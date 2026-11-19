@@ -37,6 +37,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
 
 import torch
+import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 GBM_ROOT = PROJECT_ROOT / "gbm_project"
@@ -70,6 +71,11 @@ class TrainerConfig:
 
     # --- Rollout (实测有效率, 见 rl/rollout.py) ---
     n_prompts: int = 4
+    # prompt bank 的总条数 (0 = 用 n_prompts)。
+    # 每步从 bank 里随机抽 n_prompts 条 -> 跨 prompt 泛化。
+    # ⚠️ 唯一 prompt 上限是 8: CELL_STATES(4) × 不同 metric 字符串(2)
+    #    (METRIC_VARIANTS 虽有 4 项, 但 metric[0] 只有 2 种不同取值)
+    prompt_bank_size: int = 8
     group_size: int = 8
     temperature: float = 0.8
     top_p: float = 0.92
@@ -78,6 +84,8 @@ class TrainerConfig:
     min_heavy_atoms: int = 12
     # 每 N 步存一次 `latest` checkpoint (state 含 optimizer, 约 190MB)
     save_every: int = 5
+    # 滑动平均窗口 (判断收敛用)。单步 reward 噪声极大, 必须看 MA。
+    ma_window: int = 5
 
     # --- 多样性 ---
     diversity_bucket_size: int = 10  # 与 REINVENT 一致
@@ -454,8 +462,16 @@ class RLTrainer:
             repetition_penalty=cfg.repetition_penalty, seed=cfg.seed))
 
         # --- prompt bank (冻结) ---
-        self.prompt_bank = PromptBank.build(cfg.target, n_prompts=cfg.n_prompts)
-        print(f"[prompt] {len(self.prompt_bank.prompts)} 条, "
+        # ⚠️ bank 大小与"每步采样几个"必须分开!
+        #    之前都用 n_prompts: n_prompts=2 -> bank 只有 2 条 -> 每步都用同样
+        #    2 个 prompt -> 15 步训练等于在 2 个 prompt 上过拟合, 学不到通用的
+        #    "怎么写高分分子", 只学到"怎么写这 2 个 prompt 的高分分子"。
+        #    M2 改成: bank 建 16 条 (CELL_STATES × METRIC_VARIANTS 全组合),
+        #    每步随机抽 n_prompts 条 -> 跨 prompt 泛化。
+        self.prompt_bank = PromptBank.build(
+            cfg.target, n_prompts=cfg.prompt_bank_size or cfg.n_prompts)
+        print(f"[prompt] bank {len(self.prompt_bank.prompts)} 条 "
+              f"(每步抽 {cfg.n_prompts}), "
               f"fingerprint={self.prompt_bank.fingerprint}", flush=True)
 
         # --- reward service ---
@@ -664,13 +680,23 @@ class RLTrainer:
         (total_loss / cfg.grad_accum).backward()
 
         grad_norm = 0.0
-        if (self.step + 1) % cfg.grad_accum == 0:
-            torch.nn.utils.clip_grad_norm_(
+        # ⚠️⚠️ 梯度累积的 off-by-one (实测踩坑):
+        #    1) `self.step` 在 run_step 末尾才 +1, 所以这里用的是**上一步的编号**。
+        #       改成用 self.step (当前步号) 判断: 每 grad_accum 步更新一次。
+        #    2) ⚠️ 更严重: 训练结束时如果 (总步数 % grad_accum != 0),
+        #       **最后若干步累积的梯度永远不会被应用** —— 白算!
+        #       例: 15 步 + grad_accum=4 -> 只有 3 次 optimizer 更新,
+        #           第 12/13/14 步的梯度全部丢弃。
+        #       短程 RL (15~30 步) 必须用 grad_accum=1, 否则有效更新次数太少。
+        self._accum_count = getattr(self, "_accum_count", 0) + 1
+        if self._accum_count >= cfg.grad_accum:
+            grad_norm = float(torch.nn.utils.clip_grad_norm_(
                 [p for p in self.model.parameters() if p.requires_grad],
-                cfg.max_grad_norm)
+                cfg.max_grad_norm))
             self.optimizer.step()
             self.optimizer.zero_grad(set_to_none=True)
             self.sched.step()
+            self._accum_count = 0
         t_bwd = time.time() - t0
 
         # --- 7. 多样性更新 ---
@@ -701,6 +727,8 @@ class RLTrainer:
             "t_reward": round(t_reward, 1),
             "t_logprob": round(t_logprob, 1),
             "t_backward": round(t_bwd, 1),
+            "grad_norm": round(grad_norm, 6),
+            "n_opt_steps": self.optimizer.state_dict().get("state", {}).__len__(),
             "t_total": round(time.time() - t_start, 1),
             "lr": self.sched.get_last_lr()[0],
             "n_buckets": self.diversity.n_buckets,
@@ -711,6 +739,25 @@ class RLTrainer:
         if contaminated:
             print(f"[step {self.step}] 🔴 SFT 先验被污染! {self._sft_fp} -> {fp_now}",
                   flush=True)
+
+        # --- 9. 滑动平均 (判断收敛的关键) ---
+        # ⚠️ 单步 reward_mean 噪声极大: 实测 3 步就出现 0.19 -> 0.21 -> 0.11
+        #    的波动, 这不是收敛失败而是采样噪声 (每步只采 16 个分子,
+        #    有效 3~8 个)。判断收敛**必须看滑动平均**。
+        #
+        # ⚠️ 当前这一步的 reward 还没进 self.history, 必须手动带上,
+        #    否则 window=1 时 recent=[] -> np.mean([]) = nan。
+        hist_rew = [h["reward_mean"] for h in self.history]
+        hist_rew.append(stats["reward_mean"])
+        hist_max = [h["reward_max"] for h in self.history]
+        hist_max.append(stats["reward_max"])
+
+        window = min(cfg.ma_window, len(hist_rew))
+        stats["reward_ma"] = float(np.mean(hist_rew[-window:]))
+        stats["reward_max_ma"] = float(np.mean(hist_max[-window:]))
+        # 相对 step 0 的基线, 看累计提升
+        if self.history:
+            stats["reward_vs_base"] = stats["reward_ma"] - self.history[0]["reward_mean"]
 
         self.history.append(stats)
         self.step += 1
@@ -794,9 +841,10 @@ class RLTrainer:
             if (self.step - 1) % log_every == 0:
                 print(
                     f"[step {stats['step']:3d}] "
-                    f"loss={stats['loss']:.4f} "
+                    f"loss={stats['loss']:+.4f} "
                     f"kl={stats['kl']:.5f} "
                     f"rew={stats['reward_mean']:.4f} "
+                    f"ma={stats.get('reward_ma', 0.0):.4f} "
                     f"(max {stats['reward_max']:.4f}) "
                     f"valid={stats['n_valid_smiles']}/{stats['n_total_samples']} "
                     f"adv|={stats['adv_abs_mean']:.3f} "
@@ -812,9 +860,24 @@ class RLTrainer:
             if self.cfg.save_every > 0 and self.step % self.cfg.save_every == 0:
                 self.save_checkpoint("latest")
 
+        # ⚠️ 必须 flush 残余梯度: 如果总步数不是 grad_accum 的整数倍,
+        #    最后累积的梯度会被丢弃 (见 run_step 里的说明)。
+        self._flush_gradients()
+
         self.save_checkpoint("final")
         print(f"\n[RL] 训练结束, 共 {self.step} 步", flush=True)
         return self.history
+
+    def _flush_gradients(self):
+        """把累积但还没应用的梯度强行更新一次 (训练结束时调用)。"""
+        if getattr(self, "_accum_count", 0) > 0:
+            torch.nn.utils.clip_grad_norm_(
+                [p for p in self.model.parameters() if p.requires_grad],
+                self.cfg.max_grad_norm)
+            self.optimizer.step()
+            self.optimizer.zero_grad(set_to_none=True)
+            print(f"[RL] flush {self._accum_count} 步残余梯度", flush=True)
+            self._accum_count = 0
 
     def _write_log(self):
         path = self.out_dir / "train_log.jsonl"

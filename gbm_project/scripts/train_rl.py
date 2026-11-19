@@ -61,7 +61,12 @@ def build_argparser() -> argparse.ArgumentParser:
     ap.add_argument("--kl_estimator", default="k3", choices=["k1", "k2", "k3"])
 
     # Rollout (默认基于实测有效率, 见 rl/rollout.py 的表格)
-    ap.add_argument("--n_prompts", type=int, default=4)
+    ap.add_argument("--n_prompts", type=int, default=4,
+                    help="每步从 bank 里抽几个 prompt")
+    ap.add_argument("--prompt_bank_size", type=int, default=8,
+                    help="prompt bank 总条数 (0=用 n_prompts)。"
+                         "唯一上限 8 (4 cell states × 2 种 metric 字符串)。"
+                         "bank 大于每步采样数才能跨 prompt 泛化")
     ap.add_argument("--group_size", type=int, default=8)
     ap.add_argument("--temperature", type=float, default=0.8)
     ap.add_argument("--top_p", type=float, default=0.92)
@@ -69,6 +74,8 @@ def build_argparser() -> argparse.ArgumentParser:
     ap.add_argument("--min_heavy_atoms", type=int, default=12)
     ap.add_argument("--save_every", type=int, default=5,
                     help="每 N 步存一次 latest checkpoint (0=只在结束时存)")
+    ap.add_argument("--ma_window", type=int, default=5,
+                    help="reward 滑动平均窗口 (判断收敛用, 单步噪声太大)")
 
     # 多样性 (与 REINVENT 对齐)
     ap.add_argument("--bucket_size", type=int, default=10)
@@ -116,12 +123,14 @@ def main():
         grad_accum=args.grad_accum,
         kl_estimator=args.kl_estimator,
         n_prompts=args.n_prompts,
+        prompt_bank_size=args.prompt_bank_size,
         group_size=args.group_size,
         temperature=args.temperature,
         top_p=args.top_p,
         max_new_tokens=args.max_new_tokens,
         min_heavy_atoms=args.min_heavy_atoms,
         save_every=args.save_every,
+        ma_window=args.ma_window,
         diversity_bucket_size=args.bucket_size,
         diversity_minscore=args.minscore,
         enable_diversity_filter=not args.no_diversity_filter,

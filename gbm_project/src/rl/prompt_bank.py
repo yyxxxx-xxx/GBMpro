@@ -75,16 +75,29 @@ class PromptBank:
         prompts_cfg = yaml.safe_load(open(path, encoding="utf-8"))
 
         out: List[str] = []
-        # 交错 CELL_STATE 和 METRIC_VARIANT, 保证覆盖面
+        # ⚠️ 之前只遍历 CELL_STATES (4 条), 每个 cell 固定配一个 metric,
+        #    导致 prompt bank 最多只有 4 条 —— n_prompts 设成 16 也只有 4 条,
+        #    RL 无法跨 prompt 泛化 (每步都在同样 4 个 prompt 上训)。
+        #    修正: 遍历 **CELL_STATES × METRIC_VARIANTS 全组合** (4×4=16)。
+        #
+        # ⚠️ 但 (cell, metric) 只能确定 16 个组合, 而 use_cot 只有 True/False
+        #    两个值 —— 若再乘上 use_cot 就会得到 32 个组合, 但其中一半是
+        #    **完全重复**的 prompt (实测: 16 条里只有 8 条唯一)。
+        #    所以: 先枚举唯一的 (cell, metric) 组合, use_cot 按 cell 的
+        #    奇偶决定, 保证 16 条**互不相同**。
         variants = []
         for i, cell in enumerate(CELL_STATES):
-            metric = METRIC_VARIANTS[i % len(METRIC_VARIANTS)]
-            variants.append((cell, metric[0], i % 2 == 0))
+            for j, metric in enumerate(METRIC_VARIANTS):
+                variants.append((cell, metric[0], i % 2 == 0))
 
+        seen = set()
         for cell, metric, use_cot in variants:
             if len(out) >= n_prompts:
                 break
             instr = build_prompt(prompts_cfg, target, cell, metric, use_cot=use_cot)
+            if instr in seen:
+                continue
+            seen.add(instr)
             out.append(instr)
 
         if not out:
