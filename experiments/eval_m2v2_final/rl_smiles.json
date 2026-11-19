@@ -1,0 +1,502 @@
+[
+  {
+    "prompt_id": 0,
+    "smiles": "CC(=O)CC(C1COCC(O)(Nc2ccc(Br)c(F)c2)n1)C(N)=O"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)C)cc3)CC21C"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "Cc1ccc(CN2CCCN(S(=O)(=O)C(F)(F)F)c3c2CCC(O)OC2=CCCC23)cc1"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(-c4cccnc4)cc3)CC21C"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(-c4cc(F)cnc4F)cc3)CC21C"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC(C)(C)Nc1ncc(-c2ccc(OCC(F)F)c(F)c2)n[nH]c1"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CCC(CS(=O)(=O)C(C)(CC(=O)O)C)c1ccc(Oc2cc(F)cc(Cl)c2)c(Br)c1"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "CC(=O)c1ccc(Oc2cc(F)cc(C#N)c2)c(Br)c1"
+  },
+  {
+    "prompt_id": 0,
+    "smiles": "N#Cc1ccc(-c2ccc(C=CC(=O)O)c(F)c2)cc1C"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(C#N)c(Cl)c3)CC21C"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCO)cc3)CC21C"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC(C)(C)Nc1ccc(OCC(F)(F)F)c(Cl)c1"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC(C)n1cnc2c(OCc3ccccc3)nc(N)nc21"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CCC(CS(=O)(=O)C(C)N(C)c1cccc(Cl)c1)N1C(=NC2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "N#Cc1cc(F)cs(OCc2ccc(C=O)c(Cl)c2)n1"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC(C)(C)OC(=O)Nc1nc(N)nc(-c2ccc(F)c(S(=O)(=O)Cc3cc(Br)ccc3F)n2)n1"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "N#Cc1cc(F)ccc1OCC"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 1,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCCCN(C)OC)cc3)CC21C"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCN)cc3)CC21C"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "NC(=O)c1ccc(Oc2cc(F)cc(C#N)c2)c(Br)c1"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC(C)(C)Nc1ccc(OCC2=CCCC2)c(Cl)c1"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC1(CC(=O)O)CC(c2cccc(Cl)c2)C(c2ccc(Cl)cc2)N(C(CS(=O)(=O)N2CCN(C)CC2)C2CC2)C1=O"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CCC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC(C)(C)Nc1ccc(OCC(F)(F)CF)c(Cl)c1"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "N#Cc1cc(F)ccc1OCCCCN"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC1(CC(=O)O)CC(c2cccc(Cl)c2)C(c2ccc(C#N)c(F)c2)N(C(CS(=O)(=O)C(C)(C)C)C2CCC2)C1=O"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)F)cc3)CC21C"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC(C)n1nc(N=O)s(n2ccc(Cl)c(F)c2n1)"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CCC(CS(=O)(=O)C(O)C(N)=O)Nc1ccc(OCC(F)(F)F)c(Cl)n1"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc(F)c(Cl)c1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N(C)C(F)(F)F)c(Cl)c4c1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 2,
+    "smiles": "N#Cc1cc(F)ccc1-c1nc(N(Cc2cccs2)n2CCN(S(=O)(=O)CF)c3c2CCC(n2CNC[C@H]2C)CS2CC23n1)"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCO)=c3)CC21C"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "COC(=O)c1ccc(Oc2cc(F)cc(C#N)c2)c(Cl)c1"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC(=O)Nc1ccc(OCC(C)(C)C)c(Cl)c1"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC(C)(C)S(=O)(=O)CC(C1CC1)N1C(=O)C(C)(CC(=O)O)CC(c2cccc(Cl)c2)C1c1ccc(Cl)cc1"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCO)cc3)CC21C"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCCF)c(Cl)c3)CC21C"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC(C)(C)OC(=O)Nc1nc(-c2ccc(Cl)c(F)c2)c2[nH]cnc2n1"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CCCC(CS(=O)(=O)CC(O)C)N(CC(C)(C)C)C(=O)OC1CC1"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC(C)n1cnc2c(OCc3ccccc3F)c(N=O)c2[nH]1"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC(=O)c1ccc(Oc2cc(F)cc(Cl)c2F)c(Br)c1"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC1(CC(=O)OC)CC(c2cccc(Cl)c2)C(c2ccc(Cl)cc2)N(C(CS(=O)(=O)C(C)(C)C)C2CC2)C1=O"
+  },
+  {
+    "prompt_id": 3,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3cc(NCCN4CCCC4)ccc31)NC2=O"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC(C)(C)Nc1nc(OC)ncc1-c1ccc(F)c(S(=O)(=O)CC2=C(N)CCCC2=1)NC"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)c(Cl)c3)CC21C"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCCCC)=c3)CC21C"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC(C)(C)OC(=O)Nc1ccc(Oc2cc(F)cnc2F)s1"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "Cc1cc(C(=O)N2CCC(NC3CCc4c(-c5cnc(N)nc5)nc(N5CCOCC5)nc43)C2)c(Br)c(O)Cn1"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CCC(CS(=O)(=O)c1ccc(Oc2cc(F)cc(Cl)c2)c2c1C(O)C(F)(F)CC2)C(N)=O"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCCCCCCCCC4(CC)CC4)cc3)CC21C"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "COc1ncc(-c2ccc(C=CN3COC3CCC(F)(F)F)c(Cl)c2)c(Br)c1"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC(C)c1ccc(Oc2cc(F)cs2)c(Cl)c1"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc(F)c(F)c1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC(=O)n1cnc2c(n1C(C)C)N(c1ccc(Cl)c(F)c1F)c3ccc(N(C)CCN(C)C)cc(O)NC32"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "Cc1cc(CN(S(=O)(=O)C(F)(F)F)c2ccc(Br)cn2)ccc1C"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC#CC(=O)c1ccc(Oc2cc(F)cc(C#N)c2)c2c1C(O)C(F)(F)C2"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C"
+  },
+  {
+    "prompt_id": 4,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCCCCCCCCCI)cc3)CC21C"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc(N(C)CCCN)cc1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)c5ccc(CC(=O)O)cc5-CC(C)(C)C43CC21C"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "COc1ccc(CN)c(OC)n1"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC(C)(C)OC(=O)Nc1ccc(OCC2OC(N)CNC2)cc1"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCC(F)F)c(Cl)c3)CC21C"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(=O)OC)cc3)CC21C"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CCC(C)(C)Nc1ccc(OCC(F)(F)F)c(Cl)n1"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 5,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCO)=c3)CC21C"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3cc(NC4CCC4)ccc31)NC2=O"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "N#Cc1cc(F)cc(Oc2ccc(S(=O)(=O)c3cn(-c4cnc(N)nc4)nc32))c1"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "Cc1cc(-n2cc(C#N)c(N=O)c3ccc(OCC(F)(F)Cl)cn32)ccc1C(F)F"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC(C)(C)OC(=O)Nc1ccc(OCC2CN(C)CCC2)cc1"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC)s(CC)c3)CC21C"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)F)cc3)CC21C"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)Cl)cc3)CC21C"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CCCC(C)c1ccc(Oc2cc(F)cc(Cl)c2F)c(OC)n1"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N(C)C(F)(F)F)c(Cl)c4n1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "CC#CC(=O)c1ccc(Oc2cc(F)cc(CCF)c2)c(Cl)c1"
+  },
+  {
+    "prompt_id": 6,
+    "smiles": "N#Cc1cc(F)cs(OCc2ccc(Cl)c(C(F)(F)F)c2)n1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CCC(CS(=O)(=O)C(F)(F)F)N1CCC(COC2COCC2)C(c2cccc(Cl)c2)C1c1ccc(Cl)cc1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC(C)n1cnc2c(OCc3ccccc3)nc(N)nc21"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CCCCCCCCCCCCCCCNC(=O)c1ccc(Oc2cc(F)cc(C#N)c2F)c(Cl)c1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC#CC(=O)Nc1nc(-c2ccccc2)c2[nH]cnc2n1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCCCCCC(=O)OC)cc3)CC21C"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(-c4ccco4)cc3)CC21C"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "N#Cc1cc(F)cs(OCc2ccc(C=O)c(Cl)c2)n1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC(=O)c1ccc(Oc2cc(F)cs2)c(Cl)n1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(-c4ncn[nH]4)cc3)CC21C"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)C)cc3)CC21C"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOC)cc3)CC21C"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC(C)(C)S(=O)(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CCC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1"
+  },
+  {
+    "prompt_id": 7,
+    "smiles": "CC(Oc1cc2c3c(c1)nc(-c1ccc(OC(F)(F)F)c(Cl)c1)n3CCCCO2)C(N)=O"
+  }
+]

@@ -155,6 +155,18 @@ def make_plot(a, out_dir: Path):
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    # ⚠️ 中文字体: 容器里默认 DejaVu Sans 没有 CJK 字形, 会渲染成方块。
+    #    优先用系统装的 Noto Serif CJK SC / WQY 等。
+    from matplotlib import font_manager as _fm
+    _have = {f.name for f in _fm.fontManager.ttflist}
+    for _cand in ("Noto Serif CJK SC", "Noto Sans CJK SC", "WenQuanYi Zen Hei",
+                  "WenQuanYi Micro Hei", "AR PL UMing CN"):
+        if _cand in _have:
+            matplotlib.rcParams["font.sans-serif"] = [_cand]
+            matplotlib.rcParams["font.family"] = "sans-serif"
+            matplotlib.rcParams["axes.unicode_minus"] = False
+            break
+
     fig, axes = plt.subplots(2, 2, figsize=(13, 8))
     steps = a["steps"]
 

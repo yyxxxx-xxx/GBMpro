@@ -1,0 +1,14 @@
+{
+  "tag": "baseline_sft",
+  "n_sampled": 116,
+  "n_scored": 116,
+  "reward_mean": 0.2548572672413793,
+  "reward_std": 0.23737681583984732,
+  "reward_median": 0.30503250000000004,
+  "reward_max": 0.654465,
+  "reward_p90": 0.564174,
+  "vina_mean": -7.5399,
+  "vina_best": -9.897,
+  "n_unique": 91,
+  "seed": 1234
+}
