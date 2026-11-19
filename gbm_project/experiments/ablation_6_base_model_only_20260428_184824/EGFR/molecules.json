@@ -1,0 +1,394 @@
+[
+  {
+    "id": 0,
+    "smiles": "CC(C)(C)C(=O)NC(=O)C1CCCN(C(C1)C)C",
+    "tpsa": 49.410000000000004,
+    "mw": 254.37399999999994,
+    "target": "EGFR"
+  },
+  {
+    "id": 1,
+    "smiles": "CC(=O)Nc1ccc(cc1)C(=O)OC",
+    "tpsa": 55.400000000000006,
+    "mw": 193.20199999999997,
+    "target": "EGFR"
+  },
+  {
+    "id": 2,
+    "smiles": "NC(=O)C1=CC=CC=C1",
+    "tpsa": 43.09,
+    "mw": 121.13899999999995,
+    "target": "EGFR"
+  },
+  {
+    "id": 3,
+    "smiles": "Cc1ccc(cc1)C(=O)Nc2ccc(cc2)C(=O)OC",
+    "tpsa": 55.400000000000006,
+    "mw": 269.3,
+    "target": "EGFR"
+  },
+  {
+    "id": 4,
+    "smiles": "CC(=O)Nc1ccccc1C(=O)OC",
+    "tpsa": 55.400000000000006,
+    "mw": 193.20199999999994,
+    "target": "EGFR"
+  },
+  {
+    "id": 5,
+    "smiles": "C1=CC(=O)NC2C1C(=O)C(=O)C(C)=CC=C2",
+    "tpsa": 63.24,
+    "mw": 217.22399999999996,
+    "target": "EGFR"
+  },
+  {
+    "id": 6,
+    "smiles": "CC(=O)C1=CC=C(C=C1)NCCN",
+    "tpsa": 55.120000000000005,
+    "mw": 178.23499999999993,
+    "target": "EGFR"
+  },
+  {
+    "id": 7,
+    "smiles": "CC(=O)Nc1ccccc1Nc2ccccc2C(=O)O",
+    "tpsa": 78.43,
+    "mw": 270.28799999999995,
+    "target": "EGFR"
+  },
+  {
+    "id": 8,
+    "smiles": "CC(=O)Nc1ccccc1CC(=O)O",
+    "tpsa": 66.4,
+    "mw": 193.20199999999994,
+    "target": "EGFR"
+  },
+  {
+    "id": 9,
+    "smiles": "CC(=O)Nc1ccccc1C(=O)O",
+    "tpsa": 66.4,
+    "mw": 179.17499999999995,
+    "target": "EGFR"
+  },
+  {
+    "id": 10,
+    "smiles": "CC(=O)Nc1ccccc1C(=O)NCCN",
+    "tpsa": 84.22,
+    "mw": 221.25999999999993,
+    "target": "EGFR"
+  },
+  {
+    "id": 11,
+    "smiles": "CC(=O)OC1=CC=C(C=C1)C(=O)N",
+    "tpsa": 69.39,
+    "mw": 179.17499999999998,
+    "target": "EGFR"
+  },
+  {
+    "id": 12,
+    "smiles": "CC(=O)Nc1ccccc1C(=O)CC",
+    "tpsa": 46.17,
+    "mw": 191.22999999999993,
+    "target": "EGFR"
+  },
+  {
+    "id": 13,
+    "smiles": "CC(=O)Oc1ccccc1N",
+    "tpsa": 52.32,
+    "mw": 151.16499999999996,
+    "target": "EGFR"
+  },
+  {
+    "id": 14,
+    "smiles": "CC(=O)Nc1ccc(COP(=O)O)cc1",
+    "tpsa": 75.63,
+    "mw": 229.172,
+    "target": "EGFR"
+  },
+  {
+    "id": 15,
+    "smiles": "CC(=O)N(C)C1=CC=C(C=C1)C(=O)O",
+    "tpsa": 57.61,
+    "mw": 193.202,
+    "target": "EGFR"
+  },
+  {
+    "id": 16,
+    "smiles": "CC(=O)N1CCCC2=C(C=CC=C2)C(=O)N(C)C1",
+    "tpsa": 40.620000000000005,
+    "mw": 246.31,
+    "target": "EGFR"
+  },
+  {
+    "id": 17,
+    "smiles": "Cc1ccccc1C(=O)Nc2ccc(C(=O)CN3CCCC3)cc2",
+    "tpsa": 49.410000000000004,
+    "mw": 322.4080000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 18,
+    "smiles": "Cc1ccc(cc1)C(N)=N(C(=O)Nc2ccc(C(=O)CN(C)C)cc2)",
+    "tpsa": 87.78999999999998,
+    "mw": 338.4110000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 19,
+    "smiles": "CC(=O)Nc1ccc(cc1)C(=O)O",
+    "tpsa": 66.4,
+    "mw": 179.17499999999998,
+    "target": "EGFR"
+  },
+  {
+    "id": 20,
+    "smiles": "CC1=CC=CC=CC=C1CN(C)C(=O)O",
+    "tpsa": 40.540000000000006,
+    "mw": 205.25699999999998,
+    "target": "EGFR"
+  },
+  {
+    "id": 21,
+    "smiles": "CC(=O)C(=CC(C)(C)C)C(=O)C1CCCC(C(=O)N)CC1",
+    "tpsa": 77.23,
+    "mw": 293.40700000000004,
+    "target": "EGFR"
+  },
+  {
+    "id": 22,
+    "smiles": "CC(=O)Nc1ccc(cc1)C(=O)Nc2ccccc2",
+    "tpsa": 58.2,
+    "mw": 254.28900000000002,
+    "target": "EGFR"
+  },
+  {
+    "id": 23,
+    "smiles": "CC(=O)Nc1ccc(cc1)C(=O)Nc2ccccc2CN1CCCCCN1",
+    "tpsa": 73.47,
+    "mw": 366.46500000000026,
+    "target": "EGFR"
+  },
+  {
+    "id": 24,
+    "smiles": "CC1=CC=CC(=O)C2=CC=CC=C2C(=O)N1",
+    "tpsa": 46.17,
+    "mw": 213.23600000000002,
+    "target": "EGFR"
+  },
+  {
+    "id": 25,
+    "smiles": "NC1=CN=CC=CC=C1N",
+    "tpsa": 64.39999999999999,
+    "mw": 135.16999999999996,
+    "target": "EGFR"
+  },
+  {
+    "id": 26,
+    "smiles": "C(CCN)C1=CC=CC=C1C(=O)O",
+    "tpsa": 63.32000000000001,
+    "mw": 179.21899999999997,
+    "target": "EGFR"
+  },
+  {
+    "id": 27,
+    "smiles": "C1=CC=C(C=C1)N(C)C(=O)O",
+    "tpsa": 40.540000000000006,
+    "mw": 151.165,
+    "target": "EGFR"
+  },
+  {
+    "id": 28,
+    "smiles": "C1=CC=CC=CC=C1C(=O)S(=O)(=O)O",
+    "tpsa": 71.44,
+    "mw": 212.22599999999997,
+    "target": "EGFR"
+  },
+  {
+    "id": 29,
+    "smiles": "C1=CC=CC=CC=C1C(=O)N",
+    "tpsa": 43.09,
+    "mw": 147.17699999999996,
+    "target": "EGFR"
+  },
+  {
+    "id": 30,
+    "smiles": "CC(=O)Nc1ccccc1CC(=O)CN",
+    "tpsa": 72.19,
+    "mw": 206.24499999999992,
+    "target": "EGFR"
+  },
+  {
+    "id": 31,
+    "smiles": "CC(=O)Nc1ccccc1C(=O)CC(=O)C",
+    "tpsa": 63.24,
+    "mw": 219.23999999999992,
+    "target": "EGFR"
+  },
+  {
+    "id": 32,
+    "smiles": "CC(=O)Nc1cccc1CC(=O)O",
+    "tpsa": 66.4,
+    "mw": 180.18299999999996,
+    "target": "EGFR"
+  },
+  {
+    "id": 33,
+    "smiles": "CC(=O)Nc1ccc(Cl)c(c1)C(=O)OC",
+    "tpsa": 55.400000000000006,
+    "mw": 227.64699999999996,
+    "target": "EGFR"
+  },
+  {
+    "id": 34,
+    "smiles": "C1=CC=C(C2=CC(=CC2N)N3C(=CN3CCC(=O)C4=CC=C(C5=CC(=C4)NCCN5)C)C)C=C1",
+    "tpsa": 77.00999999999999,
+    "mw": 453.59000000000015,
+    "target": "EGFR"
+  },
+  {
+    "id": 35,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)NCC1",
+    "tpsa": 82.26,
+    "mw": 248.28599999999997,
+    "target": "EGFR"
+  },
+  {
+    "id": 36,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)C1=O",
+    "tpsa": 87.30000000000001,
+    "mw": 233.22699999999998,
+    "target": "EGFR"
+  },
+  {
+    "id": 37,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)CN1",
+    "tpsa": 82.26,
+    "mw": 234.259,
+    "target": "EGFR"
+  },
+  {
+    "id": 38,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)OC1",
+    "tpsa": 79.46000000000001,
+    "mw": 235.24299999999997,
+    "target": "EGFR"
+  },
+  {
+    "id": 39,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)S1",
+    "tpsa": 70.23,
+    "mw": 237.284,
+    "target": "EGFR"
+  },
+  {
+    "id": 40,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)N1",
+    "tpsa": 82.26,
+    "mw": 220.232,
+    "target": "EGFR"
+  },
+  {
+    "id": 41,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)N(C)C1",
+    "tpsa": 73.47,
+    "mw": 248.28599999999997,
+    "target": "EGFR"
+  },
+  {
+    "id": 42,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)C(C)C1",
+    "tpsa": 70.23,
+    "mw": 247.29799999999997,
+    "target": "EGFR"
+  },
+  {
+    "id": 43,
+    "smiles": "C1=CC=CC2=C(NC(=O)NCCN2)C(=O)CC1",
+    "tpsa": 70.23,
+    "mw": 233.27099999999996,
+    "target": "EGFR"
+  },
+  {
+    "id": 44,
+    "smiles": "C1=CC(=O)NC2=C1C(=O)N2",
+    "tpsa": 61.96,
+    "mw": 136.10999999999999,
+    "target": "EGFR"
+  },
+  {
+    "id": 45,
+    "smiles": "C1=CC(=O)NCCCNC1",
+    "tpsa": 41.13,
+    "mw": 140.18599999999998,
+    "target": "EGFR"
+  },
+  {
+    "id": 46,
+    "smiles": "C1=CC(=O)NCCC(N)C1",
+    "tpsa": 55.120000000000005,
+    "mw": 140.18599999999998,
+    "target": "EGFR"
+  },
+  {
+    "id": 47,
+    "smiles": "C1=CC=CC(C=C1)Nc3ccccc3C(=O)O",
+    "tpsa": 49.33,
+    "mw": 227.263,
+    "target": "EGFR"
+  },
+  {
+    "id": 48,
+    "smiles": "C1=CC=CC(C=C1)Nc4ccccc4C(=O)Nc5ccccc5C(=O)O",
+    "tpsa": 78.43,
+    "mw": 346.3860000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 49,
+    "smiles": "C1=CC=CC(C=C1)Nc6ccccc6C(=O)Nc7ccccc7N",
+    "tpsa": 67.15,
+    "mw": 317.39200000000005,
+    "target": "EGFR"
+  },
+  {
+    "id": 50,
+    "smiles": "C1=CC=CC(C=C1)NC(=O)c8ccccc8C(=O)OC(=O)C9CC9",
+    "tpsa": 72.47,
+    "mw": 323.3480000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 51,
+    "smiles": "C1=CC=CC(C=C1)C(=O)Nc1ccccc1C(=O)O",
+    "tpsa": 66.4,
+    "mw": 255.273,
+    "target": "EGFR"
+  },
+  {
+    "id": 52,
+    "smiles": "C1=CC=CC(C=C1)Nc2ccccc2C(=O)S(O)(=O)CC",
+    "tpsa": 66.4,
+    "mw": 305.3990000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 53,
+    "smiles": "C1=CC=CC(C=C1)Nc3ccccc3C(=O)Nc4ccccc4C(=O)Nc5ccccc5",
+    "tpsa": 70.23,
+    "mw": 421.5000000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 54,
+    "smiles": "C1=CC=CC(C=C1)Nc6ccccc6C(=O)Nc7ccccc7C(=O)OC(=O)OC",
+    "tpsa": 93.73,
+    "mw": 404.4220000000002,
+    "target": "EGFR"
+  },
+  {
+    "id": 55,
+    "smiles": "C1=CC=CC(C=C1)Nc8ccccc8C(=O)O",
+    "tpsa": 49.33,
+    "mw": 227.263,
+    "target": "EGFR"
+  }
+]

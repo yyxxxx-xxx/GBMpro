@@ -1,0 +1,26 @@
+{
+  "EGFR": {
+    "n_requested": 40,
+    "n_unique": 15,
+    "n_raw_valid": 21,
+    "n_repaired": 0,
+    "n_failed": 19,
+    "csv": "/root/Llamole-main/gbm_project/final_results/comparative/Ours_active/EGFR.csv"
+  },
+  "VEGFR": {
+    "n_requested": 40,
+    "n_unique": 18,
+    "n_raw_valid": 20,
+    "n_repaired": 1,
+    "n_failed": 19,
+    "csv": "/root/Llamole-main/gbm_project/final_results/comparative/Ours_active/VEGFR.csv"
+  },
+  "IDH1": {
+    "n_requested": 40,
+    "n_unique": 20,
+    "n_raw_valid": 25,
+    "n_repaired": 1,
+    "n_failed": 14,
+    "csv": "/root/Llamole-main/gbm_project/final_results/comparative/Ours_active/IDH1.csv"
+  }
+}

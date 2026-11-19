@@ -1,0 +1,21 @@
+entity_id,mol_id,library_name,target,smiles
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_1","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CCC(CS(=O)(=O)CCCO)c1ccc(-c2nc(N)sc2)c(F)c1F
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_2","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NC4=NC=N4)cc31)NC2=O
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_3","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_4","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_5","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC(=O)Cn1cnc2c(OCc3ccccc3)c(N(C)CC(F)(F)C3CC3)nc(-c3cnn(C#N)c3)s2cn1
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_6","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCc4ccccc4)cc3)CC21C
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_7","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC(=O)C(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)N1CCN(CC(=O)OC(C)(C)C)CC1
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_8","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NCCN4CCC4OC(=O)N(C)C(O)C(F)(F)F)cc31)NC2=O
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_9","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CCC(CS(=O)(=O)CC(C)C)N
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_10","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(=O)N(C)CCCC(F)(F)C)cc3)CC21C
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_11","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_12","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC(C)n1cnc2cc(n1)-c1ccc(NC(=O)OC(C)(C)C)c(OCC(F)F)c1-NC2=O
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_13","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CCC(CS(=O)(=O)C(Nc1ncn(CC(F)(F)F)c1OC)C(C)(CC(=O)O)C2=CC=C2)N1C(=O)C(O)Cc2ccccc21
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_14","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NCCN4CCC4=O)cc31)NC2=O
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_15","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC(=O)C(C)(N)C(CC(=O)OC)S(=O)(=O)CC(c1ccc(F)c(Cl)c1F)C2=C(C#N)C2c1ccccc1-Cl
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_16","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N(C)CCO)cn(CC)c4c1)n3CCCCO2)C(N)=O
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_17","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)F)cc3)CC21C
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_18","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC(=O)c1ccc(Oc2cc(F)cc(Cl)c2)c(Br)c1
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_19","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NCCN4CCC4)cc31)NC2=O
+IDH1,"GBM-PharmaMind (Ours, active-QA LoRA)_IDH1_20","GBM-PharmaMind (Ours, active-QA LoRA)",IDH1,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCCCCO)cc3)CC21C

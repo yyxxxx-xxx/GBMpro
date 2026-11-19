@@ -1,0 +1,102 @@
+{
+  "strict-train, suffix='SMILES: ', T=0.7": {
+    "valid_rate": "0/5",
+    "samples": [
+      [
+        "109824176138831814211465103118743801111141141110",
+        []
+      ],
+      [
+        "6164c1ccc2ccccc2c1Oc1ccccc1Nc1ccccc1Oc1ccc(C)cc1F.1S.2O.3O.11C.",
+        [
+          "C)cc1F.1S.2O.3O.11C"
+        ]
+      ]
+    ]
+  },
+  "strict-train, suffix='SMILES: ', T=1.0": {
+    "valid_rate": "0/5",
+    "samples": [
+      [
+        "7Nc1ccc2cc3[nH]c4ccc3cc2c1OC1(C)1s2.1.1.1.1.1.1.1.1.1.1.",
+        [
+          "C)1s2.1.1.1.1.1.1.1.1.1.1"
+        ]
+      ],
+      [
+        "0O1CC(=O)NNCc12ccc3cc4ccn4c32s1S(=O)(=O)O1.0B2CS(=O)OC1(C",
+        [
+          "O)NNCc12ccc3cc4ccn4c32s1S(=O)(=O)O1.0B2CS(=O)OC1(C"
+        ]
+      ]
+    ]
+  },
+  "strict-train, suffix='SMILES: ', T=1.2": {
+    "valid_rate": "0/5",
+    "samples": [
+      [
+        "0c1cc2ccc3c(O)cc3c2n1ccccc1)cc12OCCN1CCC1.I.1.1.1.1.1.1.1.1.",
+        [
+          "O)cc3c2n1ccccc1)cc12OCCN1CCC1.I.1.1.1.1.1.1.1.1"
+        ]
+      ],
+      [
+        "5-((6-Methoxycarbonyl)uriedoxyldifluoromethanes-3,5-pyrazine[3,2-C]furan-4-yl)-ind4H-thi",
+        [
+          "C]furan-4-yl)-ind4H-thi"
+        ]
+      ]
+    ]
+  },
+  "strict-train, no suffix, T=0.7": {
+    "valid_rate": "0/5",
+    "samples": [
+      [
+        "SMILES: CCNCCc1c2ccccc2s1Oc1ccc(C(N)=O)cc1Cl[1,2,3]S(=O)(N)(=O)1c1cc",
+        [
+          "CCNCCc1c2ccccc2s1Oc1ccc(C(N)=O)cc1Cl[1,2,3]S(=O)(N)(=O)1c1cc"
+        ]
+      ],
+      [
+        "SMILES: O=CCNc12ccc3ccccc3c12)C(=O)OCc1ccccc1Oc1ccc(C)s1O1c1ccccc11Cc1cc",
+        [
+          "O=CCNc12ccc3ccccc3c12)C(=O)OCc1ccccc1Oc1ccc(C)s1O1c1ccccc11Cc1cc"
+        ]
+      ]
+    ]
+  },
+  "strict-train, no suffix, T=1.0": {
+    "valid_rate": "0/5",
+    "samples": [
+      [
+        "SMILES: CC(=O)Nc12ccc3ccccc3c2c1OCc1ccccc11.1H,0.1H,0.2H-1,1,2",
+        [
+          "CC(=O)Nc12ccc3ccccc3c2c1OCc1ccccc11.1H,0.1H,0.2H-1,1,2"
+        ]
+      ],
+      [
+        "SMILES: CC(=O)Nc1n2cc3ccccc3o2nc1Cc1ccccc1OCc1ccccc11C(N)=O1CCNC(C)C1.Cc",
+        [
+          "CC(=O)Nc1n2cc3ccccc3o2nc1Cc1ccccc1OCc1ccccc11C(N)=O1CCNC(C)C1.Cc"
+        ]
+      ]
+    ]
+  },
+  "strict-train, no suffix, T=1.2": {
+    "valid_rate": "0/5",
+    "samples": [
+      [
+        "SMILES: AOBc1ccc2c(Nc3cc4ccccc43)ccc2c1-O*1CCNC2CS(N(=O)(C)C)CS2N(C)CC(N",
+        [
+          "AOBc1ccc2c(Nc3cc4ccccc43)ccc2c1-O*1CCNC2CS(N(=O)(C)C)CS2N(C)CC(N"
+        ]
+      ],
+      [
+        "SMILES: O=Cc1c2ccccc2Nc1-c1ccccc1OCc1ccccc11CC(=O)NCc1ccccc11s11.1.1.1",
+        [
+          "O=Cc1c2ccccc2Nc1-c1ccccc1OCc1ccccc11CC(=O)NCc1ccccc11s11.1.1.1"
+        ]
+      ]
+    ]
+  }
+}

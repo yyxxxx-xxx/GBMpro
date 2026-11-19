@@ -1,0 +1,6 @@
+ID,SMILES,TPSA,MW
+EGFR_21413_001,Cc1cc(-c2ccnc(N)n2)cn1-c1ccc(Br)cc1Cc1cc(-c2ccnc(N)n2)cn1-c1ccc(Br)cc1,113.46,656.39
+EGFR_47471_002,Cc1cc(Br)cc(-c2cccc(F)c2)nc(N)n1,50.74,308.15
+EGFR_44632_003,Cc1cc(-c2ccnc(NCC(C)(C)C)n2)no1,63.84,246.31
+EGFR_74116_004,Cc1cc(-c2cc(Cl)nc(NCc3ccccc3Cl)n2)no1,63.84,335.19
+EGFR_01038_005,Cc1cc(-c2nc(NCC3CCC(OCC(C)(C)C)CC3)n2)ccn1,58.87,342.49

@@ -1,0 +1,10 @@
+entity_id,mol_id,library_name,smiles,drugclip_score,vina_docking_score
+69e5d1cb8148b7835ae25738,EGFR_00014,EGFR,Cc1cc(C(C)(C)OC(C)(C)C)cn1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc1ccccc1,0.70,-7.54
+69e5d1cb8148b7835ae25739,EGFR_00019,EGFR,Cc1cc(Br)nc(N)n1,0.42,-3.73
+69e5d1cb8148b7835ae2573d,EGFR_00037,EGFR,Cc1cc(N)nc(-c2ccc(Cl)cc2)n1,0.22,-6.06
+69e5d1cb8148b7835ae2573b,EGFR_00022,EGFR,Cc1cc(Br)cn1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc1ccccc1,0.18,-6.65
+69e5d1cb8148b7835ae2573c,EGFR_00036,EGFR,Cc1cc(NC(=O)n2cc(B(O)O)cc2C)c(CBr)c(-c2ccccn2)n1,-0.32,
+69e5d1cb8148b7835ae25737,EGFR_00010,EGFR,[O-]C(CCO)CCNCc1ccccc1,-0.39,-4.41
+69e5d1cb8148b7835ae25735,EGFR_00003,EGFR,Cc1cc(NC(=O)n2cc(Br)cc2C)cc(-c2ccccn2)n1,-0.63,-6.56
+69e5d1cb8148b7835ae2573a,EGFR_00020,EGFR,CC(C)CN(C(F)(F)F)S(=O)(=O)O[S](C)OS(=O)(=O)N(CC(C)C)C(F)(F)F,-0.87,-5.79
+69e5d1cb8148b7835ae25736,EGFR_00004,EGFR,Cc1cc(C(=O)Nc2ccc(F)cc2)nc(-c2ccc(Cl)cc2)n1,-1.41,-5.6

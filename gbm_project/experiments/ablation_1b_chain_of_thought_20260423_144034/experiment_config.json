@@ -1,0 +1,12 @@
+{
+  "experiment_name": "ablation_1b_chain_of_thought",
+  "ablation_description": "Ablation 1b: Chain-of-Thought generation using GBMPromptGenerator.generate_cot_prompt(). The full CoT prompt includes: (1) GBM domain knowledge + target-specific context (from generate_domain_prompt), (2) cot_reasoning_templates.step_by_step_design 7-step SOP with market drug references, and (3) target-specific reasoning (from _generate_target_reasoning). The model is guided step-by-step but WITHOUT ToT's hierarchical BFS branching and state evaluation/pruning. This tests whether the hierarchical search structure adds value beyond good CoT prompting.",
+  "targets": [
+    "EGFR",
+    "IDH1_IDH2",
+    "VEGF_VEGFR"
+  ],
+  "num_molecules": 50,
+  "gpu_id": 1,
+  "timestamp": "2026-04-23T14:40:34.784083"
+}

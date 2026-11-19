@@ -1,0 +1,14 @@
+{
+  "experiment_name": "ablation_2_no_feedback",
+  "targets_processed": [
+    "IDH1_IDH2",
+    "EGFR",
+    "VEGF_VEGFR"
+  ],
+  "per_target": {
+    "EGFR": 16,
+    "IDH1_IDH2": 45,
+    "VEGF_VEGFR": 22
+  },
+  "timestamp": "2026-04-24T08:47:45.331881"
+}

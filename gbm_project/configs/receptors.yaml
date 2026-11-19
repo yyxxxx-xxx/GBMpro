@@ -1,0 +1,51 @@
+### 受体配置：3 个 GBM 靶点的真实 PDB 结构与对接盒
+###
+### 每个靶点的 box_center 取自该结构的共晶配体（cryo-ligand）质心，
+### box_size 24 A 立方，覆盖绝大多数激酶 ATP 位点。
+### crystal_ligand_smiles 用于 sanity validation（重对接共晶配体，检验管线正确性）。
+
+EGFR:
+  display_name: "EGFR"
+  pdb_id: "2JIV"          # EGFR kinase domain T790M + HKI (neratinib-like)
+  chain: "A"
+  ligand_residue: "HKI"
+  box_center: [4.77, 3.65, 17.11]
+  box_size: [24, 24, 24]
+  crystal_ligand_smiles: "CCOC1CC2NCC(CN)C(NC3CCC(OCC4CCCCN4)C(Cl)C3)C2CC1NC(O)CCCN(C)C"
+  crystal_ligand_name: "HKI"
+
+IDH1_IDH2:
+  display_name: "IDH1/IDH2"
+  pdb_id: "6U4J"          # IDH1 R132H mutant in complex with FT-2102
+  chain: "A"
+  ligand_residue: "PWV"
+  box_center: [11.89, -3.71, 23.56]
+  box_size: [24, 24, 24]
+  crystal_ligand_smiles: "C[C@H](NC1=CC=C(C#N)N(C)C1=O)C2=Cc3cc(Cl)ccc3NC2=O"
+  crystal_ligand_name: "PWV"
+
+VEGF_VEGFR:
+  display_name: "VEGF/VEGFR"
+  pdb_id: "3WZD"          # KDR (VEGFR2) in complex with lenvatinib (LEV)
+  chain: "A"
+  ligand_residue: "LEV"
+  box_center: [1.12, -6.89, 15.94]
+  box_size: [24, 24, 24]
+  crystal_ligand_smiles: "COc1cc2nccc(Oc3ccc(NC(=O)NC4CC4)c(Cl)c3)c2cc1C(N)=O"   # lenvatinib (LEV)
+  crystal_ligand_name: "LEV"
+
+### 靶点名称别名映射：生成脚本输出的靶点名 -> 配置 key
+target_aliases:
+  EGFR: "EGFR"
+  IDH1: "IDH1_IDH2"
+  IDH1_IDH2: "IDH1_IDH2"
+  VEGF: "VEGF_VEGFR"
+  VEGFR: "VEGF_VEGFR"
+  VEGF_VEGFR: "VEGF_VEGFR"
+
+### 硬截断阈值（与 gbm_physical_evaluator.py 的 MPORewardCalculator 保持一致）
+hard_cutoffs:
+  vina_max: -5.0          # kcal/mol，高于此值视为结合过弱
+  mw_max: 600.0
+  tpsa_max: 120.0
+  logp_max: 5.0

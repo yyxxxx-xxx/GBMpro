@@ -1,0 +1,10 @@
+{
+  "experiment_name": "ablation_6_base_model_only",
+  "targets_processed": [
+    "EGFR",
+    "IDH1_IDH2",
+    "VEGF_VEGFR"
+  ],
+  "total_molecules": 139,
+  "timestamp": "2026-04-28T19:24:46.357076"
+}

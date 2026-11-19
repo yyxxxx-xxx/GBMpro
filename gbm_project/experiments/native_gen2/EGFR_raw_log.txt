@@ -1,0 +1,139 @@
+--- prompt variant 0 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CC(=O)Nc1c2ccccc2o1c1CC2Oc1ccccc12O1O2Oc1ccccc12O2OCCO2s1c2ccccc2o1n1c2ccccc2s1
+
+--- prompt variant 1 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: NC(=O)c1ccc(OC)cc1Nc1s2ccccc12S(N)(=O)O1=O1=O1=O1=O1.2.1.2.1.2.1.2.1.2.1
+
+--- prompt variant 2 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CC(=O)Nc1ccc2[nH]c2c1OCNCCOCC1c1ccccc11C1CCOCC1Nc1ccccc11)C1CN2CC3CC3O2c1ccccc12=O
+
+--- prompt variant 0 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: O=C(Cc1n2ccccc2n1)NCc1ccccc1Nc1ccccc1O2CCCC2O2=O2CC1(C)C1NCCO2CCN2C1C=O2C2O1O2CC2
+
+--- prompt variant 1 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: NC(=O)c1ccc2ccccc2c1Nc1ccc(C)cc1OCc1ccccc11.1S(N)(=O)CC1CCN(C)CC1.2CCN1CCN(C)CC11.S1O
+
+--- prompt variant 2 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: c1ccc2ccccc2c1C(=O)N1CCc2ccccc21.CCc2ccccc21Nc1c2ccccc21.OCc1ccccc1Nc1c2ccccc21Nc1
+
+--- prompt variant 0 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: O=C(Nc1cc2ccccc2n1)Cc1ccccc1OCCN1CCC1.1O2CCCC2>>C(=O)Oc1cc2ccccc2n1OCc1ccc2ccccc11.OCc1
+
+--- prompt variant 1 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CCN(CC)CCOc1ccc(C(C)=O)cc1Oc1ccc2ccccc12OC1=O1CCO1.1CCO1=O1CCO1=O1CCO1=O1CCO1=O1O
+
+--- prompt variant 2 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: NC(=O)Nc1ccc2ccccc21OCc1ccccc1Oc1ccccc1Oc1ccccc1O1Oc1ccccc1O1Oc1ccccc1O1O1Oc1ccccc1O1O
+
+--- prompt variant 0 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: c1ccc(Nc2cc3ccccc32)cc1N=Oc1ccc2ccccc21OCO1.1.2.3.4.5.6.7.8.9.0.Ic1ccc2ccccc21O1
+
+--- prompt variant 1 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CC(c1ccc2ccccc2c1)C(=O)NCc1ccc2ccccc2c1O1CC2CCO2CC1c2ccccc2C2=O12(C)2O1(C)O12(C)1=
+
+--- prompt variant 2 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: NC(=NCc1ccc2[nH]c2c1)CCNc1c(C)cc(C(N)C)cc1OCCOc1ccccc1[Si](O)O2CCO2.1n1ccccc1O1(CCN
+
+--- prompt variant 0 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: O=C(Nc1cc2ccccc21)NCc1cc2ccccc21c1OCCNC1c2ccccc2Oc1cc2ccccc21Oc1cc2ccccc21NCc2ccccc2OCCNC1c
+
+--- prompt variant 1 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: (S)O=Cc1ccccc1N(N)Cc1ccccc1Oc1ccccc1O2CCCC2Oc1ccccc1O2CCCC2O1ccccc1O2CCC1Oc2ccc3ccccc3cc2O1)
+
+--- prompt variant 2 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CC(=O)Nc1ccc2ncc2c1COc1ccc(C(N)=O)cc1N1CCOCC1C1=O1=O1=O)cc1=O1=O1=O)1=O1=O1
+
+--- prompt variant 0 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CC(=O)Nc1c2ccccc2c1Oc12ccc3ccccc21C(=O)OC2CCC2(C)CC2O12OCC2CCC2(C)CC2O12O1(CC)O1O
+
+--- prompt variant 1 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CCN(CC)CCc1ccccc1N1CCOCC1O1CCO1CCO1O1O1O1O1O1O1O1O1O1O1O1O1O1O1O1O1O1O1O
+
+--- prompt variant 2 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: O=Cc1ccc2ccccc21=CN1c2ccccc2O1.OCc1ccc(C)cc1ClN1c2ccccc2N1O1c2ccc(C)cc2N1CCl1.1CCl1.
+
+--- prompt variant 0 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: good; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CC(=O)Nc1ccc2ncc2c1NCc1ccccc1OCc1ccccc11.1CCC(N)O1c1ccccc11n1ccccc11c1ccccc11.1n1c(C
+
+--- prompt variant 1 ---
+Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.
+Target: EGFR kinase domain inhibitor with quinazoline core and acrylamide warhead.
+Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)
+Output format: SMILES: <canonical_SMILES>
+>>>  SMILES: CC(=O)Nc1c2ncc2[nH]1c2ccccc2C1=O2CCO2=O1=O2O2CCO2=O1=O2O1=O2O2CCO2=O1=

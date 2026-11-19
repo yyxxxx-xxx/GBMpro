@@ -1,0 +1,391 @@
+{
+  "EGFR": [
+    {
+      "smiles": "Cc1cc(Br)cn1C(=O)Nc2cc(-n3ccnc3)cc2C#NCc1cc(Br)cn1C(=O)Nc2cc(-n3ccnc3)cc2C#N",
+      "tpsa": 0.0,
+      "mw": 713.37,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "S(=O)(=O)c1cc(Cl)nc(-c2ccc3ccccc3c2)ns1",
+      "tpsa": 58.86,
+      "mw": 336.83,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "BrcOCCNc1ccc(-n2ccnc2)cc1Br.Nc1ccccc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 116.7,
+      "mw": 679.42,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Cl.COCOCC.COCCOCC",
+      "tpsa": 100.91,
+      "mw": 457.96,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(C)(C)OC(=O)NC(C)=O.ClCc1cc(Br)cc1.Clc1ccc(Cl)cc1.[K+].[OH-]",
+      "tpsa": 85.4,
+      "mw": 554.76,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "C(NCCNC(c1ccc(Cl)cc1)c1cc[nH+]cnc1)c1cc(I)cc1",
+      "tpsa": 51.09,
+      "mw": 479.77,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(C)(C)OC(=O)NC1CCC(Nc2ccc(Cl)cc2)CC1",
+      "tpsa": 50.36,
+      "mw": 324.85,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Cl)ccc1NC(=O)OC[C@H](CC)COc1cc(Cl)ccc1F",
+      "tpsa": 47.56,
+      "mw": 400.28,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(-c2ccc(Cl)cc2)cn1C(=O)Nc3ccccc3C#NFCc1cc(Cl)cc1C(=O)Nc2ccccc2C#N",
+      "tpsa": 0.0,
+      "mw": 611.48,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "NCCCN(C)NCc1ccc(C)cc1",
+      "tpsa": 41.29,
+      "mw": 207.32,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COCCNC(CC)[C@H](O)Cc1cc(Br)cc1C(=O)Nc2ccccc2C(=O)OC(C)(C)C",
+      "tpsa": 96.89,
+      "mw": 522.46,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+      "tpsa": 46.92,
+      "mw": 342.78,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Cl)cc1C(=O)OCc1ccccc1C(=O)OCC#N",
+      "tpsa": 76.39,
+      "mw": 330.75,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "C=CBr.O=C(O)O.[K+].[K+]",
+      "tpsa": 57.53,
+      "mw": 247.17,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)nc2cncc(Br)cc2[nH]1",
+      "tpsa": 41.57,
+      "mw": 330.0,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1cc(Br)cn1C(O)Oc1ccccc1",
+      "tpsa": 43.62,
+      "mw": 298.14,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1ccc(Br)cc1C(=O)OC(C)(C)CCON=C(C)C.O=C(O)O.[K+].[K+]",
+      "tpsa": 114.65,
+      "mw": 512.48,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CNOCNOC1CCCN(c2ccnc(N)c2)CC1",
+      "tpsa": 84.67,
+      "mw": 281.36,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CCOP(=O)[C@H](NC(=S)OCc1ccccc1)C(=O)Nc1ccc(-n2ccnc2)cc1",
+      "tpsa": 94.48,
+      "mw": 458.48,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Fc1cnc(N)n1-c1ccc(Cl)cc1C#N",
+      "tpsa": 67.63,
+      "mw": 236.64,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1ccc(Br)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 64.11,
+      "mw": 398.26,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Fc(=O)c1cc(-c2ccc(C(F)(F)F)cc2C(=O)OCCCCCl)nc(Cl)n1.[K+]",
+      "tpsa": 68.09,
+      "mw": 478.29,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(N)nc(-c2ccc(C(=O)OC(C)(C)C)s2)n1",
+      "tpsa": 78.1,
+      "mw": 291.38,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "NC[C@H]1CN(C)C[C@H](O[Si](C)(C)C(C)(C)C)C1OS(=O)(=O)C(C)(C)C",
+      "tpsa": 81.86,
+      "mw": 394.65,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1NC(=O)O",
+      "tpsa": 49.33,
+      "mw": 217.04,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "O=C(O)CBr.CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3.[2H]Cl",
+      "tpsa": 113.32,
+      "mw": 496.77,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COCOCCOCCCOc1ccnc(Br)n1COCOCCOCCCOc1ccnc(Br)n1",
+      "tpsa": 117.44,
+      "mw": 641.33,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CCClNOCCCN1CCC(c2cccnc2)C1CCClNOCCCN1CCC(c2cccnc2)C1",
+      "tpsa": 0.0,
+      "mw": 567.61,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CCOC(=O)NC(=O)C(=O)CCCN1CCC(c2ccc(Br)cc2)CC1",
+      "tpsa": 75.71,
+      "mw": 425.32,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "O=C(Nc1ccnc(-c2ccnc2)cc1)c1cc(Cl)nn1O=C=N[C@@H](Cc1ccccc1)ClO=C(Nc1ccnc(-c2ccnc2)cc1)Cl",
+      "tpsa": 0.0,
+      "mw": 713.99,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "N=C(NCc1ccnc(N)n1)C(=O)Nc2ccc(Br)cc2",
+      "tpsa": 116.78,
+      "mw": 349.19,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCCCN1CCCCC1",
+      "tpsa": 89.35,
+      "mw": 540.46,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "OCCCN1CCC(Nc2cc(-c3ccccc3)cn2)CC1",
+      "tpsa": 48.39,
+      "mw": 298.41,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1Cc1ccc(C#N)cc1C(=O)Nc2ccc(O)cc2C#NCc1cc(Br)cn1Cc1ccc(C#N)cc1C(=O)Nc2ccc(O)cc2C#N",
+      "tpsa": 0.0,
+      "mw": 869.55,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(=O)[O-].B(O)c1ccc(Br)cc1Cl.Fc1ccccn1Br.[K+]",
+      "tpsa": 65.29,
+      "mw": 494.41,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Cl)nc(N)n1C(=O)OCCBr",
+      "tpsa": 70.14,
+      "mw": 295.54,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1Cc1ccccc1BrCc1cc(Br)cn1Cc1ccccc1Br",
+      "tpsa": 0.0,
+      "mw": 657.06,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+      "tpsa": 93.84,
+      "mw": 683.55,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Fc1nc(N)sc(-c2ccc(F)cc2)n1",
+      "tpsa": 51.8,
+      "mw": 226.23,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Clc1cc(Cl)cc(N)n1Cc2ccc(Cl)cc2-c1ccc(Br)cn1",
+      "tpsa": 43.84,
+      "mw": 444.57,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CCC[C@H](NC(=O)OC(C)(C)C)C(=O)NC(=O)OC(C)(C)C",
+      "tpsa": 93.73,
+      "mw": 316.4,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Fc1cnn1-c1ccc(NC(=O)CO)cc1C(=O)NC1CCCC1CN1CCCC1",
+      "tpsa": 99.49,
+      "mw": 416.48,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)ccc1NC(=O)Nc1ccc(Cl)cc1",
+      "tpsa": 41.13,
+      "mw": 339.62,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1CCNC(=O)C1CCCC1Cc1cc(Br)cn1CCNC(=O)C1CCCC1",
+      "tpsa": 68.06,
+      "mw": 596.41,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1C(=O)Nc2cc(C)nc(-c3ccccn3)c2Cl",
+      "tpsa": 59.81,
+      "mw": 405.68,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "C(=O)OC(=O)Nc1ccc(I)cc1F",
+      "tpsa": 55.4,
+      "mw": 309.03,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Cl)nc(N)n1Cc1ccccn1",
+      "tpsa": 56.73,
+      "mw": 235.7,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "NC#Cc1ccnc(-c2ccc(O[Si](Cl)(Cl)(Cl))cc2)n1",
+      "tpsa": 61.03,
+      "mw": 344.66,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "N#Cc1c(=NC(C)(C)C#N)ccc1-c1ccnc(Nc2ccccc2)c1.OC(F)F",
+      "tpsa": 105.09,
+      "mw": 407.42,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CO[PH+](C)Cc1cncc1-c1ccsc1OC(c1ccnc(Nc2ccnc(N)cc2)cc1)c1cc(Cl)cc1",
+      "tpsa": 95.18,
+      "mw": 577.07,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "OC(c1ccnc(Nc2ccnc(N)cc2)cc1)c1cc(Cl)cc1",
+      "tpsa": 84.06,
+      "mw": 339.81,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(C)[C@H](NC(=O)=O)c1ccc(Br)cc1Cl.OC(F)(F)F.OC(F)(F)F",
+      "tpsa": 0.0,
+      "mw": 477.6,
+      "target": "EGFR"
+    }
+  ],
+  "IDH1_IDH2": [],
+  "VEGF_VEGFR": [
+    {
+      "smiles": "OC(c1ccc(Br)cc1)CC#N",
+      "tpsa": 44.02,
+      "mw": 226.07,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "CN1CCN(c2ccc(Br)cc2)C(=O)OCCN1Cc1cc(-n2ccnc2)cc1C(=O)O",
+      "tpsa": 91.14,
+      "mw": 501.36,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "CCc1cc(Cl)nc(-c2ccc(F)cc2)n1C(=O)OCCCCc1cc(Cl)nc(-c2ccc(F)cc2)n1C(=O)OCC",
+      "tpsa": 88.24,
+      "mw": 617.48,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "C(=O)Nc3ccccc3C(=O)OCCl",
+      "tpsa": 55.4,
+      "mw": 213.62,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 72.94,
+      "mw": 278.32,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 76.02,
+      "mw": 462.33,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1ccc(I)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 54.88,
+      "mw": 429.26,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "CNc1cc(-c2ccnc2)cc1C(=O)N[C@@H]([C@H](C)C)C(=O)OC(C)(C)C",
+      "tpsa": 80.32,
+      "mw": 357.45,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "CCOC(=O)NC1CCC(O)C1.CCOC(=O)NC1CCCCC1",
+      "tpsa": 96.89,
+      "mw": 344.45,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1NC(=O)c1cc(C)nc(-c2cccnc2)c1C(=O)Nc3ccccc3C(=O)OCCl.[K+].[K+]",
+      "tpsa": 110.28,
+      "mw": 659.04,
+      "target": "VEGF_VEGFR"
+    }
+  ]
+}

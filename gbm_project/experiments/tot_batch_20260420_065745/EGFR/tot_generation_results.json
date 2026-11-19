@@ -1,0 +1,2818 @@
+{
+  "config": {
+    "target": "EGFR",
+    "tot_depth": 3,
+    "tot_k": 3,
+    "tot_b": 2,
+    "constraints": {
+      "mw_range": "300-500",
+      "bbb_requirement": "high",
+      "logp_range": "2.0-4.0",
+      "tpsa_range": "40-120"
+    }
+  },
+  "num_generated": 50,
+  "molecules": [
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.38700295030314674,
+            "reward": 0.0011921043775414187,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.38700295030314674,
+        "reward": 0.0011921043775414187,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.39 (低CNS渗透，不适合GBM) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.0012"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2cccnc2)cn1C(=O)Nc1ccccc1",
+      "tpsa": 57.59,
+      "mw": 304.35,
+      "logp": 3.9,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(-c2cccnc2)cn1C(=O)Nc1ccccc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccnc(-c2cccnc2)cn1C(=O)Nc1ccccc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.33646775434976023,
+            "reward": 0.0011430968681653136,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.33646775434976023,
+        "reward": 0.0011430968681653136,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.34 (低CNS渗透，不适合GBM) | 理化性质: MW=304.4, LogP=3.90, TPSA=57.6Å² | Reward=0.0011"
+    },
+    {
+      "smiles": "NC(=O)CC(C)(C)C",
+      "tpsa": 43.09,
+      "mw": 115.18,
+      "logp": 0.91,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NC(=O)CC(C)(C)C",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "NC(=O)CC(C)(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.6199474821511466,
+            "reward": 0.0013234714257341835,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.6199474821511466,
+        "reward": 0.0013234714257341835,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.62 (中等CNS渗透) | 理化性质: MW=115.2, LogP=0.91, TPSA=43.1Å² | Reward=0.0013 | [警告: 此分支已被硬截断剪枝: MW=115.2 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "CCNC(=O)NC(=O)S(N)(=O)=O",
+      "tpsa": 118.36,
+      "mw": 195.2,
+      "logp": -1.29,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCNC(=O)NC(=O)S(N)(=O)=O",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "CCNC(=O)NC(=O)S(N)(=O)=O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 5.685078178778869e-06,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 5.685078178778869e-06,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=195.2, LogP=-1.29, TPSA=118.4Å² | Reward=0.0000 | [警告: 此分支已被硬截断剪枝: MW=195.2 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3C(=O)OCc1ccccc1Br",
+      "tpsa": 107.25,
+      "mw": 677.35,
+      "logp": 7.2,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cn1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3C(=O)OCc1ccccc1Br",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)cn1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3C(=O)OCc1ccccc1Br",
+            "vina_score": -7.5,
+            "dili_prob": 0.15000000000000002,
+            "bbb_prob": 0.0,
+            "reward": 5.313111443332397e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.15000000000000002,
+        "bbb_prob": 0.0,
+        "reward": 5.313111443332397e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.15 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=677.4, LogP=7.20, TPSA=107.3Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "COc1cc(O)cc(-c2ccc(Br)cc2)cc1C(=O)Nc1ccc(Br)cc1",
+      "tpsa": 58.56,
+      "mw": 490.17,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc(O)cc(-c2ccc(Br)cc2)cc1C(=O)Nc1ccc(Br)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1cc(O)cc(-c2ccc(Br)cc2)cc1C(=O)Nc1ccc(Br)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.31348926332896004,
+            "reward": 0.0010900023361649052,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.31348926332896004,
+        "reward": 0.0010900023361649052,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.31 (低CNS渗透，不适合GBM) | 理化性质: MW=490.2, LogP=5.03, TPSA=58.6Å² | Reward=0.0011"
+    },
+    {
+      "smiles": "CN1CCN(c2ccccn2)CCN(C)C(C)C1CN1CCN(c2ccccn2)CCN(C)C(C)C1",
+      "tpsa": 45.22,
+      "mw": 494.73,
+      "logp": 2.06,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CCN(c2ccccn2)CCN(C)C(C)C1CN1CCN(c2ccccn2)CCN(C)C(C)C1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1CCN(c2ccccn2)CCN(C)C(C)C1CN1CCN(c2ccccn2)CCN(C)C(C)C1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.309573444801943e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.309573444801943e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=494.7, LogP=2.06, TPSA=45.2Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "NC1CCN(C(=O)OC2CCCC2)C1",
+      "tpsa": 55.56,
+      "mw": 198.27,
+      "logp": 1.1,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NC1CCN(C(=O)OC2CCCC2)C1",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "NC1CCN(C(=O)OC2CCCC2)C1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.17697112988821329,
+            "reward": 0.0009253408340152415,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.17697112988821329,
+        "reward": 0.0009253408340152415,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.18 (低CNS渗透，不适合GBM) | 理化性质: MW=198.3, LogP=1.10, TPSA=55.6Å² | Reward=0.0009 | [警告: 此分支已被硬截断剪枝: MW=198.3 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "CNC(=S)NC(=O)OC(C)(C)CCNC(=O)OC(C)(C)C",
+      "tpsa": 88.69,
+      "mw": 319.43,
+      "logp": 1.91,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CNC(=S)NC(=O)OC(C)(C)CCNC(=O)OC(C)(C)C",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CNC(=S)NC(=O)OC(C)(C)CCNC(=O)OC(C)(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.309573444801943e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.309573444801943e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=319.4, LogP=1.91, TPSA=88.7Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+      "tpsa": 46.92,
+      "mw": 342.78,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_prob": 0.6206529362715736,
+            "reward": 0.0013560807330333388,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_prob": 0.6206529362715736,
+        "reward": 0.0013560807330333388,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB穿透=0.62 (中等CNS渗透) | 理化性质: MW=342.8, LogP=4.77, TPSA=46.9Å² | Reward=0.0014"
+    },
+    {
+      "smiles": "CC(C)(C)OC(=O)NC1CCC(Oc2ccccc2)CC1",
+      "tpsa": 47.56,
+      "mw": 291.39,
+      "logp": 3.9,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(C)(C)OC(=O)NC1CCC(Oc2ccccc2)CC1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(C)(C)OC(=O)NC1CCC(Oc2ccccc2)CC1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.4481054022554669,
+            "reward": 0.0012439026698559405,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.4481054022554669,
+        "reward": 0.0012439026698559405,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.45 (中等CNS渗透) | 理化性质: MW=291.4, LogP=3.90, TPSA=47.6Å² | Reward=0.0012"
+    },
+    {
+      "smiles": "Cc1cc(Nc2cccs2)nc(N)n1",
+      "tpsa": 63.83,
+      "mw": 206.27,
+      "logp": 2.17,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Nc2cccs2)nc(N)n1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Nc2cccs2)nc(N)n1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.203309322497383e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.203309322497383e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=206.3, LogP=2.17, TPSA=63.8Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1cc(Br)nc(N)n1I",
+      "tpsa": 43.84,
+      "mw": 314.93,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)nc(N)n1I",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)nc(N)n1I",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.36365161747189334,
+            "reward": 0.001170053330325491,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.36365161747189334,
+        "reward": 0.001170053330325491,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.36 (低CNS渗透，不适合GBM) | 理化性质: MW=314.9, LogP=1.66, TPSA=43.8Å² | Reward=0.0012"
+    },
+    {
+      "smiles": "COC(=O)CNC(=O)CCSC1CCCC1",
+      "tpsa": 55.4,
+      "mw": 245.34,
+      "logp": 1.34,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COC(=O)CNC(=O)CCSC1CCCC1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COC(=O)CNC(=O)CCSC1CCCC1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.02815154972490667,
+            "reward": 0.0005379013337491891,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.02815154972490667,
+        "reward": 0.0005379013337491891,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.03 (低CNS渗透，不适合GBM) | 理化性质: MW=245.3, LogP=1.34, TPSA=55.4Å² | Reward=0.0005"
+    },
+    {
+      "smiles": "CSCC[C@@H]1CN(S(C)(C)C)[C@H](C(=O)OC(C)(C)C)[C@H]1O",
+      "tpsa": 49.77,
+      "mw": 337.55,
+      "logp": 2.35,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CSCC[C@@H]1CN(S(C)(C)C)[C@H](C(=O)OC(C)(C)C)[C@H]1O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CSCC[C@@H]1CN(S(C)(C)C)[C@H](C(=O)OC(C)(C)C)[C@H]1O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.309573444801943e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.309573444801943e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=337.6, LogP=2.35, TPSA=49.8Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1ccnc(N)cn1BrCC(=O)Nc1ccnc(N)cn1.Clc1ccnc(Cl)cn1C(=O)Nc1ccnc(N)cn1",
+      "tpsa": 0.0,
+      "mw": 678.36,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(N)cn1BrCC(=O)Nc1ccnc(N)cn1.Clc1ccnc(Cl)cn1C(=O)Nc1ccnc(N)cn1",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "Cc1ccnc(N)cn1BrCC(=O)Nc1ccnc(N)cn1.Clc1ccnc(Cl)cn1C(=O)Nc1ccnc(N)cn1",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_prob": 0.3,
+            "reward": 0.00017280936634579843,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_prob": 0.3,
+        "reward": 0.00017280936634579843,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB穿透=0.30 (低CNS渗透，不适合GBM) | 理化性质: MW=0.0, LogP=0.00, TPSA=0.0Å² | Reward=0.0002 | [警告: 此分支已被硬截断剪枝: MW=0.0 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "Cc1cc(C(F)(F)F)ccc1NC(=O)OC(C)(C)C.OC(C)(C)C",
+      "tpsa": 58.56,
+      "mw": 349.39,
+      "logp": 5.14,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(C(F)(F)F)ccc1NC(=O)OC(C)(C)C.OC(C)(C)C",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(C(F)(F)F)ccc1NC(=O)OC(C)(C)C.OC(C)(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.4609967013593605,
+            "reward": 0.0012236859474167132,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.4609967013593605,
+        "reward": 0.0012236859474167132,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.46 (中等CNS渗透) | 理化性质: MW=349.4, LogP=5.14, TPSA=58.6Å² | Reward=0.0012"
+    },
+    {
+      "smiles": "Cc1cc(-c2ccc(Br)cc2)CC1",
+      "tpsa": 0.0,
+      "mw": 236.13,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2ccc(Br)cc2)CC1",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "Cc1cc(-c2ccc(Br)cc2)CC1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 1.0,
+            "reward": 0.0014437777994702498,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 1.0,
+        "reward": 0.0014437777994702498,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=1.00 (高CNS渗透) | 理化性质: MW=236.1, LogP=3.80, TPSA=0.0Å² | Reward=0.0014 | [警告: 此分支已被硬截断剪枝: TPSA=0.0 outside [20.0, 120.0]]"
+    },
+    {
+      "smiles": "COc1cc(Br)cn1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCCN1CCC1.[2H]Cl",
+      "tpsa": 98.58,
+      "mw": 551.85,
+      "logp": 4.39,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc(Br)cn1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCCN1CCC1.[2H]Cl",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1cc(Br)cn1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCCN1CCC1.[2H]Cl",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.111900418296317e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.111900418296317e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=551.8, LogP=4.39, TPSA=98.6Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "CCOC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)CNC(C)(C)C#N",
+      "tpsa": 91.2,
+      "mw": 474.68,
+      "logp": 5.46,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCOC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)CNC(C)(C)C#N",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCOC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)OC(C)(C)CNC(C)(C)C#N",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.0,
+            "reward": 6.133145035543987e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.0,
+        "reward": 6.133145035543987e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=474.7, LogP=5.46, TPSA=91.2Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "COc1ccc(B(O)O)cc1C(=O)Nc1ccccn1C(=O)OCCl",
+      "tpsa": 110.02,
+      "mw": 365.56,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1ccc(B(O)O)cc1C(=O)Nc1ccccn1C(=O)OCCl",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1ccc(B(O)O)cc1C(=O)Nc1ccccn1C(=O)OCCl",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.058556383031102e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.058556383031102e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=365.6, LogP=-0.24, TPSA=110.0Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1cc(N)nc1CCN(c2ccc(Cl)cc2)OC(C)(C)C",
+      "tpsa": 51.38,
+      "mw": 320.84,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)nc1CCN(c2ccc(Cl)cc2)OC(C)(C)C",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(N)nc1CCN(c2ccc(Cl)cc2)OC(C)(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.2416138211644804,
+            "reward": 0.0010349909019306007,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.2416138211644804,
+        "reward": 0.0010349909019306007,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.24 (低CNS渗透，不适合GBM) | 理化性质: MW=320.8, LogP=3.79, TPSA=51.4Å² | Reward=0.0010"
+    },
+    {
+      "smiles": "Cc1ccc(Nc2cc(B(O)O)cc2)cc1",
+      "tpsa": 52.49,
+      "mw": 214.05,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccc(Nc2cc(B(O)O)cc2)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccc(Nc2cc(B(O)O)cc2)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.27502667839808,
+            "reward": 0.0010594930492256794,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.27502667839808,
+        "reward": 0.0010594930492256794,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.28 (低CNS渗透，不适合GBM) | 理化性质: MW=214.1, LogP=0.87, TPSA=52.5Å² | Reward=0.0011"
+    },
+    {
+      "smiles": "COc1cc(Cl)nc(CN(C)C(=O)OC(C)(C)C)c1Cl.OC(F)(F)F.OC(F)(F)F",
+      "tpsa": 92.12,
+      "mw": 493.23,
+      "logp": 4.76,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc(Cl)nc(CN(C)C(=O)OC(C)(C)C)c1Cl.OC(F)(F)F.OC(F)(F)F",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1cc(Cl)nc(CN(C)C(=O)OC(C)(C)C)c1Cl.OC(F)(F)F.OC(F)(F)F",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_prob": 0.0,
+            "reward": 6.206812534802141e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_prob": 0.0,
+        "reward": 6.206812534802141e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=493.2, LogP=4.76, TPSA=92.1Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1C(=O)NS(=O)(Cl)(Cl)C(C)CCc1cc(Br)cn1C(=O)NS(=O)(Cl)(Cl)C(C)C",
+      "tpsa": 102.2,
+      "mw": 726.17,
+      "logp": 6.75,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cn1C(=O)NS(=O)(Cl)(Cl)C(C)CCc1cc(Br)cn1C(=O)NS(=O)(Cl)(Cl)C(C)C",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "Cc1cc(Br)cn1C(=O)NS(=O)(Cl)(Cl)C(C)CCc1cc(Br)cn1C(=O)NS(=O)(Cl)(Cl)C(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.25,
+            "bbb_prob": 0.0,
+            "reward": 5.199866466767588e-06,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.25,
+        "bbb_prob": 0.0,
+        "reward": 5.199866466767588e-06,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.25 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=726.2, LogP=6.75, TPSA=102.2Å² | Reward=0.0000 | [警告: 此分支已被硬截断剪枝: MW=726.2 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "CCOC(=O)NC(=O)C(C)(C)C",
+      "tpsa": 55.4,
+      "mw": 173.21,
+      "logp": 1.31,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCOC(=O)NC(=O)C(C)(C)C",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "CCOC(=O)NC(=O)C(C)(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.22418314257120012,
+            "reward": 0.0009882602688222734,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.22418314257120012,
+        "reward": 0.0009882602688222734,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.22 (低CNS渗透，不适合GBM) | 理化性质: MW=173.2, LogP=1.31, TPSA=55.4Å² | Reward=0.0010 | [警告: 此分支已被硬截断剪枝: MW=173.2 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "COc1ccc(Br)cc1NC(=O)[C@H](O)Cc1ccccc1",
+      "tpsa": 58.56,
+      "mw": 350.21,
+      "logp": 3.0,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1ccc(Br)cc1NC(=O)[C@H](O)Cc1ccccc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1ccc(Br)cc1NC(=O)[C@H](O)Cc1ccccc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.24447679593429336,
+            "reward": 0.0010386549460451278,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.24447679593429336,
+        "reward": 0.0010386549460451278,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.24 (低CNS渗透，不适合GBM) | 理化性质: MW=350.2, LogP=3.00, TPSA=58.6Å² | Reward=0.0010"
+    },
+    {
+      "smiles": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1O",
+      "tpsa": 64.07,
+      "mw": 236.68,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.2145331362100266,
+            "reward": 0.0009876541488345887,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.2145331362100266,
+        "reward": 0.0009876541488345887,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.21 (低CNS渗透，不适合GBM) | 理化性质: MW=236.7, LogP=2.14, TPSA=64.1Å² | Reward=0.0010"
+    },
+    {
+      "smiles": "O=C(O)CCNC1CCC1O=C(O)CCNC1CCC1",
+      "tpsa": 0.0,
+      "mw": 285.36,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "O=C(O)CCNC1CCC1O=C(O)CCNC1CCC1",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "O=C(O)CCNC1CCC1O=C(O)CCNC1CCC1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.3,
+            "reward": 0.00017503962587941098,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.3,
+        "reward": 0.00017503962587941098,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.30 (低CNS渗透，不适合GBM) | 理化性质: MW=0.0, LogP=0.00, TPSA=0.0Å² | Reward=0.0002 | [警告: 此分支已被硬截断剪枝: MW=0.0 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "Cc1cc(-c2ccc(NCCNC3CCCCC3)cc2)cn1C(=O)Nc3ccccc3Cc1cc(-c2ccc(NCCNC3CCCCC3)cc2)cn1C(=O)Nc3ccccc3",
+      "tpsa": 116.18,
+      "mw": 831.12,
+      "logp": 11.35,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2ccc(NCCNC3CCCCC3)cc2)cn1C(=O)Nc3ccccc3Cc1cc(-c2ccc(NCCNC3CCCCC3)cc2)cn1C(=O)Nc3ccccc3",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "Cc1cc(-c2ccc(NCCNC3CCCCC3)cc2)cn1C(=O)Nc3ccccc3Cc1cc(-c2ccc(NCCNC3CCCCC3)cc2)cn1C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.25,
+            "bbb_prob": 0.0,
+            "reward": 4.4581689942061355e-06,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.25,
+        "bbb_prob": 0.0,
+        "reward": 4.4581689942061355e-06,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.25 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=831.1, LogP=11.35, TPSA=116.2Å² | Reward=0.0000 | [警告: 此分支已被硬截断剪枝: MW=831.1 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "Cc1cc(B(O)O)cn1Cc1cc(Cl)cc1Nc2cc(C)nc(-c3ccccn3)c2C(=O)Nc3ccccc3",
+      "tpsa": 112.3,
+      "mw": 538.82,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(B(O)O)cn1Cc1cc(Cl)cc1Nc2cc(C)nc(-c3ccccn3)c2C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(B(O)O)cn1Cc1cc(Cl)cc1Nc2cc(C)nc(-c3ccccn3)c2C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 5.92286456200428e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 5.92286456200428e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=538.8, LogP=4.17, TPSA=112.3Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "CN1CC[C@H](CO)CN1C(=O)OC",
+      "tpsa": 53.01,
+      "mw": 188.23,
+      "logp": -0.09,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CC[C@H](CO)CN1C(=O)OC",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "CN1CC[C@H](CO)CN1C(=O)OC",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.180833636666352e-06,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.180833636666352e-06,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=188.2, LogP=-0.09, TPSA=53.0Å² | Reward=0.0000 | [警告: 此分支已被硬截断剪枝: MW=188.2 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "CCOC(=O)CNS(=O)(=O)C(F)(F)F",
+      "tpsa": 72.47,
+      "mw": 235.18,
+      "logp": -0.01,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCOC(=O)CNS(=O)(=O)C(F)(F)F",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCOC(=O)CNS(=O)(=O)C(F)(F)F",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.237852567462547e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.237852567462547e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=235.2, LogP=-0.01, TPSA=72.5Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "COc1ccc(Br)cc1NC(=O)OC(C)(C)C(C)(C)C(C)=O",
+      "tpsa": 64.63,
+      "mw": 372.26,
+      "logp": 4.4,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1ccc(Br)cc1NC(=O)OC(C)(C)C(C)(C)C(C)=O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1ccc(Br)cc1NC(=O)OC(C)(C)C(C)(C)C(C)=O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.12272508931978703,
+            "reward": 0.0008446562638141917,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.12272508931978703,
+        "reward": 0.0008446562638141917,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.12 (低CNS渗透，不适合GBM) | 理化性质: MW=372.3, LogP=4.40, TPSA=64.6Å² | Reward=0.0008"
+    },
+    {
+      "smiles": "Cc1cc(-n2ccnc2)cc1C(=O)Nc3ccccc3C(=O)OCCl.[K+]",
+      "tpsa": 73.22,
+      "mw": 395.89,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-n2ccnc2)cc1C(=O)Nc3ccccc3C(=O)OCCl.[K+]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(-n2ccnc2)cc1C(=O)Nc3ccccc3C(=O)OCCl.[K+]",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.309573444801943e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.309573444801943e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=395.9, LogP=0.29, TPSA=73.2Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "COc1ccc(CBr)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCC(C)(C)C",
+      "tpsa": 90.41,
+      "mw": 526.43,
+      "logp": 5.81,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1ccc(CBr)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCC(C)(C)C",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1ccc(CBr)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCC(C)(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.0,
+            "reward": 6.099198642812408e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.0,
+        "reward": 6.099198642812408e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=526.4, LogP=5.81, TPSA=90.4Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1ccnc(N)cc(-c2cccnc2)n1",
+      "tpsa": 63.63,
+      "mw": 212.26,
+      "logp": 1.66,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(N)cc(-c2cccnc2)n1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccnc(N)cc(-c2cccnc2)n1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.01168455290111988,
+            "reward": 0.00041059835972828045,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.01168455290111988,
+        "reward": 0.00041059835972828045,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.01 (低CNS渗透，不适合GBM) | 理化性质: MW=212.3, LogP=1.66, TPSA=63.6Å² | Reward=0.0004"
+    },
+    {
+      "smiles": "Nc1cc(Br)cc(-n2ccnc2)cc1F",
+      "tpsa": 43.84,
+      "mw": 269.1,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Nc1cc(Br)cc(-n2ccnc2)cc1F",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Nc1cc(Br)cc(-n2ccnc2)cc1F",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.44265997825834646,
+            "reward": 0.0012345951941877121,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.44265997825834646,
+        "reward": 0.0012345951941877121,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.44 (中等CNS渗透) | 理化性质: MW=269.1, LogP=1.99, TPSA=43.8Å² | Reward=0.0012"
+    },
+    {
+      "smiles": "Fc1nnc(-c2ccc(Cl)cc2)c1C(=O)Nc3ccccc3C#Cc1ccccc1",
+      "tpsa": 54.88,
+      "mw": 414.85,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1nnc(-c2ccc(Cl)cc2)c1C(=O)Nc3ccccc3C#Cc1ccccc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Fc1nnc(-c2ccc(Cl)cc2)c1C(=O)Nc3ccccc3C#Cc1ccccc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.3878454696049069,
+            "reward": 0.0011618718888737906,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.3878454696049069,
+        "reward": 0.0011618718888737906,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.39 (低CNS渗透，不适合GBM) | 理化性质: MW=414.8, LogP=5.22, TPSA=54.9Å² | Reward=0.0012"
+    },
+    {
+      "smiles": "On1ncnc(Nc2ccc(Cl)cc2)cs1",
+      "tpsa": 62.97,
+      "mw": 255.71,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "On1ncnc(Nc2ccc(Cl)cc2)cs1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "On1ncnc(Nc2ccc(Cl)cc2)cs1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.26137472990337e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.26137472990337e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=255.7, LogP=2.36, TPSA=63.0Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "O=C(O)O.O=C(O)O.[K+].[K+]",
+      "tpsa": 115.06,
+      "mw": 202.24,
+      "logp": -5.55,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "O=C(O)O.O=C(O)O.[K+].[K+]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "O=C(O)O.O=C(O)O.[K+].[K+]",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 5.784469466115897e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 5.784469466115897e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=202.2, LogP=-5.55, TPSA=115.1Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1cc(Cl)cc1NC(=O)N(C(F)(F)C(F)(F)F)C(=O)OCc1ccc(Cl)cc1.OC(F)(F)C(F)(F)F.OC(F)(F)C(F)(F)F",
+      "tpsa": 99.1,
+      "mw": 730.23,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Cl)cc1NC(=O)N(C(F)(F)C(F)(F)F)C(=O)OCc1ccc(Cl)cc1.OC(F)(F)C(F)(F)F.OC(F)(F)C(F)(F)F",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "Cc1cc(Cl)cc1NC(=O)N(C(F)(F)C(F)(F)F)C(=O)OCc1ccc(Cl)cc1.OC(F)(F)C(F)(F)F.OC(F)(F)C(F)(F)F",
+            "vina_score": -7.5,
+            "dili_prob": 0.25,
+            "bbb_prob": 0.0,
+            "reward": 5.284024461262393e-06,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.25,
+        "bbb_prob": 0.0,
+        "reward": 5.284024461262393e-06,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.25 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=730.2, LogP=8.18, TPSA=99.1Å² | Reward=0.0000 | [警告: 此分支已被硬截断剪枝: MW=730.2 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "Cc1cc(-c2cccnc2)cc1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)OCC.FCC(=O)OCc1ccccc1F.[K+].[K+]",
+      "tpsa": 112.41,
+      "mw": 677.81,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2cccnc2)cc1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)OCC.FCC(=O)OCc1ccccc1F.[K+].[K+]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(-c2cccnc2)cc1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)OCC.FCC(=O)OCc1ccccc1F.[K+].[K+]",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_prob": 0.0,
+            "reward": 5.253298444165776e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_prob": 0.0,
+        "reward": 5.253298444165776e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=677.8, LogP=0.01, TPSA=112.4Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1cc(Br)nc(N)n1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 98.72,
+      "mw": 400.26,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)nc(N)n1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)nc(N)n1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.21125953738093e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.21125953738093e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=400.3, LogP=3.30, TPSA=98.7Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "CN1CCN(c2cc(N)cn2)CCN1Br",
+      "tpsa": 48.63,
+      "mw": 273.16,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CCN(c2cc(N)cn2)CCN1Br",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1CCN(c2cc(N)cn2)CCN1Br",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.280761624512417e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.280761624512417e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=273.2, LogP=-0.10, TPSA=48.6Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "O=C(O)CCCCCCCCOc1ccccc1.[2H]c1ccccc1.[K+].[OH-]",
+      "tpsa": 76.53,
+      "mw": 385.56,
+      "logp": 2.39,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "O=C(O)CCCCCCCCOc1ccccc1.[2H]c1ccccc1.[K+].[OH-]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "O=C(O)CCCCCCCCOc1ccccc1.[2H]c1ccccc1.[K+].[OH-]",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 6.309573444801943e-06,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 6.309573444801943e-06,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=385.6, LogP=2.39, TPSA=76.5Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1cc(N)c(Br)c1C#N",
+      "tpsa": 49.81,
+      "mw": 198.04,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)c(Br)c1C#N",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "Cc1cc(N)c(Br)c1C#N",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.41371037051189324,
+            "reward": 0.0011937695068661345,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.41371037051189324,
+        "reward": 0.0011937695068661345,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.41 (中等CNS渗透) | 理化性质: MW=198.0, LogP=1.59, TPSA=49.8Å² | Reward=0.0012 | [警告: 此分支已被硬截断剪枝: MW=198.0 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "Cc1cc(-c2ccc(Cl)cc2)nc1C(=O)NCCl",
+      "tpsa": 41.99,
+      "mw": 282.15,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2ccc(Cl)cc2)nc1C(=O)NCCl",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(-c2ccc(Cl)cc2)nc1C(=O)NCCl",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.5716613012457602,
+            "reward": 0.0013360724325487763,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.5716613012457602,
+        "reward": 0.0013360724325487763,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.57 (中等CNS渗透) | 理化性质: MW=282.1, LogP=3.21, TPSA=42.0Å² | Reward=0.0013"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1B(O)=OCc1cc(Br)cn1B(O)=O",
+      "tpsa": 0.0,
+      "mw": 404.64,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cn1B(O)=OCc1cc(Br)cn1B(O)=O",
+          "evaluation": "impossible",
+          "metadata": {
+            "smiles": "Cc1cc(Br)cn1B(O)=OCc1cc(Br)cn1B(O)=O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.3,
+            "reward": 0.00017503962587941098,
+            "is_pruned": true
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.3,
+        "reward": 0.00017503962587941098,
+        "verdict": "impossible",
+        "is_pruned": true
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.30 (低CNS渗透，不适合GBM) | 理化性质: MW=0.0, LogP=0.00, TPSA=0.0Å² | Reward=0.0002 | [警告: 此分支已被硬截断剪枝: MW=0.0 outside [200.0, 700.0]]"
+    },
+    {
+      "smiles": "COc1cc(-c2ccnc2)cc1NC1CCOCC1",
+      "tpsa": 43.38,
+      "mw": 258.32,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc(-c2ccnc2)cc1NC1CCOCC1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1cc(-c2ccnc2)cc1NC1CCOCC1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.18336323655488,
+            "reward": 0.0009459473199698471,
+            "is_pruned": false
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.18336323655488,
+        "reward": 0.0009459473199698471,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.18 (低CNS渗透，不适合GBM) | 理化性质: MW=258.3, LogP=1.83, TPSA=43.4Å² | Reward=0.0009"
+    }
+  ],
+  "timestamp": "2026-04-20T09:38:08.663114"
+}

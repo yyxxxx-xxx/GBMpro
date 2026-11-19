@@ -1,0 +1,23 @@
+{
+  "EGFR": {
+    "pdb_id": "2JIV",
+    "ligand": "HKI",
+    "crystal_ligand_smiles": "CCOC1CC2NCC(CN)C(NC3CCC(OCC4CCCCN4)C(Cl)C3)C2CC1NC(O)CCCN(C)C",
+    "crystal_redock_score": -8.864,
+    "error": ""
+  },
+  "IDH1_IDH2": {
+    "pdb_id": "6U4J",
+    "ligand": "PWV",
+    "crystal_ligand_smiles": "C[C@H](NC1=CC=C(C#N)N(C)C1=O)C2=Cc3cc(Cl)ccc3NC2=O",
+    "crystal_redock_score": -11.827,
+    "error": ""
+  },
+  "VEGF_VEGFR": {
+    "pdb_id": "3WZD",
+    "ligand": "LEV",
+    "crystal_ligand_smiles": "COc1cc2nccc(Oc3ccc(NC(=O)NC4CC4)c(Cl)c3)c2cc1C(N)=O",
+    "crystal_redock_score": -10.183,
+    "error": ""
+  }
+}

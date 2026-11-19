@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "smiles": "CCCCSc1ccc(C(=O)NCc2cccc(-c3cccs3)c2C#N)cc1",
+    "tpsa": 52.89,
+    "mw": 406.5760000000001,
+    "target": "IDH1_IDH2"
+  },
+  {
+    "id": 1,
+    "smiles": "C=C(Cc1ccc(OCCO[Si](C)(C)C)c(Cl)c1)C(=O)OC(C)(C)C",
+    "tpsa": 44.760000000000005,
+    "mw": 384.97600000000017,
+    "target": "IDH1_IDH2"
+  },
+  {
+    "id": 2,
+    "smiles": "CCOPC(CC(=O)Nc1cccc(NS(=O)(=O)Cl)c1)c1ccc(O)cc1",
+    "tpsa": 104.73,
+    "mw": 430.8500000000002,
+    "target": "IDH1_IDH2"
+  },
+  {
+    "id": 3,
+    "smiles": "O=C(O)CN(CCCCl)C(C)(C)OCc1ccccc1",
+    "tpsa": 49.769999999999996,
+    "mw": 299.798,
+    "target": "IDH1_IDH2"
+  },
+  {
+    "id": 4,
+    "smiles": "Cn1nnc(CC(=O)c2ccc(Cl)nn2)c1",
+    "tpsa": 73.56,
+    "mw": 237.65,
+    "target": "IDH1_IDH2"
+  },
+  {
+    "id": 5,
+    "smiles": "CCCCNC1CCCCC1.O=C(O)Cc1ccccc1.Cl",
+    "tpsa": 49.33,
+    "mw": 327.8959999999999,
+    "target": "IDH1_IDH2"
+  }
+]

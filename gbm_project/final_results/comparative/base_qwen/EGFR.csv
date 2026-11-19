@@ -1,0 +1,21 @@
+entity_id,mol_id,library_name,target,smiles
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_1,Qwen2-7B-Instruct (Base),EGFR,C1=CC=CC=C1
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_2,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccccc1N(C(=O)Nc2ccccc2C3=CC=CC=C3)C4=CC=CC=C4C5=CC=CC=C5C6=CC=CC=C6C7=CC=CC=C7C8=CC=CC=C8C(=O)Nc9ccccc9C(=O)N
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_3,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccc(cc1)C(=O)Nc2ccccc2C(=O)NCC(=O)Nc3ccccc3C(=O)Nc4cc(=O)c(c4)C(=O)Nc5ccc(cc5)C(=O)Nc6ccc(cc6)C(=O)Nc7ccccc7C(=O)Nc8cc(=O)c(c8)C(=O)Nc9cc(=O)c(c9)C
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_4,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccc(cc1)C(=O)Nc2ccccc2C(=O)NCCCN
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_5,Qwen2-7B-Instruct (Base),EGFR,C1=CC=C(C=C1)Nc2ccccc2[C@H]
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_6,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccccc1C(=O)N(C)CC(=O)N(C)C(=O)
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_7,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccc(cc1)C(=O)[C@H]
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_8,Qwen2-7B-Instruct (Base),EGFR,Nc1ccccc1C(=O)Nc2ccc(c3ccccc3C(F)(F)F)cc2
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_9,Qwen2-7B-Instruct (Base),EGFR,CC(=O)N
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_10,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccccc1C(=O)N2C(=CC=C(C=C2)N3C4=CC=CC=C4C(=O)N3)C(=O)N(C)C
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_11,Qwen2-7B-Instruct (Base),EGFR,NCC
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_12,Qwen2-7B-Instruct (Base),EGFR,C1=CC(=CC2=C(C=C1)N3CCC(=O)C4=C(N=C5C(=C4)NCCN5)C(=O)NC6=C5C=CN=C5C(=O)NC6=C(C=C7C8=C(C=C7)NCCN8)C(=O)N3)C(=O)N2
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_13,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccc(cc1)C(=O)c2ccccc2N(C)C3CCCCC3CN=C(C)C4CCCCC4
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_14,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccccc1C(=O)N
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_15,Qwen2-7B-Instruct (Base),EGFR,CN1C(=O)N(C(=O)c2ccccc2)CCN1C(=O)N(c3ccccc3)
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_16,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccc(c2ccccc2)cc1C(=O)Nc3ccc(cc3)CC[NH]C(=O)
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_17,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccccc1N(C)C(=O)c2ccccc2C(=O)[C@H]
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_18,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccc(cc1)C(=O)
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_19,Qwen2-7B-Instruct (Base),EGFR,CC1=CC=C(C=C1)C(=O)Nc2ccc(cc2)Nc3ccccc3C(=O)Nc4cccc(NC(=O)c5cccc(F)c5)c4C(=O)N
+EGFR,Qwen2-7B-Instruct (Base)_EGFR_20,Qwen2-7B-Instruct (Base),EGFR,CC(=O)Nc1ccccc1C(=O)[S](=O)(=O)Nc2ccccc2C(=O)N(C)CC(=O)Nc3ccccc3C(=O)Nc4ccccc4C(=O)[S](=O)(=O)Nc5ccccc5C(=O)N(C)CC(=O)Nc6ccccc6C(=O)N(C)CC(=O)Nc7ccccc7C(=O)N(C)

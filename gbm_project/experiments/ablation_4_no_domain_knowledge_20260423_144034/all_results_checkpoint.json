@@ -1,0 +1,614 @@
+{
+  "EGFR": [
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)ClFc1ccnc1Br.O=C(O)O.[K+].[K+]",
+      "tpsa": 0.0,
+      "mw": 734.89,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "FcClCCCN1CCC(c2cc(Br)ccc2F)CC1",
+      "tpsa": 0.0,
+      "mw": 367.69,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2cccnc2)cc1C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 320.35,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CCN(CCO)c1cncn1-c1ccc(Cl)cc1",
+      "tpsa": 41.29,
+      "mw": 265.74,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CCOP(=O)NC(=S)Cc1cc(Br)ccc1Cl.[K+].[OH-]",
+      "tpsa": 68.33,
+      "mw": 412.71,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1ccc(Br)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 64.11,
+      "mw": 398.26,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cn1ccc(Br)cc1C(=O)Nc2cc(-c3ccccn3)c2C=O",
+      "tpsa": 63.99,
+      "mw": 371.21,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1ccc(NCCNC(=O)OC(C)(C)C)o1Ic1cccnc1",
+      "tpsa": 0.0,
+      "mw": 462.31,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1.CCCOC(=O)NC(=O)[C@H]1CCC[C@H](CO)C[C@@H](C)(C)CN1",
+      "tpsa": 0.0,
+      "mw": 474.44,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Cl)cc(N)n1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 85.83,
+      "mw": 354.82,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1cc(OCCCl)cc1C(=O)Nc1ccc(Br)cc1",
+      "tpsa": 47.56,
+      "mw": 371.64,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Nc1cc(Br)nc(N)n1Br",
+      "tpsa": 69.86,
+      "mw": 268.92,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cn1nc(Br)nc2ccn1-c1cnc2s1",
+      "tpsa": 48.53,
+      "mw": 284.14,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "C([Na+])=C([OH-])Oc1cc(OCCCCCC)cc1C(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 0.0,
+      "mw": 549.58,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(=O)Cl.Clc1c[nH]c1c1ccnc1Br.O=C(O)O.[K+]",
+      "tpsa": 103.28,
+      "mw": 411.1,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1Cc1ccc(O)cc1C(=O)OCCl.[K+]",
+      "tpsa": 46.53,
+      "mw": 395.72,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Brc1cc(Br)cc1NC(=O)[C@H](OC)C(=O)N[C@@H](CO)CO",
+      "tpsa": 107.89,
+      "mw": 427.07,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Cl)cc1NC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)OCCl",
+      "tpsa": 85.25,
+      "mw": 406.25,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)ccc1BrC(=O)NC(=O)COCCl.[K+].[OH-]",
+      "tpsa": 0.0,
+      "mw": 456.58,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Clc1cc(Cl)cc1Nc2cc(-c3ccnc3)cc2C(=O)OCClFClc1cc(Cl)cc1Nc2cc(-c3ccnc3)cc2C(=O)OCClF",
+      "tpsa": 0.0,
+      "mw": 775.25,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1cc(Cl)cc1NC(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCC",
+      "tpsa": 102.44,
+      "mw": 427.87,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1ccnc(-n2ccnc2)cc1C(=O)Nc3ccccc3Br.O=C(O)O.[K+].[K+]",
+      "tpsa": 117.34,
+      "mw": 510.45,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3.CC[NH+](CC)CC.[K+].[OH-]",
+      "tpsa": 110.46,
+      "mw": 478.66,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 76.02,
+      "mw": 320.35,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Cl)nc(N)n1CCC(F)CCl",
+      "tpsa": 43.84,
+      "mw": 253.13,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1OC(=O)C(C)(C)CCc1cc(Br)cc1OC(=O)C(C)(C)C",
+      "tpsa": 52.6,
+      "mw": 514.25,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CO[Sn+4]c1ccc(O)nc1Br",
+      "tpsa": 42.35,
+      "mw": 322.73,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Nc1ncc(Br)ncc1F",
+      "tpsa": 51.8,
+      "mw": 205.01,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "O=C/N=C=N.O=C/C=C/NN=Cc1ccc(Br)cc1Br",
+      "tpsa": 94.74,
+      "mw": 402.05,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "OCC(O)CN1CCC(NC2CCCCC2)CC1",
+      "tpsa": 55.73,
+      "mw": 256.39,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Nc1ncc(NCc2cccc(C(F)(F)F)c3ccc(Cl)snc23)n1",
+      "tpsa": 76.72,
+      "mw": 385.8,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "OCC(O)(C#Cc1ccc(N)cc1)c1cc(C)nc(-c2ccnc2)cc1",
+      "tpsa": 92.26,
+      "mw": 345.4,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cn1cnc(Nc2ccc(O)c2)nc1F",
+      "tpsa": 62.97,
+      "mw": 208.2,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cn1cnc(Nc2ccc(OC(F)(F)F)c2)nc1F",
+      "tpsa": 51.97,
+      "mw": 276.19,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CN1CCC(NC(=O)OC(C)(C)Br)CC1",
+      "tpsa": 41.57,
+      "mw": 279.18,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1Cc1cc(NCCNC2CCCCC2)no1",
+      "tpsa": 55.02,
+      "mw": 381.32,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Nc1cc(N(CCl)CCl)nc1Br",
+      "tpsa": 42.15,
+      "mw": 271.95,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COCc1cc(-c2nc(C(C)C)n[nH]c2)nn1",
+      "tpsa": 76.58,
+      "mw": 233.28,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1ccnc(N)n1Cc1ccccc1",
+      "tpsa": 43.84,
+      "mw": 200.27,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CBr1ccccc1B(C)F.Oc1ccccc1-c1ncco1C(F)(F)F",
+      "tpsa": 0.0,
+      "mw": 434.04,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CC(=O)NC(=O)OC(C)(C)C.CCOC(C)(C)C.[K+]",
+      "tpsa": 64.63,
+      "mw": 300.46,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2cccnc2)cc1C(=O)Nc3ccccc3C(=O)OCCl.[Cs+]",
+      "tpsa": 81.18,
+      "mw": 527.74,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CCOP(=O)[C@H]1[C@@H](CO)[C@H](OC)CN(c2cc(Br)ccc2F)C1.[K+]",
+      "tpsa": 59.0,
+      "mw": 449.32,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 54.88,
+      "mw": 369.24,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1cccc(Br)nc(N)n1",
+      "tpsa": 59.97,
+      "mw": 230.06,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "COc1ccc(NCc2ccnc(F)nc2C)ncc1Cl",
+      "tpsa": 59.93,
+      "mw": 308.74,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CB(O)c1ccc(B(O)c2cc(C)nc(-c3ccccn3)c2)cc1C",
+      "tpsa": 66.24,
+      "mw": 330.01,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "O=C(O)C(=O)OCClCCCClC(=O)OC(=O)OCc1cc[nH]cn1",
+      "tpsa": 0.0,
+      "mw": 398.18,
+      "target": "EGFR"
+    },
+    {
+      "smiles": "CCc1cc(Br)c(Nc2cc(C)nc(-c3ccccn3)c2)c(Cl)n1",
+      "tpsa": 50.7,
+      "mw": 403.71,
+      "target": "EGFR"
+    }
+  ],
+  "IDH1_IDH2": [
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.6735284266666669,
+            "reward": 0.6510207833345124,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.6735284266666669,
+        "reward": 0.6510207833345124,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.67 (中等CNS渗透) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.6510"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.6735284266666669,
+            "reward": 0.6510207833345124,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.6735284266666669,
+        "reward": 0.6510207833345124,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.67 (中等CNS渗透) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.6510"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 421,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.6735284266666669,
+            "reward": 0.6510207833345124,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.6735284266666669,
+        "reward": 0.6510207833345124,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.67 (中等CNS渗透) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.6510"
+    }
+  ],
+  "VEGF_VEGFR": [
+    {
+      "smiles": "CCCC(CC#Cc1ccnc(NCCNC2CCC2)cc1)SCCC(CC#Cc1ccnc(Cl)cc1)S",
+      "tpsa": 49.84,
+      "mw": 567.27,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "CP#Cc1cc(Br)nc(N)n1-c1cccc(F)c1",
+      "tpsa": 43.84,
+      "mw": 327.12,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "NCSCC[NH+](Cl)(Cl)Cc1cc(Br)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 0.0,
+      "mw": 544.33,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2ccc(Cl)cc2)cn1C(=O)Nc3ccccc3Cc1ccnc(-c2ccc(Cl)cc2)cn1C(=O)Nc3ccccc3",
+      "tpsa": 89.4,
+      "mw": 673.6,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 76.02,
+      "mw": 320.35,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCCl",
+      "tpsa": 81.18,
+      "mw": 461.72,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "COc1ccc(C(C)=O)c(Br)c1N=C(c2cccnc2)C(=O)Oc1ccccc1",
+      "tpsa": 77.85,
+      "mw": 453.29,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1cc(Nc2nc(N(C)c3cccc(Cl)c3)n[nH]2)ccc1Cl",
+      "tpsa": 56.84,
+      "mw": 348.24,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "CO/Nc1cc(N)nc1Nc1ccc(Cl)cc1",
+      "tpsa": 72.2,
+      "mw": 251.7,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "COc1ccc(B(O)c2cc(C)nc2)cc1C(=O)Nc3ccccc3COc1ccc(Br)cc1C(=O)OCCl",
+      "tpsa": 106.98,
+      "mw": 610.68,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "CB(Br)OC(=O)Cl.Clc1cccs1.O=C(O)O.[Cs+].[Cs+]",
+      "tpsa": 83.83,
+      "mw": 631.63,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "COc1cc(Br)cc(NC(=O)Nc2ccccc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 79.46,
+      "mw": 453.32,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1cc(Br)nc(N)n1C(=O)Nc2cc(C)nc(-c3ccccn3)c2ClCc1cc(Br)nc(N)n1C(=O)Nc2cc(C)nc(-c3ccccn3)c2Cl",
+      "tpsa": 0.0,
+      "mw": 868.4,
+      "target": "VEGF_VEGFR"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.6735284266666669,
+            "reward": 0.6510207833345124,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.6735284266666669,
+        "reward": 0.6510207833345124,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.67 (中等CNS渗透) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.6510"
+    }
+  ]
+}

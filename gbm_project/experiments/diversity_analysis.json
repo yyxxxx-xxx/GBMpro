@@ -1,0 +1,260 @@
+{
+  "EGFR": {
+    "PlayMolecule_AI": {
+      "n_input": 49,
+      "n_valid": 49,
+      "n_unique_smiles": 49,
+      "n_unique_scaffolds": 1,
+      "tanimoto_mean": 0.649,
+      "tanimoto_max": 0.908,
+      "tanimoto_median": 0.644,
+      "near_duplicate_pct": 0.1,
+      "intdiv": 0.351,
+      "max_tanimoto_chembl_mean": null
+    },
+    "REINVENT": {
+      "n_input": 20,
+      "n_valid": 20,
+      "n_unique_smiles": 20,
+      "n_unique_scaffolds": 20,
+      "tanimoto_mean": 0.155,
+      "tanimoto_max": 0.3,
+      "tanimoto_median": 0.153,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.845,
+      "max_tanimoto_chembl_mean": null
+    },
+    "base_mistral": {
+      "n_input": 20,
+      "n_valid": 20,
+      "n_unique_smiles": 20,
+      "n_unique_scaffolds": 14,
+      "tanimoto_mean": 0.099,
+      "tanimoto_max": 0.412,
+      "tanimoto_median": 0.086,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.901,
+      "max_tanimoto_chembl_mean": null
+    },
+    "base_qwen": {
+      "n_input": 20,
+      "n_valid": 20,
+      "n_unique_smiles": 20,
+      "n_unique_scaffolds": 13,
+      "tanimoto_mean": 0.189,
+      "tanimoto_max": 0.533,
+      "tanimoto_median": 0.194,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.811,
+      "max_tanimoto_chembl_mean": null
+    },
+    "comparison_final": {
+      "n_input": 16,
+      "n_valid": 16,
+      "n_unique_smiles": 16,
+      "n_unique_scaffolds": 14,
+      "tanimoto_mean": 0.158,
+      "tanimoto_max": 0.427,
+      "tanimoto_median": 0.159,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.842,
+      "max_tanimoto_chembl_mean": null
+    },
+    "llamole": {
+      "n_input": 15,
+      "n_valid": 15,
+      "n_unique_smiles": 14,
+      "n_unique_scaffolds": 4,
+      "tanimoto_mean": 0.159,
+      "tanimoto_max": 1.0,
+      "tanimoto_median": 0.079,
+      "near_duplicate_pct": 1.0,
+      "intdiv": 0.841,
+      "max_tanimoto_chembl_mean": null
+    },
+    "llasmol": {
+      "n_input": 38,
+      "n_valid": 38,
+      "n_unique_smiles": 34,
+      "n_unique_scaffolds": 23,
+      "tanimoto_mean": 0.141,
+      "tanimoto_max": 1.0,
+      "tanimoto_median": 0.122,
+      "near_duplicate_pct": 0.7,
+      "intdiv": 0.859,
+      "max_tanimoto_chembl_mean": null
+    }
+  },
+  "IDH1": {
+    "PlayMolecule_AI": {
+      "n_input": 50,
+      "n_valid": 50,
+      "n_unique_smiles": 50,
+      "n_unique_scaffolds": 5,
+      "tanimoto_mean": 0.36,
+      "tanimoto_max": 0.81,
+      "tanimoto_median": 0.203,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.64,
+      "max_tanimoto_chembl_mean": null
+    },
+    "REINVENT": {
+      "n_input": 20,
+      "n_valid": 20,
+      "n_unique_smiles": 20,
+      "n_unique_scaffolds": 20,
+      "tanimoto_mean": 0.155,
+      "tanimoto_max": 0.391,
+      "tanimoto_median": 0.146,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.845,
+      "max_tanimoto_chembl_mean": null
+    },
+    "base_mistral": {
+      "n_input": 20,
+      "n_valid": 20,
+      "n_unique_smiles": 20,
+      "n_unique_scaffolds": 14,
+      "tanimoto_mean": 0.1,
+      "tanimoto_max": 0.667,
+      "tanimoto_median": 0.085,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.9,
+      "max_tanimoto_chembl_mean": null
+    },
+    "base_qwen": {
+      "n_input": 15,
+      "n_valid": 15,
+      "n_unique_smiles": 15,
+      "n_unique_scaffolds": 10,
+      "tanimoto_mean": 0.208,
+      "tanimoto_max": 0.645,
+      "tanimoto_median": 0.18,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.792,
+      "max_tanimoto_chembl_mean": null
+    },
+    "comparison_final": {
+      "n_input": 16,
+      "n_valid": 16,
+      "n_unique_smiles": 16,
+      "n_unique_scaffolds": 10,
+      "tanimoto_mean": 0.162,
+      "tanimoto_max": 0.357,
+      "tanimoto_median": 0.162,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.838,
+      "max_tanimoto_chembl_mean": null
+    },
+    "llamole": {
+      "n_input": 26,
+      "n_valid": 26,
+      "n_unique_smiles": 23,
+      "n_unique_scaffolds": 9,
+      "tanimoto_mean": 0.109,
+      "tanimoto_max": 1.0,
+      "tanimoto_median": 0.083,
+      "near_duplicate_pct": 0.9,
+      "intdiv": 0.891,
+      "max_tanimoto_chembl_mean": null
+    },
+    "llasmol": {
+      "n_input": 42,
+      "n_valid": 42,
+      "n_unique_smiles": 40,
+      "n_unique_scaffolds": 29,
+      "tanimoto_mean": 0.166,
+      "tanimoto_max": 1.0,
+      "tanimoto_median": 0.133,
+      "near_duplicate_pct": 2.1,
+      "intdiv": 0.834,
+      "max_tanimoto_chembl_mean": null
+    }
+  },
+  "VEGFR": {
+    "PlayMolecule_AI": {
+      "n_input": 50,
+      "n_valid": 50,
+      "n_unique_smiles": 50,
+      "n_unique_scaffolds": 1,
+      "tanimoto_mean": 0.633,
+      "tanimoto_max": 0.879,
+      "tanimoto_median": 0.623,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.367,
+      "max_tanimoto_chembl_mean": null
+    },
+    "REINVENT": {
+      "n_input": 20,
+      "n_valid": 20,
+      "n_unique_smiles": 20,
+      "n_unique_scaffolds": 20,
+      "tanimoto_mean": 0.167,
+      "tanimoto_max": 0.42,
+      "tanimoto_median": 0.163,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.833,
+      "max_tanimoto_chembl_mean": null
+    },
+    "base_mistral": {
+      "n_input": 20,
+      "n_valid": 20,
+      "n_unique_smiles": 19,
+      "n_unique_scaffolds": 12,
+      "tanimoto_mean": 0.102,
+      "tanimoto_max": 1.0,
+      "tanimoto_median": 0.078,
+      "near_duplicate_pct": 1.1,
+      "intdiv": 0.898,
+      "max_tanimoto_chembl_mean": null
+    },
+    "base_qwen": {
+      "n_input": 20,
+      "n_valid": 20,
+      "n_unique_smiles": 20,
+      "n_unique_scaffolds": 15,
+      "tanimoto_mean": 0.208,
+      "tanimoto_max": 0.703,
+      "tanimoto_median": 0.2,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.792,
+      "max_tanimoto_chembl_mean": null
+    },
+    "comparison_final": {
+      "n_input": 17,
+      "n_valid": 17,
+      "n_unique_smiles": 17,
+      "n_unique_scaffolds": 10,
+      "tanimoto_mean": 0.163,
+      "tanimoto_max": 0.377,
+      "tanimoto_median": 0.151,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.837,
+      "max_tanimoto_chembl_mean": null
+    },
+    "llamole": {
+      "n_input": 12,
+      "n_valid": 12,
+      "n_unique_smiles": 12,
+      "n_unique_scaffolds": 9,
+      "tanimoto_mean": 0.134,
+      "tanimoto_max": 0.387,
+      "tanimoto_median": 0.131,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.866,
+      "max_tanimoto_chembl_mean": null
+    },
+    "llasmol": {
+      "n_input": 34,
+      "n_valid": 34,
+      "n_unique_smiles": 34,
+      "n_unique_scaffolds": 16,
+      "tanimoto_mean": 0.153,
+      "tanimoto_max": 0.833,
+      "tanimoto_median": 0.103,
+      "near_duplicate_pct": 0.0,
+      "intdiv": 0.847,
+      "max_tanimoto_chembl_mean": null
+    }
+  }
+}

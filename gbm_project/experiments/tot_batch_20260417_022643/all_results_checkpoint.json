@@ -1,0 +1,2482 @@
+{
+  "EGFR": [
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "NC(=S)Nc1ccnc2cc(-c3ccccn3)c2n1",
+      "tpsa": 76.72,
+      "mw": 268.32,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NC(=S)Nc1ccnc2cc(-c3ccccn3)c2n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "NC(=S)Nc1ccnc2cc(-c3ccccn3)c2n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "COCC(C)(C)c1ccc(F)cc(NC(=O)OC(C)(C)C)n1OCCC(F)(F)F.OCc1cc(Cl)ccn1OCCC(F)(F)F",
+      "tpsa": 96.11,
+      "mw": 681.07,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COCC(C)(C)c1ccc(F)cc(NC(=O)OC(C)(C)C)n1OCCC(F)(F)F.OCc1cc(Cl)ccn1OCCC(F)(F)F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "COCC(C)(C)c1ccc(F)cc(NC(=O)OC(C)(C)C)n1OCCC(F)(F)F.OCc1cc(Cl)ccn1OCCC(F)(F)F"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(B(O)O)cn1",
+      "tpsa": 53.35,
+      "mw": 123.93,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(B(O)O)cn1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(B(O)O)cn1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1ccnc(N)n1",
+      "tpsa": 51.8,
+      "mw": 109.13,
+      "logp": 0.37,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(N)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1ccnc(N)n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "N#Cc1ccnc(Cl)n1",
+      "tpsa": 49.57,
+      "mw": 139.54,
+      "logp": 1.0,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "N#Cc1ccnc(Cl)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "N#Cc1ccnc(Cl)n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CCCCN(CC#Cc1ccnc(N)cc1)CCOC",
+      "tpsa": 51.38,
+      "mw": 274.39,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCCCN(CC#Cc1ccnc(N)cc1)CCOC",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CCCCN(CC#Cc1ccnc(N)cc1)CCOC"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "COC(=O)/C=C/c1ccccc1C(=O)OC",
+      "tpsa": 52.6,
+      "mw": 220.22,
+      "logp": 1.66,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COC(=O)/C=C/c1ccccc1C(=O)OC",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "COC(=O)/C=C/c1ccccc1C(=O)OC"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(Br)c(S(=O)(=O)O)cc1S(=O)(=O)Cl",
+      "tpsa": 88.51,
+      "mw": 349.61,
+      "logp": 1.93,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)c(S(=O)(=O)O)cc1S(=O)(=O)Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Br)c(S(=O)(=O)O)cc1S(=O)(=O)Cl"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CSc1ccc(Br)cc1.Cc1cc(Br)cn1.O=C=N",
+      "tpsa": 53.81,
+      "mw": 405.13,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CSc1ccc(Br)cc1.Cc1cc(Br)cn1.O=C=N",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CSc1ccc(Br)cc1.Cc1cc(Br)cn1.O=C=N"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "COCCC(CC#N)c1nc2ccccc2n1",
+      "tpsa": 58.8,
+      "mw": 228.28,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COCCC(CC#N)c1nc2ccccc2n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "COCCC(CC#N)c1nc2ccccc2n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "C/C(=O)[C@H]1CO[C@@H](C)CN=C1CBrCc1cc(-n2ccnc2)cc1C(=O)ClCc1cc(Cl)cc1C(=O)Nc3ccc(F)cc3.[K+]",
+      "tpsa": 0.0,
+      "mw": 743.52,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "sure",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "C/C(=O)[C@H]1CO[C@@H](C)CN=C1CBrCc1cc(-n2ccnc2)cc1C(=O)ClCc1cc(Cl)cc1C(=O)Nc3ccc(F)cc3.[K+]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "C/C(=O)[C@H]1CO[C@@H](C)CN=C1CBrCc1cc(-n2ccnc2)cc1C(=O)ClCc1cc(Cl)cc1C(=O)Nc3ccc(F)cc3.[K+]"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CON=C(/C=N/C(C)(C)C)C(=O)NC(=O)OC(C)(C)C",
+      "tpsa": 89.35,
+      "mw": 285.34,
+      "logp": 1.91,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CON=C(/C=N/C(C)(C)C)C(=O)NC(=O)OC(C)(C)C",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CON=C(/C=N/C(C)(C)C)C(=O)NC(=O)OC(C)(C)C"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CC(C)(C)OC(=O)NC(c1ccc(Br)cc1)c1cc(Nc2ccnc2)cc1C(=O)Nc1ccc(-n2ccnc2)cc1",
+      "tpsa": 110.17,
+      "mw": 613.52,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(C)(C)OC(=O)NC(c1ccc(Br)cc1)c1cc(Nc2ccnc2)cc1C(=O)Nc1ccc(-n2ccnc2)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CC(C)(C)OC(=O)NC(c1ccc(Br)cc1)c1cc(Nc2ccnc2)cc1C(=O)Nc1ccc(-n2ccnc2)cc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "NCNCCNC(=O)c1ccc(Br)cc1C(=O)[NH3+]Cl.[K+].[OH-]",
+      "tpsa": 0.0,
+      "mw": 407.74,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NCNCCNC(=O)c1ccc(Br)cc1C(=O)[NH3+]Cl.[K+].[OH-]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "NCNCCNC(=O)c1ccc(Br)cc1C(=O)[NH3+]Cl.[K+].[OH-]"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "COc1ccc(C(=O)Oc2cc(C)nc(-c3ccccn3)c2Cl)s1",
+      "tpsa": 61.31,
+      "mw": 360.82,
+      "logp": 4.39,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1ccc(C(=O)Oc2cc(C)nc(-c3ccccn3)c2Cl)s1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "COc1ccc(C(=O)Oc2cc(C)nc(-c3ccccn3)c2Cl)s1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(N)nn1-c1ccc(Cl)cc1",
+      "tpsa": 43.84,
+      "mw": 207.66,
+      "logp": 2.42,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)nn1-c1ccc(Cl)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(N)nn1-c1ccc(Cl)cc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1ccnc(N)n1-c1ccncn1C",
+      "tpsa": 61.66,
+      "mw": 203.25,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "sure",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(N)n1-c1ccncn1C",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1ccnc(N)n1-c1ccncn1C"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3.[Na+].[OH-]",
+      "tpsa": 76.92,
+      "mw": 382.78,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3.[Na+].[OH-]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3.[Na+].[OH-]"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "NCOCc1ccc(Br)cc1NCc2ccc(F)cc2F",
+      "tpsa": 47.28,
+      "mw": 357.2,
+      "logp": 3.77,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NCOCc1ccc(Br)cc1NCc2ccc(F)cc2F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "NCOCc1ccc(Br)cc1NCc2ccc(F)cc2F"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OB(O)c1cc(Br)nc(Cl)c1",
+      "tpsa": 53.35,
+      "mw": 236.26,
+      "logp": 0.18,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OB(O)c1cc(Br)nc(Cl)c1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OB(O)c1cc(Br)nc(Cl)c1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "O=C(N)COC(c1ccnc2cc(Cl)ccc12)C(=O)Nc1cc(Br)ccc1Cl",
+      "tpsa": 94.31,
+      "mw": 483.15,
+      "logp": 4.49,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "O=C(N)COC(c1ccnc2cc(Cl)ccc12)C(=O)Nc1cc(Br)ccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "O=C(N)COC(c1ccnc2cc(Cl)ccc12)C(=O)Nc1cc(Br)ccc1Cl"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ncc(-n2ccnc2)cc1C(=O)Nc3ccccc3Cc1cc(Cl)cc1Cc1cc(Cl)cc1.N#CCOCCN1CCC1.[Na+]",
+      "tpsa": 96.07,
+      "mw": 668.56,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ncc(-n2ccnc2)cc1C(=O)Nc3ccccc3Cc1cc(Cl)cc1Cc1cc(Cl)cc1.N#CCOCCN1CCC1.[Na+]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ncc(-n2ccnc2)cc1C(=O)Nc3ccccc3Cc1cc(Cl)cc1Cc1cc(Cl)cc1.N#CCOCCN1CCC1.[Na+]"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccnc1-c1cccnc1NC1CCN1",
+      "tpsa": 49.84,
+      "mw": 231.25,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccnc1-c1cccnc1NC1CCN1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccnc1-c1cccnc1NC1CCN1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1cc(Br)c1",
+      "tpsa": 0.0,
+      "mw": 148.96,
+      "logp": 2.13,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1cc(Br)c1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1cc(Br)c1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3.Clc1ccc(Br)cc1C(=O)OCCN1CCCCC1.[2H]Cl",
+      "tpsa": 105.56,
+      "mw": 704.47,
+      "logp": 7.25,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3.Clc1ccc(Br)cc1C(=O)OCCN1CCCCC1.[2H]Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3.Clc1ccc(Br)cc1C(=O)OCCN1CCCCC1.[2H]Cl"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1nc(-c2cccc(F)c2)sc1CN(C(=O)OC(C)(C)C)CCN(C)C.OC(C)(C)C.OC(C)(C)C",
+      "tpsa": 86.13,
+      "mw": 541.77,
+      "logp": 6.11,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1nc(-c2cccc(F)c2)sc1CN(C(=O)OC(C)(C)C)CCN(C)C.OC(C)(C)C.OC(C)(C)C",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1nc(-c2cccc(F)c2)sc1CN(C(=O)OC(C)(C)C)CCN(C)C.OC(C)(C)C.OC(C)(C)C"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(-c2ccc(Cl)cc2)nc(N)n1",
+      "tpsa": 51.8,
+      "mw": 219.68,
+      "logp": 2.69,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2ccc(Cl)cc2)nc(N)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2ccc(Cl)cc2)nc(N)n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CCCOCCC#Cc1ccnc(N)n1Cc1ccccc1",
+      "tpsa": 53.07,
+      "mw": 296.39,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCCOCCC#Cc1ccnc(N)n1Cc1ccccc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CCCOCCC#Cc1ccnc(N)n1Cc1ccccc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CO/N=C(/C=N/Cc1cc(Br)cc1)OC.Clc1ccc(Br)cc1.O=C(O)O.[Cs+].[Cs+]",
+      "tpsa": 100.71,
+      "mw": 791.41,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CO/N=C(/C=N/Cc1cc(Br)cc1)OC.Clc1ccc(Br)cc1.O=C(O)O.[Cs+].[Cs+]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CO/N=C(/C=N/Cc1cc(Br)cc1)OC.Clc1ccc(Br)cc1.O=C(O)O.[Cs+].[Cs+]"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1Cc1cc(Cl)ccc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 59.81,
+      "mw": 495.81,
+      "logp": 6.28,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cn1Cc1cc(Cl)ccc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Br)cn1Cc1cc(Cl)ccc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(N)nc(N)n1Cc1ccnc2ncc12Br",
+      "tpsa": 95.64,
+      "mw": 321.18,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)nc(N)n1Cc1ccnc2ncc12Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(N)nc(N)n1Cc1ccnc2ncc12Br"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc(O)c1ccnc(Nc2ccccc2)n1",
+      "tpsa": 56.98,
+      "mw": 218.21,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc(O)c1ccnc(Nc2ccccc2)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc(O)c1ccnc(Nc2ccccc2)n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cn1ccc(Br)cc1-c1ccnc(Cl)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)Nc3ccccc3",
+      "tpsa": 101.8,
+      "mw": 627.93,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "sure",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cn1ccc(Br)cc1-c1ccnc(Cl)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)Nc3ccccc3",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cn1ccc(Br)cc1-c1ccnc(Cl)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)Nc3ccccc3"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CBBrBr.Clc1ccc(Br)cc1C(=O)Nc1ccc(Br)cc1C(=O)Cl.Fc1ccccc1",
+      "tpsa": 0.0,
+      "mw": 734.7,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CBBrBr.Clc1ccc(Br)cc1C(=O)Nc1ccc(Br)cc1C(=O)Cl.Fc1ccccc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CBBrBr.Clc1ccc(Br)cc1C(=O)Nc1ccc(Br)cc1C(=O)Cl.Fc1ccccc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CCOC(=O)NC(=O)CCCCN(CC)C(=O)OCC",
+      "tpsa": 84.94,
+      "mw": 288.34,
+      "logp": 1.91,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "sure",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCOC(=O)NC(=O)CCCCN(CC)C(=O)OCC",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CCOC(=O)NC(=O)CCCCN(CC)C(=O)OCC"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1ccnc1C(=O)Nc1ccc(Br)cc1C(=O)Nc1ccc(Br)cc1",
+      "tpsa": 71.09,
+      "mw": 476.15,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc1C(=O)Nc1ccc(Br)cc1C(=O)Nc1ccc(Br)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1ccnc1C(=O)Nc1ccc(Br)cc1C(=O)Nc1ccc(Br)cc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Clc1cccs1C(=O)NC(=O)CSCc1ccccc1",
+      "tpsa": 46.17,
+      "mw": 326.85,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Clc1cccs1C(=O)NC(=O)CSCc1ccccc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Clc1cccs1C(=O)NC(=O)CSCc1ccccc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "O=C(O)Cc1cccnc1",
+      "tpsa": 50.19,
+      "mw": 137.14,
+      "logp": 0.71,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "purine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "purine",
+            "rationale": "Suitable scaffold for purine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "purine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "O=C(O)Cc1cccnc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "O=C(O)Cc1cccnc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "COClClOCCNC(=O)Nc1ccc(Br)cc1.Nc1ccc(-n2ccnc2)cc1C(=O)O.[Br-]",
+      "tpsa": 0.0,
+      "mw": 643.14,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COClClOCCNC(=O)Nc1ccc(Br)cc1.Nc1ccc(-n2ccnc2)cc1C(=O)O.[Br-]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "COClClOCCNC(=O)Nc1ccc(Br)cc1.Nc1ccc(-n2ccnc2)cc1C(=O)O.[Br-]"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "NC(=O)OCc1ccccc1F",
+      "tpsa": 52.32,
+      "mw": 169.15,
+      "logp": 1.42,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NC(=O)OCc1ccccc1F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "NC(=O)OCc1ccccc1F"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CCCCSc1cc(Cl)nc(N)n1",
+      "tpsa": 51.8,
+      "mw": 217.72,
+      "logp": 2.6,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCCCSc1cc(Cl)nc(N)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CCCCSc1cc(Cl)nc(N)n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CCCN1CCC(Nc2cn[nH]c2)CC1",
+      "tpsa": 43.95,
+      "mw": 208.31,
+      "logp": 1.7,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCCN1CCC(Nc2cn[nH]c2)CC1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CCCN1CCC(Nc2cn[nH]c2)CC1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CCN(CC(C)C)C(=O)NC(=O)OC(C)(C)C(F)(F)F.OC(C)(C)C(F)(F)F.OC(C)(C)C(F)(F)F",
+      "tpsa": 99.1,
+      "mw": 554.49,
+      "logp": 5.79,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCN(CC(C)C)C(=O)NC(=O)OC(C)(C)C(F)(F)F.OC(C)(C)C(F)(F)F.OC(C)(C)C(F)(F)F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CCN(CC(C)C)C(=O)NC(=O)OC(C)(C)C(F)(F)F.OC(C)(C)C(F)(F)F.OC(C)(C)C(F)(F)F"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1ccnc(-c2ccc(Br)cc2)CC(=O)N=C1",
+      "tpsa": 42.32,
+      "mw": 304.17,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(-c2ccc(Br)cc2)CC(=O)N=C1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1ccnc(-c2ccc(Br)cc2)CC(=O)N=C1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ncc1-c1ccnc2nccnc2c1",
+      "tpsa": 51.56,
+      "mw": 213.2,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ncc1-c1ccnc2nccnc2c1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ncc1-c1ccnc2nccnc2c1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Clc1cc(Cl)ccc(OS(=O)(=O)N(C)C(C)C)c(-c2ccc(F)cc2)n1.OC(F)(F)F",
+      "tpsa": 79.2,
+      "mw": 505.32,
+      "logp": 4.82,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Clc1cc(Cl)ccc(OS(=O)(=O)N(C)C(C)C)c(-c2ccc(F)cc2)n1.OC(F)(F)F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Clc1cc(Cl)ccc(OS(=O)(=O)N(C)C(C)C)c(-c2ccc(F)cc2)n1.OC(F)(F)F"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CC(=O)[O-].CCOPCCCBr.[NH-]",
+      "tpsa": 81.36,
+      "mw": 273.09,
+      "logp": 1.66,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)[O-].CCOPCCCBr.[NH-]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CC(=O)[O-].CCOPCCCBr.[NH-]"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Nc2ccc(Cl)cc2C(=O)Nc3ccc(F)cc3",
+      "tpsa": 55.12,
+      "mw": 264.69,
+      "logp": 3.31,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Nc2ccc(Cl)cc2C(=O)Nc3ccc(F)cc3",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Nc2ccc(Cl)cc2C(=O)Nc3ccc(F)cc3"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CB1CCC(CBr)CC1.O=C(O)O.[Cs+].[Cs+]",
+      "tpsa": 57.53,
+      "mw": 516.74,
+      "logp": -2.85,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CB1CCC(CBr)CC1.O=C(O)O.[Cs+].[Cs+]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CB1CCC(CBr)CC1.O=C(O)O.[Cs+].[Cs+]"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(N)nc(N)n1-c1ccccc1C#N",
+      "tpsa": 93.65,
+      "mw": 226.26,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)nc(N)n1-c1ccccc1C#N",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(N)nc(N)n1-c1ccccc1C#N"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1ccnc(N)n1",
+      "tpsa": 72.03,
+      "mw": 125.13,
+      "logp": -0.45,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "sure",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1ccnc(N)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1ccnc(N)n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "On1ccnc(N2CCC(O)CC2)cc1Br",
+      "tpsa": 59.3,
+      "mw": 288.14,
+      "logp": 1.25,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "On1ccnc(N2CCC(O)CC2)cc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "On1ccnc(N2CCC(O)CC2)cc1Br"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1cnn(CC#N)c1-c1ccc(Cl)cc1Cl",
+      "tpsa": 41.61,
+      "mw": 270.09,
+      "logp": 3.52,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1cnn(CC#N)c1-c1ccc(Cl)cc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1cnn(CC#N)c1-c1ccc(Cl)cc1Cl"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1C(O)=O",
+      "tpsa": 42.23,
+      "mw": 204.02,
+      "logp": 2.09,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "sure",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cn1C(O)=O",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Br)cn1C(O)=O"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CS(=O)(=O)ClCc1cc(Br)cc1C(=O)Nc1ccc(-n2ccnc2)cc1",
+      "tpsa": 0.0,
+      "mw": 456.75,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "sure",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CS(=O)(=O)ClCc1cc(Br)cc1C(=O)Nc1ccc(-n2ccnc2)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CS(=O)(=O)ClCc1cc(Br)cc1C(=O)Nc1ccc(-n2ccnc2)cc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(-n2ccnc2)cc1NC(=O)Nc3ccccc3C(=O)OCClCc1cc(-n2ccnc2)cc1NC(=O)Nc3ccccc3C(=O)OCCl",
+      "tpsa": 0.0,
+      "mw": 742.6,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-n2ccnc2)cc1NC(=O)Nc3ccccc3C(=O)OCClCc1cc(-n2ccnc2)cc1NC(=O)Nc3ccccc3C(=O)OCCl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-n2ccnc2)cc1NC(=O)Nc3ccccc3C(=O)OCClCc1cc(-n2ccnc2)cc1NC(=O)Nc3ccccc3C(=O)OCCl"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "N#Cc1cc(-c2ccncc2)no1",
+      "tpsa": 62.71,
+      "mw": 171.16,
+      "logp": 1.61,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "N#Cc1cc(-c2ccncc2)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "N#Cc1cc(-c2ccncc2)no1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+EGFR_00000,CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3,76.02,320.35,EGFR
+EGFR_00000,Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3,54.88,341.77,EGFR
+EGFR_00000,CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3,76.02,320.35,EGFR
+EGFR_00000,CSN=C(CCl)CNC(=O)CSCCNC(=S)C(N)=O,96.58,356.93,EGFR
+EGFR_00000,Cc1cc(N)ccc1NC(=O)C(C)(C)OCc1ccccc1C(=O)OCC(Cl)c1cc(Cl)cc1NCCC(O)C(C)(C)CI[C@H](CO)[2H]Cl.OCc1ccccc1I.OCc1ccccc1I.Ic1ccccc1I.OCc1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.OCc1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.OCc1ccccc1I.Ic1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I,0.00,0.00,EGFR
+EGFR_00000,N#Cc1cc(-c2cccnc2)nc3ccnc3n1,75.35,233.23,EGFR
+EGFR_00000,N#Cc1cc(-c2ccc(Cl)cc2)no1,49.82,204.62,EGFR
+EGFR_00000,CC(C)(C)OC(=O)N[C@@H]1CCC[C@H](CO)CN1.Cc1ccccc1F.Fc1ccccc1F.Fc1ccccc1F.[Na+].[OH-],100.59,622.65,EGFR
+EGFR_00000,Cc1ccc(-c2cnnc2)cc1NC1CCN(c2ccc(Cl)cc2)CC1,41.05,365.89,EGFR
+EGFR_00000,O=C(/N=N/C(=O)/C(Cl)(Cl)Cl)C1CCC1,58.86,257.50,EGFR
+EGFR_00000,Cc1cc(N)nc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3,72.94,357.80,EGFR

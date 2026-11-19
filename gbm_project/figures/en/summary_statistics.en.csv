@@ -1,0 +1,4 @@
+﻿Target,Total Molecules,Valid (DrugClip>0),BBB Pass Count,BBB Pass Rate (%),DrugClip>0 Count,DrugClip>0 Rate (%),Score≥70 Count,Score≥70 Rate (%),Score≥80 Count,Score≥80 Rate (%),Median Score (Valid),Mean Score (Valid),Median Vina (Valid)
+EGFR,99,43,47,47.5,43,43.4,10,23.3,0,0.0,58.18,58.72,-5.78
+IDH1_IDH2,100,67,45,45.0,67,67.0,14,20.9,7,10.4,56.63,58.04,-7.82
+VEGF_VEGFR,99,48,55,55.6,48,48.5,20,41.7,6,12.5,63.83,64.72,-5.34

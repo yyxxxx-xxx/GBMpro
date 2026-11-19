@@ -1,0 +1,119 @@
+--- variant 0 (cot=True) ---
+>>> SMILES: CCC(CS(=O)(=O)CCCO)c1ccc(-c2nc(N)sc2)c(F)c1F
+
+--- variant 1 (cot=False) ---
+>>> SMILES: Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NC4=NC=N4)cc31)NC2=O
+
+--- variant 2 (cot=True) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1
+
+--- variant 0 (cot=True) ---
+>>> SMILES: CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1
+
+--- variant 1 (cot=False) ---
+>>> SMILES: CC(=O)Cn1cnc2c(OCc3ccccc3)c(N(C)CC(F)(F)C3CC3)nc(-c3cnn(C#N)c3)s2cn1
+
+--- variant 2 (cot=True) ---
+>>> SMILES: CC(C)(C)Nc1nc(OCc2ccccc2)c2[nH]nCCO2n1
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C
+
+--- variant 0 (cot=True) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCc4ccccc4)cc3)CC21C
+
+--- variant 1 (cot=False) ---
+>>> SMILES: Nc1nc(OCc2ccccc2)c2[nH]c(C#N)c2n1
+
+--- variant 2 (cot=True) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC(C)n1cnc2c(OCc3ccccc3)c(Br)C(c3cccc(Cl)c3)N(c2cn(CC(F)(F)Cl)CC(O)C2)CC1
+
+--- variant 0 (cot=True) ---
+>>> SMILES: CC(C)n1cnc2c(OCc3ccccc3)nc(N)sc2cn1
+
+--- variant 1 (cot=False) ---
+>>> SMILES: CC(=O)C(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)N1CCN(CC(=O)OC(C)(C)C)CC1
+
+--- variant 2 (cot=True) ---
+>>> SMILES: Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NCCN4CCC4OC(=O)N(C)C(O)C(F)(F)F)cc31)NC2=O
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC(C)(C)OC(=O)Nc1ccc(-c2ccnnc(N)c2F)c(F)c1F
+
+--- variant 0 (cot=True) ---
+>>> SMILES: CCC(CS(=O)(=O)CC(C)C)N1CCC2=C(CC=C(Nc3cccc(Cl)c3)C3CCOC3=CC(OC)CF3)C21
+
+--- variant 1 (cot=False) ---
+>>> SMILES: CC(C)(C)OC(=O)Nc1cc(-n2cnc(N)nc2)c(n2ccc(Cl)c(F)c2)nn1
+
+--- variant 2 (cot=True) ---
+>>> SMILES: CCCCCOC(=O)Nc1nnc(N(C)C)ncc1Cl
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(=O)N(C)CCCC(F)(F)C)cc3)CC21C
+
+--- variant 0 (cot=True) ---
+>>> SMILES: CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O
+
+--- variant 1 (cot=False) ---
+>>> SMILES: CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1
+
+--- variant 2 (cot=True) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)C)ncc3)CC21C
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC(C)(C)OC(=O)Nc1ccc(Oc2cc(F)c(C#N)c2)c(Cl)c1
+
+--- variant 0 (cot=True) ---
+>>> SMILES: CC(C)n1cnc2c(OCc3ccccc3)c(NC3=O)-c3c(cc1NC(F)(F)C(O)N3)CCC3n1
+
+--- variant 1 (cot=False) ---
+>>> SMILES: CC(C)n1cnc2cc(n1)-c1ccc(NC(=O)OC(C)(C)C)c(OCC(F)F)c1-NC2=O
+
+--- variant 2 (cot=True) ---
+>>> SMILES: CCC(CS(=O)(=O)C(Nc1ncn(CC(F)(F)F)c1OC)C(C)(CC(=O)O)C2=CC=C2)N1C(=O)C(O)Cc2ccccc21
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC(C)n1cnc2cc(n1)-c1ccc(OCc3ccccc3)c(Cl)c1OCCn1cc(-c3cnn(CC=NC(N)=O)c3)nc(-c2cccc(Cl)c2)C1
+
+--- variant 0 (cot=True) ---
+>>> SMILES: Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NCCN4CCC4=O)cc31)NC2=O
+
+--- variant 1 (cot=False) ---
+>>> SMILES: CCC(CS(=O)(=O)C(Nc1ncc(-c2nc(N)nc3nc[nH]c23)c2cn[nH]c21)n)N(C1CCN(C)COC1)C2CCCC2
+
+--- variant 2 (cot=True) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC(=O)C(C)(N)C(CC(=O)OC)S(=O)(=O)CC(c1ccc(F)c(Cl)c1F)C2=C(C#N)C2c1ccccc1-Cl
+
+--- variant 0 (cot=True) ---
+>>> SMILES: CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N(C)CCO)cn(CC)c4c1)n3CCCCO2)C(N)=O
+
+--- variant 1 (cot=False) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)F)cc3)CC21C
+
+--- variant 2 (cot=True) ---
+>>> SMILES: CC(=O)c1ccc(Oc2cc(F)cc(Cl)c2)c(Br)c1
+
+--- variant 3 (cot=False) ---
+>>> SMILES: Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NCCN4CCC4)cc31)NC2=O
+
+--- variant 0 (cot=True) ---
+>>> SMILES: CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1
+
+--- variant 1 (cot=False) ---
+>>> SMILES: CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCCCCO)cc3)CC21C
+
+--- variant 2 (cot=True) ---
+>>> SMILES: Nc1nc(OCc2ccccc2)c2[nH]c(C#N)c2n1
+
+--- variant 3 (cot=False) ---
+>>> SMILES: CC(C)(C)OC(=O)Nc1ccc(Oc2cc(F)c(-c3nc(N)ns3)n(C)c2cn1)C(F)(F)F

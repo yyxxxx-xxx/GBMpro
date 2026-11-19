@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="4220">
+<defs>
+<style type="text/css"><![CDATA[
+  .node { fill: #f7f7f7; stroke: #2b6cb0; stroke-width:1.2 }
+  .label { font-family: Helvetica, Arial, sans-serif; font-size:12px; fill:#111 }
+  .edge { stroke:#444; stroke-width:1.0; fill:none }
+]]></style>
+</defs>
+<path class="edge" d="M 270 2065.0 C 280.0 2065.0 280.0 1405.0 290 1405.0" />
+<path class="edge" d="M 375 1405.0 C 472.5 1405.0 472.5 745.0 570 745.0" />
+<path class="edge" d="M 270 2065.0 C 280.0 2065.0 280.0 1525.0 290 1525.0" />
+<path class="edge" d="M 403 1525.0 C 486.5 1525.0 486.5 865.0 570 865.0" />
+<path class="edge" d="M 697 865.0 C 773.5 865.0 773.5 145.0 850 145.0" />
+<path class="edge" d="M 697 865.0 C 773.5 865.0 773.5 265.0 850 265.0" />
+<path class="edge" d="M 403 1525.0 C 486.5 1525.0 486.5 985.0 570 985.0" />
+<path class="edge" d="M 683 985.0 C 766.5 985.0 766.5 385.0 850 385.0" />
+<path class="edge" d="M 683 985.0 C 766.5 985.0 766.5 512.0 850 512.0" />
+<path class="edge" d="M 683 985.0 C 766.5 985.0 766.5 625.0 850 625.0" />
+<path class="edge" d="M 403 1525.0 C 486.5 1525.0 486.5 1105.0 570 1105.0" />
+<path class="edge" d="M 676 1105.0 C 763.0 1105.0 763.0 745.0 850 745.0" />
+<path class="edge" d="M 676 1105.0 C 763.0 1105.0 763.0 865.0 850 865.0" />
+<path class="edge" d="M 270 2065.0 C 280.0 2065.0 280.0 1645.0 290 1645.0" />
+<path class="edge" d="M 445 1645.0 C 507.5 1645.0 507.5 1225.0 570 1225.0" />
+<path class="edge" d="M 445 1645.0 C 507.5 1645.0 507.5 1345.0 570 1345.0" />
+<path class="edge" d="M 704 1345.0 C 777.0 1345.0 777.0 985.0 850 985.0" />
+<path class="edge" d="M 704 1345.0 C 777.0 1345.0 777.0 1105.0 850 1105.0" />
+<path class="edge" d="M 704 1345.0 C 777.0 1345.0 777.0 1225.0 850 1225.0" />
+<path class="edge" d="M 704 1345.0 C 777.0 1345.0 777.0 1345.0 850 1345.0" />
+<path class="edge" d="M 445 1645.0 C 507.5 1645.0 507.5 1465.0 570 1465.0" />
+<path class="edge" d="M 669 1465.0 C 759.5 1465.0 759.5 1465.0 850 1465.0" />
+<path class="edge" d="M 669 1465.0 C 759.5 1465.0 759.5 1585.0 850 1585.0" />
+<path class="edge" d="M 669 1465.0 C 759.5 1465.0 759.5 1705.0 850 1705.0" />
+<path class="edge" d="M 270 2065.0 C 280.0 2065.0 280.0 1765.0 290 1765.0" />
+<path class="edge" d="M 403 1765.0 C 486.5 1765.0 486.5 1585.0 570 1585.0" />
+<path class="edge" d="M 690 1585.0 C 770.0 1585.0 770.0 1825.0 850 1825.0" />
+<path class="edge" d="M 690 1585.0 C 770.0 1585.0 770.0 1945.0 850 1945.0" />
+<path class="edge" d="M 403 1765.0 C 486.5 1765.0 486.5 1705.0 570 1705.0" />
+<path class="edge" d="M 676 1705.0 C 763.0 1705.0 763.0 2065.0 850 2065.0" />
+<path class="edge" d="M 676 1705.0 C 763.0 1705.0 763.0 2185.0 850 2185.0" />
+<path class="edge" d="M 676 1705.0 C 763.0 1705.0 763.0 2305.0 850 2305.0" />
+<path class="edge" d="M 676 1705.0 C 763.0 1705.0 763.0 2425.0 850 2425.0" />
+<path class="edge" d="M 676 1705.0 C 763.0 1705.0 763.0 2545.0 850 2545.0" />
+<path class="edge" d="M 676 1705.0 C 763.0 1705.0 763.0 2665.0 850 2665.0" />
+<path class="edge" d="M 403 1765.0 C 486.5 1765.0 486.5 1825.0 570 1825.0" />
+<path class="edge" d="M 676 1825.0 C 763.0 1825.0 763.0 2785.0 850 2785.0" />
+<path class="edge" d="M 676 1825.0 C 763.0 1825.0 763.0 2905.0 850 2905.0" />
+<path class="edge" d="M 676 1825.0 C 763.0 1825.0 763.0 3025.0 850 3025.0" />
+<path class="edge" d="M 403 1765.0 C 486.5 1765.0 486.5 1945.0 570 1945.0" />
+<path class="edge" d="M 669 1945.0 C 759.5 1945.0 759.5 3145.0 850 3145.0" />
+<path class="edge" d="M 669 1945.0 C 759.5 1945.0 759.5 3265.0 850 3265.0" />
+<path class="edge" d="M 270 2065.0 C 280.0 2065.0 280.0 1885.0 290 1885.0" />
+<path class="edge" d="M 431 1885.0 C 500.5 1885.0 500.5 2065.0 570 2065.0" />
+<path class="edge" d="M 676 2065.0 C 763.0 2065.0 763.0 3385.0 850 3385.0" />
+<path class="edge" d="M 676 2065.0 C 763.0 2065.0 763.0 3505.0 850 3505.0" />
+<path class="edge" d="M 431 1885.0 C 500.5 1885.0 500.5 2185.0 570 2185.0" />
+<path class="edge" d="M 669 2185.0 C 759.5 2185.0 759.5 3625.0 850 3625.0" />
+<path class="edge" d="M 88 2185.0 C 189.0 2185.0 189.0 2005.0 290 2005.0" />
+<path class="edge" d="M 88 2185.0 C 189.0 2185.0 189.0 2125.0 290 2125.0" />
+<path class="edge" d="M 88 2185.0 C 189.0 2185.0 189.0 2245.0 290 2245.0" />
+<path class="edge" d="M 88 2185.0 C 189.0 2185.0 189.0 2365.0 290 2365.0" />
+<path class="edge" d="M 396 2365.0 C 483.0 2365.0 483.0 2305.0 570 2305.0" />
+<path class="edge" d="M 396 2365.0 C 483.0 2365.0 483.0 2425.0 570 2425.0" />
+<path class="edge" d="M 396 2365.0 C 483.0 2365.0 483.0 2545.0 570 2545.0" />
+<path class="edge" d="M 88 2185.0 C 189.0 2185.0 189.0 2485.0 290 2485.0" />
+<path class="edge" d="M 396 2485.0 C 483.0 2485.0 483.0 2665.0 570 2665.0" />
+<path class="edge" d="M 396 2485.0 C 483.0 2485.0 483.0 2785.0 570 2785.0" />
+<path class="edge" d="M 396 2485.0 C 483.0 2485.0 483.0 2905.0 570 2905.0" />
+<path class="edge" d="M 88 2185.0 C 189.0 2185.0 189.0 2605.0 290 2605.0" />
+<path class="edge" d="M 396 2605.0 C 483.0 2605.0 483.0 3025.0 570 3025.0" />
+<path class="edge" d="M 676 3025.0 C 763.0 3025.0 763.0 3745.0 850 3745.0" />
+<path class="edge" d="M 676 3025.0 C 763.0 3025.0 763.0 3865.0 850 3865.0" />
+<path class="edge" d="M 396 2605.0 C 483.0 2605.0 483.0 3145.0 570 3145.0" />
+<path class="edge" d="M 683 3145.0 C 766.5 3145.0 766.5 3985.0 850 3985.0" />
+<path class="edge" d="M 683 3145.0 C 766.5 3145.0 766.5 4105.0 850 4105.0" />
+<path class="edge" d="M 88 2185.0 C 189.0 2185.0 189.0 2725.0 290 2725.0" />
+<path class="edge" d="M 396 2725.0 C 483.0 2725.0 483.0 3265.0 570 3265.0" />
+<path class="edge" d="M 396 2725.0 C 483.0 2725.0 483.0 3385.0 570 3385.0" />
+<path class="edge" d="M 396 2725.0 C 483.0 2725.0 483.0 3505.0 570 3505.0" />
+<path class="edge" d="M 88 2185.0 C 189.0 2185.0 189.0 2845.0 290 2845.0" />
+<g>
+  <rect class="node" x="20" y="2050.0" width="240" height="30" rx="6" ry="6" />
+  <text class="label" x="28" y="2066.0">《基于多模态大语言模型的胶质母细胞瘤新药候选分子生成与优化研究》</text>
+</g>
+<g>
+  <rect class="node" x="20" y="2170.0" width="58" height="30" rx="6" ry="6" />
+  <text class="label" x="28" y="2186.0">动态靶点选择</text>
+</g>
+<g>
+  <rect class="node" x="300" y="1390.0" width="65" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="1406.0">方法论详细文档</text>
+</g>
+<g>
+  <rect class="node" x="300" y="1510.0" width="93" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="1526.0">1. GBM领域知识库</text>
+</g>
+<g>
+  <rect class="node" x="300" y="1630.0" width="135" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="1646.0">2. GBM专业Prompt生成器</text>
+</g>
+<g>
+  <rect class="node" x="300" y="1750.0" width="93" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="1766.0">3. GBM专项评估器</text>
+</g>
+<g>
+  <rect class="node" x="300" y="1870.0" width="121" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="1886.0">4. GBM分子生成器改进内容</text>
+</g>
+<g>
+  <rect class="node" x="300" y="1990.0" width="198" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="2006.0">4.2.2 Chain-of-Thought推理增强</text>
+</g>
+<g>
+  <rect class="node" x="300" y="2110.0" width="107" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="2126.0">4.2.3 多维度约束优化</text>
+</g>
+<g>
+  <rect class="node" x="300" y="2230.0" width="107" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="2246.0">4.2.4 智能评估与筛选</text>
+</g>
+<g>
+  <rect class="node" x="300" y="2350.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="2366.0">4.3 性能优化策略</text>
+</g>
+<g>
+  <rect class="node" x="300" y="2470.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="2486.0">4.4 实验验证体系</text>
+</g>
+<g>
+  <rect class="node" x="300" y="2590.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="2606.0">5. 实验结果与验证</text>
+</g>
+<g>
+  <rect class="node" x="300" y="2710.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="2726.0">6. 结论与未来工作</text>
+</g>
+<g>
+  <rect class="node" x="300" y="2830.0" width="44" height="30" rx="6" ry="6" />
+  <text class="label" x="308" y="2846.0">参考文献</text>
+</g>
+<g>
+  <rect class="node" x="580" y="730.0" width="44" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="746.0">研究概述</text>
+</g>
+<g>
+  <rect class="node" x="580" y="850.0" width="107" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="866.0">1.1 数据来源与构建原则</text>
+</g>
+<g>
+  <rect class="node" x="580" y="970.0" width="93" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="986.0">1.2 数据结构与格式</text>
+</g>
+<g>
+  <rect class="node" x="580" y="1090.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="1106.0">1.3 知识库类实现</text>
+</g>
+<g>
+  <rect class="node" x="580" y="1210.0" width="72" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="1226.0">2.1 设计理念</text>
+</g>
+<g>
+  <rect class="node" x="580" y="1330.0" width="114" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="1346.0">2.2 Prompt模板体系</text>
+</g>
+<g>
+  <rect class="node" x="580" y="1450.0" width="79" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="1466.0">2.3 生成器实现</text>
+</g>
+<g>
+  <rect class="node" x="580" y="1570.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="1586.0">3.1 评估体系设计原则</text>
+</g>
+<g>
+  <rect class="node" x="580" y="1690.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="1706.0">3.2 核心评估指标</text>
+</g>
+<g>
+  <rect class="node" x="580" y="1810.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="1826.0">3.3 综合得分算法</text>
+</g>
+<g>
+  <rect class="node" x="580" y="1930.0" width="79" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="1946.0">3.4 评估器实现</text>
+</g>
+<g>
+  <rect class="node" x="580" y="2050.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="2066.0">4.1 技术架构改进</text>
+</g>
+<g>
+  <rect class="node" x="580" y="2170.0" width="79" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="2186.0">4.2 核心改进点</text>
+</g>
+<g>
+  <rect class="node" x="580" y="2290.0" width="93" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="2306.0">4.3.1 批处理优化</text>
+</g>
+<g>
+  <rect class="node" x="580" y="2410.0" width="107" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="2426.0">4.3.2 GPU加速支持</text>
+</g>
+<g>
+  <rect class="node" x="580" y="2530.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="2546.0">4.3.3 内存管理优化</text>
+</g>
+<g>
+  <rect class="node" x="580" y="2650.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="2666.0">4.4.1 基准测试框架</text>
+</g>
+<g>
+  <rect class="node" x="580" y="2770.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="2786.0">4.4.2 消融实验设计</text>
+</g>
+<g>
+  <rect class="node" x="580" y="2890.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="2906.0">4.4.3 统计分析方法</text>
+</g>
+<g>
+  <rect class="node" x="580" y="3010.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="3026.0">5.1 预期性能提升</text>
+</g>
+<g>
+  <rect class="node" x="580" y="3130.0" width="93" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="3146.0">5.2 方法有效性验证</text>
+</g>
+<g>
+  <rect class="node" x="580" y="3250.0" width="79" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="3266.0">6.1 方法论贡献</text>
+</g>
+<g>
+  <rect class="node" x="580" y="3370.0" width="79" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="3386.0">6.2 技术创新点</text>
+</g>
+<g>
+  <rect class="node" x="580" y="3490.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="588" y="3506.0">6.3 未来研究方向</text>
+</g>
+<g>
+  <rect class="node" x="860" y="130.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="146.0">1.1.1 数据来源</text>
+</g>
+<g>
+  <rect class="node" x="860" y="250.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="266.0">1.1.2 构建原则</text>
+</g>
+<g>
+  <rect class="node" x="860" y="370.0" width="233" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="386.0">1.2.1 靶点数据 (`gbm_targets.json`)</text>
+</g>
+<g>
+  <rect class="node" x="860" y="490.0" width="198" height="44" rx="6" ry="6" />
+  <text class="label" x="868" y="506.0">1.2.2 临床数据</text>
+  <text class="label" x="868" y="520.0">(`gbm_clinical_data.json`)</text>
+</g>
+<g>
+  <rect class="node" x="860" y="610.0" width="247" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="626.0">1.2.3 分子数据 (`gbm_molecules.json`)</text>
+</g>
+<g>
+  <rect class="node" x="860" y="730.0" width="177" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="746.0">1.3.1 GBMKnowledgeBase类</text>
+</g>
+<g>
+  <rect class="node" x="860" y="850.0" width="107" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="866.0">1.3.2 数据完整性保证</text>
+</g>
+<g>
+  <rect class="node" x="860" y="970.0" width="142" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="986.0">2.2.1 基础GBM Prompt</text>
+</g>
+<g>
+  <rect class="node" x="860" y="1090.0" width="128" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="1106.0">2.2.2 靶点特定Prompt</text>
+</g>
+<g>
+  <rect class="node" x="860" y="1210.0" width="198" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="1226.0">2.2.3 Chain-of-Thought推理模板</text>
+</g>
+<g>
+  <rect class="node" x="860" y="1330.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="1346.0">2.2.4 约束条件模板</text>
+</g>
+<g>
+  <rect class="node" x="860" y="1450.0" width="191" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="1466.0">2.3.1 GBMPromptGenerator类</text>
+</g>
+<g>
+  <rect class="node" x="860" y="1570.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="1586.0">2.3.2 智能靶点选择</text>
+</g>
+<g>
+  <rect class="node" x="860" y="1690.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="1706.0">2.3.3 动态约束集成</text>
+</g>
+<g>
+  <rect class="node" x="860" y="1810.0" width="107" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="1826.0">3.1.1 多维度评估理念</text>
+</g>
+<g>
+  <rect class="node" x="860" y="1930.0" width="114" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="1946.0">3.1.2 评估指标选取标准</text>
+</g>
+<g>
+  <rect class="node" x="860" y="2050.0" width="240" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="2066.0">3.2.1 血脑屏障穿透性 (BBB Permeability)</text>
+</g>
+<g>
+  <rect class="node" x="860" y="2170.0" width="121" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="2186.0">3.2.2 GBM细胞活性预测</text>
+</g>
+<g>
+  <rect class="node" x="860" y="2290.0" width="114" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="2306.0">3.2.3 正常细胞毒性预测</text>
+</g>
+<g>
+  <rect class="node" x="860" y="2410.0" width="93" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="2426.0">3.2.4 选择性指数</text>
+</g>
+<g>
+  <rect class="node" x="860" y="2530.0" width="184" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="2546.0">3.2.5 合成可行性评分 (SA Score)</text>
+</g>
+<g>
+  <rect class="node" x="860" y="2650.0" width="93" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="2666.0">3.2.6 临床相似度</text>
+</g>
+<g>
+  <rect class="node" x="860" y="2770.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="2786.0">3.3.1 权重分配策略</text>
+</g>
+<g>
+  <rect class="node" x="860" y="2890.0" width="93" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="2906.0">3.3.2 得分归一化</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3010.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3026.0">3.3.3 综合得分计算</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3130.0" width="149" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3146.0">3.4.1 GBMEvaluator类</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3250.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3266.0">3.4.2 评估结果格式</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3370.0" width="107" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3386.0">4.1.1 多模态集成框架</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3490.0" width="114" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3506.0">4.1.2 知识增强推理流程</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3610.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3626.0">4.2.1 领域知识注入</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3730.0" width="100" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3746.0">5.1.1 定量指标改进</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3850.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3866.0">5.1.2 定性改进</text>
+</g>
+<g>
+  <rect class="node" x="860" y="3970.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="3986.0">5.2.1 内部验证</text>
+</g>
+<g>
+  <rect class="node" x="860" y="4090.0" width="86" height="30" rx="6" ry="6" />
+  <text class="label" x="868" y="4106.0">5.2.2 外部验证</text>
+</g>
+</svg>

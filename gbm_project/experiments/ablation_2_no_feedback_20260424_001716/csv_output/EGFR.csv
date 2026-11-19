@@ -1,0 +1,17 @@
+EGFR_00000,Clc1ccnc(-c2ccc(N)cc2)n1,51.80,205.65,EGFR
+EGFR_00001,Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3,54.88,341.77,EGFR
+EGFR_00000,Clc1ccnc(-c2ccc(N)cc2)n1,51.80,205.65,EGFR
+EGFR_00002,COc1cc(Cl)cnc1C(=O)OCC,48.42,215.64,EGFR
+EGFR_00003,COc1ccc(Br)cc2[nH]ccc2[nH]c1,40.81,267.13,EGFR
+EGFR_00004,OCCCN1CCC(Oc2ccnc3cc(Br)ccc3o2)c1,54.29,367.24,EGFR
+EGFR_00005,Cc1ccnc(Nc2ccnc3cc(Br)ccc3o2)c1,46.51,330.19,EGFR
+EGFR_00006,C[N+]c1ccnc(Nc2ccnc3cc(Br)ccc3o2)c1,60.61,344.19,EGFR
+EGFR_00007,CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3,76.02,320.35,EGFR
+EGFR_00008,COC(C)(C#Cc1ccccc1)NC(=O)Nc1cc(Br)ccc(O)c1,70.59,402.27,EGFR
+EGFR_00009,NC#Cc1cc(Br)cc(Nc2ccnc2)n1Cl,55.87,311.57,EGFR
+EGFR_00010,Cc1cc(Br)cn1C(=O)Nc1ccc(Br)cc1C(=O)OCCl,60.33,450.51,EGFR
+EGFR_00011,Cc1cc(N)nc(Nc2ccc(Cl)cc2)n1C(=O)Nc3ccccc3,84.97,354.82,EGFR
+EGFR_00012,Cc1ccnc(-c2cccnc2)cc1C(=O)Nc3ccccc3C(=O)Cl.[Cs+].[OH-],101.95,514.72,EGFR
+EGFR_00013,Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3Cc1ccnc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3,93.84,683.55,EGFR
+EGFR_00014,Cc1ccnc(-c2cccnc2)cc1C(=O)Nc3ccccc3C(=O)OCCl.[Na+],81.18,417.83,EGFR
+EGFR_00015,Cc1cc(Cl)nc(N)n1-c1cccnc1Cl,56.73,256.12,EGFR

@@ -1,0 +1,29 @@
+{
+  "experiment_config": {
+    "targets": [
+      "VEGF_VEGFR"
+    ],
+    "num_molecules_per_target": 200,
+    "tot_k": 4,
+    "tot_b": 3,
+    "gpu_id": 2,
+    "prompts_config_path": "gbm_project/configs/english_gbm_prompts.yaml",
+    "enable_guardrail_fallback": false,
+    "enable_default_strategy_fallback": false,
+    "max_attempts": 300,
+    "max_no_new_streak": 0,
+    "timestamp": "2026-04-22T16:24:44.448471"
+  },
+  "summary_stats": {
+    "VEGF_VEGFR": {
+      "total_generated": 200,
+      "unique_smiles": 198,
+      "avg_path_length": 3.0
+    }
+  },
+  "total_targets": 1,
+  "total_molecules": 200,
+  "targets_breakdown": {
+    "VEGF_VEGFR": 200
+  }
+}

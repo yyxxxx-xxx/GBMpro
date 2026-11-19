@@ -1,0 +1,30 @@
+# REINVENT 4 Transfer Learning —— VEGFR
+#
+# 目的: 把 PubChem 通用先验平移到「VEGFR 抑制剂化学型」，
+#       修复之前「我们做 SFT 而 REINVENT 不做」的不对称性。
+#
+# 这是纯最大似然微调 (NLL)，不含任何奖励项，不看对接分数。
+
+run_type = "transfer_learning"
+device = "cpu"
+tb_logdir = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/tb_TL_VEGFR"
+
+[parameters]
+input_model_file = "/root/reinvent_pubchem.prior"
+output_model_file = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/VEGFR_tl.chkpt"
+smiles_file = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/tl_smiles/VEGFR_tl.smi"
+validation_smiles_file = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/tl_smiles/VEGFR_tl.smi"
+num_epochs = 25
+batch_size = 32
+standardize_smiles = true
+randomize_smiles = true
+sample_batch_size = 100
+save_every_n_epochs = 1
+max_sequence_length = 128
+clip_gradient_norm = 1.0
+
+[scheduler]
+lr = 0.0001
+min = 0.00001
+gamma = 0.95
+step = 10

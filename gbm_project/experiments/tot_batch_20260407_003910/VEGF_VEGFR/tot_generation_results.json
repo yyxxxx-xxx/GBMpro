@@ -1,0 +1,1917 @@
+{
+  "config": {
+    "target": "VEGF_VEGFR",
+    "tot_depth": 3,
+    "tot_k": 3,
+    "tot_b": 2,
+    "constraints": {
+      "mw_range": "300-500",
+      "bbb_requirement": "high",
+      "logp_range": "2.0-4.0"
+    }
+  },
+  "num_generated": 50,
+  "molecules": [
+    {
+      "smiles": "ClCc1cc(Cl)cc(Br)cc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "ClCc1cc(Cl)cc(Br)cc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "ClCc1cc(Cl)cc(Br)cc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "On1cc(Cl)ccc(Cl)cc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "On1cc(Cl)ccc(Cl)cc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "On1cc(Cl)ccc(Cl)cc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[OH-]",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[OH-]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[OH-]"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[Br+]",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[Br+]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[Br+]"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(Cl)ccc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Cl)ccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Cl)ccc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Nc1cc(Cl)ccc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Nc1cc(Cl)ccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Nc1cc(Cl)ccc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1cc(Cl)ccc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(Cl)ccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1cc(Cl)ccc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "N#Cc1ccccc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "N#Cc1ccccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "N#Cc1ccccc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fn1ccnc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fn1ccnc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fn1ccnc1Br"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Oc1ccccc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Oc1ccccc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Oc1ccccc1Br"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(C)C(C)C",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(C)C(C)C",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(C)C(C)C"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(C)C(Cl)C(Cl)C(Cl)Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(C)C(Cl)C(Cl)C(Cl)Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(C)C(Cl)C(Cl)C(Cl)Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C(Cl)"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "ClCc1ccccc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "ClCc1ccccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "ClCc1ccccc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[nH]c1cc(Cl)ccc",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[nH]c1cc(Cl)ccc",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[nH]c1cc(Cl)ccc"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccc(Br)cc(Br)c1F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc(Br)cc(Br)c1F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc(Br)cc(Br)c1F"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(C)(C)C",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(C)(C)C",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(C)(C)C"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "c1ccc(Br)cc(Br)c1F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "c1ccc(Br)cc(Br)c1F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "c1ccc(Br)cc(Br)c1F"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "N#Cc1cc(Br)ccc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "N#Cc1cc(Br)ccc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "N#Cc1cc(Br)ccc1Br"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Nc1cc(Br)ccc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Nc1cc(Br)ccc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Nc1cc(Br)ccc1Br"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1cc(Br)ccc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(Br)ccc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1cc(Br)ccc1Br"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CC(C)(C)CC",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(C)(C)CC",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CC(C)(C)CC"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CCN(C)CBr",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCN(C)CBr",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CCN(C)CBr"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccc(Cl)cc1F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc(Cl)cc1F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc(Cl)cc1F"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "COc1cc([PH+](c2cccc(Cl)c2)c2ccccc2)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc([PH+](c2cccc(Cl)c2)c2ccccc2)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "COc1cc([PH+](c2cccc(Cl)c2)c2ccccc2)cc1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[Cs+]",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[Cs+]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[Cs+]"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(-c2cnccn2)nc(Nc2ccc(Br)cc2)no1-c1ccc(F)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2cnccn2)nc(Nc2ccc(Br)cc2)no1-c1ccc(F)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2cnccn2)nc(Nc2ccc(Br)cc2)no1-c1ccc(F)cc1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccc(Br)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc(Br)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc(Br)cc1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc2n(C)nc(-c3cccc(F)(F)c3)oc1-c2ccc(Cl)cc2Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cc2n(C)nc(-c3cccc(F)(F)c3)oc1-c2ccc(Cl)cc2Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Br)cc2n(C)nc(-c3cccc(F)(F)c3)oc1-c2ccc(Cl)cc2Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "ClCc1cc(Cl)ccn1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "ClCc1cc(Cl)ccn1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "ClCc1cc(Cl)ccn1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Clc1ccc(Br)cc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Clc1ccc(Br)cc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Clc1ccc(Br)cc1Br"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccc(F)cc1F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc(F)cc1F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc(F)cc1F"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CC[NH+](CC)CC",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC[NH+](CC)CC",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CC[NH+](CC)CC"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "NCc1cc(Br)cn[nH]1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NCc1cc(Br)cn[nH]1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "NCc1cc(Br)cn[nH]1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1cc(Br)cn[nH]1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(Br)cn[nH]1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1cc(Br)cn[nH]1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CSc1ccc([PH+](c2cc(Cl)nc2-c3ccccc3)n2ccccc21)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CSc1ccc([PH+](c2cc(Cl)nc2-c3ccccc3)n2ccccc21)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CSc1ccc([PH+](c2cc(Cl)nc2-c3ccccc3)n2ccccc21)cc1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cl1ccc([PH+](c2cc(Cl)nc2-c3ccccc3)n2ccccc21)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cl1ccc([PH+](c2cc(Cl)nc2-c3ccccc3)n2ccccc21)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cl1ccc([PH+](c2cc(Cl)nc2-c3ccccc3)n2ccccc21)cc1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Ic1cc",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Ic1cc",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Ic1cc"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "SCC[NH+]c1cc(Cl)nc(Cl)n1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "SCC[NH+]c1cc(Cl)nc(Cl)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "SCC[NH+]c1cc(Cl)nc(Cl)n1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "SCC[NH+]c1cc(Cl)nc(Cl)n",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "SCC[NH+]c1cc(Cl)nc(Cl)n",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "SCC[NH+]c1cc(Cl)nc(Cl)n"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(F)(F)F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(F)(F)F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(F)(F)F"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Ic1ccc(Cl)cc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Ic1ccc(Cl)cc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Ic1ccc(Cl)cc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccc(Cl)cc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc(Cl)cc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc(Cl)cc1Cl"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(Cl)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Cl)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Cl)cc1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccc([PH+])cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc([PH+])cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc([PH+])cc1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "ClCc1cc(Cl)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "ClCc1cc(Cl)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "ClCc1cc(Cl)cc1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Clc1cc(Br)cc(Cl)c2ccc(Br)cc21",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Clc1cc(Br)cc(Cl)c2ccc(Br)cc21",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Clc1cc(Br)cc(Cl)c2ccc(Br)cc21"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(Br)ccn1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)ccn1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Br)ccn1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Nc1cc(Cl)ccn1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Nc1cc(Cl)ccn1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Nc1cc(Cl)ccn1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Oc1cc(Br)ccn1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Oc1cc(Br)ccn1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Oc1cc(Br)ccn1"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "timestamp": "2026-04-07T02:48:33.115449"
+}

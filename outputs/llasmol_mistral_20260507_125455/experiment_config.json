@@ -1,0 +1,14 @@
+{
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "adapter": "osunlp/LlaSMol-Mistral-7B",
+  "targets": [
+    "EGFR"
+  ],
+  "num_per_target": 5,
+  "max_attempts": 2,
+  "use_4bit": true,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "max_new_tokens": 256,
+  "timestamp": "2026-05-07T12:54:55.939882"
+}

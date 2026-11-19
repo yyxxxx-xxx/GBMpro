@@ -1,0 +1,107 @@
+{
+  "config": {
+    "target": "PI3K_AKT_mTOR",
+    "tot_depth": 3,
+    "tot_k": 3,
+    "tot_b": 2,
+    "constraints": {
+      "mw_range": "300-500",
+      "bbb_requirement": "high",
+      "logp_range": "2.0-4.0"
+    }
+  },
+  "num_generated": 5,
+  "molecules": [
+    {
+      "smiles": "pyridine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "thiazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "impossible",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "indole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "benzimidazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "benzimidazole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "benzimidazole",
+            "rationale": "Suitable scaffold for benzimidazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "purine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "purine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "purine",
+            "rationale": "Suitable scaffold for purine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "timestamp": "2026-03-01T16:53:47.417930"
+}

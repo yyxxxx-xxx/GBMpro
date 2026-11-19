@@ -1,0 +1,56 @@
+{
+  "A_base_only": {
+    "raw_ok": 0,
+    "repaired_ok": 1,
+    "samples": [
+      [
+        "In order to generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells, we need to perform an in silico design, where we ",
+        null
+      ],
+      [
+        "GBM Drug Candidate: \n\n<canonical_SMILES> = \"CC(=O)Nc1ccc(cc1)[C@H]2[C@@H](CCC(=O)N2C(F)(F)F)[",
+        null
+      ],
+      [
+        "SMILES: C1=CC=C(C=C1)C(=O)Nc2cc(=CC(=O)c3cc(O)nc(-Cc(-c4ccc(F)cc4)c(OC)(",
+        "C1=CC=C(C=C1)C(=O)N"
+      ]
+    ]
+  },
+  "B_base_llamole": {
+    "raw_ok": 0,
+    "repaired_ok": 2,
+    "samples": [
+      [
+        "In accordance with the requirements: The molecule has a scaffold built around an aromatic ring, accompanied by aliphatic chains an",
+        null
+      ],
+      [
+        "This is a complex task that requires the synthesis and testing of various drug molecules, which cannot be accomplished through an ",
+        null
+      ],
+      [
+        "NC(CCOC(=O)c1cccnc1)C(=O)=ONC(=O)/Nc1ccco1Cc1ccccc1NC(CCC#N)C1CCCC1",
+        "NC(CCOC(=O)c1cccnc1)C(=O)"
+      ]
+    ]
+  },
+  "C_full": {
+    "raw_ok": 0,
+    "repaired_ok": 8,
+    "samples": [
+      [
+        "SMILES: O=C1c2ccccc21C(=O)NCc1ccccc1O[Br];c1ccccc11CC(=O)OC1N2C3CCCO32",
+        "O=C1c2ccccc21"
+      ],
+      [
+        "SMILES: O=CCNc1cc2ccccc2c1Oc1ccc(C)cc1Cl-1CCNCCNCc2ccccc2O2>>CC(=O)OC(N)Cc",
+        "O=CCN"
+      ],
+      [
+        "SMILES: CCN(CC)CCN1c1ccc2ccccc2s1.1.2.3.4.5.6.7.8.9.0.1.2.3.4",
+        "CCN(CC)CCN"
+      ]
+    ]
+  }
+}

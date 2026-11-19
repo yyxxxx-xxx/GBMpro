@@ -1,0 +1,2868 @@
+{
+  "config": {
+    "target": "VEGF_VEGFR",
+    "tot_depth": 3,
+    "tot_k": 4,
+    "tot_b": 3,
+    "constraints": {
+      "mw_range": "300-500",
+      "bbb_requirement": "high",
+      "logp_range": "2.0-4.0",
+      "tpsa_range": "40-120"
+    }
+  },
+  "num_generated": 50,
+  "molecules": [
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.38700295030314674,
+            "reward": 0.5827288534735499,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.38700295030314674,
+        "reward": 0.5827288534735499,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.39 (低CNS渗透，不适合GBM) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.5827"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.38700295030314674,
+            "reward": 0.5827288534735499,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.38700295030314674,
+        "reward": 0.5827288534735499,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.39 (低CNS渗透，不适合GBM) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.5827"
+    },
+    {
+      "smiles": "OC(CCl)N[C@@H]1CCN1CCCC(=O)NCc1ccc(Br)cn1",
+      "tpsa": 77.49,
+      "mw": 405.72,
+      "logp": 1.42,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(CCl)N[C@@H]1CCN1CCCC(=O)NCc1ccc(Br)cn1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "OC(CCl)N[C@@H]1CCN1CCCC(=O)NCc1ccc(Br)cn1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.0196016855156665,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.0196016855156665,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=405.7, LogP=1.42, TPSA=77.5Å² | Reward=0.0196"
+    },
+    {
+      "smiles": "Cc1cc(N)cc(N)CCN1c1ccc(Cl)cc1",
+      "tpsa": 55.28,
+      "mw": 262.76,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methyl",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)cc(N)CCN1c1ccc(Cl)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(N)cc(N)CCN1c1ccc(Cl)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.2992157677789866,
+            "reward": 0.549848181338536,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.2992157677789866,
+        "reward": 0.549848181338536,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.30 (低CNS渗透，不适合GBM) | 理化性质: MW=262.8, LogP=2.37, TPSA=55.3Å² | Reward=0.5498"
+    },
+    {
+      "smiles": "CO/NCS.CO/NCS.COCO.NCS",
+      "tpsa": 98.0,
+      "mw": 311.5,
+      "logp": -0.54,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "chloro",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CO/NCS.CO/NCS.COCO.NCS",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CO/NCS.CO/NCS.COCO.NCS",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.019227324804560686,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.019227324804560686,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=311.5, LogP=-0.54, TPSA=98.0Å² | Reward=0.0192"
+    },
+    {
+      "smiles": "N#Cc1cc(Br)ccn1C(C)(C)CO",
+      "tpsa": 48.95,
+      "mw": 256.12,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "N#Cc1cc(Br)ccn1C(C)(C)CO",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "N#Cc1cc(Br)ccn1C(C)(C)CO",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.28512197056405325,
+            "reward": 0.6023735865593238,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.28512197056405325,
+        "reward": 0.6023735865593238,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.29 (低CNS渗透，不适合GBM) | 理化性质: MW=256.1, LogP=2.08, TPSA=49.0Å² | Reward=0.6024"
+    },
+    {
+      "smiles": "C(Nc1ccnc(Cl)n1)Cc1cc(C)nc(-c2cccnc2)s1",
+      "tpsa": 63.59,
+      "mw": 344.85,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methoxy",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "C(Nc1ccnc(Cl)n1)Cc1cc(C)nc(-c2cccnc2)s1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "C(Nc1ccnc(Cl)n1)Cc1cc(C)nc(-c2cccnc2)s1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.018746120943005814,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.018746120943005814,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=344.9, LogP=3.21, TPSA=63.6Å² | Reward=0.0187"
+    },
+    {
+      "smiles": "CC(C)(C)NC1CCCC1.O=C(O)O.[2H]Cl",
+      "tpsa": 69.56,
+      "mw": 240.75,
+      "logp": 2.96,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(C)(C)NC1CCCC1.O=C(O)O.[2H]Cl",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(C)(C)NC1CCCC1.O=C(O)O.[2H]Cl",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.4214864366498665,
+            "reward": 0.6493402277196085,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.4214864366498665,
+        "reward": 0.6493402277196085,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.42 (中等CNS渗透) | 理化性质: MW=240.7, LogP=2.96, TPSA=69.6Å² | Reward=0.6493"
+    },
+    {
+      "smiles": "COc1ccc(N)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCCl",
+      "tpsa": 116.43,
+      "mw": 426.86,
+      "logp": 3.65,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methoxy",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1ccc(N)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCCl",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1ccc(N)cc1C(=O)Nc2cc(C)nc(-c3ccccn3)c2C(=O)OCCl",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.0,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.0,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=426.9, LogP=3.65, TPSA=116.4Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1C(=O)Nc1cc(S(N)(=O)=O)cn1",
+      "tpsa": 102.15,
+      "mw": 344.19,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cc1C(=O)Nc1cc(S(N)(=O)=O)cn1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)cc1C(=O)Nc1cc(S(N)(=O)=O)cn1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.018960141456027254,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.018960141456027254,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=344.2, LogP=1.38, TPSA=102.1Å² | Reward=0.0190"
+    },
+    {
+      "smiles": "COc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 56.15,
+      "mw": 293.33,
+      "logp": 3.13,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.15494272563626668,
+            "reward": 0.5134014822105359,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.15494272563626668,
+        "reward": 0.5134014822105359,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.15 (低CNS渗透，不适合GBM) | 理化性质: MW=293.3, LogP=3.13, TPSA=56.2Å² | Reward=0.5134"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1C(=O)NC[C@H](NCCCO)C(=O)O",
+      "tpsa": 103.59,
+      "mw": 348.2,
+      "logp": 0.54,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methoxy",
+            "estimated_mw": 300,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cn1C(=O)NC[C@H](NCCCO)C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)cn1C(=O)NC[C@H](NCCCO)C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.01884780148858364,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.01884780148858364,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=348.2, LogP=0.54, TPSA=103.6Å² | Reward=0.0188"
+    },
+    {
+      "smiles": "CCOPCCC(CC(C)(C)OS(=O)(=O)C(F)(F)F)CC",
+      "tpsa": 52.6,
+      "mw": 352.36,
+      "logp": 4.07,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCOPCCC(CC(C)(C)OS(=O)(=O)C(F)(F)F)CC",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCOPCCC(CC(C)(C)OS(=O)(=O)C(F)(F)F)CC",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.17311641181584028,
+            "reward": 0.5494916098369904,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.17311641181584028,
+        "reward": 0.5494916098369904,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.17 (低CNS渗透，不适合GBM) | 理化性质: MW=352.4, LogP=4.07, TPSA=52.6Å² | Reward=0.5495"
+    },
+    {
+      "smiles": "COc1cc(Br)cc1C(=O)Nc2cc(-n3ccnc3)cc2C(=O)Nc3ccccc3",
+      "tpsa": 85.25,
+      "mw": 465.31,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc(Br)cc1C(=O)Nc2cc(-n3ccnc3)cc2C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1cc(Br)cc1C(=O)Nc2cc(-n3ccnc3)cc2C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.018746120943005814,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.018746120943005814,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=465.3, LogP=4.07, TPSA=85.2Å² | Reward=0.0187"
+    },
+    {
+      "smiles": "Cc1ccnc(N)n1-c1ccc(F)cc1Cl",
+      "tpsa": 43.84,
+      "mw": 238.67,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccnc(N)n1-c1ccc(F)cc1Cl",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccnc(N)n1-c1ccc(F)cc1Cl",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.38521960148960005,
+            "reward": 0.5755717165597812,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.38521960148960005,
+        "reward": 0.5755717165597812,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.39 (低CNS渗透，不适合GBM) | 理化性质: MW=238.7, LogP=2.40, TPSA=43.8Å² | Reward=0.5756"
+    },
+    {
+      "smiles": "Cc1cc(N=C(c2ccc(Cl)cc2)C(=O)O)cn1C(=O)OCCOCCO.[Cs+].[Li+]",
+      "tpsa": 110.35,
+      "mw": 534.66,
+      "logp": -3.34,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "chloro",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N=C(c2ccc(Cl)cc2)C(=O)O)cn1C(=O)OCCOCCO.[Cs+].[Li+]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(N=C(c2ccc(Cl)cc2)C(=O)O)cn1C(=O)OCCOCCO.[Cs+].[Li+]",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.016116365398465803,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.016116365398465803,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=534.7, LogP=-3.34, TPSA=110.4Å² | Reward=0.0161"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1NC(=O)Nc1ccc(C(=O)OCC)cc1",
+      "tpsa": 67.43,
+      "mw": 364.22,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cc1NC(=O)Nc1ccc(C(=O)OCC)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)cc1NC(=O)Nc1ccc(C(=O)OCC)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.23049242958762695,
+            "reward": 0.5564712708413575,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.23049242958762695,
+        "reward": 0.5564712708413575,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.23 (低CNS渗透，不适合GBM) | 理化性质: MW=364.2, LogP=3.86, TPSA=67.4Å² | Reward=0.5565"
+    },
+    {
+      "smiles": "Cc1cc(Br)nc(-c2ccc(Cl)cc2)n1Cc1cc(Cl)nc1C(=O)Nc3ccc(F)cc3",
+      "tpsa": 59.81,
+      "mw": 534.22,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)nc(-c2ccc(Cl)cc2)n1Cc1cc(Cl)nc1C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)nc(-c2ccc(Cl)cc2)n1Cc1cc(Cl)nc1C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.22611803461216037,
+            "reward": 0.4681085662605955,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.22611803461216037,
+        "reward": 0.4681085662605955,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.23 (低CNS渗透，不适合GBM) | 理化性质: MW=534.2, LogP=6.52, TPSA=59.8Å² | Reward=0.4681"
+    },
+    {
+      "smiles": "Cc1cc(Cl)cn1NC(=O)OC(C)(C)CCc1cc(Cl)cn1NC(=O)OC(C)(C)C",
+      "tpsa": 86.52,
+      "mw": 459.37,
+      "logp": 5.47,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Cl)cn1NC(=O)OC(C)(C)CCc1cc(Cl)cn1NC(=O)OC(C)(C)C",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Cl)cn1NC(=O)OC(C)(C)CCc1cc(Cl)cn1NC(=O)OC(C)(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_prob": 0.0,
+            "reward": 0.018997070749981346,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_prob": 0.0,
+        "reward": 0.018997070749981346,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=459.4, LogP=5.47, TPSA=86.5Å² | Reward=0.0190"
+    },
+    {
+      "smiles": "Cc1cc(Br)nc(N)n1C(=O)Nc2ccc(F)cc2",
+      "tpsa": 72.94,
+      "mw": 326.15,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)nc(N)n1C(=O)Nc2ccc(F)cc2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)nc(N)n1C(=O)Nc2ccc(F)cc2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.018746120943005814,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.018746120943005814,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=326.1, LogP=2.60, TPSA=72.9Å² | Reward=0.0187"
+    },
+    {
+      "smiles": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+      "tpsa": 72.94,
+      "mw": 357.8,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.06420596922666684,
+            "reward": 0.4068541483983933,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.06420596922666684,
+        "reward": 0.4068541483983933,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.06 (低CNS渗透，不适合GBM) | 理化性质: MW=357.8, LogP=3.97, TPSA=72.9Å² | Reward=0.4069"
+    },
+    {
+      "smiles": "S(=O)(=O)Nc1cc(Br)c(S(=O)(=O)Cl)n[nH]n1",
+      "tpsa": 117.06,
+      "mw": 351.59,
+      "logp": -0.82,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methyl",
+            "estimated_mw": 248,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "S(=O)(=O)Nc1cc(Br)c(S(=O)(=O)Cl)n[nH]n1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "S(=O)(=O)Nc1cc(Br)c(S(=O)(=O)Cl)n[nH]n1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.0,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.0,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=351.6, LogP=-0.82, TPSA=117.1Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "NC#CCN1CCC(c2ncccc2Cl)CC1",
+      "tpsa": 42.15,
+      "mw": 249.74,
+      "logp": 1.83,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NC#CCN1CCC(c2ncccc2Cl)CC1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "NC#CCN1CCC(c2ncccc2Cl)CC1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.3335167684772267,
+            "reward": 0.6207771595558526,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.3335167684772267,
+        "reward": 0.6207771595558526,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.33 (低CNS渗透，不适合GBM) | 理化性质: MW=249.7, LogP=1.83, TPSA=42.1Å² | Reward=0.6208"
+    },
+    {
+      "smiles": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1",
+      "tpsa": 51.8,
+      "mw": 219.68,
+      "logp": 2.69,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(N)nc(-c2ccc(Cl)cc2)n1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.3544499193333333,
+            "reward": 0.5637254119825307,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.3544499193333333,
+        "reward": 0.5637254119825307,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.35 (低CNS渗透，不适合GBM) | 理化性质: MW=219.7, LogP=2.69, TPSA=51.8Å² | Reward=0.5637"
+    },
+    {
+      "smiles": "CCCCCNC(=O)OC(C)(C)C(C)(C)C.Clc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 85.25,
+      "mw": 527.11,
+      "logp": 7.51,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCCCCNC(=O)OC(C)(C)C(C)(C)C.Clc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCCCCNC(=O)OC(C)(C)C(C)(C)C.Clc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.00550321212917404,
+            "reward": 0.223107560521754,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.00550321212917404,
+        "reward": 0.223107560521754,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.01 (低CNS渗透，不适合GBM) | 理化性质: MW=527.1, LogP=7.51, TPSA=85.2Å² | Reward=0.2231"
+    },
+    {
+      "smiles": "CC(=O)NC(=O)c1ccnc(Nc2ccnc2)cn1Cc1cc(Cl)cc1Cc1cc(Cl)cc1",
+      "tpsa": 88.91,
+      "mw": 481.36,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)NC(=O)c1ccnc(Nc2ccnc2)cn1Cc1cc(Cl)cc1Cc1cc(Cl)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)NC(=O)c1ccnc(Nc2ccnc2)cn1Cc1cc(Cl)cc1Cc1cc(Cl)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.0196016855156665,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.0196016855156665,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=481.4, LogP=4.15, TPSA=88.9Å² | Reward=0.0196"
+    },
+    {
+      "smiles": "CCOP(=O)CNS(=O)(Cl)C(=O)OCC",
+      "tpsa": 81.7,
+      "mw": 279.68,
+      "logp": 1.29,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCOP(=O)CNS(=O)(Cl)C(=O)OCC",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCOP(=O)CNS(=O)(Cl)C(=O)OCC",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.019533073322219315,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.019533073322219315,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=279.7, LogP=1.29, TPSA=81.7Å² | Reward=0.0195"
+    },
+    {
+      "smiles": "BrC(=O)OCCN1CCC(O)CC1",
+      "tpsa": 49.77,
+      "mw": 252.11,
+      "logp": 0.97,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methyl",
+            "estimated_mw": 220,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "BrC(=O)OCCN1CCC(O)CC1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "BrC(=O)OCCN1CCC(O)CC1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.04069330399743998,
+            "reward": 0.40777563847304565,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.04069330399743998,
+        "reward": 0.40777563847304565,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.04 (低CNS渗透，不适合GBM) | 理化性质: MW=252.1, LogP=0.97, TPSA=49.8Å² | Reward=0.4078"
+    },
+    {
+      "smiles": "CNc1cc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+      "tpsa": 46.06,
+      "mw": 330.77,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CNc1cc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CNc1cc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.5099298429382402,
+            "reward": 0.6157802464779407,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.5099298429382402,
+        "reward": 0.6157802464779407,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.51 (中等CNS渗透) | 理化性质: MW=330.8, LogP=4.22, TPSA=46.1Å² | Reward=0.6158"
+    },
+    {
+      "smiles": "CCCCCOC(=O)NCc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3Cl",
+      "tpsa": 85.25,
+      "mw": 440.93,
+      "logp": 5.19,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methoxy",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCCCCOC(=O)NCc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3Cl",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCCCCOC(=O)NCc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3Cl",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_prob": 0.0,
+            "reward": 0.01689009682097149,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_prob": 0.0,
+        "reward": 0.01689009682097149,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=440.9, LogP=5.19, TPSA=85.2Å² | Reward=0.0169"
+    },
+    {
+      "smiles": "COC(=O)NC(=O)c1ccc(CBr)cc1",
+      "tpsa": 55.4,
+      "mw": 272.1,
+      "logp": 2.08,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COC(=O)NC(=O)c1ccc(CBr)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COC(=O)NC(=O)c1ccc(CBr)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.2058889867904,
+            "reward": 0.5413999890213789,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.2058889867904,
+        "reward": 0.5413999890213789,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.21 (低CNS渗透，不适合GBM) | 理化性质: MW=272.1, LogP=2.08, TPSA=55.4Å² | Reward=0.5414"
+    },
+    {
+      "smiles": "OCc1cc(Br)ccc1C(N)=O",
+      "tpsa": 63.32,
+      "mw": 230.06,
+      "logp": 1.04,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(Br)ccc1C(N)=O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "OCc1cc(Br)ccc1C(N)=O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.24607221061194662,
+            "reward": 0.5252575079577305,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.24607221061194662,
+        "reward": 0.5252575079577305,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.25 (低CNS渗透，不适合GBM) | 理化性质: MW=230.1, LogP=1.04, TPSA=63.3Å² | Reward=0.5253"
+    },
+    {
+      "smiles": "CCCCCCCCSc1cc(Br)nc(Nc2ccc(C#N)cc2)n1",
+      "tpsa": 61.6,
+      "mw": 419.39,
+      "logp": 6.31,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCCCCCCCSc1cc(Br)nc(Nc2ccc(C#N)cc2)n1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCCCCCCCSc1cc(Br)nc(Nc2ccc(C#N)cc2)n1",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.170812395895147,
+            "reward": 0.48448021480902237,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.170812395895147,
+        "reward": 0.48448021480902237,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.17 (低CNS渗透，不适合GBM) | 理化性质: MW=419.4, LogP=6.31, TPSA=61.6Å² | Reward=0.4845"
+    },
+    {
+      "smiles": "CC(N)c1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 72.94,
+      "mw": 306.37,
+      "logp": 3.14,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methoxy",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(N)c1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(N)c1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.030881646286613423,
+            "reward": 0.3722643976534132,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.030881646286613423,
+        "reward": 0.3722643976534132,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.03 (低CNS渗透，不适合GBM) | 理化性质: MW=306.4, LogP=3.14, TPSA=72.9Å² | Reward=0.3723"
+    },
+    {
+      "smiles": "B(O)c1ccco1.CCOC(=O)[C@H](Cc1ccccc1)NC(=O)OC(C)(C)C.[Cs+].[Cs+]",
+      "tpsa": 98.0,
+      "mw": 655.07,
+      "logp": -4.06,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "B(O)c1ccco1.CCOC(=O)[C@H](Cc1ccccc1)NC(=O)OC(C)(C)C.[Cs+].[Cs+]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "B(O)c1ccco1.CCOC(=O)[C@H](Cc1ccccc1)NC(=O)OC(C)(C)C.[Cs+].[Cs+]",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.016615569901669586,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.016615569901669586,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=655.1, LogP=-4.06, TPSA=98.0Å² | Reward=0.0166"
+    },
+    {
+      "smiles": "COc1cc(C)nc(-c2ccnc2)cc1C(=O)OCCCC",
+      "tpsa": 61.31,
+      "mw": 300.36,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "chloro",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc(C)nc(-c2ccnc2)cc1C(=O)OCCCC",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1cc(C)nc(-c2ccnc2)cc1C(=O)OCCCC",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.0196016855156665,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.0196016855156665,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=300.4, LogP=2.66, TPSA=61.3Å² | Reward=0.0196"
+    },
+    {
+      "smiles": "COCC(=O)[C@H](Cc1ccc(-c2ccnc2)cc1)NC(=[SH]F)c1ccc(Cl)cc1.OC(F)(F)F.OC(F)(F)F.OC(F)(F)F",
+      "tpsa": 111.91,
+      "mw": 689.98,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COCC(=O)[C@H](Cc1ccc(-c2ccnc2)cc1)NC(=[SH]F)c1ccc(Cl)cc1.OC(F)(F)F.OC(F)(F)F.OC(F)(F)F",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COCC(=O)[C@H](Cc1ccc(-c2ccnc2)cc1)NC(=[SH]F)c1ccc(Cl)cc1.OC(F)(F)F.OC(F)(F)F.OC(F)(F)F",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_prob": 0.0,
+            "reward": 0.012527130832374118,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_prob": 0.0,
+        "reward": 0.012527130832374118,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=690.0, LogP=5.43, TPSA=111.9Å² | Reward=0.0125"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 76.02,
+      "mw": 320.35,
+      "logp": 3.08,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.018746120943005814,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.018746120943005814,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=320.4, LogP=3.08, TPSA=76.0Å² | Reward=0.0187"
+    },
+    {
+      "smiles": "COc1cc(N)ccc1NC(=O)C[C@H]1CC[C@H](C)C[C@H](C)C1",
+      "tpsa": 64.35,
+      "mw": 304.43,
+      "logp": 4.07,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc(N)ccc1NC(=O)C[C@H]1CC[C@H](C)C[C@H](C)C1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "COc1cc(N)ccc1NC(=O)C[C@H]1CC[C@H](C)C[C@H](C)C1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.33985232290581363,
+            "reward": 0.6014083632379518,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.33985232290581363,
+        "reward": 0.6014083632379518,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.34 (低CNS渗透，不适合GBM) | 理化性质: MW=304.4, LogP=4.07, TPSA=64.3Å² | Reward=0.6014"
+    },
+    {
+      "smiles": "Cc1cc(Cl)cc(N)n1-c1ccc(F)cc1C#N",
+      "tpsa": 54.74,
+      "mw": 262.69,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Cl)cc(N)n1-c1ccc(F)cc1C#N",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Cl)cc(N)n1-c1ccc(F)cc1C#N",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.30229650815626674,
+            "reward": 0.5835990393456167,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.30229650815626674,
+        "reward": 0.5835990393456167,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.30 (低CNS渗透，不适合GBM) | 理化性质: MW=262.7, LogP=2.88, TPSA=54.7Å² | Reward=0.5836"
+    },
+    {
+      "smiles": "CCCCNC1(c2cc(N)nc(N)n2)CCN1Cc1cc(Cl)cc1",
+      "tpsa": 93.09,
+      "mw": 347.87,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCCCNC1(c2cc(N)nc(N)n2)CCN1Cc1cc(Cl)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCCCNC1(c2cc(N)nc(N)n2)CCN1Cc1cc(Cl)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.019472805932150204,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.019472805932150204,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=347.9, LogP=1.59, TPSA=93.1Å² | Reward=0.0195"
+    },
+    {
+      "smiles": "O=C(O)Cc1cc(-c2ccnc2)cc1C(=O)OCCBr",
+      "tpsa": 76.49,
+      "mw": 338.16,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methoxy",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "O=C(O)Cc1cc(-c2ccnc2)cc1C(=O)OCCBr",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "O=C(O)Cc1cc(-c2ccnc2)cc1C(=O)OCCBr",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.0196016855156665,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.0196016855156665,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=338.2, LogP=2.07, TPSA=76.5Å² | Reward=0.0196"
+    },
+    {
+      "smiles": "N#Cc1ccnc2cc(-c3ccccn3)c2n1",
+      "tpsa": 62.46,
+      "mw": 219.23,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "methyl",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "N#Cc1ccnc2cc(-c3ccccn3)c2n1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "N#Cc1ccnc2cc(-c3ccccn3)c2n1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.01929665607693399,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.01929665607693399,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=219.2, LogP=1.61, TPSA=62.5Å² | Reward=0.0193"
+    },
+    {
+      "smiles": "N#Cc1ccc(Br)cc1Br.N#CCc1ccc(Br)cc1Br.O=C(O)O.[K+]",
+      "tpsa": 105.11,
+      "mw": 636.98,
+      "logp": 3.59,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 500,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "N#Cc1ccc(Br)cc1Br.N#CCc1ccc(Br)cc1Br.O=C(O)O.[K+]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "N#Cc1ccc(Br)cc1Br.N#CCc1ccc(Br)cc1Br.O=C(O)O.[K+]",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.015377024552674446,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.015377024552674446,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=637.0, LogP=3.59, TPSA=105.1Å² | Reward=0.0154"
+    },
+    {
+      "smiles": "Cc1cc(N=Cc2ccnc2)cc1C(=O)Nc1ccc(Cl)cc1Cc1cc(N=Cc2ccnc2)cc1C(=O)Nc1ccc(Cl)cc1",
+      "tpsa": 108.7,
+      "mw": 645.55,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(N=Cc2ccnc2)cc1C(=O)Nc1ccc(Cl)cc1Cc1cc(N=Cc2ccnc2)cc1C(=O)Nc1ccc(Cl)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(N=Cc2ccnc2)cc1C(=O)Nc1ccc(Cl)cc1Cc1cc(N=Cc2ccnc2)cc1C(=O)Nc1ccc(Cl)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_prob": 0.0,
+            "reward": 0.013194246439924574,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_prob": 0.0,
+        "reward": 0.013194246439924574,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=645.6, LogP=8.07, TPSA=108.7Å² | Reward=0.0132"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc1C(=O)Nc1ccnc(N)n1C(=O)OCc1ccccc1Br.[K+]",
+      "tpsa": 99.24,
+      "mw": 547.27,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cc1C(=O)Nc1ccnc(N)n1C(=O)OCc1ccccc1Br.[K+]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)cc1C(=O)Nc1ccnc(N)n1C(=O)OCc1ccccc1Br.[K+]",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.01706276775988098,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.01706276775988098,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=547.3, LogP=1.63, TPSA=99.2Å² | Reward=0.0171"
+    },
+    {
+      "smiles": "Cc1cc(Br)cn1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+      "tpsa": 59.81,
+      "mw": 371.24,
+      "logp": 4.4,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cn1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(Br)cn1C(=O)Nc2cc(C)nc(-c3ccccn3)c2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.1717691691093334,
+            "reward": 0.548633673996493,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.1717691691093334,
+        "reward": 0.548633673996493,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.17 (低CNS渗透，不适合GBM) | 理化性质: MW=371.2, LogP=4.40, TPSA=59.8Å² | Reward=0.5486"
+    },
+    {
+      "smiles": "CCOC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3.[K+].[OH-]",
+      "tpsa": 115.25,
+      "mw": 406.48,
+      "logp": 0.52,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Hardcoded fallback: EGFR-approved scaffold",
+            "base_mw": 130,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CCOC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3.[K+].[OH-]",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CCOC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3.[K+].[OH-]",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.0,
+            "reward": 0.0,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.0,
+        "reward": 0.0,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=406.5, LogP=0.52, TPSA=115.2Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "C1CN(Cc2ccccc2)CCN1Cc1cccs1.OC(F)(F)F.OC(F)(F)F",
+      "tpsa": 46.94,
+      "mw": 444.44,
+      "logp": 4.06,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Hardcoded fallback: core EGFR hinge binder",
+            "base_mw": 80,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Hardcoded EGFR covalent warhead with BBB-friendly groups"
+          }
+        },
+        {
+          "level": 2,
+          "content": "C1CN(Cc2ccccc2)CCN1Cc1cccs1.OC(F)(F)F.OC(F)(F)F",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "C1CN(Cc2ccccc2)CCN1Cc1cccs1.OC(F)(F)F.OC(F)(F)F",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.1156903233128539,
+            "reward": 0.48480916530308754,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.1156903233128539,
+        "reward": 0.48480916530308754,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.12 (低CNS渗透，不适合GBM) | 理化性质: MW=444.4, LogP=4.06, TPSA=46.9Å² | Reward=0.4848"
+    },
+    {
+      "smiles": "C=C(CBr)C(C)=O.COc1cc(Br)ccc1C(=O)OC",
+      "tpsa": 52.6,
+      "mw": 408.09,
+      "logp": 3.77,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Hardcoded fallback: CNS-friendly heterocycle",
+            "base_mw": 79,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90",
+            "rationale": "Extracted from output: warhead=acrylamide"
+          }
+        },
+        {
+          "level": 2,
+          "content": "C=C(CBr)C(C)=O.COc1cc(Br)ccc1C(=O)OC",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "C=C(CBr)C(C)=O.COc1cc(Br)ccc1C(=O)OC",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_prob": 0.08992542058389359,
+            "reward": 0.4352112997926344,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_prob": 0.08992542058389359,
+        "reward": 0.4352112997926344,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB穿透=0.09 (低CNS渗透，不适合GBM) | 理化性质: MW=408.1, LogP=3.77, TPSA=52.6Å² | Reward=0.4352"
+    }
+  ],
+  "timestamp": "2026-04-22T02:07:54.612885"
+}

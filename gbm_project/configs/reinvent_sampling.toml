@@ -1,0 +1,24 @@
+# REINVENT4 采样配置 —— 用于 GBM 靶点基线生成
+#
+# 用法:
+#   /root/venv_reinvent/bin/reinvent -l /tmp/reinvent_sampling.log \
+#       /root/Llamole-main/gbm_project/configs/reinvent_sampling.toml
+#
+# 说明:
+#   REINVENT 是化学领域最主流的生成模型基线（非 LLM 路线），
+#   用 PubChem 预训练的先验模型做无条件采样。
+#   为了让对比公平，我们在下游用**与我们的模型完全相同的**本地
+#   评测管线（Vina + admet-ai + RDKit）重算所有指标。
+
+run_type = "sampling"
+device = "cpu"
+json_out_config = "_reinvent_sampling.json"
+
+[parameters]
+model_file = "/root/reinvent_pubchem.prior"
+output_file = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/sampling.csv"
+num_smiles = 200
+unique_molecules = true
+randomize_smiles = true
+sample_strategy = "multinomial"
+temperature = 1.0

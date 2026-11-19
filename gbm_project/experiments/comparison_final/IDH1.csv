@@ -1,0 +1,17 @@
+entity_id,mol_id,library_name,target,smiles
+IDH1,GBM-PharmaMind (Ours)_IDH1_1,GBM-PharmaMind (Ours),IDH1,NC(=O)Nc1ccc2ccccc2c1C(N)(=O)
+IDH1,GBM-PharmaMind (Ours)_IDH1_2,GBM-PharmaMind (Ours),IDH1,CC(C)(C)OC(=O)N
+IDH1,GBM-PharmaMind (Ours)_IDH1_3,GBM-PharmaMind (Ours),IDH1,CCCCCc1ccccc1N
+IDH1,GBM-PharmaMind (Ours)_IDH1_4,GBM-PharmaMind (Ours),IDH1,CC(=O)Nc1ccc(N)cc1OC
+IDH1,GBM-PharmaMind (Ours)_IDH1_5,GBM-PharmaMind (Ours),IDH1,CCN(CC)CCOc1ccc(C)cc1OCc1ccccc1
+IDH1,GBM-PharmaMind (Ours)_IDH1_6,GBM-PharmaMind (Ours),IDH1,c1ccccc1OCCN1Cc1
+IDH1,GBM-PharmaMind (Ours)_IDH1_7,GBM-PharmaMind (Ours),IDH1,O=CCN(C)CCc1ccc(C(N)=O)cc1OCc1ccccc1
+IDH1,GBM-PharmaMind (Ours)_IDH1_8,GBM-PharmaMind (Ours),IDH1,c1ccc(O)cc1Oc1ccccc1N
+IDH1,GBM-PharmaMind (Ours)_IDH1_9,GBM-PharmaMind (Ours),IDH1,CCCCCCCCC(=O)N
+IDH1,GBM-PharmaMind (Ours)_IDH1_10,GBM-PharmaMind (Ours),IDH1,c1ccc(CN)cc1NCc1ccccc1O
+IDH1,GBM-PharmaMind (Ours)_IDH1_11,GBM-PharmaMind (Ours),IDH1,CCN(CC)CCN(N)CCc1ccccc1OC
+IDH1,GBM-PharmaMind (Ours)_IDH1_12,GBM-PharmaMind (Ours),IDH1,O=C(Nc1ccccc1)c1ccccc1Cc1ccccc1Oc1ccccc1Nc1ccccc1Cl
+IDH1,GBM-PharmaMind (Ours)_IDH1_13,GBM-PharmaMind (Ours),IDH1,CC(C)(C)OC(=O)NCc1ccccc1Cl
+IDH1,GBM-PharmaMind (Ours)_IDH1_14,GBM-PharmaMind (Ours),IDH1,O=C(Nc1ccccc1)c1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1OCCN1CCOCCO1
+IDH1,GBM-PharmaMind (Ours)_IDH1_15,GBM-PharmaMind (Ours),IDH1,O=C(NCc1ccccc1)NCc1ccccc1.OCc1ccccc1Oc1ccccc1NCc1ccccc1CCNc1ccccc1Oc1ccc(O)cc1OCCl
+IDH1,GBM-PharmaMind (Ours)_IDH1_16,GBM-PharmaMind (Ours),IDH1,O=C(NCc1ccccc1)c1ccccc1OCCNCc1ccccc1Oc1ccccc1N

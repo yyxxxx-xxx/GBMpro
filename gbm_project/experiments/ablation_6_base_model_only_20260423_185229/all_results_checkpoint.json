@@ -1,0 +1,2860 @@
+{
+  "EGFR": [],
+  "VEGF_VEGFR": [],
+  "IDH1_IDH2": [],
+  "MGMT": [],
+  "PD-1_PD-L1": [],
+  "PI3K_AKT_mTOR": [],
+  "p53_MDM2": [
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)c1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 247.22,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Quinoline framework",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Quinoline framework",
+            "rationale": "Structural adaptation for optimal pharmacokinetic properties",
+            "base_mw": 398,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Quinoline framework + 2-Methylquinoline",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "2-Methylquinoline",
+            "bbb_enhancers": "None",
+            "estimated_mw": 398,
+            "expected_logp": "3-4",
+            "expected_tpsa": "60-80",
+            "rationale": "Simple modification, minimal increase in complexity and cost."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(F)cc2)c1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)c1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.3107627733333332,
+            "reward": 0.6117553434837444,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.3107627733333332,
+        "reward": 0.6117553434837444,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.31 (低CNS渗透，不适合GBM) | 理化性质: MW=247.2, LogP=2.04, TPSA=66.4Å² | Reward=0.6118"
+    },
+    {
+      "smiles": "CN1CCCC1C(=O)Nc2ccccc2C(=O)Nc3ccccc3",
+      "tpsa": 61.44,
+      "mw": 323.4,
+      "logp": 2.97,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targets p53-MDM2 interaction",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Indole",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Indole",
+            "bbb_enhancers": "Cholesterol, DHA",
+            "estimated_mw": 460,
+            "expected_logp": "4-5",
+            "expected_tpsa": "120-170",
+            "rationale": "Enhances lipid solubility and BBB crossing efficiency."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CCCC1C(=O)Nc2ccccc2C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1CCCC1C(=O)Nc2ccccc2C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.45424746666666665,
+            "reward": 0.6373381529202466,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.45424746666666665,
+        "reward": 0.6373381529202466,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.45 (中等CNS渗透) | 理化性质: MW=323.4, LogP=2.97, TPSA=61.4Å² | Reward=0.6373"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cccBrcc2)n1C(=O)O",
+      "tpsa": 0.0,
+      "mw": 324.15,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound C",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound C",
+            "rationale": "Enhances p53-mediated cell cycle arrest",
+            "base_mw": 470,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound C + Alkylating agent",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Alkylating agent",
+            "bbb_enhancers": "Docosylamine",
+            "estimated_mw": 480,
+            "expected_logp": "3-4",
+            "expected_tpsa": "15-25",
+            "rationale": "Balances potency and BBB crossing capability"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cccBrcc2)n1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cccBrcc2)n1C(=O)O",
+            "vina_score": 0.0,
+            "dili_prob": 1.0,
+            "bbb_score": 0.0,
+            "reward": 0.0,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": 0.0,
+        "dili_prob": 1.0,
+        "bbb_score": 0.0,
+        "reward": 0.0,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=0.00 kcal/mol (偏弱，需增强结合) | 肝毒性(DILI)=1.00 (警告: 高风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=0.0, LogP=0.00, TPSA=0.0Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 58.2,
+      "mw": 330.39,
+      "logp": 4.56,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targets p53-MDM2 interaction",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Bifunctional linker",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Bifunctional linker",
+            "bbb_enhancers": "Cholesterol, PEG",
+            "estimated_mw": 470,
+            "expected_logp": "2-3",
+            "expected_tpsa": "100-150",
+            "rationale": "Balances reactivity and BBB permeation"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_score": 0.6476090666666668,
+            "reward": 0.659356558412244,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_score": 0.6476090666666668,
+        "reward": 0.659356558412244,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB评分=0.65 (中等CNS渗透) | 理化性质: MW=330.4, LogP=4.56, TPSA=58.2Å² | Reward=0.6594"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 255.27,
+      "logp": 3.01,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targets p53-MDM2 interaction",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Cytotoxic agent",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Cytotoxic agent",
+            "bbb_enhancers": "DAPT, Cilengitide",
+            "estimated_mw": 485,
+            "expected_logp": "1-2",
+            "expected_tpsa": "90-120",
+            "rationale": "Targets specific intracellular pathways, improves penetration"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.40922026666666667,
+            "reward": 0.6191516331258343,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.40922026666666667,
+        "reward": 0.6191516331258343,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.41 (中等CNS渗透) | 理化性质: MW=255.3, LogP=3.01, TPSA=66.4Å² | Reward=0.6192"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccccc2)c1C(=O)Nc3ccc(F)cc3",
+      "tpsa": 58.2,
+      "mw": 335.36,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound B",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound B",
+            "rationale": "Alters MDM2's binding affinity",
+            "base_mw": 400,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound B + Peptide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Peptide",
+            "bbb_enhancers": "PEG, cholesterol",
+            "estimated_mw": 450,
+            "expected_logp": "2-4",
+            "expected_tpsa": "150-250",
+            "rationale": "Balances hydrophobicity and BBB penetration."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccccc2)c1C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccccc2)c1C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.5776363733333334,
+            "reward": 0.6687169341533999,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.5776363733333334,
+        "reward": 0.6687169341533999,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.58 (中等CNS渗透) | 理化性质: MW=335.4, LogP=3.87, TPSA=58.2Å² | Reward=0.6687"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 260.24,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound B",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound B",
+            "rationale": "Alters MDM2's binding affinity",
+            "base_mw": 400,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound B + Alkyl halide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Alkyl halide",
+            "bbb_enhancers": "DPPC, trans-cinnamaldehyde",
+            "estimated_mw": 460,
+            "expected_logp": "3-5",
+            "expected_tpsa": "200-300",
+            "rationale": "Utilizes lipophilicity and natural BBB enhancers."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.2966429866666666,
+            "reward": 0.607649587973319,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.2966429866666666,
+        "reward": 0.607649587973319,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.30 (低CNS渗透，不适合GBM) | 理化性质: MW=260.2, LogP=1.90, TPSA=66.4Å² | Reward=0.6076"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccccc2)n1C(=O)O",
+      "tpsa": 71.33,
+      "mw": 244.25,
+      "logp": 2.64,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Curcumin",
+          "evaluation": "sure",
+          "metadata": {
+            "base_mw": 428,
+            "bbb_potential": "high",
+            "name": "Curcumin",
+            "rationale": "Suitable for GBM drug design"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Curcumin + Iodoacetamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Iodoacetamide",
+            "bbb_enhancers": "Docosyl",
+            "estimated_mw": 542,
+            "expected_logp": "3.5-4.5",
+            "expected_tpsa": "120-170",
+            "rationale": "Targets conjugation with high MW for enhanced permeability"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccccc2)n1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccccc2)n1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.3230234666666667,
+            "reward": 0.5892422717570952,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.3230234666666667,
+        "reward": 0.5892422717570952,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.32 (低CNS渗透，不适合GBM) | 理化性质: MW=244.2, LogP=2.64, TPSA=71.3Å² | Reward=0.5892"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(CBr)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 272.1,
+      "logp": 2.24,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "resveratrol",
+          "evaluation": "likely",
+          "metadata": {
+            "rationale": "Known p53 activator with BBB permeability",
+            "base_mw": 368,
+            "bbb_potential": "medium",
+            "name": "resveratrol"
+          }
+        },
+        {
+          "level": 1,
+          "content": "resveratrol + Cinnamoyl group",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Cinnamoyl group",
+            "bbb_enhancers": "Cholesteryl ester, Flurbiprofen",
+            "estimated_mw": 510,
+            "expected_logp": "3-5",
+            "expected_tpsa": "30-50",
+            "rationale": "Adds hydrophobicity and increases BBB permeability."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(CBr)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(CBr)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.33098079999999985,
+            "reward": 0.5953223392790519,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.33098079999999985,
+        "reward": 0.5953223392790519,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.33 (低CNS渗透，不适合GBM) | 理化性质: MW=272.1, LogP=2.24, TPSA=66.4Å² | Reward=0.5953"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "NAMIT",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "NAMIT",
+            "rationale": "Similar to PAMIT, optimized for better logP",
+            "base_mw": 450,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "NAMIT + Peptide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Peptide",
+            "bbb_enhancers": "PEGylation, Fc fusion",
+            "estimated_mw": 600,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "250-300",
+            "rationale": "Enhances blood-brain barrier penetration, improves stability"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.6735284266666669,
+            "reward": 0.6510207833345124,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.6735284266666669,
+        "reward": 0.6510207833345124,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.67 (中等CNS渗透) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.6510"
+    },
+    {
+      "smiles": "CN1CCCCC1C(=O)N2CCCCC2.N(C)CCCCC(=O)N2CCCCC2",
+      "tpsa": 55.89,
+      "mw": 408.63,
+      "logp": 2.87,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "NAMIT",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "NAMIT",
+            "rationale": "Similar to PAMIT, optimized for better logP",
+            "base_mw": 450,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "NAMIT + Alkylating agent",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Alkylating agent",
+            "bbb_enhancers": "None",
+            "estimated_mw": 580,
+            "expected_logp": "3.0-4.0",
+            "expected_tpsa": "220-270",
+            "rationale": "Directly targets cancer cells, avoids healthy brain tissue"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CCCCC1C(=O)N2CCCCC2.N(C)CCCCC(=O)N2CCCCC2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1CCCCC1C(=O)N2CCCCC2.N(C)CCCCC(=O)N2CCCCC2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.4988944,
+            "reward": 0.6790396640564096,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.4988944,
+        "reward": 0.6790396640564096,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.50 (中等CNS渗透) | 理化性质: MW=408.6, LogP=2.87, TPSA=55.9Å² | Reward=0.6790"
+    },
+    {
+      "smiles": "CN(C)C(=O)Nc1ccc(-c2ccccc2)c1C(=O)O",
+      "tpsa": 69.64,
+      "mw": 271.3,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Designed for BBB penetration",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Nitrogen heterocycle",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Nitrogen heterocycle",
+            "bbb_enhancers": "PEG, cholesterol",
+            "estimated_mw": 480,
+            "expected_logp": "2-3",
+            "expected_tpsa": "20-30",
+            "rationale": "Balances potency and BBB penetration"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C(=O)Nc1ccc(-c2ccccc2)c1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C(=O)Nc1ccc(-c2ccccc2)c1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.30687424,
+            "reward": 0.5862996138890479,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.30687424,
+        "reward": 0.5862996138890479,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.31 (低CNS渗透，不适合GBM) | 理化性质: MW=271.3, LogP=2.32, TPSA=69.6Å² | Reward=0.5863"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)n1C(=O)O",
+      "tpsa": 71.33,
+      "mw": 249.22,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound B",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "Compound B",
+            "rationale": "Optimized for drug-like properties",
+            "base_mw": 400,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound B + Peptide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Peptide",
+            "bbb_enhancers": "Transmembrane protein ligand, pH-responsive segment",
+            "estimated_mw": 460,
+            "expected_logp": "2-3",
+            "expected_tpsa": "90-120",
+            "rationale": "Utilizes targeted delivery via peptide for enhanced BBB crossing"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(F)cc2)n1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)n1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.21599013333333325,
+            "reward": 0.5690538535892877,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.21599013333333325,
+        "reward": 0.5690538535892877,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.22 (低CNS渗透，不适合GBM) | 理化性质: MW=249.2, LogP=1.58, TPSA=71.3Å² | Reward=0.5691"
+    },
+    {
+      "smiles": "CN1CCCC1OC(=O)N2C(O)CCC(=O)NC2",
+      "tpsa": 82.11,
+      "mw": 257.29,
+      "logp": -0.34,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Mimics MDM2 binding to p53",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Cytotoxic agent",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Cytotoxic agent",
+            "bbb_enhancers": "Galactose, Polyethylene glycol",
+            "estimated_mw": 480,
+            "expected_logp": "0-2",
+            "expected_tpsa": "60-100",
+            "rationale": "Enhances crossing and prolongs circulation time."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CCCC1OC(=O)N2C(O)CCC(=O)NC2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1CCCC1OC(=O)N2C(O)CCC(=O)NC2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.0,
+            "reward": 0.01945174196376726,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.0,
+        "reward": 0.01945174196376726,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=257.3, LogP=-0.34, TPSA=82.1Å² | Reward=0.0195"
+    },
+    {
+      "smiles": "CC(=O)N(C)C1=CC(=O)OC2=CC=CC=C21",
+      "tpsa": 50.52,
+      "mw": 217.22,
+      "logp": 1.78,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Phenylalanine Derivative",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "Phenylalanine Derivative",
+            "rationale": "Hydrophobic interaction with MDM2",
+            "base_mw": 285,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Phenylalanine Derivative + Phenylalanine derivative",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Phenylalanine derivative",
+            "bbb_enhancers": "P-gp inhibitor, MDR modulator",
+            "estimated_mw": 460,
+            "expected_logp": "3-4",
+            "expected_tpsa": "60-80",
+            "rationale": "Enhances crossing BBB, increases potency"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)N(C)C1=CC(=O)OC2=CC=CC=C21",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)N(C)C1=CC(=O)OC2=CC=CC=C21",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.4408069333333333,
+            "reward": 0.6518271235216159,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.4408069333333333,
+        "reward": 0.6518271235216159,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.44 (中等CNS渗透) | 理化性质: MW=217.2, LogP=1.78, TPSA=50.5Å² | Reward=0.6518"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccccc1C(=O)Nc2ccccc2",
+      "tpsa": 58.2,
+      "mw": 254.29,
+      "logp": 2.9,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targets p53-MDM2 interaction with low MW",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Phenyl group",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Phenyl group",
+            "bbb_enhancers": "Cholesterol, FITC",
+            "estimated_mw": 505,
+            "expected_logp": "4-5",
+            "expected_tpsa": "100-150",
+            "rationale": "High BBB penetration with low TPSA"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccccc1C(=O)Nc2ccccc2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccccc1C(=O)Nc2ccccc2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.47868639999999996,
+            "reward": 0.6387515225486678,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.47868639999999996,
+        "reward": 0.6387515225486678,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.48 (中等CNS渗透) | 理化性质: MW=254.3, LogP=2.90, TPSA=58.2Å² | Reward=0.6388"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)n1C(=O)O",
+      "tpsa": 71.33,
+      "mw": 323.15,
+      "logp": 3.4,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound C",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound C",
+            "rationale": "Modulates p53-MDM2 dynamics with favorable logP",
+            "base_mw": 450,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound C + Amino acid",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Amino acid",
+            "bbb_enhancers": "Cholesterol, PEG",
+            "estimated_mw": 510,
+            "expected_logp": "3-4",
+            "expected_tpsa": "120-150",
+            "rationale": "Enhances BBB crossing & reduces toxicity"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)n1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)n1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.40029013333333346,
+            "reward": 0.5866764351093364,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.40029013333333346,
+        "reward": 0.5866764351093364,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.40 (中等CNS渗透) | 理化性质: MW=323.1, LogP=3.40, TPSA=71.3Å² | Reward=0.5867"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(c2ccccc2)c1C(=O)[NH+](c3ccccc3)[O-]c4ccccc4",
+      "tpsa": 0.0,
+      "mw": 410.47,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "P3MDM",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "P3MDM",
+            "rationale": "Targeting MDM2 inhibition, enhancing p53 activity",
+            "base_mw": 374,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "P3MDM + Triazoles",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Triazoles",
+            "bbb_enhancers": "Amino, Hydroxy",
+            "estimated_mw": 449,
+            "expected_logp": "3-4",
+            "expected_tpsa": "110-140",
+            "rationale": "Low toxicity profile, optimal metabolic stability"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(c2ccccc2)c1C(=O)[NH+](c3ccccc3)[O-]c4ccccc4",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(c2ccccc2)c1C(=O)[NH+](c3ccccc3)[O-]c4ccccc4",
+            "vina_score": 0.0,
+            "dili_prob": 1.0,
+            "bbb_score": 0.0,
+            "reward": 0.0,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": 0.0,
+        "dili_prob": 1.0,
+        "bbb_score": 0.0,
+        "reward": 0.0,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=0.00 kcal/mol (偏弱，需增强结合) | 肝毒性(DILI)=1.00 (警告: 高风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=0.0, LogP=0.00, TPSA=0.0Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "CN(C)C1=CC=CC=C1C(=O)N2C(=C1)C(=CC=CC=C1)N2",
+      "tpsa": 41.03,
+      "mw": 279.34,
+      "logp": 1.26,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "MDMXinhibit",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "MDMXinhibit",
+            "rationale": "Designed to inhibit MDMX, restoring p53 function",
+            "base_mw": 428,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "MDMXinhibit + Peptide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Peptide",
+            "bbb_enhancers": "Fc, Lipid anchors",
+            "estimated_mw": 528,
+            "expected_logp": "3-4",
+            "expected_tpsa": "200-250 Å²",
+            "rationale": "Target high BBB penetration with multi-modality."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C1=CC=CC=C1C(=O)N2C(=C1)C(=CC=CC=C1)N2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C1=CC=CC=C1C(=O)N2C(=C1)C(=CC=CC=C1)N2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.48195093333333333,
+            "reward": 0.6426326793446588,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.48195093333333333,
+        "reward": 0.6426326793446588,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.48 (中等CNS渗透) | 理化性质: MW=279.3, LogP=1.26, TPSA=41.0Å² | Reward=0.6426"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccccc1C(=O)Nc2ccccc2C(=O)O",
+      "tpsa": 95.5,
+      "mw": 298.3,
+      "logp": 2.6,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Promotes p53 stabilization by inhibiting MDM2 interaction",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Nitrophenol",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Nitrophenol",
+            "bbb_enhancers": "PEG, DHA",
+            "estimated_mw": 485,
+            "expected_logp": "2-3",
+            "expected_tpsa": "20-30",
+            "rationale": "High potency, BBB crossing ability"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccccc1C(=O)Nc2ccccc2C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccccc1C(=O)Nc2ccccc2C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.0,
+            "reward": 0.018509411003258494,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.0,
+        "reward": 0.018509411003258494,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=298.3, LogP=2.60, TPSA=95.5Å² | Reward=0.0185"
+    },
+    {
+      "smiles": "Cc1ccccc1C(=O)Nc2ccccc2C(=O)Nc3ccccc3",
+      "tpsa": 58.2,
+      "mw": 330.39,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Scaffold_A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Scaffold_A",
+            "rationale": "Targeting p53-MDM2 interaction with BBB permeability",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Scaffold_A + Small molecule",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Small molecule",
+            "bbb_enhancers": "P-glycoprotein inhibitors",
+            "estimated_mw": 400,
+            "expected_logp": "2-4",
+            "expected_tpsa": "90-120",
+            "rationale": "Balances effective BBB penetration with solubility and metabolic stability."
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccccc1C(=O)Nc2ccccc2C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccccc1C(=O)Nc2ccccc2C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.6410548266666668,
+            "reward": 0.6827951844362153,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.6410548266666668,
+        "reward": 0.6827951844362153,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.64 (中等CNS渗透) | 理化性质: MW=330.4, LogP=4.50, TPSA=58.2Å² | Reward=0.6828"
+    },
+    {
+      "smiles": "CN(C)C1=CC=CC=C1C(=O)N2C(=CC=CC2)N",
+      "tpsa": 49.57,
+      "mw": 243.31,
+      "logp": 1.56,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Scaffold_B",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Scaffold_B",
+            "rationale": "Alkyl amine derivative enhancing p53 activation, BBB crossing capability",
+            "base_mw": 400,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Scaffold_B + Alkyl nitro group",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Alkyl nitro group",
+            "bbb_enhancers": "PEG, Cholesterol",
+            "estimated_mw": 500,
+            "expected_logp": "2-3",
+            "expected_tpsa": "90-130",
+            "rationale": "Balancing high BBB crossing potential with low toxicity profile."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C1=CC=CC=C1C(=O)N2C(=CC=CC2)N",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C1=CC=CC=C1C(=O)N2C(=CC=CC2)N",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.42879893333333324,
+            "reward": 0.6234678868835053,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.42879893333333324,
+        "reward": 0.6234678868835053,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.43 (中等CNS渗透) | 理化性质: MW=243.3, LogP=1.56, TPSA=49.6Å² | Reward=0.6235"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(C(=O)Nc2ccccc2)cc1",
+      "tpsa": 58.2,
+      "mw": 254.29,
+      "logp": 2.9,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targets p53 with optimal BBB penetration and LogP",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Pyrazole",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Pyrazole",
+            "bbb_enhancers": "2",
+            "estimated_mw": 408,
+            "expected_logp": "2-3",
+            "expected_tpsa": "60-90",
+            "rationale": "Balances MW, LogP and TPSA within constraints"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(C(=O)Nc2ccccc2)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(C(=O)Nc2ccccc2)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.4786864000000001,
+            "reward": 0.6387515225486678,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.4786864000000001,
+        "reward": 0.6387515225486678,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.48 (中等CNS渗透) | 理化性质: MW=254.3, LogP=2.90, TPSA=58.2Å² | Reward=0.6388"
+    },
+    {
+      "smiles": "Cc1ccccc1C(=O)Nc2ccccc2N",
+      "tpsa": 55.12,
+      "mw": 226.28,
+      "logp": 2.83,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targets p53 with optimal BBB penetration and LogP",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Heterocycle",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Heterocycle",
+            "bbb_enhancers": "3",
+            "estimated_mw": 410,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "80-100",
+            "rationale": "Optimizes BBB penetration capability with additional enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccccc1C(=O)Nc2ccccc2N",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccccc1C(=O)Nc2ccccc2N",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.50220736,
+            "reward": 0.6411566912776634,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.50220736,
+        "reward": 0.6411566912776634,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.50 (中等CNS渗透) | 理化性质: MW=226.3, LogP=2.83, TPSA=55.1Å² | Reward=0.6412"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(C)cc2)n1C(=O)O",
+      "tpsa": 71.33,
+      "mw": 245.26,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound B",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound B",
+            "rationale": "Modulates p53 activity through MDM2 inhibition",
+            "base_mw": 400,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound B + Alkyl halide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Alkyl halide",
+            "bbb_enhancers": "PEG, Folate tag",
+            "estimated_mw": 480,
+            "expected_logp": "2-3",
+            "expected_tpsa": "70-100",
+            "rationale": "Lowers MW, targets specific receptors"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(C)cc2)n1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(C)cc2)n1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.23538735999999996,
+            "reward": 0.5784624081265888,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.23538735999999996,
+        "reward": 0.5784624081265888,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.24 (低CNS渗透，不适合GBM) | 理化性质: MW=245.3, LogP=1.77, TPSA=71.3Å² | Reward=0.5785"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(C)cc2)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 256.28,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound B",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound B",
+            "rationale": "Modulating MDM2 to enhance p53 activity, selective BBB crossing",
+            "base_mw": 420,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound B + Acetyl group",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Acetyl group",
+            "bbb_enhancers": "Lipophilic side chain, Aza cycle",
+            "estimated_mw": 475,
+            "expected_logp": "3-4",
+            "expected_tpsa": "100-150",
+            "rationale": "Maximizes hydrophobicity, optimized BBB penetration potential"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(C)cc2)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(C)cc2)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.31604021333333315,
+            "reward": 0.614924284141226,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.31604021333333315,
+        "reward": 0.614924284141226,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.32 (低CNS渗透，不适合GBM) | 理化性质: MW=256.3, LogP=2.09, TPSA=66.4Å² | Reward=0.6149"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccc(NC(=O)C3=CC=CC32)cc1)C(=O)N",
+      "tpsa": 101.29,
+      "mw": 335.36,
+      "logp": 2.4,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "P53 Derivative A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "P53 Derivative A",
+            "rationale": "Mimics p53 interaction with MDM2, alters ligand-binding site.",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "P53 Derivative A + Alkylating agent",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Alkylating agent",
+            "bbb_enhancers": "PEG, cholesterol",
+            "estimated_mw": 450,
+            "expected_logp": "2-3",
+            "expected_tpsa": "100-150",
+            "rationale": "Balance efficacy and BBB penetration"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccc(NC(=O)C3=CC=CC32)cc1)C(=O)N",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccc(NC(=O)C3=CC=CC32)cc1)C(=O)N",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.0,
+            "reward": 0.019021654518182038,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.0,
+        "reward": 0.019021654518182038,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=335.4, LogP=2.40, TPSA=101.3Å² | Reward=0.0190"
+    },
+    {
+      "smiles": "CN1CC(CCN1)c2cc(OC(=O)C(F)(F)F)c(F)c2F",
+      "tpsa": 41.57,
+      "mw": 311.23,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "MDM2 Inhibitor B",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "MDM2 Inhibitor B",
+            "rationale": "Targeting MDM2-p53 complex to enhance tumor suppressor function.",
+            "base_mw": 425,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "MDM2 Inhibitor B + Nitrophenyl",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Nitrophenyl",
+            "bbb_enhancers": "PEG, Fc",
+            "estimated_mw": 495,
+            "expected_logp": "4-5",
+            "expected_tpsa": "100-150",
+            "rationale": "High MW enhancer for BBB crossing, high lipophilicity."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CC(CCN1)c2cc(OC(=O)C(F)(F)F)c(F)c2F",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1CC(CCN1)c2cc(OC(=O)C(F)(F)F)c(F)c2F",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.51483472,
+            "reward": 0.6833244850364811,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.51483472,
+        "reward": 0.6833244850364811,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.51 (中等CNS渗透) | 理化性质: MW=311.2, LogP=1.63, TPSA=41.6Å² | Reward=0.6833"
+    },
+    {
+      "smiles": "C1=CC=NC(=CC(=C1C2CCCCC2)C(=O)N(C3CCCCC3)S(=O)(=O)N(C4CCCCC4)C5CCCCC5)C6CCCCC6",
+      "tpsa": 70.05,
+      "mw": 637.97,
+      "logp": 9.34,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "P53",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "P53",
+            "rationale": "Targeting p53-MDM2 interaction",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "P53 + Peptide toxin",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Peptide toxin",
+            "bbb_enhancers": "Fusion with BBB penetrating peptide",
+            "estimated_mw": 520,
+            "expected_logp": "3-5",
+            "expected_tpsa": "250-300",
+            "rationale": "Targeting specific receptors for enhanced tumor localization"
+          }
+        },
+        {
+          "level": 2,
+          "content": "C1=CC=NC(=CC(=C1C2CCCCC2)C(=O)N(C3CCCCC3)S(=O)(=O)N(C4CCCCC4)C5CCCCC5)C6CCCCC6",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "C1=CC=NC(=CC(=C1C2CCCCC2)C(=O)N(C3CCCCC3)S(=O)(=O)N(C4CCCCC4)C5CCCCC5)C6CCCCC6",
+            "vina_score": -7.5,
+            "dili_prob": 0.1,
+            "bbb_score": 0.8814554666666669,
+            "reward": 0.6543022911727296,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.1,
+        "bbb_score": 0.8814554666666669,
+        "reward": 0.6543022911727296,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.10 (低风险) | BBB评分=0.88 (高CNS渗透) | 理化性质: MW=638.0, LogP=9.34, TPSA=70.0Å² | Reward=0.6543"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(OC(=O)N)ccc1",
+      "tpsa": 81.42,
+      "mw": 207.21,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Isoxazole conjugate",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Isoxazole conjugate",
+            "rationale": "Inhibits MDM2-p53 binding",
+            "base_mw": 329,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Isoxazole conjugate + Isoxazole conjugate",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Isoxazole conjugate",
+            "bbb_enhancers": "N/A",
+            "estimated_mw": 329,
+            "expected_logp": "2-3",
+            "expected_tpsa": "60-80",
+            "rationale": "Matching base MW, minimizes synthetic complexity"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(OC(=O)N)ccc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(OC(=O)N)ccc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.0,
+            "reward": 0.019242335619027936,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.0,
+        "reward": 0.019242335619027936,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=207.2, LogP=0.31, TPSA=81.4Å² | Reward=0.0192"
+    },
+    {
+      "smiles": "Cc1ccccc1C(=O)Nc2cc(F)nc(-c3ccccn3)c2",
+      "tpsa": 54.88,
+      "mw": 307.33,
+      "logp": 3.84,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Isoxazole conjugate",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Isoxazole conjugate",
+            "rationale": "Inhibits MDM2-p53 binding",
+            "base_mw": 329,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Isoxazole conjugate + Isoxazole conjugate",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Isoxazole conjugate",
+            "bbb_enhancers": "P-glycoprotein inhibitors",
+            "estimated_mw": 400,
+            "expected_logp": "2-4",
+            "expected_tpsa": "60-100",
+            "rationale": "Targeting BBB with known enhancers increases bioavailability"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccccc1C(=O)Nc2cc(F)nc(-c3ccccn3)c2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccccc1C(=O)Nc2cc(F)nc(-c3ccccn3)c2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.6073172266666669,
+            "reward": 0.6754520663738374,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.6073172266666669,
+        "reward": 0.6754520663738374,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.61 (中等CNS渗透) | 理化性质: MW=307.3, LogP=3.84, TPSA=54.9Å² | Reward=0.6755"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(cc1)C(=O)Nc2ccccc2C(=O)O",
+      "tpsa": 95.5,
+      "mw": 298.3,
+      "logp": 2.6,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "N-(2-Aminophenyl)benzamide",
+          "evaluation": "sure",
+          "metadata": {
+            "base_mw": 437,
+            "bbb_potential": "high",
+            "name": "N-(2-Aminophenyl)benzamide",
+            "rationale": "Suitable for GBM drug design"
+          }
+        },
+        {
+          "level": 1,
+          "content": "N-(2-Aminophenyl)benzamide + Nitrophenol",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Nitrophenol",
+            "bbb_enhancers": "PEG, cholesterol",
+            "estimated_mw": 480,
+            "expected_logp": "3-4",
+            "expected_tpsa": "30-40",
+            "rationale": "Enhances BBB penetration, hydrophobicity & lipophilicity"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(cc1)C(=O)Nc2ccccc2C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(cc1)C(=O)Nc2ccccc2C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.0,
+            "reward": 0.018509411003258494,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.0,
+        "reward": 0.018509411003258494,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=298.3, LogP=2.60, TPSA=95.5Å² | Reward=0.0185"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccc(OC)cc2)c1C(=O)OC",
+      "tpsa": 64.63,
+      "mw": 286.31,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "N-(2-Aminophenyl)benzamide",
+          "evaluation": "sure",
+          "metadata": {
+            "base_mw": 437,
+            "bbb_potential": "high",
+            "name": "N-(2-Aminophenyl)benzamide",
+            "rationale": "Suitable for GBM drug design"
+          }
+        },
+        {
+          "level": 1,
+          "content": "N-(2-Aminophenyl)benzamide + Fluoromethyl ketone",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Fluoromethyl ketone",
+            "bbb_enhancers": "Flurobenzene, PEG",
+            "estimated_mw": 495,
+            "expected_logp": "3-4",
+            "expected_tpsa": "25-35",
+            "rationale": "Targets cancer cells, enhances solubility & diffusion"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccc(OC)cc2)c1C(=O)OC",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccc(OC)cc2)c1C(=O)OC",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.35244544000000005,
+            "reward": 0.6043872992394751,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.35244544000000005,
+        "reward": 0.6043872992394751,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.35 (低CNS渗透，不适合GBM) | 理化性质: MW=286.3, LogP=2.28, TPSA=64.6Å² | Reward=0.6044"
+    },
+    {
+      "smiles": "Cc1cc(CBr)cc1C(=O)Nc2ccccc2C(=O)O",
+      "tpsa": 66.4,
+      "mw": 335.18,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "CompoundA",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "CompoundA",
+            "rationale": "Targeting p53-MDM2 interaction for enhanced activity",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "CompoundA + Bromine",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Bromine",
+            "bbb_enhancers": "Docosyl, Oleoyl",
+            "estimated_mw": 490,
+            "expected_logp": "4.5-6.0",
+            "expected_tpsa": "180-230",
+            "rationale": "Strong electrophilicity combined with dual lipid incorporation"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(CBr)cc1C(=O)Nc2ccccc2C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(CBr)cc1C(=O)Nc2ccccc2C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.45601600000000003,
+            "reward": 0.6378336548610549,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.45601600000000003,
+        "reward": 0.6378336548610549,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.46 (中等CNS渗透) | 理化性质: MW=335.2, LogP=3.47, TPSA=66.4Å² | Reward=0.6378"
+    },
+    {
+      "smiles": "CN1CCCC1C(=O)Nc2ccc(C(=O)C(F)(F)F)cc2",
+      "tpsa": 49.41,
+      "mw": 300.28,
+      "logp": 2.46,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Scaffold_A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Scaffold_A",
+            "rationale": "Mimics p53 binding, enhancing MDM2 interaction.",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Scaffold_A + Bicyclic Amino Acid Derivatives",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Bicyclic Amino Acid Derivatives",
+            "bbb_enhancers": "Cholesterol, Polyethylene glycol",
+            "estimated_mw": 400,
+            "expected_logp": "2-3",
+            "expected_tpsa": "100-150",
+            "rationale": "Balances BBB penetration and pharmacokinetic properties within budget."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CCCC1C(=O)Nc2ccc(C(=O)C(F)(F)F)cc2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1CCCC1C(=O)Nc2ccc(C(=O)C(F)(F)F)cc2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.5215370666666667,
+            "reward": 0.6551917957784531,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.5215370666666667,
+        "reward": 0.6551917957784531,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.52 (中等CNS渗透) | 理化性质: MW=300.3, LogP=2.46, TPSA=49.4Å² | Reward=0.6552"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(OC(=O)C(C)C)c2)cc1",
+      "tpsa": 55.4,
+      "mw": 271.32,
+      "logp": 3.13,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Scaffold_B",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Scaffold_B",
+            "rationale": "Optimized LogP for brain penetration, stabilizes MDM2 interaction.",
+            "base_mw": 400,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Scaffold_B + Cyclic Amine",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Cyclic Amine",
+            "bbb_enhancers": "PEG, Lipophilic Tail",
+            "estimated_mw": 450,
+            "expected_logp": "3-4",
+            "expected_tpsa": "200-250",
+            "rationale": "High BBB permeability, good solubility."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(OC(=O)C(C)C)c2)cc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(OC(=O)C(C)C)c2)cc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.5293968000000002,
+            "reward": 0.6538609249981988,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.5293968000000002,
+        "reward": 0.6538609249981988,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.53 (中等CNS渗透) | 理化性质: MW=271.3, LogP=3.13, TPSA=55.4Å² | Reward=0.6539"
+    },
+    {
+      "smiles": "CN(C)C1=CC=CC=C1C(=O)N2C(C)CC2CC(=O)N(CCN)C(=O)N2C(C)CC2",
+      "tpsa": 90.19,
+      "mw": 415.54,
+      "logp": 1.75,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "P5-MDM2-Linker",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "P5-MDM2-Linker",
+            "rationale": "Connecting p53 and MDM2 for interaction modulation.",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "P5-MDM2-Linker + Indole derivative",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Indole derivative",
+            "bbb_enhancers": "P-gp inhibitor, CYP3A4 modulator",
+            "estimated_mw": 470,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-70",
+            "rationale": "High drug-like properties and BBB penetration"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C1=CC=CC=C1C(=O)N2C(C)CC2CC(=O)N(CCN)C(=O)N2C(C)CC2",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C1=CC=CC=C1C(=O)N2C(C)CC2CC(=O)N(CCN)C(=O)N2C(C)CC2",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.046508266666666596,
+            "reward": 0.4038794751127559,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.046508266666666596,
+        "reward": 0.4038794751127559,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.05 (低CNS渗透，不适合GBM) | 理化性质: MW=415.5, LogP=1.75, TPSA=90.2Å² | Reward=0.4039"
+    },
+    {
+      "smiles": "CN(C)C1=CC=NC(C=C1)C(=O)N2C(=CC=CN2)C",
+      "tpsa": 47.94,
+      "mw": 258.32,
+      "logp": 1.21,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "P5-Quinoline Derivative",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "P5-Quinoline Derivative",
+            "rationale": "Quinoline ring enhances potency against MDM2.",
+            "base_mw": 420,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "P5-Quinoline Derivative + 4-Methoxyphenyl",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "4-Methoxyphenyl",
+            "bbb_enhancers": "N/A",
+            "estimated_mw": 515,
+            "expected_logp": "3.5-4.5",
+            "expected_tpsa": "90-110",
+            "rationale": "High potency and BBB penetration potential."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C1=CC=NC(C=C1)C(=O)N2C(=CC=CN2)C",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C1=CC=NC(C=C1)C(=O)N2C(=CC=CN2)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.4084725333333332,
+            "reward": 0.6475573664207673,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.4084725333333332,
+        "reward": 0.6475573664207673,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.41 (中等CNS渗透) | 理化性质: MW=258.3, LogP=1.21, TPSA=47.9Å² | Reward=0.6476"
+    },
+    {
+      "smiles": "CN(C)C1=CC(=O)OC(C2CCCCC2)C1N",
+      "tpsa": 55.56,
+      "mw": 238.33,
+      "logp": 1.26,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "P5-Quinoline Derivative",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "P5-Quinoline Derivative",
+            "rationale": "Quinoline ring enhances potency against MDM2.",
+            "base_mw": 420,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "P5-Quinoline Derivative + 2-Chlorophenyl",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "2-Chlorophenyl",
+            "bbb_enhancers": "Poloxamer 188",
+            "estimated_mw": 555,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "100-120",
+            "rationale": "Optimized lipophilicity for improved BBB crossing."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C1=CC(=O)OC(C2CCCCC2)C1N",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C1=CC(=O)OC(C2CCCCC2)C1N",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.3393178666666667,
+            "reward": 0.6214665053480183,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.3393178666666667,
+        "reward": 0.6214665053480183,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.34 (低CNS渗透，不适合GBM) | 理化性质: MW=238.3, LogP=1.26, TPSA=55.6Å² | Reward=0.6215"
+    },
+    {
+      "smiles": "CN(C)C1=CC(=C(F)C2=CC=C(C=C2)O)C(=O)C3CCCC(C=C3)N1C(=O)CN(C)CC(C)CC(C)C",
+      "tpsa": 64.09,
+      "mw": 511.68,
+      "logp": 5.23,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targets p53-MDM2 interaction, BBB permeability improved.",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Peptidomimetics",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Peptidomimetics",
+            "bbb_enhancers": "Farnesyl group, Docosahexaenoic acid",
+            "estimated_mw": 460,
+            "expected_logp": "4-6",
+            "expected_tpsa": "100-160",
+            "rationale": "Optimized BBB crossing ability"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C1=CC(=C(F)C2=CC=C(C=C2)O)C(=O)C3CCCC(C=C3)N1C(=O)CN(C)CC(C)CC(C)C",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C1=CC(=C(F)C2=CC=C(C=C2)O)C(=O)C3CCCC(C=C3)N1C(=O)CN(C)CC(C)CC(C)C",
+            "vina_score": -7.5,
+            "dili_prob": 0.05,
+            "bbb_score": 0.5232133333333339,
+            "reward": 0.5889263573559899,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.05,
+        "bbb_score": 0.5232133333333339,
+        "reward": 0.5889263573559899,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.05 (低风险) | BBB评分=0.52 (中等CNS渗透) | 理化性质: MW=511.7, LogP=5.23, TPSA=64.1Å² | Reward=0.5889"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)c1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 321.15,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targets p53-MDM2 interaction",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Nitrophenol",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Nitrophenol",
+            "bbb_enhancers": "Phosphatidylcholine, Docosahexaenoic acid",
+            "estimated_mw": 460,
+            "expected_logp": "2.5-3.0",
+            "expected_tpsa": "90-120",
+            "rationale": "Targets lipophilic areas of brain, improves lipid solubility"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)c1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)c1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.40241877333333326,
+            "reward": 0.5872990709924027,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.40241877333333326,
+        "reward": 0.5872990709924027,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.40 (中等CNS渗透) | 理化性质: MW=321.2, LogP=2.94, TPSA=66.4Å² | Reward=0.5873"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 334.17,
+      "logp": 3.77,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Acetylated Residue",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Acetylated Residue",
+            "rationale": "Modulates MDM2 interaction",
+            "base_mw": 362,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Acetylated Residue + Furanone",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Furanone",
+            "bbb_enhancers": "N-Aryl substituted peptides",
+            "estimated_mw": 476,
+            "expected_logp": "2-4",
+            "expected_tpsa": "30-60",
+            "rationale": "Utilizes conjugates that modulate acetylation while improving cell permeability."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccc(Br)cc2)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.4864869333333335,
+            "reward": 0.6100113326000193,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.4864869333333335,
+        "reward": 0.6100113326000193,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.49 (中等CNS渗透) | 理化性质: MW=334.2, LogP=3.77, TPSA=66.4Å² | Reward=0.6100"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)Nc3ccccc3",
+      "tpsa": 58.2,
+      "mw": 335.36,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Pyrimidine-based Inhibitor",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Pyrimidine-based Inhibitor",
+            "rationale": "Enhances p53 activity through stabilization",
+            "base_mw": 428,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Pyrimidine-based Inhibitor + Pyrimidine derivative",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Pyrimidine derivative",
+            "bbb_enhancers": "None",
+            "estimated_mw": 460,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "100-150",
+            "rationale": "Maximizes target binding while staying under budget"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)Nc3ccccc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)Nc3ccccc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.5350317866666667,
+            "reward": 0.6585478428668498,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.5350317866666667,
+        "reward": 0.6585478428668498,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.54 (中等CNS渗透) | 理化性质: MW=335.4, LogP=3.45, TPSA=58.2Å² | Reward=0.6585"
+    },
+    {
+      "smiles": "Cc1ccc([NH+])c2ccccc2c1c(F)(F)O",
+      "tpsa": 44.03,
+      "mw": 235.23,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Pyrimidine-based Inhibitor",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Pyrimidine-based Inhibitor",
+            "rationale": "Enhances p53 activity through stabilization",
+            "base_mw": 428,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Pyrimidine-based Inhibitor + Alkylated pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Alkylated pyrimidine",
+            "bbb_enhancers": "Parietals",
+            "estimated_mw": 490,
+            "expected_logp": "3-3.5",
+            "expected_tpsa": "150-200",
+            "rationale": "Increases BBB penetration potential slightly over target mass"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccc([NH+])c2ccccc2c1c(F)(F)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccc([NH+])c2ccccc2c1c(F)(F)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.42799648,
+            "reward": 0.6505793979863636,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.42799648,
+        "reward": 0.6505793979863636,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.43 (中等CNS渗透) | 理化性质: MW=235.2, LogP=1.02, TPSA=44.0Å² | Reward=0.6506"
+    },
+    {
+      "smiles": "CC(=O)Nc1cccc(F)c(c2ccccc2N(CCN3CCCC3)S(=O)(=O)Nc4ccccc4)c1",
+      "tpsa": 81.75,
+      "mw": 509.63,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Targeting p53-MDM2 interaction",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Small molecule",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Small molecule",
+            "bbb_enhancers": "Farnesyltransferase inhibitor",
+            "estimated_mw": 430,
+            "expected_logp": "4-6",
+            "expected_tpsa": "120-150",
+            "rationale": "Low cost, existing BBB enhancer, high MW."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1cccc(F)c(c2ccccc2N(CCN3CCCC3)S(=O)(=O)Nc4ccccc4)c1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1cccc(F)c(c2ccccc2N(CCN3CCCC3)S(=O)(=O)Nc4ccccc4)c1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.2517954133333336,
+            "reward": 0.5650016881990825,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.2517954133333336,
+        "reward": 0.5650016881990825,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.25 (低CNS渗透，不适合GBM) | 理化性质: MW=509.6, LogP=4.27, TPSA=81.8Å² | Reward=0.5650"
+    },
+    {
+      "smiles": "CC(NC(=O)Nc1ccccc1)C(OC)C(OC)C(OC)",
+      "tpsa": 68.82,
+      "mw": 296.37,
+      "logp": 1.87,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "DMMP",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "DMMP",
+            "rationale": "Mimics MDM2 structure, inhibits p53 degradation",
+            "base_mw": 353,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "DMMP + Azaann",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Azaann",
+            "bbb_enhancers": "TATP, MTT",
+            "estimated_mw": 368,
+            "expected_logp": "3.5-5",
+            "expected_tpsa": "135-175",
+            "rationale": "Enhanced BBB crossing capability with optimized physicochemistry."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(NC(=O)Nc1ccccc1)C(OC)C(OC)C(OC)",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(NC(=O)Nc1ccccc1)C(OC)C(OC)C(OC)",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.27010666666666655,
+            "reward": 0.5740555297334894,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.27010666666666655,
+        "reward": 0.5740555297334894,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.27 (低CNS渗透，不适合GBM) | 理化性质: MW=296.4, LogP=1.87, TPSA=68.8Å² | Reward=0.5741"
+    },
+    {
+      "smiles": "CN(C)C1=CC=CC(OC[C@H]1O)C(O)C(=O)O",
+      "tpsa": 90.23,
+      "mw": 243.26,
+      "logp": -0.81,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "CompoundA",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "CompoundA",
+            "rationale": "Targets p53-MDM2 interaction effectively.",
+            "base_mw": 375,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "CompoundA + Aromatic ring",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Aromatic ring",
+            "bbb_enhancers": "Cholanic acid, PEG",
+            "estimated_mw": 450,
+            "expected_logp": "3-4",
+            "expected_tpsa": "100-150",
+            "rationale": "High mw warhead for enhanced potency, BBB enhancers for crossing blood-brain barrier."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C1=CC=CC(OC[C@H]1O)C(O)C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C1=CC=CC(OC[C@H]1O)C(O)C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.0,
+            "reward": 0.01938831648104482,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.0,
+        "reward": 0.01938831648104482,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=243.3, LogP=-0.81, TPSA=90.2Å² | Reward=0.0194"
+    },
+    {
+      "smiles": "CN(C)C(=O)Nc1ccc(F)c(c1)CC(=O)C(=O)c1ccccc1",
+      "tpsa": 66.48,
+      "mw": 328.34,
+      "logp": 2.91,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "CompoundB",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "CompoundB",
+            "rationale": "Enhances p53 stability through allosteric modulation.",
+            "base_mw": 450,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "CompoundB + Peptide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Peptide",
+            "bbb_enhancers": "Farnesylation, Lipophilic Tail",
+            "estimated_mw": 540,
+            "expected_logp": "5-6",
+            "expected_tpsa": "150-200",
+            "rationale": "High binding affinity, BBB penetration"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN(C)C(=O)Nc1ccc(F)c(c1)CC(=O)C(=O)c1ccccc1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN(C)C(=O)Nc1ccc(F)c(c1)CC(=O)C(=O)c1ccccc1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.39865226666666675,
+            "reward": 0.620912298632351,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.39865226666666675,
+        "reward": 0.620912298632351,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.40 (低CNS渗透，不适合GBM) | 理化性质: MW=328.3, LogP=2.91, TPSA=66.5Å² | Reward=0.6209"
+    },
+    {
+      "smiles": "CN1CCN(C(=O)C2=CC=C(C=C2)N)C1",
+      "tpsa": 49.57,
+      "mw": 205.26,
+      "logp": 0.61,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "CompoundB",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "CompoundB",
+            "rationale": "Enhances p53 stability through allosteric modulation.",
+            "base_mw": 450,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "CompoundB + Alkylating agent",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Alkylating agent",
+            "bbb_enhancers": "Polyethylene glycol, Glucuronide conjugation",
+            "estimated_mw": 550,
+            "expected_logp": "3-4",
+            "expected_tpsa": "200-250",
+            "rationale": "Ester hydrolysis for release, enhanced solubility"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1CCN(C(=O)C2=CC=C(C=C2)N)C1",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1CCN(C(=O)C2=CC=C(C=C2)N)C1",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.33245119999999995,
+            "reward": 0.5875113416216858,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.33245119999999995,
+        "reward": 0.5875113416216858,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.33 (低CNS渗透，不适合GBM) | 理化性质: MW=205.3, LogP=0.61, TPSA=49.6Å² | Reward=0.5875"
+    },
+    {
+      "smiles": "CC([C@H]1CCCC[C@@H]1C(=O)Nc2cc(F)cc2)[C@H]([H])([CH3])[C@@H]([CH3])([H])",
+      "tpsa": 0.0,
+      "mw": 293.43,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Pyrimidine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Pyrimidine",
+            "rationale": "Similar to pemetrexed, disrupts DNA synthesis.",
+            "base_mw": 327,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Pyrimidine + Nitrophenol",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Nitrophenol",
+            "bbb_enhancers": "Cholesterol conjugation, Positively charged group",
+            "estimated_mw": 480,
+            "expected_logp": "3-4",
+            "expected_tpsa": "110-120",
+            "rationale": "Cholesterol for increased permeability and positively charged group for selective targeting."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC([C@H]1CCCC[C@@H]1C(=O)Nc2cc(F)cc2)[C@H]([H])([CH3])[C@@H]([CH3])([H])",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC([C@H]1CCCC[C@@H]1C(=O)Nc2cc(F)cc2)[C@H]([H])([CH3])[C@@H]([CH3])([H])",
+            "vina_score": 0.0,
+            "dili_prob": 1.0,
+            "bbb_score": 0.0,
+            "reward": 0.0,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": 0.0,
+        "dili_prob": 1.0,
+        "bbb_score": 0.0,
+        "reward": 0.0,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=0.00 kcal/mol (偏弱，需增强结合) | 肝毒性(DILI)=1.00 (警告: 高风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=0.0, LogP=0.00, TPSA=0.0Å² | Reward=0.0000"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "项目默认 T=0.7 p=0.9 mnt=256": {
+    "raw_ok": 0,
+    "fix_ok": 5,
+    "mols": [
+      "O=Cc1ccc2ccccc2c1Oc1ccccc1OCc1ccccc1N2CCCNC2CCO",
+      "O=Cc1ccc2ccccc21C(=O)NCc1ccccc1NCCl",
+      "O=Cc1ccccc1Nc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1O",
+      "CC(=O)Nc1ccc2ccccc2c1OCc1ccccc1",
+      "CCN(CC)CCc1c2ccccc2c1OCC(=O)N"
+    ]
+  },
+  "T=0.7 p=0.9 mnt=64": {
+    "raw_ok": 1,
+    "fix_ok": 5,
+    "mols": [
+      "O=Cc1ccc2ccccc2c1Oc1ccccc1OCc1ccccc1N2CCCNC2CCO",
+      "O=Cc1ccc2ccccc21C(=O)NCc1ccccc1NCCl",
+      "O=Cc1ccccc1Nc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1",
+      "CC(=O)Nc1ccc2ccccc2c1OCc1ccccc1",
+      "CCN(CC)CCc1c2ccccc2c1OCC(=O)N"
+    ]
+  },
+  "T=0.6 p=0.9 mnt=256": {
+    "raw_ok": 0,
+    "fix_ok": 4,
+    "mols": [
+      "O=C(Nc1cc2ccccc2s1)c1ccccc1Oc1ccccc1Nc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1O",
+      "O=C(Nc1ccccc1)c1ccccc1Oc1ccccc1Nc1ccccc1OCc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1O",
+      "CC(=O)Nc1ccc2ccccc2c1OCc1ccccc1",
+      "CCN(CC)CCc1c2ccccc2c1OCC(=O)N"
+    ]
+  },
+  "T=0.8 p=0.92 mnt=256": {
+    "raw_ok": 0,
+    "fix_ok": 5,
+    "mols": [
+      "O=Cc1ccc2ccccc2c1OCc1ccccc1Oc1ccccc1N(N)",
+      "O=Cc1ccc2ccccc21C(=O)NCc1ccccc1NCCl",
+      "O=Cc1ccccc1Nc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1O",
+      "CC(=O)Nc1ccc2ccccc2c1OCc1ccccc1",
+      "CCN(CC)CCc1c2ccccc2c1C(=O)NCc1ccccc1Nc1ccccc1"
+    ]
+  },
+  "T=1.0 p=0.95 mnt=256": {
+    "raw_ok": 0,
+    "fix_ok": 6,
+    "mols": [
+      "O=Cc1ccc2ccccc2c1OCc1ccccc1Oc1ccccc1N(N)",
+      "O=Cc1ccc2ccccc21C(=O)NCc1ccccc1NCCl",
+      "O=Cc1ccccc1Nc1cc2ccccc21",
+      "CC(=O)Nc1ccc2ccccc2c1OCc1ccccc1",
+      "O=C(CNc1cc2ccccc2s1)c1ccccc1NCc1ccccc1C(=O)CC(CF)F.OCCl",
+      "CCN(CC)CCc1c2ccccc2c1C(=O)OCCN"
+    ]
+  }
+}

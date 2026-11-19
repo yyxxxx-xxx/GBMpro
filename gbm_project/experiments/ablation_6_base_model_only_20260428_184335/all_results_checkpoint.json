@@ -1,0 +1,517 @@
+{
+  "EGFR": [
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cccBrcc2)n1C(=O)O",
+      "tpsa": 0.0,
+      "mw": 324.15,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "EGFR inhibitor A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "EGFR inhibitor A",
+            "rationale": "Targeting EGFR with BBB permeability enhancement",
+            "base_mw": 375,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "EGFR inhibitor A + Peptide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Peptide",
+            "bbb_enhancers": "Amide linkages",
+            "estimated_mw": 495,
+            "expected_logp": "3-5",
+            "expected_tpsa": "15-25",
+            "rationale": "Enhances BBB penetration through amide linkages"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cccBrcc2)n1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cccBrcc2)n1C(=O)O",
+            "vina_score": 0.0,
+            "dili_prob": 1.0,
+            "bbb_score": 0.0,
+            "reward": 0.0,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": 0.0,
+        "dili_prob": 1.0,
+        "bbb_score": 0.0,
+        "reward": 0.0,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=0.00 kcal/mol (偏弱，需增强结合) | 肝毒性(DILI)=1.00 (警告: 高风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=0.0, LogP=0.00, TPSA=0.0Å² | Reward=0.0000"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)n1C(=O)O",
+      "tpsa": 71.33,
+      "mw": 249.22,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "EGFR ligand B",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "EGFR ligand B",
+            "rationale": "Enhancing EGFR binding while improving BBB crossing",
+            "base_mw": 425,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "EGFR ligand B + Cytotoxic Payload",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Cytotoxic Payload",
+            "bbb_enhancers": "PEGylation, Lipophilic Group",
+            "estimated_mw": 510,
+            "expected_logp": "5-6",
+            "expected_tpsa": "12-15 sq.A",
+            "rationale": "Enhances tumor cell uptake and toxicity"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(F)cc2)n1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)n1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.21599013333333325,
+            "reward": 0.5690538535892877,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.21599013333333325,
+        "reward": 0.5690538535892877,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.22 (低CNS渗透，不适合GBM) | 理化性质: MW=249.2, LogP=1.58, TPSA=71.3Å² | Reward=0.5691"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 255.27,
+      "logp": 3.01,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "EGFR ligand B",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "EGFR ligand B",
+            "rationale": "Enhancing EGFR binding while improving BBB crossing",
+            "base_mw": 425,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "EGFR ligand B + Radiolabel (Iodine-131)",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Radiolabel (Iodine-131)",
+            "bbb_enhancers": "Cationic Surfactants",
+            "estimated_mw": 530,
+            "expected_logp": "3-4",
+            "expected_tpsa": "8-10 sq.A",
+            "rationale": "Targeted radiotherapy with BBB penetration"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2ccccc2)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.40922026666666667,
+            "reward": 0.6191516331258343,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.40922026666666667,
+        "reward": 0.6191516331258343,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.41 (中等CNS渗透) | 理化性质: MW=255.3, LogP=3.01, TPSA=66.4Å² | Reward=0.6192"
+    },
+    {
+      "smiles": "CN1C(=CC=CC1)N(CC(=O)O)C(=O)O",
+      "tpsa": 81.08,
+      "mw": 212.2,
+      "logp": 0.39,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "EGF-Diterpene",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "EGF-Diterpene",
+            "rationale": "Integrates growth factor & lipophilic terpenoids for tumor specificity and penetration.",
+            "base_mw": 420,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "EGF-Diterpene + Pyrrolopyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Pyrrolopyrimidine",
+            "bbb_enhancers": "P-glycoprotein inhibitor",
+            "estimated_mw": 430,
+            "expected_logp": "5-6",
+            "expected_tpsa": "50-70",
+            "rationale": "Balances high BBB permeability with acceptable lipophilicity and TPSA"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CN1C(=CC=CC1)N(CC(=O)O)C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CN1C(=CC=CC1)N(CC(=O)O)C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.0,
+            "reward": 0.019265271558547847,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.0,
+        "reward": 0.019265271558547847,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.00 (低CNS渗透，不适合GBM) | 理化性质: MW=212.2, LogP=0.39, TPSA=81.1Å² | Reward=0.0193"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(C)cc2)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 256.28,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "EGFRi-Quinoline",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "EGFRi-Quinoline",
+            "rationale": "Utilizes quinoline for efficient EGFR inhibition with right logP value.",
+            "base_mw": 375,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "EGFRi-Quinoline + Quinoline derivative",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Quinoline derivative",
+            "bbb_enhancers": "PEGylation, cyclodextrin inclusion",
+            "estimated_mw": 495,
+            "expected_logp": "3-4",
+            "expected_tpsa": "60-70",
+            "rationale": "Enhances BBB penetration while maintaining potency"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(C)cc2)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(C)cc2)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.31604021333333315,
+            "reward": 0.614924284141226,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.31604021333333315,
+        "reward": 0.614924284141226,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.32 (低CNS渗透，不适合GBM) | 理化性质: MW=256.3, LogP=2.09, TPSA=66.4Å² | Reward=0.6149"
+    },
+    {
+      "smiles": "Cc1ccc(CBr)cc1C(=O)Nc2ccccc2N",
+      "tpsa": 55.12,
+      "mw": 319.2,
+      "logp": 3.72,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "EGFRi-Quinoline",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "EGFRi-Quinoline",
+            "rationale": "Utilizes quinoline for efficient EGFR inhibition with right logP value.",
+            "base_mw": 375,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "EGFRi-Quinoline + Modified quinoline linker",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Modified quinoline linker",
+            "bbb_enhancers": "Lipophilic modification, prodrug design",
+            "estimated_mw": 480,
+            "expected_logp": "5-6",
+            "expected_tpsa": "80-90",
+            "rationale": "Increases lipid solubility for better tissue distribution"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1ccc(CBr)cc1C(=O)Nc2ccccc2N",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1ccc(CBr)cc1C(=O)Nc2ccccc2N",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.5928905600000001,
+            "reward": 0.6722120939586043,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.5928905600000001,
+        "reward": 0.6722120939586043,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.59 (中等CNS渗透) | 理化性质: MW=319.2, LogP=3.72, TPSA=55.1Å² | Reward=0.6722"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 260.24,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Pyrazine Analog",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Pyrazine Analog",
+            "rationale": "Potent EGFR binding agent",
+            "base_mw": 331,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Pyrazine Analog + Aromatic amine",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Aromatic amine",
+            "bbb_enhancers": "PEG chain, cyclodextrin cavity",
+            "estimated_mw": 420,
+            "expected_logp": "3-4",
+            "expected_tpsa": "180-220",
+            "rationale": "Balances solubility and BBB penetration."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.2966429866666666,
+            "reward": 0.607649587973319,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.2966429866666666,
+        "reward": 0.607649587973319,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.30 (低CNS渗透，不适合GBM) | 理化性质: MW=260.2, LogP=1.90, TPSA=66.4Å² | Reward=0.6076"
+    },
+    {
+      "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+      "tpsa": 66.4,
+      "mw": 260.24,
+      "logp": null,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Pyrazine Analog",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Pyrazine Analog",
+            "rationale": "Potent EGFR binding agent",
+            "base_mw": 331,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Pyrazine Analog + Pyridine derivative",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Pyridine derivative",
+            "bbb_enhancers": "Alkyl chain, cholesterol group",
+            "estimated_mw": 460,
+            "expected_logp": "3-4",
+            "expected_tpsa": "170-200",
+            "rationale": "Enhances lipid solubility and brain targeting."
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "CC(=O)Nc1ccc(-c2cc(F)cc2)cc1C(=O)O",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.2966429866666666,
+            "reward": 0.607649587973319,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.2966429866666666,
+        "reward": 0.607649587973319,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.30 (低CNS渗透，不适合GBM) | 理化性质: MW=260.2, LogP=1.90, TPSA=66.4Å² | Reward=0.6076"
+    },
+    {
+      "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+      "tpsa": 54.88,
+      "mw": 341.77,
+      "logp": 4.5,
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "Compound A",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "Compound A",
+            "rationale": "Balances MW and BBB permeability",
+            "base_mw": 350,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "Compound A + Aldehyde",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "Aldehyde",
+            "bbb_enhancers": "Fatty acid, cholesterol",
+            "estimated_mw": 470,
+            "expected_logp": "5-6",
+            "expected_tpsa": "100-120",
+            "rationale": "High MW ensures retention, aids in BBB crossing"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+          "evaluation": "likely",
+          "metadata": {
+            "smiles": "Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3",
+            "vina_score": -7.5,
+            "dili_prob": 0.0,
+            "bbb_score": 0.6735284266666669,
+            "reward": 0.6510207833345124,
+            "is_pruned": false,
+            "refinement_round": 0
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs_feedback",
+      "physical_evaluation": {
+        "vina_score": -7.5,
+        "dili_prob": 0.0,
+        "bbb_score": 0.6735284266666669,
+        "reward": 0.6510207833345124,
+        "verdict": "likely",
+        "is_pruned": false
+      },
+      "physical_feedback": "Vina得分=-7.50 kcal/mol (中等结合) | 肝毒性(DILI)=0.00 (低风险) | BBB评分=0.67 (中等CNS渗透) | 理化性质: MW=341.8, LogP=4.50, TPSA=54.9Å² | Reward=0.6510"
+    }
+  ]
+}

@@ -1,0 +1,5502 @@
+[
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: 10.DEBC, Cell State: OPC, Score: 1.000",
+    "output": "基于10.DEBC的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "10.DEBC",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为5.50。",
+    "input": "Drug: 16,16.dimethylprostaglandin.e2, Cell State: OPC, Score: 5.500",
+    "output": "16,16.dimethylprostaglandin.e2的连接模式（OPC分数：5.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "16,16.dimethylprostaglandin.e2",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.83。",
+    "input": "Drug: 17.hydroxyprogesterone.caproate, Cell State: OPC, Score: 1.833",
+    "output": "基于17.hydroxyprogesterone.caproate的高OPC连接性（1.83），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "17.hydroxyprogesterone.caproate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: 2',5'.dideoxyadenosine, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似2',5'.dideoxyadenosine的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "2',5'.dideoxyadenosine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: 2.iminobiotin, Cell State: OPC, Score: 1.000",
+    "output": "基于2.iminobiotin的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "2.iminobiotin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: 2.methoxyestradiol, Cell State: OPC, Score: 2.333",
+    "output": "2.methoxyestradiol的连接模式（OPC分数：2.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "2.methoxyestradiol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: 3.amino.benzamide, Cell State: OPC, Score: 1.000",
+    "output": "3.amino.benzamide的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "3.amino.benzamide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: 3.deazaadenosine, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似3.deazaadenosine的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "3.deazaadenosine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.61。",
+    "input": "Drug: A.443654, Cell State: OPC, Score: 1.614",
+    "output": "A.443654的连接模式（OPC分数：1.61）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "A.443654",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: abacavir, Cell State: OPC, Score: 3.000",
+    "output": "abacavir的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "abacavir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: ABT.239, Cell State: OPC, Score: 2.000",
+    "output": "基于ABT.239的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ABT.239",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: acarbose, Cell State: OPC, Score: 1.333",
+    "output": "基于acarbose的高OPC连接性（1.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "acarbose",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: acebutolol, Cell State: OPC, Score: 1.000",
+    "output": "基于acebutolol的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "acebutolol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.10。",
+    "input": "Drug: acetazolamide, Cell State: OPC, Score: 1.100",
+    "output": "基于acetazolamide的高OPC连接性（1.10），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "acetazolamide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: acivicin, Cell State: OPC, Score: 1.000",
+    "output": "基于acivicin的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "acivicin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.20。",
+    "input": "Drug: aclidinium, Cell State: OPC, Score: 1.200",
+    "output": "靶向OPC细胞的分子应包含类似aclidinium的结构特征，该药显示出强的连接性（分数：1.20）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "aclidinium",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为5.00。",
+    "input": "Drug: acyclovir, Cell State: OPC, Score: 5.000",
+    "output": "靶向OPC细胞的分子应包含类似acyclovir的结构特征，该药显示出强的连接性（分数：5.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "acyclovir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: adapalene, Cell State: OPC, Score: 3.000",
+    "output": "adapalene的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "adapalene",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.70。",
+    "input": "Drug: adarotene, Cell State: OPC, Score: 2.704",
+    "output": "靶向OPC细胞的分子应包含类似adarotene的结构特征，该药显示出强的连接性（分数：2.70）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "adarotene",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: adoprazine, Cell State: OPC, Score: 1.000",
+    "output": "基于adoprazine的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "adoprazine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.50。",
+    "input": "Drug: AEE.788, Cell State: OPC, Score: 4.500",
+    "output": "基于AEE.788的高OPC连接性（4.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AEE.788",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: afatinib, Cell State: OPC, Score: 1.000",
+    "output": "afatinib的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "afatinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.50。",
+    "input": "Drug: AGK.2, Cell State: OPC, Score: 4.500",
+    "output": "基于AGK.2的高OPC连接性（4.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AGK.2",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: AKT.inhibitor.1.2, Cell State: OPC, Score: 2.000",
+    "output": "AKT.inhibitor.1.2的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AKT.inhibitor.1.2",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: alagebrium, Cell State: OPC, Score: 3.000",
+    "output": "基于alagebrium的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "alagebrium",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.89。",
+    "input": "Drug: alaproclate, Cell State: OPC, Score: 0.889",
+    "output": "alaproclate的连接模式（OPC分数：0.89）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "alaproclate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.46。",
+    "input": "Drug: albendazole, Cell State: OPC, Score: 1.457",
+    "output": "靶向OPC细胞的分子应包含类似albendazole的结构特征，该药显示出强的连接性（分数：1.46）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "albendazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.90。",
+    "input": "Drug: alisertib, Cell State: OPC, Score: 2.900",
+    "output": "基于alisertib的高OPC连接性（2.90），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "alisertib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.80。",
+    "input": "Drug: almitrine, Cell State: OPC, Score: 1.800",
+    "output": "almitrine的连接模式（OPC分数：1.80）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "almitrine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.50。",
+    "input": "Drug: alpelisib, Cell State: OPC, Score: 3.500",
+    "output": "alpelisib的连接模式（OPC分数：3.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "alpelisib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: altanserin, Cell State: OPC, Score: 1.000",
+    "output": "altanserin的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "altanserin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.27。",
+    "input": "Drug: altrenogest, Cell State: OPC, Score: 2.267",
+    "output": "altrenogest的连接模式（OPC分数：2.27）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "altrenogest",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.58。",
+    "input": "Drug: alvespimycin, Cell State: OPC, Score: 1.579",
+    "output": "基于alvespimycin的高OPC连接性（1.58），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "alvespimycin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: alvimopan, Cell State: OPC, Score: 3.000",
+    "output": "基于alvimopan的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "alvimopan",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.38。",
+    "input": "Drug: alvocidib, Cell State: OPC, Score: 1.378",
+    "output": "基于alvocidib的高OPC连接性（1.38），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "alvocidib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: AM.24, Cell State: OPC, Score: 1.000",
+    "output": "AM.24的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AM.24",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.40。",
+    "input": "Drug: ambrisentan, Cell State: OPC, Score: 1.400",
+    "output": "基于ambrisentan的高OPC连接性（1.40），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ambrisentan",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.88。",
+    "input": "Drug: amcinonide, Cell State: OPC, Score: 1.875",
+    "output": "amcinonide的连接模式（OPC分数：1.88）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "amcinonide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.60。",
+    "input": "Drug: AMD.11070, Cell State: OPC, Score: 2.600",
+    "output": "靶向OPC细胞的分子应包含类似AMD.11070的结构特征，该药显示出强的连接性（分数：2.60）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AMD.11070",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: AMG.208, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似AMG.208的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AMG.208",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.40。",
+    "input": "Drug: AMG.232, Cell State: OPC, Score: 1.400",
+    "output": "基于AMG.232的高OPC连接性（1.40），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AMG.232",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: AMG.517, Cell State: OPC, Score: 1.500",
+    "output": "基于AMG.517的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AMG.517",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.44。",
+    "input": "Drug: amikacin, Cell State: OPC, Score: 1.444",
+    "output": "靶向OPC细胞的分子应包含类似amikacin的结构特征，该药显示出强的连接性（分数：1.44）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "amikacin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.29。",
+    "input": "Drug: amineptine, Cell State: OPC, Score: 2.286",
+    "output": "基于amineptine的高OPC连接性（2.29），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "amineptine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: aminoguanidine, Cell State: OPC, Score: 1.333",
+    "output": "aminoguanidine的连接模式（OPC分数：1.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "aminoguanidine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.43。",
+    "input": "Drug: aminosalicylic.acid, Cell State: OPC, Score: 1.429",
+    "output": "aminosalicylic.acid的连接模式（OPC分数：1.43）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "aminosalicylic.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: amiprilose, Cell State: OPC, Score: 1.000",
+    "output": "amiprilose的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "amiprilose",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: amlodipine, Cell State: OPC, Score: 2.000",
+    "output": "基于amlodipine的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "amlodipine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: amodiaquine, Cell State: OPC, Score: 1.500",
+    "output": "amodiaquine的连接模式（OPC分数：1.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "amodiaquine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.20。",
+    "input": "Drug: ampalex, Cell State: OPC, Score: 2.200",
+    "output": "ampalex的连接模式（OPC分数：2.20）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "ampalex",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.60。",
+    "input": "Drug: amsacrine, Cell State: OPC, Score: 1.600",
+    "output": "靶向OPC细胞的分子应包含类似amsacrine的结构特征，该药显示出强的连接性（分数：1.60）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "amsacrine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.50。",
+    "input": "Drug: amtolmetin.guacil, Cell State: OPC, Score: 2.500",
+    "output": "基于amtolmetin.guacil的高OPC连接性（2.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "amtolmetin.guacil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: anacetrapib, Cell State: OPC, Score: 2.333",
+    "output": "anacetrapib的连接模式（OPC分数：2.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "anacetrapib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: anagrelide, Cell State: OPC, Score: 2.000",
+    "output": "anagrelide的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "anagrelide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: anandamide, Cell State: OPC, Score: 1.333",
+    "output": "靶向OPC细胞的分子应包含类似anandamide的结构特征，该药显示出强的连接性（分数：1.33）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "anandamide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: andarine, Cell State: OPC, Score: 1.000",
+    "output": "andarine的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "andarine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.75。",
+    "input": "Drug: andrographolide, Cell State: OPC, Score: 2.750",
+    "output": "andrographolide的连接模式（OPC分数：2.75）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "andrographolide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: anecortave.acetate, Cell State: OPC, Score: 1.000",
+    "output": "基于anecortave.acetate的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "anecortave.acetate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: anidulafungin, Cell State: OPC, Score: 1.667",
+    "output": "基于anidulafungin的高OPC连接性（1.67），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "anidulafungin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: anisodamine, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似anisodamine的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "anisodamine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.89。",
+    "input": "Drug: AP.26113, Cell State: OPC, Score: 2.895",
+    "output": "基于AP.26113的高OPC连接性（2.89），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AP.26113",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: APD.668, Cell State: OPC, Score: 1.000",
+    "output": "基于APD.668的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "APD.668",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.44。",
+    "input": "Drug: aphidicolin, Cell State: OPC, Score: 2.444",
+    "output": "aphidicolin的连接模式（OPC分数：2.44）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "aphidicolin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.29。",
+    "input": "Drug: apocynin, Cell State: OPC, Score: 1.286",
+    "output": "apocynin的连接模式（OPC分数：1.29）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "apocynin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: apremilast, Cell State: OPC, Score: 2.000",
+    "output": "基于apremilast的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "apremilast",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: arbutin, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似arbutin的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "arbutin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: argatroban, Cell State: OPC, Score: 1.000",
+    "output": "基于argatroban的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "argatroban",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: aripiprazole, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似aripiprazole的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "aripiprazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: armodafinil, Cell State: OPC, Score: 2.000",
+    "output": "基于armodafinil的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "armodafinil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.20。",
+    "input": "Drug: arofylline, Cell State: OPC, Score: 1.200",
+    "output": "基于arofylline的高OPC连接性（1.20），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "arofylline",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.14。",
+    "input": "Drug: ARP.101, Cell State: OPC, Score: 1.143",
+    "output": "基于ARP.101的高OPC连接性（1.14），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ARP.101",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为5.00。",
+    "input": "Drug: ARRY.334543, Cell State: OPC, Score: 5.000",
+    "output": "基于ARRY.334543的高OPC连接性（5.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ARRY.334543",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.36。",
+    "input": "Drug: AS.601245, Cell State: OPC, Score: 1.360",
+    "output": "靶向OPC细胞的分子应包含类似AS.601245的结构特征，该药显示出强的连接性（分数：1.36）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AS.601245",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: AS.605240, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似AS.605240的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AS.605240",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.22。",
+    "input": "Drug: AS.703026, Cell State: OPC, Score: 2.219",
+    "output": "靶向OPC细胞的分子应包含类似AS.703026的结构特征，该药显示出强的连接性（分数：2.22）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AS.703026",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.89。",
+    "input": "Drug: ASC.J9, Cell State: OPC, Score: 1.889",
+    "output": "靶向OPC细胞的分子应包含类似ASC.J9的结构特征，该药显示出强的连接性（分数：1.89）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ASC.J9",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: aspirin, Cell State: OPC, Score: 3.000",
+    "output": "基于aspirin的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "aspirin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为5.00。",
+    "input": "Drug: asymmetrical.dimethylarginine, Cell State: OPC, Score: 5.000",
+    "output": "基于asymmetrical.dimethylarginine的高OPC连接性（5.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "asymmetrical.dimethylarginine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.89。",
+    "input": "Drug: AT.13387, Cell State: OPC, Score: 1.893",
+    "output": "AT.13387的连接模式（OPC分数：1.89）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AT.13387",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.52。",
+    "input": "Drug: AT.7519, Cell State: OPC, Score: 1.519",
+    "output": "AT.7519的连接模式（OPC分数：1.52）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AT.7519",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.39。",
+    "input": "Drug: AT.9283, Cell State: OPC, Score: 1.393",
+    "output": "AT.9283的连接模式（OPC分数：1.39）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AT.9283",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: ataluren, Cell State: OPC, Score: 3.000",
+    "output": "基于ataluren的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ataluren",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: atenolol.(+/.), Cell State: OPC, Score: 1.000",
+    "output": "atenolol.(+/.)的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "atenolol.(+/.)",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.54。",
+    "input": "Drug: atorvastatin, Cell State: OPC, Score: 2.538",
+    "output": "atorvastatin的连接模式（OPC分数：2.54）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "atorvastatin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: atracurium, Cell State: OPC, Score: 2.000",
+    "output": "atracurium的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "atracurium",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为7.00。",
+    "input": "Drug: aurora.a.inhibitor.i, Cell State: OPC, Score: 7.000",
+    "output": "基于aurora.a.inhibitor.i的高OPC连接性（7.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "aurora.a.inhibitor.i",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为6.25。",
+    "input": "Drug: AV.412, Cell State: OPC, Score: 6.250",
+    "output": "靶向OPC细胞的分子应包含类似AV.412的结构特征，该药显示出强的连接性（分数：6.25）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AV.412",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: AV.608, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似AV.608的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AV.608",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: avagacestat, Cell State: OPC, Score: 2.000",
+    "output": "avagacestat的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "avagacestat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: avasimibe, Cell State: OPC, Score: 2.333",
+    "output": "基于avasimibe的高OPC连接性（2.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "avasimibe",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.64。",
+    "input": "Drug: AVL.292, Cell State: OPC, Score: 1.636",
+    "output": "AVL.292的连接模式（OPC分数：1.64）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AVL.292",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.28。",
+    "input": "Drug: AVN.944, Cell State: OPC, Score: 2.278",
+    "output": "基于AVN.944的高OPC连接性（2.28），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AVN.944",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.11。",
+    "input": "Drug: AZ.20, Cell State: OPC, Score: 1.111",
+    "output": "AZ.20的连接模式（OPC分数：1.11）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AZ.20",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.67。",
+    "input": "Drug: azacitidine, Cell State: OPC, Score: 2.667",
+    "output": "azacitidine的连接模式（OPC分数：2.67）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "azacitidine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.40。",
+    "input": "Drug: AZD.1208, Cell State: OPC, Score: 1.400",
+    "output": "靶向OPC细胞的分子应包含类似AZD.1208的结构特征，该药显示出强的连接性（分数：1.40）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AZD.1208",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.57。",
+    "input": "Drug: AZD.1981, Cell State: OPC, Score: 2.571",
+    "output": "基于AZD.1981的高OPC连接性（2.57），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AZD.1981",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.70。",
+    "input": "Drug: AZD.2014, Cell State: OPC, Score: 1.703",
+    "output": "AZD.2014的连接模式（OPC分数：1.70）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AZD.2014",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: AZD.5363, Cell State: OPC, Score: 1.667",
+    "output": "基于AZD.5363的高OPC连接性（1.67），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AZD.5363",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: AZD.6482, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似AZD.6482的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AZD.6482",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: AZD.7545, Cell State: OPC, Score: 1.000",
+    "output": "AZD.7545的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "AZD.7545",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: AZD.7762, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似AZD.7762的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "AZD.7762",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.04。",
+    "input": "Drug: AZD.8055, Cell State: OPC, Score: 2.036",
+    "output": "基于AZD.8055的高OPC连接性（2.04），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AZD.8055",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.75。",
+    "input": "Drug: AZD.8330, Cell State: OPC, Score: 1.750",
+    "output": "基于AZD.8330的高OPC连接性（1.75），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AZD.8330",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: AZD.8931, Cell State: OPC, Score: 2.000",
+    "output": "基于AZD.8931的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "AZD.8931",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: azelaic.acid, Cell State: OPC, Score: 1.000",
+    "output": "azelaic.acid的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "azelaic.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: baicalin, Cell State: OPC, Score: 1.000",
+    "output": "基于baicalin的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "baicalin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: balaglitazone, Cell State: OPC, Score: 4.000",
+    "output": "基于balaglitazone的高OPC连接性（4.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "balaglitazone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: balapiravir, Cell State: OPC, Score: 1.000",
+    "output": "基于balapiravir的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "balapiravir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: balicatib, Cell State: OPC, Score: 1.500",
+    "output": "基于balicatib的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "balicatib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: barasertib, Cell State: OPC, Score: 1.333",
+    "output": "基于barasertib的高OPC连接性（1.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "barasertib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: barasertib.HQPA, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似barasertib.HQPA的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "barasertib.HQPA",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.54。",
+    "input": "Drug: bardoxolone.methyl, Cell State: OPC, Score: 1.542",
+    "output": "基于bardoxolone.methyl的高OPC连接性（1.54），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "bardoxolone.methyl",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为6.00。",
+    "input": "Drug: basimglurant, Cell State: OPC, Score: 6.000",
+    "output": "靶向OPC细胞的分子应包含类似basimglurant的结构特征，该药显示出强的连接性（分数：6.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "basimglurant",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: batimastat, Cell State: OPC, Score: 2.333",
+    "output": "基于batimastat的高OPC连接性（2.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "batimastat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.19。",
+    "input": "Drug: BAY.87.2243, Cell State: OPC, Score: 1.190",
+    "output": "BAY.87.2243的连接模式（OPC分数：1.19）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "BAY.87.2243",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: BCI.540, Cell State: OPC, Score: 1.500",
+    "output": "基于BCI.540的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "BCI.540",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.83。",
+    "input": "Drug: beclomethasone.dipropionate, Cell State: OPC, Score: 1.833",
+    "output": "靶向OPC细胞的分子应包含类似beclomethasone.dipropionate的结构特征，该药显示出强的连接性（分数：1.83）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "beclomethasone.dipropionate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.29。",
+    "input": "Drug: belinostat, Cell State: OPC, Score: 1.288",
+    "output": "基于belinostat的高OPC连接性（1.29），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "belinostat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: bendamustine, Cell State: OPC, Score: 2.000",
+    "output": "bendamustine的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "bendamustine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: benzamil, Cell State: OPC, Score: 2.000",
+    "output": "基于benzamil的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "benzamil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.83。",
+    "input": "Drug: benzbromarone, Cell State: OPC, Score: 1.833",
+    "output": "靶向OPC细胞的分子应包含类似benzbromarone的结构特征，该药显示出强的连接性（分数：1.83）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "benzbromarone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: benzotript, Cell State: OPC, Score: 1.000",
+    "output": "基于benzotript的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "benzotript",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: benzydamine, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似benzydamine的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "benzydamine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.12。",
+    "input": "Drug: bepotastine, Cell State: OPC, Score: 1.125",
+    "output": "靶向OPC细胞的分子应包含类似bepotastine的结构特征，该药显示出强的连接性（分数：1.12）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "bepotastine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: betrixaban, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似betrixaban的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "betrixaban",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为6.00。",
+    "input": "Drug: betulinic.acid, Cell State: OPC, Score: 6.000",
+    "output": "基于betulinic.acid的高OPC连接性（6.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "betulinic.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: bevirimat.dimeglumine, Cell State: OPC, Score: 1.000",
+    "output": "bevirimat.dimeglumine的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "bevirimat.dimeglumine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.14。",
+    "input": "Drug: bexarotene, Cell State: OPC, Score: 3.143",
+    "output": "靶向OPC细胞的分子应包含类似bexarotene的结构特征，该药显示出强的连接性（分数：3.14）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "bexarotene",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.86。",
+    "input": "Drug: BI.2536, Cell State: OPC, Score: 0.864",
+    "output": "靶向OPC细胞的分子应包含类似BI.2536的结构特征，该药显示出强的连接性（分数：0.86）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "BI.2536",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.83。",
+    "input": "Drug: BIBX.1382, Cell State: OPC, Score: 0.833",
+    "output": "靶向OPC细胞的分子应包含类似BIBX.1382的结构特征，该药显示出强的连接性（分数：0.83）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "BIBX.1382",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: bifemelane, Cell State: OPC, Score: 1.000",
+    "output": "基于bifemelane的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "bifemelane",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: bifonazole, Cell State: OPC, Score: 2.333",
+    "output": "基于bifonazole的高OPC连接性（2.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "bifonazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: BIIB.021, Cell State: OPC, Score: 1.326",
+    "output": "BIIB.021的连接模式（OPC分数：1.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "BIIB.021",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: bindarit, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似bindarit的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "bindarit",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: binimetinib, Cell State: OPC, Score: 2.000",
+    "output": "基于binimetinib的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "binimetinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: biperiden, Cell State: OPC, Score: 2.000",
+    "output": "基于biperiden的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "biperiden",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.88。",
+    "input": "Drug: bisindolylmaleimide, Cell State: OPC, Score: 0.875",
+    "output": "基于bisindolylmaleimide的高OPC连接性（0.88），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "bisindolylmaleimide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: BIX.01294, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似BIX.01294的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "BIX.01294",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: blonanserin, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似blonanserin的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "blonanserin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.18。",
+    "input": "Drug: BMS.299897, Cell State: OPC, Score: 2.182",
+    "output": "BMS.299897的连接模式（OPC分数：2.18）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "BMS.299897",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.50。",
+    "input": "Drug: BMS.345541, Cell State: OPC, Score: 4.500",
+    "output": "靶向OPC细胞的分子应包含类似BMS.345541的结构特征，该药显示出强的连接性（分数：4.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "BMS.345541",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.47。",
+    "input": "Drug: BMS.387032, Cell State: OPC, Score: 1.467",
+    "output": "靶向OPC细胞的分子应包含类似BMS.387032的结构特征，该药显示出强的连接性（分数：1.47）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "BMS.387032",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: BMS.707035, Cell State: OPC, Score: 1.500",
+    "output": "BMS.707035的连接模式（OPC分数：1.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "BMS.707035",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: BMS.927711, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似BMS.927711的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "BMS.927711",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.88。",
+    "input": "Drug: BMY.14802, Cell State: OPC, Score: 0.875",
+    "output": "基于BMY.14802的高OPC连接性（0.88），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "BMY.14802",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: bopindolol, Cell State: OPC, Score: 1.000",
+    "output": "基于bopindolol的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "bopindolol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.10。",
+    "input": "Drug: bortezomib, Cell State: OPC, Score: 2.100",
+    "output": "基于bortezomib的高OPC连接性（2.10），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "bortezomib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.33。",
+    "input": "Drug: bosentan, Cell State: OPC, Score: 3.333",
+    "output": "bosentan的连接模式（OPC分数：3.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "bosentan",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为12.00。",
+    "input": "Drug: BRD.K68548958, Cell State: OPC, Score: 12.000",
+    "output": "BRD.K68548958的连接模式（OPC分数：12.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "BRD.K68548958",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.97。",
+    "input": "Drug: brequinar, Cell State: OPC, Score: 0.972",
+    "output": "靶向OPC细胞的分子应包含类似brequinar的结构特征，该药显示出强的连接性（分数：0.97）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "brequinar",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: bretazenil, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似bretazenil的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "bretazenil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: brexpiprazole, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似brexpiprazole的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "brexpiprazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: brivanib, Cell State: OPC, Score: 3.000",
+    "output": "靶向OPC细胞的分子应包含类似brivanib的结构特征，该药显示出强的连接性（分数：3.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "brivanib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: bropirimine, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似bropirimine的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "bropirimine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.90。",
+    "input": "Drug: bruceantin, Cell State: OPC, Score: 1.898",
+    "output": "基于bruceantin的高OPC连接性（1.90），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "bruceantin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: BTS.54505, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似BTS.54505的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "BTS.54505",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: budipine, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似budipine的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "budipine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: buflomedil, Cell State: OPC, Score: 1.000",
+    "output": "基于buflomedil的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "buflomedil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: bumetanide, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似bumetanide的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "bumetanide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.91。",
+    "input": "Drug: buparlisib, Cell State: OPC, Score: 2.909",
+    "output": "靶向OPC细胞的分子应包含类似buparlisib的结构特征，该药显示出强的连接性（分数：2.91）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "buparlisib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: bupropion, Cell State: OPC, Score: 3.000",
+    "output": "bupropion的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "bupropion",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.80。",
+    "input": "Drug: busulfan, Cell State: OPC, Score: 2.800",
+    "output": "busulfan的连接模式（OPC分数：2.80）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "busulfan",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: butaclamol, Cell State: OPC, Score: 1.000",
+    "output": "butaclamol的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "butaclamol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为9.00。",
+    "input": "Drug: BX.795, Cell State: OPC, Score: 9.000",
+    "output": "基于BX.795的高OPC连接性（9.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "BX.795",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.45。",
+    "input": "Drug: cabazitaxel, Cell State: OPC, Score: 1.450",
+    "output": "cabazitaxel的连接模式（OPC分数：1.45）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cabazitaxel",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.40。",
+    "input": "Drug: cabergoline, Cell State: OPC, Score: 1.400",
+    "output": "靶向OPC细胞的分子应包含类似cabergoline的结构特征，该药显示出强的连接性（分数：1.40）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "cabergoline",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: caffeine, Cell State: OPC, Score: 1.000",
+    "output": "caffeine的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "caffeine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.08。",
+    "input": "Drug: calcitriol, Cell State: OPC, Score: 1.083",
+    "output": "calcitriol的连接模式（OPC分数：1.08）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "calcitriol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: calpeptin, Cell State: OPC, Score: 3.000",
+    "output": "基于calpeptin的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "calpeptin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: camicinal, Cell State: OPC, Score: 1.667",
+    "output": "基于camicinal的高OPC连接性（1.67），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "camicinal",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.29。",
+    "input": "Drug: camptothecin, Cell State: OPC, Score: 1.294",
+    "output": "基于camptothecin的高OPC连接性（1.29），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "camptothecin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: canertinib, Cell State: OPC, Score: 2.000",
+    "output": "canertinib的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "canertinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: carbamazepine, Cell State: OPC, Score: 1.000",
+    "output": "carbamazepine的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "carbamazepine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: carbenoxolone, Cell State: OPC, Score: 1.000",
+    "output": "基于carbenoxolone的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "carbenoxolone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: carbimazole, Cell State: OPC, Score: 2.000",
+    "output": "carbimazole的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "carbimazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.07。",
+    "input": "Drug: carfilzomib, Cell State: OPC, Score: 3.069",
+    "output": "carfilzomib的连接模式（OPC分数：3.07）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "carfilzomib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.80。",
+    "input": "Drug: carglumic.acid, Cell State: OPC, Score: 0.800",
+    "output": "靶向OPC细胞的分子应包含类似carglumic.acid的结构特征，该药显示出强的连接性（分数：0.80）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "carglumic.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: carisoprodol, Cell State: OPC, Score: 1.000",
+    "output": "carisoprodol的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "carisoprodol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: carprofen, Cell State: OPC, Score: 1.333",
+    "output": "carprofen的连接模式（OPC分数：1.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "carprofen",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.75。",
+    "input": "Drug: CC.401, Cell State: OPC, Score: 1.750",
+    "output": "基于CC.401的高OPC连接性（1.75），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "CC.401",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: cediranib, Cell State: OPC, Score: 1.667",
+    "output": "cediranib的连接模式（OPC分数：1.67）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cediranib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: cefdinir, Cell State: OPC, Score: 1.000",
+    "output": "cefdinir的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cefdinir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: cefepime, Cell State: OPC, Score: 1.000",
+    "output": "基于cefepime的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "cefepime",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: cefoperazone, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似cefoperazone的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "cefoperazone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.08。",
+    "input": "Drug: celastrol, Cell State: OPC, Score: 2.083",
+    "output": "celastrol的连接模式（OPC分数：2.08）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "celastrol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.45。",
+    "input": "Drug: CEP.37440, Cell State: OPC, Score: 3.455",
+    "output": "CEP.37440的连接模式（OPC分数：3.45）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "CEP.37440",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: cepharanthine, Cell State: OPC, Score: 1.000",
+    "output": "cepharanthine的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cepharanthine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: CG.930, Cell State: OPC, Score: 1.000",
+    "output": "基于CG.930的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "CG.930",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.44。",
+    "input": "Drug: CGP.60474, Cell State: OPC, Score: 1.439",
+    "output": "靶向OPC细胞的分子应包含类似CGP.60474的结构特征，该药显示出强的连接性（分数：1.44）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "CGP.60474",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.18。",
+    "input": "Drug: CGS.20625, Cell State: OPC, Score: 2.182",
+    "output": "基于CGS.20625的高OPC连接性（2.18），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "CGS.20625",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为9.00。",
+    "input": "Drug: chelerythrine, Cell State: OPC, Score: 9.000",
+    "output": "基于chelerythrine的高OPC连接性（9.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "chelerythrine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: chenodiol, Cell State: OPC, Score: 4.000",
+    "output": "chenodiol的连接模式（OPC分数：4.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "chenodiol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.20。",
+    "input": "Drug: CHIR.99021, Cell State: OPC, Score: 1.200",
+    "output": "基于CHIR.99021的高OPC连接性（1.20），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "CHIR.99021",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: chlorphenamine, Cell State: OPC, Score: 1.333",
+    "output": "基于chlorphenamine的高OPC连接性（1.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "chlorphenamine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: chlorpropamide, Cell State: OPC, Score: 4.000",
+    "output": "chlorpropamide的连接模式（OPC分数：4.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "chlorpropamide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: chlorprothixene, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似chlorprothixene的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "chlorprothixene",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: chlorthalidone, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似chlorthalidone的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "chlorthalidone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.80。",
+    "input": "Drug: chrysin, Cell State: OPC, Score: 0.800",
+    "output": "基于chrysin的高OPC连接性（0.80），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "chrysin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: CI.966, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似CI.966的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "CI.966",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: cianidanol, Cell State: OPC, Score: 1.000",
+    "output": "基于cianidanol的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "cianidanol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为5.17。",
+    "input": "Drug: ciclesonide, Cell State: OPC, Score: 5.167",
+    "output": "靶向OPC细胞的分子应包含类似ciclesonide的结构特征，该药显示出强的连接性（分数：5.17）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ciclesonide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: cilengitide, Cell State: OPC, Score: 3.000",
+    "output": "cilengitide的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cilengitide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: cimetidine, Cell State: OPC, Score: 1.500",
+    "output": "基于cimetidine的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "cimetidine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: cinaciguat, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似cinaciguat的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "cinaciguat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: cisapride, Cell State: OPC, Score: 1.000",
+    "output": "cisapride的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cisapride",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.08。",
+    "input": "Drug: cladribine, Cell State: OPC, Score: 3.083",
+    "output": "cladribine的连接模式（OPC分数：3.08）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cladribine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: clarithromycin, Cell State: OPC, Score: 2.000",
+    "output": "clarithromycin的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "clarithromycin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.75。",
+    "input": "Drug: climbazole, Cell State: OPC, Score: 1.750",
+    "output": "climbazole的连接模式（OPC分数：1.75）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "climbazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.53。",
+    "input": "Drug: clofarabine, Cell State: OPC, Score: 1.529",
+    "output": "靶向OPC细胞的分子应包含类似clofarabine的结构特征，该药显示出强的连接性（分数：1.53）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "clofarabine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.75。",
+    "input": "Drug: clofazimine, Cell State: OPC, Score: 2.750",
+    "output": "基于clofazimine的高OPC连接性（2.75），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "clofazimine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.85。",
+    "input": "Drug: clofibric.acid, Cell State: OPC, Score: 0.846",
+    "output": "clofibric.acid的连接模式（OPC分数：0.85）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "clofibric.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: clomifene, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似clomifene的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "clomifene",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: clonidine, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似clonidine的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "clonidine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: clotrimazole, Cell State: OPC, Score: 1.667",
+    "output": "靶向OPC细胞的分子应包含类似clotrimazole的结构特征，该药显示出强的连接性（分数：1.67）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "clotrimazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.25。",
+    "input": "Drug: clozapine, Cell State: OPC, Score: 1.250",
+    "output": "clozapine的连接模式（OPC分数：1.25）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "clozapine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: CO.102862, Cell State: OPC, Score: 1.000",
+    "output": "CO.102862的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "CO.102862",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为13.00。",
+    "input": "Drug: cobicistat, Cell State: OPC, Score: 13.000",
+    "output": "cobicistat的连接模式（OPC分数：13.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cobicistat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.07。",
+    "input": "Drug: cobimetinib, Cell State: OPC, Score: 2.067",
+    "output": "基于cobimetinib的高OPC连接性（2.07），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "cobimetinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.23。",
+    "input": "Drug: colchicine, Cell State: OPC, Score: 1.226",
+    "output": "靶向OPC细胞的分子应包含类似colchicine的结构特征，该药显示出强的连接性（分数：1.23）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "colchicine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.50。",
+    "input": "Drug: colforsin.daproate, Cell State: OPC, Score: 2.500",
+    "output": "基于colforsin.daproate的高OPC连接性（2.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "colforsin.daproate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.11。",
+    "input": "Drug: combretastatin.A.4, Cell State: OPC, Score: 1.106",
+    "output": "靶向OPC细胞的分子应包含类似combretastatin.A.4的结构特征，该药显示出强的连接性（分数：1.11）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "combretastatin.A.4",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为15.00。",
+    "input": "Drug: conivaptan, Cell State: OPC, Score: 15.000",
+    "output": "靶向OPC细胞的分子应包含类似conivaptan的结构特征，该药显示出强的连接性（分数：15.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "conivaptan",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: CP.724714, Cell State: OPC, Score: 1.667",
+    "output": "CP.724714的连接模式（OPC分数：1.67）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "CP.724714",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: CP.945598, Cell State: OPC, Score: 2.000",
+    "output": "基于CP.945598的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "CP.945598",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: CPI.613, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似CPI.613的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "CPI.613",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.20。",
+    "input": "Drug: crizotinib, Cell State: OPC, Score: 2.200",
+    "output": "基于crizotinib的高OPC连接性（2.20），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "crizotinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.25。",
+    "input": "Drug: CT.7758, Cell State: OPC, Score: 1.250",
+    "output": "靶向OPC细胞的分子应包含类似CT.7758的结构特征，该药显示出强的连接性（分数：1.25）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "CT.7758",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.06。",
+    "input": "Drug: CTS.1027, Cell State: OPC, Score: 1.062",
+    "output": "CTS.1027的连接模式（OPC分数：1.06）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "CTS.1027",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: cutamesine, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似cutamesine的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "cutamesine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.08。",
+    "input": "Drug: CX.4945, Cell State: OPC, Score: 1.083",
+    "output": "靶向OPC细胞的分子应包含类似CX.4945的结构特征，该药显示出强的连接性（分数：1.08）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "CX.4945",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: cyanocobalamin, Cell State: OPC, Score: 1.333",
+    "output": "基于cyanocobalamin的高OPC连接性（1.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "cyanocobalamin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: cyclizine, Cell State: OPC, Score: 1.500",
+    "output": "基于cyclizine的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "cyclizine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.58。",
+    "input": "Drug: cyclosporin.a, Cell State: OPC, Score: 1.583",
+    "output": "cyclosporin.a的连接模式（OPC分数：1.58）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cyclosporin.a",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: cyproheptadine, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似cyproheptadine的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "cyproheptadine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: CYT.997, Cell State: OPC, Score: 1.333",
+    "output": "靶向OPC细胞的分子应包含类似CYT.997的结构特征，该药显示出强的连接性（分数：1.33）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "CYT.997",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.20。",
+    "input": "Drug: cytochalasin.b, Cell State: OPC, Score: 2.200",
+    "output": "cytochalasin.b的连接模式（OPC分数：2.20）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "cytochalasin.b",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.20。",
+    "input": "Drug: dabrafenib, Cell State: OPC, Score: 2.200",
+    "output": "靶向OPC细胞的分子应包含类似dabrafenib的结构特征，该药显示出强的连接性（分数：2.20）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dabrafenib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.17。",
+    "input": "Drug: dacarbazine, Cell State: OPC, Score: 2.167",
+    "output": "靶向OPC细胞的分子应包含类似dacarbazine的结构特征，该药显示出强的连接性（分数：2.17）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dacarbazine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.34。",
+    "input": "Drug: dacinostat, Cell State: OPC, Score: 1.338",
+    "output": "靶向OPC细胞的分子应包含类似dacinostat的结构特征，该药显示出强的连接性（分数：1.34）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dacinostat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.71。",
+    "input": "Drug: danazol, Cell State: OPC, Score: 2.714",
+    "output": "danazol的连接模式（OPC分数：2.71）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "danazol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: danegaptide, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似danegaptide的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "danegaptide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.11。",
+    "input": "Drug: dantrolene, Cell State: OPC, Score: 2.111",
+    "output": "dantrolene的连接模式（OPC分数：2.11）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "dantrolene",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.20。",
+    "input": "Drug: danusertib, Cell State: OPC, Score: 4.200",
+    "output": "基于danusertib的高OPC连接性（4.20），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "danusertib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.25。",
+    "input": "Drug: dapivirine, Cell State: OPC, Score: 1.250",
+    "output": "基于dapivirine的高OPC连接性（1.25），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "dapivirine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为6.50。",
+    "input": "Drug: darapladib, Cell State: OPC, Score: 6.500",
+    "output": "基于darapladib的高OPC连接性（6.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "darapladib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: darifenacin, Cell State: OPC, Score: 1.000",
+    "output": "基于darifenacin的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "darifenacin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.92。",
+    "input": "Drug: dasabuvir, Cell State: OPC, Score: 0.917",
+    "output": "基于dasabuvir的高OPC连接性（0.92），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "dasabuvir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.06。",
+    "input": "Drug: daunorubicin, Cell State: OPC, Score: 2.057",
+    "output": "基于daunorubicin的高OPC连接性（2.06），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "daunorubicin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: dazmegrel, Cell State: OPC, Score: 2.000",
+    "output": "dazmegrel的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "dazmegrel",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: dazoxiben, Cell State: OPC, Score: 1.500",
+    "output": "dazoxiben的连接模式（OPC分数：1.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "dazoxiben",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.50。",
+    "input": "Drug: decitabine, Cell State: OPC, Score: 2.500",
+    "output": "靶向OPC细胞的分子应包含类似decitabine的结构特征，该药显示出强的连接性（分数：2.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "decitabine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.23。",
+    "input": "Drug: defactinib, Cell State: OPC, Score: 4.231",
+    "output": "靶向OPC细胞的分子应包含类似defactinib的结构特征，该药显示出强的连接性（分数：4.23）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "defactinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.75。",
+    "input": "Drug: deferasirox, Cell State: OPC, Score: 1.750",
+    "output": "基于deferasirox的高OPC连接性（1.75），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "deferasirox",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: deferiprone, Cell State: OPC, Score: 1.000",
+    "output": "deferiprone的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "deferiprone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.44。",
+    "input": "Drug: deforolimus, Cell State: OPC, Score: 1.441",
+    "output": "基于deforolimus的高OPC连接性（1.44），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "deforolimus",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.04。",
+    "input": "Drug: delanzomib, Cell State: OPC, Score: 2.043",
+    "output": "基于delanzomib的高OPC连接性（2.04），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "delanzomib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.38。",
+    "input": "Drug: deoxycholic.acid, Cell State: OPC, Score: 1.375",
+    "output": "靶向OPC细胞的分子应包含类似deoxycholic.acid的结构特征，该药显示出强的连接性（分数：1.38）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "deoxycholic.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: dequalinium, Cell State: OPC, Score: 1.333",
+    "output": "基于dequalinium的高OPC连接性（1.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "dequalinium",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.67。",
+    "input": "Drug: dexamethasone, Cell State: OPC, Score: 2.667",
+    "output": "靶向OPC细胞的分子应包含类似dexamethasone的结构特征，该药显示出强的连接性（分数：2.67）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dexamethasone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.11。",
+    "input": "Drug: dexamethasone.acetate, Cell State: OPC, Score: 2.111",
+    "output": "dexamethasone.acetate的连接模式（OPC分数：2.11）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "dexamethasone.acetate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: dexfenfluramine, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似dexfenfluramine的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dexfenfluramine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.21。",
+    "input": "Drug: dexloxiglumide, Cell State: OPC, Score: 1.212",
+    "output": "dexloxiglumide的连接模式（OPC分数：1.21）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "dexloxiglumide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.22。",
+    "input": "Drug: dexniguldipine, Cell State: OPC, Score: 2.222",
+    "output": "靶向OPC细胞的分子应包含类似dexniguldipine的结构特征，该药显示出强的连接性（分数：2.22）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dexniguldipine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.75。",
+    "input": "Drug: diazoxide, Cell State: OPC, Score: 1.750",
+    "output": "基于diazoxide的高OPC连接性（1.75），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "diazoxide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: diclofensine, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似diclofensine的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "diclofensine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: dicloxacillin, Cell State: OPC, Score: 3.000",
+    "output": "基于dicloxacillin的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "dicloxacillin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: diethylcarbamazine, Cell State: OPC, Score: 2.000",
+    "output": "基于diethylcarbamazine的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "diethylcarbamazine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.36。",
+    "input": "Drug: digoxin, Cell State: OPC, Score: 1.364",
+    "output": "digoxin的连接模式（OPC分数：1.36）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "digoxin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: dilazep, Cell State: OPC, Score: 1.000",
+    "output": "基于dilazep的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "dilazep",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: dimethyl.fumarate, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似dimethyl.fumarate的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dimethyl.fumarate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: diminazene.aceturate, Cell State: OPC, Score: 1.500",
+    "output": "基于diminazene.aceturate的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "diminazene.aceturate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.62。",
+    "input": "Drug: dinaciclib, Cell State: OPC, Score: 1.623",
+    "output": "靶向OPC细胞的分子应包含类似dinaciclib的结构特征，该药显示出强的连接性（分数：1.62）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dinaciclib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: dinoprost, Cell State: OPC, Score: 3.000",
+    "output": "基于dinoprost的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "dinoprost",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: diphenylpyraline, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似diphenylpyraline的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "diphenylpyraline",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为6.00。",
+    "input": "Drug: dipyridamole, Cell State: OPC, Score: 6.000",
+    "output": "dipyridamole的连接模式（OPC分数：6.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "dipyridamole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.88。",
+    "input": "Drug: disopyramide, Cell State: OPC, Score: 0.875",
+    "output": "靶向OPC细胞的分子应包含类似disopyramide的结构特征，该药显示出强的连接性（分数：0.88）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "disopyramide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: disulfiram, Cell State: OPC, Score: 4.000",
+    "output": "靶向OPC细胞的分子应包含类似disulfiram的结构特征，该药显示出强的连接性（分数：4.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "disulfiram",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.32。",
+    "input": "Drug: docetaxel, Cell State: OPC, Score: 1.317",
+    "output": "基于docetaxel的高OPC连接性（1.32），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "docetaxel",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: dofequidar, Cell State: OPC, Score: 1.667",
+    "output": "基于dofequidar的高OPC连接性（1.67），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "dofequidar",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: dolasetron, Cell State: OPC, Score: 2.000",
+    "output": "dolasetron的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "dolasetron",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.14。",
+    "input": "Drug: dolastatin.10, Cell State: OPC, Score: 1.138",
+    "output": "基于dolastatin.10的高OPC连接性（1.14），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "dolastatin.10",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: dolutegravir, Cell State: OPC, Score: 3.000",
+    "output": "靶向OPC细胞的分子应包含类似dolutegravir的结构特征，该药显示出强的连接性（分数：3.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dolutegravir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: donepezil, Cell State: OPC, Score: 1.000",
+    "output": "基于donepezil的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "donepezil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.45。",
+    "input": "Drug: dovitinib, Cell State: OPC, Score: 1.450",
+    "output": "靶向OPC细胞的分子应包含类似dovitinib的结构特征，该药显示出强的连接性（分数：1.45）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dovitinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: doxepin, Cell State: OPC, Score: 4.000",
+    "output": "基于doxepin的高OPC连接性（4.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "doxepin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: doxifluridine, Cell State: OPC, Score: 1.000",
+    "output": "doxifluridine的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "doxifluridine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.94。",
+    "input": "Drug: doxorubicin, Cell State: OPC, Score: 1.939",
+    "output": "doxorubicin的连接模式（OPC分数：1.94）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "doxorubicin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: doxycycline, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似doxycycline的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "doxycycline",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: DPCPX, Cell State: OPC, Score: 1.667",
+    "output": "基于DPCPX的高OPC连接性（1.67），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "DPCPX",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: DPI.201106, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似DPI.201106的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "DPI.201106",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: dronedarone, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似dronedarone的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "dronedarone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: droperidol, Cell State: OPC, Score: 3.000",
+    "output": "基于droperidol的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "droperidol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: drospirenone, Cell State: OPC, Score: 1.000",
+    "output": "drospirenone的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "drospirenone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: dutasteride, Cell State: OPC, Score: 1.000",
+    "output": "dutasteride的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "dutasteride",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: ecabet, Cell State: OPC, Score: 1.000",
+    "output": "基于ecabet的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ecabet",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: efaproxiral, Cell State: OPC, Score: 4.000",
+    "output": "基于efaproxiral的高OPC连接性（4.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "efaproxiral",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.70。",
+    "input": "Drug: efatutazone, Cell State: OPC, Score: 3.700",
+    "output": "efatutazone的连接模式（OPC分数：3.70）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "efatutazone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: efavirenz, Cell State: OPC, Score: 3.000",
+    "output": "基于efavirenz的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "efavirenz",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: eflornithine, Cell State: OPC, Score: 1.000",
+    "output": "eflornithine的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "eflornithine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.91。",
+    "input": "Drug: elesclomol, Cell State: OPC, Score: 0.909",
+    "output": "靶向OPC细胞的分子应包含类似elesclomol的结构特征，该药显示出强的连接性（分数：0.91）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "elesclomol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为10.00。",
+    "input": "Drug: ellagic.acid, Cell State: OPC, Score: 10.000",
+    "output": "靶向OPC细胞的分子应包含类似ellagic.acid的结构特征，该药显示出强的连接性（分数：10.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ellagic.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: elvitegravir, Cell State: OPC, Score: 2.000",
+    "output": "elvitegravir的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "elvitegravir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.75。",
+    "input": "Drug: EMD.1214063, Cell State: OPC, Score: 2.750",
+    "output": "靶向OPC细胞的分子应包含类似EMD.1214063的结构特征，该药显示出强的连接性（分数：2.75）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "EMD.1214063",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: EMD.53998, Cell State: OPC, Score: 3.000",
+    "output": "基于EMD.53998的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "EMD.53998",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: emtricitabine, Cell State: OPC, Score: 2.333",
+    "output": "emtricitabine的连接模式（OPC分数：2.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "emtricitabine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.59。",
+    "input": "Drug: ENMD.2076, Cell State: OPC, Score: 1.588",
+    "output": "靶向OPC细胞的分子应包含类似ENMD.2076的结构特征，该药显示出强的连接性（分数：1.59）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ENMD.2076",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: enprofylline, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似enprofylline的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "enprofylline",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.55。",
+    "input": "Drug: entinostat, Cell State: OPC, Score: 1.553",
+    "output": "entinostat的连接模式（OPC分数：1.55）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "entinostat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.25。",
+    "input": "Drug: enzastaurin, Cell State: OPC, Score: 2.250",
+    "output": "靶向OPC细胞的分子应包含类似enzastaurin的结构特征，该药显示出强的连接性（分数：2.25）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "enzastaurin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: epinephrine, Cell State: OPC, Score: 1.000",
+    "output": "基于epinephrine的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "epinephrine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.14。",
+    "input": "Drug: epirubicin, Cell State: OPC, Score: 2.138",
+    "output": "靶向OPC细胞的分子应包含类似epirubicin的结构特征，该药显示出强的连接性（分数：2.14）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "epirubicin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.12。",
+    "input": "Drug: epothilone.b, Cell State: OPC, Score: 1.125",
+    "output": "基于epothilone.b的高OPC连接性（1.12），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "epothilone.b",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为13.00。",
+    "input": "Drug: erlotinib, Cell State: OPC, Score: 13.000",
+    "output": "erlotinib的连接模式（OPC分数：13.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "erlotinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.94。",
+    "input": "Drug: erteberel, Cell State: OPC, Score: 0.941",
+    "output": "靶向OPC细胞的分子应包含类似erteberel的结构特征，该药显示出强的连接性（分数：0.94）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "erteberel",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: erythromycin.ethylsuccinate, Cell State: OPC, Score: 3.000",
+    "output": "erythromycin.ethylsuccinate的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "erythromycin.ethylsuccinate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: esmolol, Cell State: OPC, Score: 1.000",
+    "output": "esmolol的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "esmolol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: estradiol, Cell State: OPC, Score: 1.000",
+    "output": "estradiol的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "estradiol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: estramustine.phosphate, Cell State: OPC, Score: 2.000",
+    "output": "estramustine.phosphate的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "estramustine.phosphate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.50。",
+    "input": "Drug: estriol, Cell State: OPC, Score: 3.500",
+    "output": "基于estriol的高OPC连接性（3.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "estriol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: estrone, Cell State: OPC, Score: 1.500",
+    "output": "基于estrone的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "estrone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: etazolate, Cell State: OPC, Score: 3.000",
+    "output": "etazolate的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "etazolate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: ethinyl.estradiol, Cell State: OPC, Score: 1.000",
+    "output": "基于ethinyl.estradiol的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ethinyl.estradiol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.80。",
+    "input": "Drug: ethylenediaminetetraacetic.acid, Cell State: OPC, Score: 0.800",
+    "output": "基于ethylenediaminetetraacetic.acid的高OPC连接性（0.80），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ethylenediaminetetraacetic.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: etodolac, Cell State: OPC, Score: 1.333",
+    "output": "etodolac的连接模式（OPC分数：1.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "etodolac",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: etoposide, Cell State: OPC, Score: 2.333",
+    "output": "etoposide的连接模式（OPC分数：2.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "etoposide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: etoricoxib, Cell State: OPC, Score: 1.000",
+    "output": "etoricoxib的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "etoricoxib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: eugenol, Cell State: OPC, Score: 3.000",
+    "output": "eugenol的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "eugenol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: EVP.6124, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似EVP.6124的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "EVP.6124",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: exalamide, Cell State: OPC, Score: 1.000",
+    "output": "基于exalamide的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "exalamide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: exherin, Cell State: OPC, Score: 1.500",
+    "output": "靶向OPC细胞的分子应包含类似exherin的结构特征，该药显示出强的连接性（分数：1.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "exherin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: fadrozole, Cell State: OPC, Score: 3.000",
+    "output": "靶向OPC细胞的分子应包含类似fadrozole的结构特征，该药显示出强的连接性（分数：3.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "fadrozole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.92。",
+    "input": "Drug: famciclovir, Cell State: OPC, Score: 1.923",
+    "output": "famciclovir的连接模式（OPC分数：1.92）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "famciclovir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: famotidine, Cell State: OPC, Score: 2.000",
+    "output": "基于famotidine的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "famotidine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: fasudil, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似fasudil的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "fasudil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: favipiravir, Cell State: OPC, Score: 1.333",
+    "output": "基于favipiravir的高OPC连接性（1.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "favipiravir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.20。",
+    "input": "Drug: fdcyd, Cell State: OPC, Score: 1.195",
+    "output": "靶向OPC细胞的分子应包含类似fdcyd的结构特征，该药显示出强的连接性（分数：1.20）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "fdcyd",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: felbamate, Cell State: OPC, Score: 1.000",
+    "output": "基于felbamate的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "felbamate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: felbinac, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似felbinac的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "felbinac",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: fenoldopam, Cell State: OPC, Score: 1.000",
+    "output": "基于fenoldopam的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "fenoldopam",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: fenoterol, Cell State: OPC, Score: 1.000",
+    "output": "fenoterol的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "fenoterol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.55。",
+    "input": "Drug: fenticonazole, Cell State: OPC, Score: 2.545",
+    "output": "靶向OPC细胞的分子应包含类似fenticonazole的结构特征，该药显示出强的连接性（分数：2.55）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "fenticonazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: fidarestat, Cell State: OPC, Score: 1.000",
+    "output": "基于fidarestat的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "fidarestat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: filgotinib, Cell State: OPC, Score: 1.333",
+    "output": "靶向OPC细胞的分子应包含类似filgotinib的结构特征，该药显示出强的连接性（分数：1.33）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "filgotinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.45。",
+    "input": "Drug: finasteride, Cell State: OPC, Score: 3.455",
+    "output": "靶向OPC细胞的分子应包含类似finasteride的结构特征，该药显示出强的连接性（分数：3.45）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "finasteride",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: fipronil, Cell State: OPC, Score: 1.500",
+    "output": "基于fipronil的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "fipronil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.06。",
+    "input": "Drug: FK.888, Cell State: OPC, Score: 1.056",
+    "output": "基于FK.888的高OPC连接性（1.06），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "FK.888",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.57。",
+    "input": "Drug: floxuridine, Cell State: OPC, Score: 2.571",
+    "output": "基于floxuridine的高OPC连接性（2.57），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "floxuridine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: fluconazole, Cell State: OPC, Score: 4.000",
+    "output": "fluconazole的连接模式（OPC分数：4.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "fluconazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.71。",
+    "input": "Drug: fludroxycortide, Cell State: OPC, Score: 1.714",
+    "output": "靶向OPC细胞的分子应包含类似fludroxycortide的结构特征，该药显示出强的连接性（分数：1.71）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "fludroxycortide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.80。",
+    "input": "Drug: flumatinib, Cell State: OPC, Score: 0.800",
+    "output": "靶向OPC细胞的分子应包含类似flumatinib的结构特征，该药显示出强的连接性（分数：0.80）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "flumatinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.38。",
+    "input": "Drug: fluocinolone.acetonide, Cell State: OPC, Score: 3.375",
+    "output": "fluocinolone.acetonide的连接模式（OPC分数：3.38）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "fluocinolone.acetonide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.14。",
+    "input": "Drug: fluorometholone, Cell State: OPC, Score: 1.143",
+    "output": "基于fluorometholone的高OPC连接性（1.14），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "fluorometholone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.80。",
+    "input": "Drug: fluoxetine, Cell State: OPC, Score: 2.800",
+    "output": "靶向OPC细胞的分子应包含类似fluoxetine的结构特征，该药显示出强的连接性（分数：2.80）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "fluoxetine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.38。",
+    "input": "Drug: fluticasone.propionate, Cell State: OPC, Score: 1.385",
+    "output": "基于fluticasone.propionate的高OPC连接性（1.38），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "fluticasone.propionate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.50。",
+    "input": "Drug: flutrimazole, Cell State: OPC, Score: 2.500",
+    "output": "flutrimazole的连接模式（OPC分数：2.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "flutrimazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: folic.acid, Cell State: OPC, Score: 3.000",
+    "output": "基于folic.acid的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "folic.acid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: fomepizole, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似fomepizole的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "fomepizole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.20。",
+    "input": "Drug: fomocaine, Cell State: OPC, Score: 3.200",
+    "output": "靶向OPC细胞的分子应包含类似fomocaine的结构特征，该药显示出强的连接性（分数：3.20）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "fomocaine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.30。",
+    "input": "Drug: foretinib, Cell State: OPC, Score: 3.300",
+    "output": "基于foretinib的高OPC连接性（3.30），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "foretinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: formestane, Cell State: OPC, Score: 2.000",
+    "output": "基于formestane的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "formestane",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.17。",
+    "input": "Drug: forskolin, Cell State: OPC, Score: 1.167",
+    "output": "forskolin的连接模式（OPC分数：1.17）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "forskolin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: FPL.62064, Cell State: OPC, Score: 1.000",
+    "output": "FPL.62064的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "FPL.62064",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: fulvestrant, Cell State: OPC, Score: 4.000",
+    "output": "fulvestrant的连接模式（OPC分数：4.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "fulvestrant",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: galeterone, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似galeterone的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "galeterone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: ganciclovir, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似ganciclovir的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ganciclovir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.76。",
+    "input": "Drug: ganetespib, Cell State: OPC, Score: 1.765",
+    "output": "ganetespib的连接模式（OPC分数：1.76）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "ganetespib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: gatifloxacin, Cell State: OPC, Score: 1.000",
+    "output": "基于gatifloxacin的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "gatifloxacin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: GDC.0152, Cell State: OPC, Score: 2.333",
+    "output": "靶向OPC细胞的分子应包含类似GDC.0152的结构特征，该药显示出强的连接性（分数：2.33）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "GDC.0152",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: GDC.0879, Cell State: OPC, Score: 2.000",
+    "output": "GDC.0879的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "GDC.0879",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.68。",
+    "input": "Drug: GDC.0941, Cell State: OPC, Score: 1.684",
+    "output": "基于GDC.0941的高OPC连接性（1.68），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "GDC.0941",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.14。",
+    "input": "Drug: GDC.0980, Cell State: OPC, Score: 2.143",
+    "output": "GDC.0980的连接模式（OPC分数：2.14）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "GDC.0980",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: gefitinib, Cell State: OPC, Score: 1.000",
+    "output": "基于gefitinib的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "gefitinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.38。",
+    "input": "Drug: geldanamycin, Cell State: OPC, Score: 1.385",
+    "output": "靶向OPC细胞的分子应包含类似geldanamycin的结构特征，该药显示出强的连接性（分数：1.38）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "geldanamycin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.55。",
+    "input": "Drug: gemcitabine, Cell State: OPC, Score: 1.552",
+    "output": "基于gemcitabine的高OPC连接性（1.55），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "gemcitabine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.50。",
+    "input": "Drug: gemfibrozil, Cell State: OPC, Score: 3.500",
+    "output": "基于gemfibrozil的高OPC连接性（3.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "gemfibrozil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: genistein, Cell State: OPC, Score: 1.000",
+    "output": "基于genistein的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "genistein",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.25。",
+    "input": "Drug: genz.644282, Cell State: OPC, Score: 1.255",
+    "output": "基于genz.644282的高OPC连接性（1.25），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "genz.644282",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.80。",
+    "input": "Drug: gestrinone, Cell State: OPC, Score: 1.800",
+    "output": "基于gestrinone的高OPC连接性（1.80），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "gestrinone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: gimeracil, Cell State: OPC, Score: 1.500",
+    "output": "gimeracil的连接模式（OPC分数：1.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "gimeracil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: glafenine, Cell State: OPC, Score: 2.000",
+    "output": "glafenine的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "glafenine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.58。",
+    "input": "Drug: gliclazide, Cell State: OPC, Score: 1.579",
+    "output": "靶向OPC细胞的分子应包含类似gliclazide的结构特征，该药显示出强的连接性（分数：1.58）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "gliclazide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: glimepiride, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似glimepiride的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "glimepiride",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: gliquidone, Cell State: OPC, Score: 2.000",
+    "output": "gliquidone的连接模式（OPC分数：2.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "gliquidone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: glycopyrrolate, Cell State: OPC, Score: 1.000",
+    "output": "glycopyrrolate的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "glycopyrrolate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: granisetron, Cell State: OPC, Score: 1.000",
+    "output": "基于granisetron的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "granisetron",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: grazoprevir, Cell State: OPC, Score: 1.000",
+    "output": "基于grazoprevir的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "grazoprevir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.33。",
+    "input": "Drug: griseofulvin, Cell State: OPC, Score: 3.333",
+    "output": "基于griseofulvin的高OPC连接性（3.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "griseofulvin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为5.80。",
+    "input": "Drug: GSK.1070916, Cell State: OPC, Score: 5.800",
+    "output": "基于GSK.1070916的高OPC连接性（5.80），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "GSK.1070916",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.29。",
+    "input": "Drug: GSK.2110183, Cell State: OPC, Score: 3.286",
+    "output": "基于GSK.2110183的高OPC连接性（3.29），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "GSK.2110183",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.37。",
+    "input": "Drug: GSK.2126458, Cell State: OPC, Score: 2.372",
+    "output": "靶向OPC细胞的分子应包含类似GSK.2126458的结构特征，该药显示出强的连接性（分数：2.37）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "GSK.2126458",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: GSK.256066, Cell State: OPC, Score: 4.000",
+    "output": "GSK.256066的连接模式（OPC分数：4.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "GSK.256066",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.80。",
+    "input": "Drug: GSK.429286A, Cell State: OPC, Score: 2.800",
+    "output": "基于GSK.429286A的高OPC连接性（2.80），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "GSK.429286A",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.90。",
+    "input": "Drug: GSK.461364, Cell State: OPC, Score: 1.905",
+    "output": "靶向OPC细胞的分子应包含类似GSK.461364的结构特征，该药显示出强的连接性（分数：1.90）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "GSK.461364",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: GSK.690693, Cell State: OPC, Score: 3.000",
+    "output": "靶向OPC细胞的分子应包含类似GSK.690693的结构特征，该药显示出强的连接性（分数：3.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "GSK.690693",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: GSK.J1, Cell State: OPC, Score: 1.000",
+    "output": "基于GSK.J1的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "GSK.J1",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: GSK.J4, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似GSK.J4的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "GSK.J4",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: guanaben.acetate, Cell State: OPC, Score: 1.000",
+    "output": "基于guanaben.acetate的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "guanaben.acetate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: guanethidine, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似guanethidine的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "guanethidine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: GW.842166, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似GW.842166的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "GW.842166",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.94。",
+    "input": "Drug: GW.843682X, Cell State: OPC, Score: 0.941",
+    "output": "GW.843682X的连接模式（OPC分数：0.94）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "GW.843682X",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.67。",
+    "input": "Drug: halcinonide, Cell State: OPC, Score: 3.667",
+    "output": "基于halcinonide的高OPC连接性（3.67），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "halcinonide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.80。",
+    "input": "Drug: halofantrine, Cell State: OPC, Score: 1.800",
+    "output": "基于halofantrine的高OPC连接性（1.80），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "halofantrine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: HC.030031, Cell State: OPC, Score: 1.000",
+    "output": "HC.030031的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "HC.030031",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: hesperidin, Cell State: OPC, Score: 1.000",
+    "output": "hesperidin的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "hesperidin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.12。",
+    "input": "Drug: hexachlorophene, Cell State: OPC, Score: 2.125",
+    "output": "基于hexachlorophene的高OPC连接性（2.12），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "hexachlorophene",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: HG.5.113.01, Cell State: OPC, Score: 2.000",
+    "output": "基于HG.5.113.01的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "HG.5.113.01",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.20。",
+    "input": "Drug: HG.5.88.01, Cell State: OPC, Score: 1.200",
+    "output": "靶向OPC细胞的分子应包含类似HG.5.88.01的结构特征，该药显示出强的连接性（分数：1.20）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "HG.5.88.01",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.93。",
+    "input": "Drug: HG.6.64.01, Cell State: OPC, Score: 0.933",
+    "output": "靶向OPC细胞的分子应包含类似HG.6.64.01的结构特征，该药显示出强的连接性（分数：0.93）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "HG.6.64.01",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: homochlorcyclizine, Cell State: OPC, Score: 1.000",
+    "output": "基于homochlorcyclizine的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "homochlorcyclizine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.27。",
+    "input": "Drug: homoharringtonine, Cell State: OPC, Score: 1.269",
+    "output": "靶向OPC细胞的分子应包含类似homoharringtonine的结构特征，该药显示出强的连接性（分数：1.27）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "homoharringtonine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.88。",
+    "input": "Drug: honokiol, Cell State: OPC, Score: 0.875",
+    "output": "honokiol的连接模式（OPC分数：0.88）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "honokiol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为9.00。",
+    "input": "Drug: hydrocortisone, Cell State: OPC, Score: 9.000",
+    "output": "基于hydrocortisone的高OPC连接性（9.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "hydrocortisone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.98。",
+    "input": "Drug: I.BET.151, Cell State: OPC, Score: 0.981",
+    "output": "靶向OPC细胞的分子应包含类似I.BET.151的结构特征，该药显示出强的连接性（分数：0.98）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "I.BET.151",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.94。",
+    "input": "Drug: I.BET.762, Cell State: OPC, Score: 0.936",
+    "output": "基于I.BET.762的高OPC连接性（0.94），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "I.BET.762",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: IB.MECA, Cell State: OPC, Score: 1.000",
+    "output": "IB.MECA的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "IB.MECA",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.20。",
+    "input": "Drug: ibutamoren, Cell State: OPC, Score: 1.200",
+    "output": "ibutamoren的连接模式（OPC分数：1.20）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "ibutamoren",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: ICI.162846, Cell State: OPC, Score: 1.333",
+    "output": "ICI.162846的连接模式（OPC分数：1.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "ICI.162846",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: ICI.192605, Cell State: OPC, Score: 1.500",
+    "output": "基于ICI.192605的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ICI.192605",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.57。",
+    "input": "Drug: idasanutlin, Cell State: OPC, Score: 4.571",
+    "output": "基于idasanutlin的高OPC连接性（4.57），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "idasanutlin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: idoxuridin, Cell State: OPC, Score: 1.000",
+    "output": "idoxuridin的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "idoxuridin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: ifenprodil, Cell State: OPC, Score: 3.000",
+    "output": "ifenprodil的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "ifenprodil",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.41。",
+    "input": "Drug: ifosfamide, Cell State: OPC, Score: 1.414",
+    "output": "靶向OPC细胞的分子应包含类似ifosfamide的结构特征，该药显示出强的连接性（分数：1.41）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ifosfamide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: iguratimod, Cell State: OPC, Score: 1.000",
+    "output": "靶向OPC细胞的分子应包含类似iguratimod的结构特征，该药显示出强的连接性（分数：1.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "iguratimod",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.70。",
+    "input": "Drug: IKK.2.inhibitor.V, Cell State: OPC, Score: 1.697",
+    "output": "基于IKK.2.inhibitor.V的高OPC连接性（1.70），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "IKK.2.inhibitor.V",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: ilomastat, Cell State: OPC, Score: 1.000",
+    "output": "ilomastat的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "ilomastat",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: imiquimod, Cell State: OPC, Score: 1.000",
+    "output": "imiquimod的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "imiquimod",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: indapamide, Cell State: OPC, Score: 3.000",
+    "output": "indapamide的连接模式（OPC分数：3.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "indapamide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.02。",
+    "input": "Drug: indibulin, Cell State: OPC, Score: 1.025",
+    "output": "indibulin的连接模式（OPC分数：1.02）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "indibulin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: indiplon, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似indiplon的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "indiplon",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: indobufen, Cell State: OPC, Score: 1.000",
+    "output": "基于indobufen的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "indobufen",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.50。",
+    "input": "Drug: indole.3.carbinol, Cell State: OPC, Score: 1.500",
+    "output": "基于indole.3.carbinol的高OPC连接性（1.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "indole.3.carbinol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.19。",
+    "input": "Drug: ingenol.mebutate, Cell State: OPC, Score: 3.188",
+    "output": "基于ingenol.mebutate的高OPC连接性（3.19），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ingenol.mebutate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.80。",
+    "input": "Drug: inositol, Cell State: OPC, Score: 1.800",
+    "output": "靶向OPC细胞的分子应包含类似inositol的结构特征，该药显示出强的连接性（分数：1.80）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "inositol",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.50。",
+    "input": "Drug: irinotecan, Cell State: OPC, Score: 4.500",
+    "output": "靶向OPC细胞的分子应包含类似irinotecan的结构特征，该药显示出强的连接性（分数：4.50）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "irinotecan",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: isbufylline, Cell State: OPC, Score: 4.000",
+    "output": "基于isbufylline的高OPC连接性（4.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "isbufylline",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: ischemin, Cell State: OPC, Score: 3.000",
+    "output": "基于ischemin的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ischemin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.50。",
+    "input": "Drug: isoconazole, Cell State: OPC, Score: 2.500",
+    "output": "isoconazole的连接模式（OPC分数：2.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "isoconazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.86。",
+    "input": "Drug: isofloxythepin, Cell State: OPC, Score: 1.857",
+    "output": "靶向OPC细胞的分子应包含类似isofloxythepin的结构特征，该药显示出强的连接性（分数：1.86）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "isofloxythepin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.67。",
+    "input": "Drug: isosorbide.mononitrate, Cell State: OPC, Score: 1.667",
+    "output": "靶向OPC细胞的分子应包含类似isosorbide.mononitrate的结构特征，该药显示出强的连接性（分数：1.67）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "isosorbide.mononitrate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.67。",
+    "input": "Drug: isradipine, Cell State: OPC, Score: 2.667",
+    "output": "靶向OPC细胞的分子应包含类似isradipine的结构特征，该药显示出强的连接性（分数：2.67）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "isradipine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.62。",
+    "input": "Drug: itraconazole, Cell State: OPC, Score: 1.625",
+    "output": "靶向OPC细胞的分子应包含类似itraconazole的结构特征，该药显示出强的连接性（分数：1.62）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "itraconazole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: ivabradine, Cell State: OPC, Score: 3.000",
+    "output": "基于ivabradine的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ivabradine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: ivacaftor, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似ivacaftor的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ivacaftor",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.45。",
+    "input": "Drug: ixabepilone, Cell State: OPC, Score: 1.447",
+    "output": "ixabepilone的连接模式（OPC分数：1.45）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "ixabepilone",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.90。",
+    "input": "Drug: ixazomib, Cell State: OPC, Score: 1.898",
+    "output": "靶向OPC细胞的分子应包含类似ixazomib的结构特征，该药显示出强的连接性（分数：1.90）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ixazomib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.80。",
+    "input": "Drug: ixazomib.citrate, Cell State: OPC, Score: 1.800",
+    "output": "靶向OPC细胞的分子应包含类似ixazomib.citrate的结构特征，该药显示出强的连接性（分数：1.80）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "ixazomib.citrate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.22。",
+    "input": "Drug: JNJ.26481585, Cell State: OPC, Score: 1.217",
+    "output": "JNJ.26481585的连接模式（OPC分数：1.22）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "JNJ.26481585",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.43。",
+    "input": "Drug: JNK.9L, Cell State: OPC, Score: 1.435",
+    "output": "JNK.9L的连接模式（OPC分数：1.43）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "JNK.9L",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.72。",
+    "input": "Drug: JNK.IN.5A, Cell State: OPC, Score: 1.722",
+    "output": "基于JNK.IN.5A的高OPC连接性（1.72），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "JNK.IN.5A",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: josamycin, Cell State: OPC, Score: 2.000",
+    "output": "基于josamycin的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "josamycin",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.73。",
+    "input": "Drug: GBM_JQ1, Cell State: OPC, Score: 1.727",
+    "output": "靶向OPC细胞的分子应包含类似GBM_JQ1的结构特征，该药显示出强的连接性（分数：1.73）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "GBM_JQ1",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.36。",
+    "input": "Drug: JQ1.(+), Cell State: OPC, Score: 1.360",
+    "output": "靶向OPC细胞的分子应包含类似JQ1.(+)的结构特征，该药显示出强的连接性（分数：1.36）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "JQ1.(+)",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.44。",
+    "input": "Drug: JQ1+SR1277, Cell State: OPC, Score: 1.441",
+    "output": "靶向OPC细胞的分子应包含类似JQ1+SR1277的结构特征，该药显示出强的连接性（分数：1.44）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "JQ1+SR1277",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: JTC.801, Cell State: OPC, Score: 3.000",
+    "output": "基于JTC.801的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "JTC.801",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.64。",
+    "input": "Drug: JW.7.24.1, Cell State: OPC, Score: 2.636",
+    "output": "靶向OPC细胞的分子应包含类似JW.7.24.1的结构特征，该药显示出强的连接性（分数：2.64）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "JW.7.24.1",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: JW55, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似JW55的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "JW55",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.07。",
+    "input": "Drug: JWE.035, Cell State: OPC, Score: 1.067",
+    "output": "基于JWE.035的高OPC连接性（1.07），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "JWE.035",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.50。",
+    "input": "Drug: kakonein, Cell State: OPC, Score: 2.500",
+    "output": "kakonein的连接模式（OPC分数：2.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "kakonein",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.50。",
+    "input": "Drug: KBG, Cell State: OPC, Score: 3.500",
+    "output": "KBG的连接模式（OPC分数：3.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "KBG",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: KIN001.242, Cell State: OPC, Score: 2.000",
+    "output": "基于KIN001.242的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "KIN001.242",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: KU.55933, Cell State: OPC, Score: 1.000",
+    "output": "KU.55933的连接模式（OPC分数：1.00）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "KU.55933",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.67。",
+    "input": "Drug: KU.60019, Cell State: OPC, Score: 2.667",
+    "output": "基于KU.60019的高OPC连接性（2.67），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "KU.60019",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.18。",
+    "input": "Drug: KW.2478, Cell State: OPC, Score: 2.182",
+    "output": "靶向OPC细胞的分子应包含类似KW.2478的结构特征，该药显示出强的连接性（分数：2.18）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "KW.2478",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.07。",
+    "input": "Drug: KX2.391, Cell State: OPC, Score: 1.065",
+    "output": "KX2.391的连接模式（OPC分数：1.07）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "KX2.391",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.57。",
+    "input": "Drug: L.655240, Cell State: OPC, Score: 1.571",
+    "output": "L.655240的连接模式（OPC分数：1.57）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "L.655240",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.80。",
+    "input": "Drug: L.690330, Cell State: OPC, Score: 2.800",
+    "output": "靶向OPC细胞的分子应包含类似L.690330的结构特征，该药显示出强的连接性（分数：2.80）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "L.690330",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.50。",
+    "input": "Drug: L.citrulline, Cell State: OPC, Score: 2.500",
+    "output": "基于L.citrulline的高OPC连接性（2.50），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "L.citrulline",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.20。",
+    "input": "Drug: L.ergothioneine, Cell State: OPC, Score: 1.195",
+    "output": "靶向OPC细胞的分子应包含类似L.ergothioneine的结构特征，该药显示出强的连接性（分数：1.20）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "L.ergothioneine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.09。",
+    "input": "Drug: lacidipine, Cell State: OPC, Score: 2.089",
+    "output": "靶向OPC细胞的分子应包含类似lacidipine的结构特征，该药显示出强的连接性（分数：2.09）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "lacidipine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.45。",
+    "input": "Drug: lacosamide, Cell State: OPC, Score: 2.455",
+    "output": "基于lacosamide的高OPC连接性（2.45），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "lacosamide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.29。",
+    "input": "Drug: lafutidine, Cell State: OPC, Score: 1.286",
+    "output": "lafutidine的连接模式（OPC分数：1.29）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "lafutidine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.03。",
+    "input": "Drug: lasalocid, Cell State: OPC, Score: 2.033",
+    "output": "靶向OPC细胞的分子应包含类似lasalocid的结构特征，该药显示出强的连接性（分数：2.03）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "lasalocid",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.40。",
+    "input": "Drug: LCL.161, Cell State: OPC, Score: 1.400",
+    "output": "基于LCL.161的高OPC连接性（1.40），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "LCL.161",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为5.00。",
+    "input": "Drug: LCQ.908, Cell State: OPC, Score: 5.000",
+    "output": "基于LCQ.908的高OPC连接性（5.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "LCQ.908",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.90。",
+    "input": "Drug: LDN.193189, Cell State: OPC, Score: 0.900",
+    "output": "基于LDN.193189的高OPC连接性（0.90），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "LDN.193189",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: ledipasvir, Cell State: OPC, Score: 1.000",
+    "output": "基于ledipasvir的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "ledipasvir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: leflunomide, Cell State: OPC, Score: 1.333",
+    "output": "leflunomide的连接模式（OPC分数：1.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "leflunomide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.20。",
+    "input": "Drug: lenalidomide, Cell State: OPC, Score: 1.200",
+    "output": "lenalidomide的连接模式（OPC分数：1.20）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "lenalidomide",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: lersivirine, Cell State: OPC, Score: 2.000",
+    "output": "基于lersivirine的高OPC连接性（2.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "lersivirine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.46。",
+    "input": "Drug: lestaurtinib, Cell State: OPC, Score: 1.458",
+    "output": "基于lestaurtinib的高OPC连接性（1.46），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "lestaurtinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.33。",
+    "input": "Drug: letrozole, Cell State: OPC, Score: 1.333",
+    "output": "letrozole的连接模式（OPC分数：1.33）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "letrozole",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: levcromakalim, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似levcromakalim的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "levcromakalim",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为4.00。",
+    "input": "Drug: levocetirizine, Cell State: OPC, Score: 4.000",
+    "output": "靶向OPC细胞的分子应包含类似levocetirizine的结构特征，该药显示出强的连接性（分数：4.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "levocetirizine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: levomequitazine, Cell State: OPC, Score: 1.000",
+    "output": "基于levomequitazine的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "levomequitazine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: levosimendan, Cell State: OPC, Score: 1.000",
+    "output": "基于levosimendan的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "levosimendan",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.87。",
+    "input": "Drug: LGX.818, Cell State: OPC, Score: 1.867",
+    "output": "LGX.818的连接模式（OPC分数：1.87）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "LGX.818",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: licarbazepine, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似licarbazepine的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "licarbazepine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: licochalcone.a, Cell State: OPC, Score: 1.000",
+    "output": "基于licochalcone.a的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "licochalcone.a",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.00。",
+    "input": "Drug: lidocaine, Cell State: OPC, Score: 2.000",
+    "output": "靶向OPC细胞的分子应包含类似lidocaine的结构特征，该药显示出强的连接性（分数：2.00）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "lidocaine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为0.83。",
+    "input": "Drug: lidoflazine, Cell State: OPC, Score: 0.833",
+    "output": "lidoflazine的连接模式（OPC分数：0.83）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "lidoflazine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: linifanib, Cell State: OPC, Score: 3.000",
+    "output": "基于linifanib的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "linifanib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: linopirdine, Cell State: OPC, Score: 1.000",
+    "output": "基于linopirdine的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "linopirdine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.80。",
+    "input": "Drug: linsidomine, Cell State: OPC, Score: 1.800",
+    "output": "linsidomine的连接模式（OPC分数：1.80）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "linsidomine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.20。",
+    "input": "Drug: linsitinib, Cell State: OPC, Score: 2.200",
+    "output": "靶向OPC细胞的分子应包含类似linsitinib的结构特征，该药显示出强的连接性（分数：2.20）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "linsitinib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.50。",
+    "input": "Drug: liranaftate, Cell State: OPC, Score: 3.500",
+    "output": "liranaftate的连接模式（OPC分数：3.50）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "liranaftate",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.33。",
+    "input": "Drug: lisinopril, Cell State: OPC, Score: 2.333",
+    "output": "基于lisinopril的高OPC连接性（2.33），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "lisinopril",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为1.00。",
+    "input": "Drug: lisofylline, Cell State: OPC, Score: 1.000",
+    "output": "基于lisofylline的高OPC连接性（1.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "lisofylline",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为3.00。",
+    "input": "Drug: lomerizine, Cell State: OPC, Score: 3.000",
+    "output": "基于lomerizine的高OPC连接性（3.00），设计具有ATP_competitive药效团的分子，并优化理化性质以靶向GBM。",
+    "drug_properties": {
+      "name": "lomerizine",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为10.67。",
+    "input": "Drug: lonafarnib, Cell State: OPC, Score: 10.667",
+    "output": "靶向OPC细胞的分子应包含类似lonafarnib的结构特征，该药显示出强的连接性（分数：10.67）。考虑具有BBB渗透性的激酶抑制剂骨架。",
+    "drug_properties": {
+      "name": "lonafarnib",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  },
+  {
+    "instruction": "为OPC细胞状态设计GBM治疗分子，连接分数为2.67。",
+    "input": "Drug: lopinavir, Cell State: OPC, Score: 2.667",
+    "output": "lopinavir的连接模式（OPC分数：2.67）表明有效靶向该GBM亚型的结构基序。重点关注平衡效能与脑渗透的骨架。",
+    "drug_properties": {
+      "name": "lopinavir",
+      "category": "kinase_inhibitor",
+      "mechanism": "ATP_competitive",
+      "clinical_status": "investigational"
+    }
+  }
+]

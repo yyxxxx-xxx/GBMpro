@@ -1,0 +1,38 @@
+entity_id,mol_id,library_name,smiles,MW,TPSA,LogP,target,source
+llamole_retro_20260507_191922,EGFR_00000,Llamole-Qwen2-7B-Instruct-Adapter,O=C(O)O,62.02,57.53,0.22,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00001,Llamole-Qwen2-7B-Instruct-Adapter,Cc1nnc(C)c1Nc1ccccc1C(=O)OC(C)(C)C,0.00,0.00,0.00,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00002,Llamole-Qwen2-7B-Instruct-Adapter,Cc1nnc(C)c1Nc1ccccc1C(=O)OC(C)(C)C(C)=O,0.00,0.00,0.00,EGFR,from_greedy_pattern
+llamole_retro_20260507_191922,EGFR_00003,Llamole-Qwen2-7B-Instruct-Adapter,CCCCC(=O)NCCNC(CC#N)C,211.31,64.92,1.18,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00004,Llamole-Qwen2-7B-Instruct-Adapter,CCCCC(=O)NCCNC(CC#N)C(=O)OCc1ccccc1,331.42,91.22,1.91,EGFR,from_greedy_pattern
+llamole_retro_20260507_191922,EGFR_00005,Llamole-Qwen2-7B-Instruct-Adapter,Cl.C[C@@H]1CN(C)[C@H](OC(C)C)NC1.O=C,238.76,41.57,1.10,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00006,Llamole-Qwen2-7B-Instruct-Adapter,Cc1nc(Nc2cc(Cl)nc(-n)cn2)n[nH]1,0.00,0.00,0.00,EGFR,from_greedy_pattern
+llamole_retro_20260507_191922,EGFR_00007,Llamole-Qwen2-7B-Instruct-Adapter,Cl.C[C@@H]1CN(C)[C@H](OC(C)C)NC1.O=C(O)O.[2H]Cl,308.22,82.03,1.93,EGFR,from_greedy_pattern
+llamole_retro_20260507_191922,EGFR_00008,Llamole-Qwen2-7B-Instruct-Adapter,CCCC(CC(C)(C)C#N)CCC(=O)[Si](C)(C)C(C),281.52,40.86,4.96,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00009,Llamole-Qwen2-7B-Instruct-Adapter,CCOCC,74.12,9.23,1.04,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00010,Llamole-Qwen2-7B-Instruct-Adapter,CCOP(OC)O.O=C(/N=N/C(C)(C)C#N)=O,0.00,0.00,0.00,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00011,Llamole-Qwen2-7B-Instruct-Adapter,CCCC(CC(C)(C)C#N)CCC(=O)[Si](C)(C)C(C)(C)C,309.57,40.86,5.74,EGFR,from_greedy_pattern
+llamole_retro_20260507_191922,EGFR_00012,Llamole-Qwen2-7B-Instruct-Adapter,CCOCC(O)O,106.12,49.69,-0.67,EGFR,from_greedy_pattern
+llamole_retro_20260507_191922,EGFR_00013,Llamole-Qwen2-7B-Instruct-Adapter,CCOCC(O)O.O=C(/N=N/C(C)(C)C#N)=O.Cc1cccc([PH+](c2ccccc2)c2ccccc2)c1,0.00,0.00,0.00,EGFR,from_greedy_pattern
+llamole_retro_20260507_191922,EGFR_00014,Llamole-Qwen2-7B-Instruct-Adapter,COc1ccc(OCc2cccc(Cl)c2)cc1Cl,283.15,18.46,4.58,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00015,Llamole-Qwen2-7B-Instruct-Adapter,Nc1cc(Cl)c(OCCCCC(C)(C)C)c(F)c1Cl,308.22,35.25,5.31,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00016,Llamole-Qwen2-7B-Instruct-Adapter,O=C(Nc1cc(Cl)c(OCCCCC(C)(C)C)c(F)c1Cl)N.ClCc1cc(Cl)c(OCCCCC(C)(C)C)c(F)c1Cl.O=C,722.96,90.65,11.50,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00017,Llamole-Qwen2-7B-Instruct-Adapter,O=C(Nc1cc(Cl)c(OCCCCC(C)(C)C)c(F)c1Cl)N,351.25,64.35,5.22,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00018,Llamole-Qwen2-7B-Instruct-Adapter,ClCc1cc(Cl)c(OCCCCC(C)(C)C)c(F)c1Cl,341.68,9.23,6.47,EGFR,from_paren_prefix
+llamole_retro_20260507_191922,EGFR_00019,Llamole-Qwen2-7B-Instruct-Adapter,C(Nc1cc(Cl)c(OCCCCC(C)(C)C)c(F)c1Cl)N,337.27,47.28,5.06,EGFR,from_greedy_pattern
+llamole_retro_20260507_191922,EGFR_00020,Llamole-Qwen2-7B-Instruct-Adapter,CCCC(CC#N)c1ccc(C(=O)OCc2ccccc2)cc1,307.39,50.09,4.84,EGFR,from_greedy_pattern
+entity_id,mol_id,library_name,smiles,MW,TPSA,LogP,target,strategy
+llamole_retro_20260507_194021,EGFR_00000,Llamole-Qwen2-7B-Instruct-Adapter,COCCOCCCO,134.18,38.69,0.03,EGFR,applied_reaction
+llamole_retro_20260507_194021,EGFR_00001,Llamole-Qwen2-7B-Instruct-Adapter,C[C@@H]1CN(C)[C@H](OC(C)C)NC1,172.27,24.50,0.87,EGFR,applied_reaction
+llamole_retro_20260507_194021,EGFR_00002,Llamole-Qwen2-7B-Instruct-Adapter,Cc1cccc([PH+](c2ccccc2)c2ccccc2)c1,277.33,0.00,3.49,EGFR,applied_reaction
+entity_id,mol_id,library_name,smiles,MW,TPSA,LogP,target
+llamole_20260507_184337,EGFR_00000,Llamole-Qwen2-7B-Instruct-Adapter,Fc1ccccc1,0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00001,Llamole-Qwen2-7B-Instruct-Adapter,[K+] and [Na+],0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00002,Llamole-Qwen2-7B-Instruct-Adapter,O=C(O)O[K+].[Na+],0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00003,Llamole-Qwen2-7B-Instruct-Adapter,CS(=O)(=O)Cl (available),0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00004,Llamole-Qwen2-7B-Instruct-Adapter,Cl (available),0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00005,Llamole-Qwen2-7B-Instruct-Adapter,O=C(Cl)O (not available,0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00006,Llamole-Qwen2-7B-Instruct-Adapter,[K+] (available). This is step 2 in the retrosynthesis process. To synthesize 2-(trifluoromethyl)-6-iodo-pyridine-3-carbaldehyde,0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00007,Llamole-Qwen2-7B-Instruct-Adapter,ClCc1ccccc1Cl,0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00008,Llamole-Qwen2-7B-Instruct-Adapter,COC(=O)/N=N\C(C)(C)O (available),0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00009,Llamole-Qwen2-7B-Instruct-Adapter,O=C(O)O (available),0.00,0.00,0.00,EGFR
+llamole_20260507_184337,EGFR_00010,Llamole-Qwen2-7B-Instruct-Adapter,[Na+] (available). This is step 2 in the retrosynthesis process. To synthesize 3-methoxybenzoyl chloride (Example 97),0.00,0.00,0.00,EGFR

@@ -1,0 +1,66 @@
+{
+  "model_a": {
+    "name": "gbm-lora",
+    "results": [
+      {
+        "smiles": "Molecule",
+        "score": 0,
+        "valid": false
+      },
+      {
+        "smiles": "N.CCCCN",
+        "score": 0.3885411860678667,
+        "valid": true
+      },
+      {
+        "smiles": "Molecule",
+        "score": 0,
+        "valid": false
+      },
+      {
+        "smiles": "Molecule",
+        "score": 0,
+        "valid": false
+      },
+      {
+        "smiles": "N.CCCCN.CCN.N",
+        "score": 0.3125,
+        "valid": true
+      }
+    ],
+    "valid_count": 2,
+    "avg_score": 0.35052059303393335
+  },
+  "model_b": {
+    "name": "gbm-evaluation-expanded",
+    "results": [
+      {
+        "smiles": "1,4-Benzodioxane",
+        "score": 0,
+        "valid": false
+      },
+      {
+        "smiles": "CC(=O)",
+        "score": 0.4845476786003667,
+        "valid": true
+      },
+      {
+        "smiles": "1,4-Benzodiazepine-4-carboxylic",
+        "score": 0,
+        "valid": false
+      },
+      {
+        "smiles": "O=C(Nc1ccccc1)c1ccccc1",
+        "score": 0.40940443830096673,
+        "valid": true
+      },
+      {
+        "smiles": "1,4-Benzodiazepine-2-one",
+        "score": 0,
+        "valid": false
+      }
+    ],
+    "valid_count": 2,
+    "avg_score": 0.4469760584506667
+  }
+}

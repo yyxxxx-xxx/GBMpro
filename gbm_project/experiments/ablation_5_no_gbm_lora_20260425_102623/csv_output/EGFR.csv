@@ -1,0 +1,6 @@
+EGFR_00000,Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3,54.88,341.77,EGFR
+EGFR_00000,Cc1ccc(C#N)cc1FCCN1CCC(c2ccc(Cl)cc2)C1Cc1ccc(C#N)cc1FCCN1CCC(c2ccc(Cl)cc2)C1,0.00,685.69,EGFR
+EGFR_00000,Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3,54.88,341.77,EGFR
+EGFR_00000,Cc1nc(N)cc(N)n1-c1cc(I)ccc1N,95.88,342.16,EGFR
+EGFR_00000,COC(=O)[C@@H](Cc1ccnc(-c2ccc(Cl)cc2)n1)NC[C@H]1CC[C@H](C)CO1CN(C)CC(=O)OCc1ccc(F)cc1Cl,0.00,648.58,EGFR
+EGFR_00000,Cc1ccnc2[nH]c(-c3ncc(Nc4ccc(F)cc4F)n3)c2cc(C)cn1,79.38,378.39,EGFR

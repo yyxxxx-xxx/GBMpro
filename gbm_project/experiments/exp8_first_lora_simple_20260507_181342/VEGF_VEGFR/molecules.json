@@ -1,0 +1,147 @@
+[
+  {
+    "id": 0,
+    "smiles": "NC(C#Cc1ccccc1)OCc1ccccc1.[NH4+]",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 1,
+    "smiles": "OCc1ccccc1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 2,
+    "smiles": "NC(c1ccccc1)O",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 3,
+    "smiles": "C(C)(C)OCC.CCS.O=C(O)O.[Cs+].[C@H]1[C@H](O)CN1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 4,
+    "smiles": "C(C)(C)OCC",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 5,
+    "smiles": "CC(C)n1c(=O)[nH]c2cc(OS(=O)(=O)Cc3cc(Cl)ccc3F)cnc21FBrB1OC1(C)=NO[C@H]1ClCC1CCC(F)CC1BCC1CCC(F)CC1.Nc1ccc(OC)cc1S(=O)(=O)c1ccc(F)cc1P(c1cc[nH]cn1)C(F)(F)FB1OC1(C)=NO[C@@H]1Cl",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 6,
+    "smiles": "C([Si](C)(C)(C)(C)[P+6](Cl)C)C[P+7]([Si](C)(C)(C)(C)C)C(Br)(F)F.O=P([O-])([O-])OP(C)(C)C.[K+].[OH-].[OH-].[OH-].[OH-]",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 7,
+    "smiles": "CC(C)Nc1ccc2c(cc1)NC(=O)CO2",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 8,
+    "smiles": "CC1=CC(C)CC1BCC(OC)O.Cc1cc(Cl)cc(Br)B1OC1(C)=NO[C@H]1Br.Fc1cccc(Cl)[nH]1.O=C([C@@H]1BrC(F)(F)C1)C[P+7].C([Si](C)(C)(C)(C)C)C([Si](C)(C)(C)(C)C)C",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 9,
+    "smiles": "FCc1cccc(Cl)[nH]1.OC(=O)[C@H](OS(=O)(=O)[O-])OC(C)(C)C",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 10,
+    "smiles": "Cn1c(=O)[nH]c2cc(Oc3ccc(OC)cc3)cnc21",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 11,
+    "smiles": "Cc1ccc(S(=O)(=O)N[C@@H](CC#N)c2cncc2s1)N#Cc1ccc(Cl)cc1Cc1ccc(F)cc1.Nc1ncco[nH]1.OCCCCCCO.[Na+].[OH-]",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 12,
+    "smiles": "Nc1ncco[nH]1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 13,
+    "smiles": "ClCC(C)=CCl",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 14,
+    "smiles": "C(F)(F)Cl",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 15,
+    "smiles": "C=CBn1ccnc1-c1cnn(-c2cnco2)s1I",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 16,
+    "smiles": "CBr(C)=O.Clc1n[nH]c2cnccc2c1.O=C(Cl)Oc1cccc(Cl)cc1.[OH-]",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 17,
+    "smiles": "COc1cccs(Br)ccc1O.[OH-]",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 18,
+    "smiles": "Clc1n[nH]c2cnccc2c1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 19,
+    "smiles": "CC(=O)Nc1ccc(OC)nc1.CC[N+]([PH-])c1ccc(Cl)c(Cl)c1.Fc1cc(I)c(I)c1.Nc1cccc(Br)c1.[K+].[K+]",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 20,
+    "smiles": "OC1CCC(O)CC1.I",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 21,
+    "smiles": "OC1CCC(C(=O)Cl)CC1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 22,
+    "smiles": "Cl.OC1CCC([PH+])CC1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 23,
+    "smiles": "O.OC1CCC(NC(=O)CO[Si](C)(C)C[Si](C)(C)C)OC1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 24,
+    "smiles": "OC1CCC([PH+])C1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 25,
+    "smiles": "OC1CCC(C(=O)OC)CC1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 26,
+    "smiles": "OC1CCC([K+])C1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 27,
+    "smiles": "CC(=O)Nc1ccc(OC)nc1",
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 28,
+    "smiles": "OC1CCC(O)CC1",
+    "target": "VEGF_VEGFR"
+  }
+]

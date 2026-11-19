@@ -1,0 +1,227 @@
+{
+  "config": {
+    "target": "EGFR",
+    "tot_depth": 3,
+    "tot_k": 3,
+    "tot_b": 2,
+    "constraints": {
+      "mw_range": "300-500",
+      "bbb_requirement": "high",
+      "logp_range": "2.0-4.0",
+      "tpsa_range": "40-120"
+    }
+  },
+  "num_generated": 5,
+  "molecules": [
+    {
+      "smiles": "Cc1cc(-c2ccnc(N)n2)cn1-c1ccc(Br)cc1Cc1cc(-c2ccnc(N)n2)cn1-c1ccc(Br)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + acrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "acrylamide",
+            "bbb_enhancers": "fluorine, methoxy, methyl",
+            "estimated_mw": 450,
+            "expected_logp": "2.5-3.5",
+            "expected_tpsa": "60-90 Å²",
+            "rationale": "Conservative EGFR-style covalent warhead with BBB-friendly substituents"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2ccnc(N)n2)cn1-c1ccc(Br)cc1Cc1cc(-c2ccnc(N)n2)cn1-c1ccc(Br)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2ccnc(N)n2)cn1-c1ccc(Br)cc1Cc1cc(-c2ccnc(N)n2)cn1-c1ccc(Br)cc1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "tpsa": 113.46,
+      "mw": 656.39
+    },
+    {
+      "smiles": "Cc1cc(Br)cc(-c2cccc(F)c2)nc(N)n1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cc(-c2cccc(F)c2)nc(N)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Br)cc(-c2cccc(F)c2)nc(N)n1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "tpsa": 50.74,
+      "mw": 308.15
+    },
+    {
+      "smiles": "Cc1cc(-c2ccnc(NCC(C)(C)C)n2)no1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2ccnc(NCC(C)(C)C)n2)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2ccnc(NCC(C)(C)C)n2)no1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "tpsa": 63.84,
+      "mw": 246.31
+    },
+    {
+      "smiles": "Cc1cc(-c2cc(Cl)nc(NCc3ccccc3Cl)n2)no1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2cc(Cl)nc(NCc3ccccc3Cl)n2)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2cc(Cl)nc(NCc3ccccc3Cl)n2)no1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "tpsa": 63.84,
+      "mw": 335.19
+    },
+    {
+      "smiles": "Cc1cc(-c2nc(NCC3CCC(OCC(C)(C)C)CC3)n2)ccn1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2nc(NCC3CCC(OCC(C)(C)C)CC3)n2)ccn1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2nc(NCC3CCC(OCC(C)(C)C)CC3)n2)ccn1"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs",
+      "tpsa": 58.87,
+      "mw": 342.49
+    }
+  ],
+  "timestamp": "2026-04-13T06:18:37.901547",
+  "cleaned": true,
+  "original_count": 5,
+  "cleaned_rdkits": true,
+  "tpsa_range_filter": "20.0-120.0"
+}

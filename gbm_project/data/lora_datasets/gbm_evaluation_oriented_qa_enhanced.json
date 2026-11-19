@@ -1,0 +1,1878 @@
+[
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "16,16.dimethylprostaglandin.e2",
+      "connectivity_score": 10.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc2ccccc2c1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "aclidinium",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)Nc1ccc2ccccc2c1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "AGK.2",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "ampalex",
+      "connectivity_score": 8.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "BMS.345541",
+      "connectivity_score": 9.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "BRD.K68548958",
+      "connectivity_score": 10.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NNc1ccc2ccccc2c1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "BX.795",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NNc1ccc2ccccc2c1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NCCc1ccc2ccccc2c1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "chelerythrine",
+      "connectivity_score": 8.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NCCc1ccc2ccccc2c1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "conivaptan",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "darapladib",
+      "connectivity_score": 9.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "dinoprost",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "finasteride",
+      "connectivity_score": 5.6,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "gemfibrozil",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "hydrocortisone",
+      "connectivity_score": 10.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "isofloxythepin",
+      "connectivity_score": 6.5,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "lopinavir",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "lurasidone",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "maraviroc",
+      "connectivity_score": 6.5,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc2ccccc2c1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "methylstat",
+      "connectivity_score": 10.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)Nc1ccc2ccccc2c1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "MGCD.265",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "nemonapride",
+      "connectivity_score": 5.5,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc2ccccc2c1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "nimesulide",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)Nc1ccc2ccccc2c1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "oglemilast",
+      "connectivity_score": 8.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NCCc1ccc2ccccc2c1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "ornidazole",
+      "connectivity_score": 8.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NCCc1ccc2ccccc2c1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "oxybuprocaine",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NNc1ccc2ccccc2c1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "PF.04457845",
+      "connectivity_score": 5.66666666666667,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NNc1ccc2ccccc2c1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NNc1ccc2ccccc2c1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "RG.108",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NNc1ccc2ccccc2c1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "rizatriptan",
+      "connectivity_score": 12.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "setiptiline",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "sumatriptan",
+      "connectivity_score": 9.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCN(CC)CCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "tesaglitazar",
+      "connectivity_score": 7.5,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "CCN(CC)CCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "trehalose",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "trimebutine",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "TWS.119",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Mesenchymal-like GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(Nc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "MES",
+      "original_drug": "ZD.7288",
+      "connectivity_score": 12.0,
+      "bbb_target": "high",
+      "activity_target": "high",
+      "toxicity_target": "moderate",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(Nc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "AKT.inhibitor.1.2",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "amtolmetin.guacil",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "anidulafungin",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "aurora.a.inhibitor.i",
+      "connectivity_score": 10.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "AV.412",
+      "connectivity_score": 8.25,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "basimglurant",
+      "connectivity_score": 8.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "BRD.K68548958",
+      "connectivity_score": 12.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "calpeptin",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "chelerythrine",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "ciclesonide",
+      "connectivity_score": 6.8,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "cobicistat",
+      "connectivity_score": 16.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "conivaptan",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "CP.945598",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "darapladib",
+      "connectivity_score": 12.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "dexamethasone",
+      "connectivity_score": 5.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "doxepin",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "erlotinib",
+      "connectivity_score": 9.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "fluconazole",
+      "connectivity_score": 8.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "foretinib",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "GSK.1070916",
+      "connectivity_score": 5.4,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "irinotecan",
+      "connectivity_score": 13.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "lonafarnib",
+      "connectivity_score": 8.75,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "methylstat",
+      "connectivity_score": 20.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "MGCD.265",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "miconazole",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "norgestrel",
+      "connectivity_score": 5.6,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NOCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "NVP.BHG712",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NOCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "PD.153035",
+      "connectivity_score": 9.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "phensuximide",
+      "connectivity_score": 6.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "pimecrolimus",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "refametinib",
+      "connectivity_score": 5.7,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "RG.108",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "rotundine",
+      "connectivity_score": 5.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "sertraline",
+      "connectivity_score": 9.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "sulfadoxine",
+      "connectivity_score": 5.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: O=C(NCc1ccccc1)c1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "tesaglitazar",
+      "connectivity_score": 14.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "O=C(NCc1ccccc1)c1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "tranilast",
+      "connectivity_score": 8.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: c1ccc(CNc2ccccc2)cc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "tyrphostin.AG.112",
+      "connectivity_score": 10.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "c1ccc(CNc2ccccc2)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Neural progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(C)(C)OC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "NPC",
+      "original_drug": "VP.20629",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(C)(C)OC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "16,16.dimethylprostaglandin.e2",
+      "connectivity_score": 11.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "AGK.2",
+      "connectivity_score": 9.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCCCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "ataluren",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCCCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "avasimibe",
+      "connectivity_score": 5.5,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "BMS.345541",
+      "connectivity_score": 10.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "BRD.K68548958",
+      "connectivity_score": 9.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc(CC(C)C)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "BX.795",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CC(=O)Nc1ccc(CC(C)C)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc(CC(C)C)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "chelerythrine",
+      "connectivity_score": 9.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CC(=O)Nc1ccc(CC(C)C)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "clofazimine",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "darapladib",
+      "connectivity_score": 10.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "EMD.1214063",
+      "connectivity_score": 7.5,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "erlotinib",
+      "connectivity_score": 11.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "hydrocortisone",
+      "connectivity_score": 9.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc(CC(C)C)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "irinotecan",
+      "connectivity_score": 8.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CC(=O)Nc1ccc(CC(C)C)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc(CC(C)C)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "KU.60019",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CC(=O)Nc1ccc(CC(C)C)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "maraviroc",
+      "connectivity_score": 11.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "methylstat",
+      "connectivity_score": 10.5,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "MGCD.265",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc(CC(C)C)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "naftidrofuryl",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CC(=O)Nc1ccc(CC(C)C)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "nimesulide",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "oglemilast",
+      "connectivity_score": 8.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "olanzapine",
+      "connectivity_score": 5.5,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "PF.04457845",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "primaquine",
+      "connectivity_score": 6.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)Nc1ccc(CC(C)C)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "rizatriptan",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CC(=O)Nc1ccc(CC(C)C)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCOc1ccc(C(N)=O)cc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "sumatriptan",
+      "connectivity_score": 8.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCOc1ccc(C(N)=O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Classical GBM cells.\nTarget metrics: BBB: high permeability (logBB > 0); GBM Activity: moderate; Toxicity: moderate acceptable\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CCCCCCCCC(=O)NCc1ccccc1",
+    "metadata": {
+      "cell_state": "AC",
+      "original_drug": "tranilast",
+      "connectivity_score": 7.0,
+      "bbb_target": "high",
+      "activity_target": "moderate",
+      "toxicity_target": "moderate",
+      "selectivity_target": "moderate",
+      "generated_smiles": "CCCCCCCCC(=O)NCc1ccccc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "16,16.dimethylprostaglandin.e2",
+      "connectivity_score": 5.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "aurora.a.inhibitor.i",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "AV.412",
+      "connectivity_score": 6.25,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "basimglurant",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "betulinic.acid",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "BRD.K68548958",
+      "connectivity_score": 12.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "BX.795",
+      "connectivity_score": 9.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "chelerythrine",
+      "connectivity_score": 9.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NCc1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "ciclesonide",
+      "connectivity_score": 5.16666666666667,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NCc1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "cobicistat",
+      "connectivity_score": 13.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "conivaptan",
+      "connectivity_score": 15.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NCc1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "darapladib",
+      "connectivity_score": 6.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NCc1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "dipyridamole",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "ellagic.acid",
+      "connectivity_score": 10.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NCc1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "erlotinib",
+      "connectivity_score": 13.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NCc1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NCc1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "GSK.1070916",
+      "connectivity_score": 5.8,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NCc1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NCc1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "hydrocortisone",
+      "connectivity_score": 9.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NCc1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "lonafarnib",
+      "connectivity_score": 10.6666666666667,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "LY.2157299",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "methylstat",
+      "connectivity_score": 24.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "MGCD.265",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "nimesulide",
+      "connectivity_score": 8.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "oglemilast",
+      "connectivity_score": 8.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "ornidazole",
+      "connectivity_score": 12.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "PD.153035",
+      "connectivity_score": 8.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "praziquantel",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "refametinib",
+      "connectivity_score": 5.1,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "RG.108",
+      "connectivity_score": 6.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "rilpivirine",
+      "connectivity_score": 5.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "rizatriptan",
+      "connectivity_score": 5.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "tesaglitazar",
+      "connectivity_score": 13.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(O)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: NC(=O)c1ccc(N)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "tyrphostin.AG.112",
+      "connectivity_score": 5.5,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "NC(=O)c1ccc(N)cc1"
+    }
+  },
+  {
+    "instruction": "Generate a GBM drug candidate SMILES for Oligodendrocyte progenitor-like GBM cells.\nTarget metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\nOutput format: SMILES: <canonical_SMILES>",
+    "response": "SMILES: CC(=O)NOCc1ccc(O)cc1",
+    "metadata": {
+      "cell_state": "OPC",
+      "original_drug": "ZD.7288",
+      "connectivity_score": 7.0,
+      "bbb_target": "moderate",
+      "activity_target": "moderate",
+      "toxicity_target": "low",
+      "selectivity_target": "high",
+      "generated_smiles": "CC(=O)NOCc1ccc(O)cc1"
+    }
+  }
+]

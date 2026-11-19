@@ -1,0 +1,401 @@
+2026-04-20 16:08:50,848 - INFO - 输出目录: tot_batch_20260420_relaxed_v4
+2026-04-20 16:08:50,849 - INFO - 初始化ToT生成器...
+2026-04-20 16:08:50,988 - INFO - Using device: cuda:0 (requested GPU ID: 0, visible GPUs: 4)
+2026-04-20 16:08:50,989 - INFO - 加载模型...
+2026-04-20 16:08:50,989 - INFO - GPU memory before loading: 0.00 GB allocated, 0.00 GB reserved
+2026-04-20 16:08:50,989 - INFO - Loading models with PeftModel...
+2026-04-20 16:08:52,425 - INFO - Loading tokenizer from /root/Llamole-main/models/Qwen2-7B-Instruct
+2026-04-20 16:08:52,707 - INFO - Loading base model from /root/Llamole-main/models/Qwen2-7B-Instruct on cuda:0
+2026-04-20 16:08:52,707 - INFO - Using FP16 on device cuda:0
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.99s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.79s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:08<00:03,  3.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  3.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.92s/it]
+2026-04-20 16:09:15,137 - INFO - Base model moved to cuda:0
+2026-04-20 16:09:15,138 - INFO - Loading Llamole adapter from /root/Llamole-main/saves/Llamole-Qwen2-7B-Instruct-Adapter
+2026-04-20 16:09:20,184 - INFO - Merging Llamole adapter into base model...
+2026-04-20 16:09:20,477 - INFO - Loading GBM adapter from /root/Llamole-main/saves/Llamole-Qwen2-7B-Instruct-Adapter-gbm-with-graph-models
+2026-04-20 16:09:20,837 - INFO - Saved base_merged_model for SMILES generation fallback
+2026-04-20 16:09:20,837 - INFO - Model loaded: PeftModelForCausalLM
+2026-04-20 16:09:20,837 - INFO - All models loaded successfully
+2026-04-20 16:09:20,838 - INFO - ================================================================================
+2026-04-20 16:09:20,838 - INFO - 处理靶点: EGFR
+2026-04-20 16:09:20,838 - INFO - ================================================================================
+2026-04-20 16:09:20,838 - INFO - 开始为靶点 EGFR 生成 50 个分子...
+2026-04-20 16:09:20,858 - WARNING - [GBMPhysicalEvaluator] Vina DISABLED — using pseudo-docking based on MW/LogP
+2026-04-20 16:09:20,858 - INFO - Prompt generator and physical evaluator loaded for target: EGFR
+2026-04-20 16:09:20,858 - INFO - Starting BFS ToT search for target: EGFR
+2026-04-20 16:09:20,858 - INFO - Parameters: depth=3, k=3, b=2, refinement_rounds=1
+2026-04-20 16:09:20,858 - INFO - ============================================================
+2026-04-20 16:09:20,858 - INFO - Level 0: Scaffold Proposal
+2026-04-20 16:09:20,858 - INFO - ============================================================
+[16:09:30] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:09:30] SMILES Parse Error: check for mistakes around position 3:
+[16:09:30] Scaffold
+[16:09:30] ~~^
+[16:09:30] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+[16:09:30] SMILES Parse Error: syntax error while parsing: Intermediate.9
+[16:09:30] SMILES Parse Error: check for mistakes around position 3:
+[16:09:30] Intermediate.9
+[16:09:30] ~~^
+[16:09:30] SMILES Parse Error: Failed parsing SMILES 'Intermediate.9' for input: 'Intermediate.9'
+2026-04-20 16:09:30,331 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold; Intermediate.9...
+2026-04-20 16:09:30,332 - INFO - [Self-Correct] Attempt 2/3 for GBM drug scaffold proposal: temp=0.2, tokens=120
+[16:09:35] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:09:35] SMILES Parse Error: check for mistakes around position 3:
+[16:09:35] Scaffold
+[16:09:35] ~~^
+[16:09:35] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+2026-04-20 16:09:35,591 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold...
+2026-04-20 16:09:35,591 - INFO - [Self-Correct] Attempt 3/3 for GBM drug scaffold proposal: temp=0.2, tokens=120
+[16:09:40] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:09:40] SMILES Parse Error: check for mistakes around position 3:
+[16:09:40] Scaffold
+[16:09:40] ~~^
+[16:09:40] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+2026-04-20 16:09:40,806 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold...
+2026-04-20 16:09:40,806 - WARNING - [Self-Correct] All 3 attempts exhausted for GBM drug scaffold proposal
+2026-04-20 16:09:40,806 - INFO - Generated scaffold proposals (head):
+Scaffold 1:  AZO  AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZO AZo AZO  AZO  AZO  AZO  AZO  AZO  AZO  AZO  AZO  AZO  AZO  AZO  AZO  AZO...
+2026-04-20 16:09:40,806 - INFO - Parsed 0 scaffold proposals
+2026-04-20 16:09:40,807 - INFO - Selected 0 scaffolds after evaluation
+2026-04-20 16:09:40,807 - WARNING - All scaffold proposals failed evaluation. Using hardcoded scaffold fallback.
+2026-04-20 16:09:40,807 - INFO - Scaffold fallback: using 2 hardcoded scaffolds
+2026-04-20 16:09:40,807 - INFO - ============================================================
+2026-04-20 16:09:40,807 - INFO - Level 1: Assembly Strategy + Level 2: SMILES Generation (nested with feedback)
+2026-04-20 16:09:40,807 - INFO - ============================================================
+[16:09:53] Can't kekulize mol.  Unkekulized atoms: 18 19 20 25 34
+2026-04-20 16:09:53,022 - WARNING - [SMILES 校验] 检测到非法 SMILES: CCCCCCCCCCNC(=O)Nc1ccc(-c2nc(C(F)(F)F)c(NC(=O)OC(C)(C)C)n2)cc1...
+2026-04-20 16:09:53,022 - INFO - [Self-Correct] Attempt 2/3 for molecular assembly strategy: temp=0.2, tokens=168
+2026-04-20 16:10:00,555 - WARNING - [Self-Correct] All 3 attempts exhausted for molecular assembly strategy
+2026-04-20 16:10:00,556 - INFO - Parsed 1 assembly strategies
+2026-04-20 16:10:00,557 - INFO -   Strategy 'quinazoline + acrylamide': impossible
+2026-04-20 16:10:00,557 - WARNING - All assembly strategies failed. Using hardcoded strategy fallback.
+2026-04-20 16:10:00,557 - INFO - Strategy fallback: using 2 hardcoded strategies
+2026-04-20 16:10:00,557 - INFO - Level 2: SMILES Generation with physical evaluation and feedback injection
+2026-04-20 16:10:20,313 - WARNING -   [SMILES fallback] Fine-tuned model returned no parseable SMILES. Switching to base_merged + few-shot.
+[16:10:40] SMILES Parse Error: syntax error while parsing: CCOC(=O)[C@H](NC(=S)Nc1ccccc1F)c1ccccc1.
+[16:10:40] SMILES Parse Error: check for mistakes around position 40:
+[16:10:40] )Nc1ccccc1F)c1ccccc1.
+[16:10:40] ~~~~~~~~~~~~~~~~~~~~^
+[16:10:40] SMILES Parse Error: Failed parsing SMILES 'CCOC(=O)[C@H](NC(=S)Nc1ccccc1F)c1ccccc1.' for input: 'CCOC(=O)[C@H](NC(=S)Nc1ccccc1F)c1ccccc1.'
+[16:10:40] SMILES Parse Error: syntax error while parsing: BrCc1ccc(Br)cc1C(=O)Nc1ccccc1Br.
+[16:10:40] SMILES Parse Error: check for mistakes around position 32:
+[16:10:40] )cc1C(=O)Nc1ccccc1Br.
+[16:10:40] ~~~~~~~~~~~~~~~~~~~~^
+[16:10:40] SMILES Parse Error: Failed parsing SMILES 'BrCc1ccc(Br)cc1C(=O)Nc1ccccc1Br.' for input: 'BrCc1ccc(Br)cc1C(=O)Nc1ccccc1Br.'
+[16:10:40] SMILES Parse Error: syntax error while parsing: EGFRvIII-specific
+[16:10:40] SMILES Parse Error: check for mistakes around position 1:
+[16:10:40] EGFRvIII-specific
+[16:10:40] ^
+[16:10:40] SMILES Parse Error: Failed parsing SMILES 'EGFRvIII-specific' for input: 'EGFRvIII-specific'
+2026-04-20 16:10:40,026 - WARNING -   [SMILES extract] Extracted 3 SMILES from text
+2026-04-20 16:10:40,026 - INFO - Generated SMILES for 'quinazoline + acrylamide':
+SMILES 1: COc1ccc(Br)cc1C(=O)Nc1ccccc1Br...
+2026-04-20 16:10:40,026 - INFO - Parsed 0 raw SMILES candidates
+2026-04-20 16:10:40,026 - WARNING -   [Last resort] parse_smiles found nothing. Trying text extraction...
+2026-04-20 16:10:40,026 - INFO -   [Last resort] Text extraction found 1 candidates
+2026-04-20 16:10:40,027 - WARNING -   [Agentic Fix] 'COc1ccc(Br)cc1C(=O)Nc1ccccc1Br...' -> RDKit error: TPSA=38.3 outside target range (40-120). Add polar groups.
+[16:10:59] SMILES Parse Error: unclosed ring for input: 'COc1ccc(OS(=O)(=O)Cc1Br)cc1C(=O)Nc1ccccc1Br.OC(F)(F)OS(=O)(=O)Cc1ccccc1Br.Fc1ccccc1Br.OC(F)(F)OS(=O)(=O)Cc1ccccc1Br'
+[16:10:59] SMILES Parse Error: unclosed ring for input: 'CC(C)(C)NC(=S)Nc1ccccc1Br.COc1ccc(OS(=O)(=O)Cc1Br)cc1C(=O)Nc1ccccc1Br.Fc1ccccc1Br.Fc1ccccc1Br.[2H]Cl.[K+].[OH-]'
+[16:10:59] SMILES Parse Error: unclosed ring for input: 'COc1ccc(OS(=O)(=O)Cc1Br)cc1C(=O)Nc1ccccc1Br'
+[16:11:18] Explicit valence for atom # 9 F, 2, is greater than permitted
+[16:11:18] Explicit valence for atom # 9 F, 2, is greater than permitted
+[16:11:18] 
+
+****
+Pre-condition Violation
+RingInfo not initialized
+Violation occurred on line 28 in file /project/build/temp.linux-x86_64-cpython-311/rdkit/Code/GraphMol/RingInfo.cpp
+Failed Expression: df_init
+----------
+Stacktrace:
+----------
+****
+
+[16:11:18] Explicit valence for atom # 9 F, 2, is greater than permitted
+[16:11:18] 
+
+****
+Pre-condition Violation
+RingInfo not initialized
+Violation occurred on line 28 in file /project/build/temp.linux-x86_64-cpython-311/rdkit/Code/GraphMol/RingInfo.cpp
+Failed Expression: df_init
+----------
+Stacktrace:
+----------
+****
+
+2026-04-20 16:11:18,559 - WARNING -   [Self-Correct] Failed after 2 attempts for: COc1ccc(Br)cc1C(=O)Nc1ccccc1Br...
+2026-04-20 16:11:18,560 - WARNING -   [Agentic FAILED] Could not correct: COc1ccc(Br)cc1C(=O)Nc1ccccc1Br...
+2026-04-20 16:11:18,560 - WARNING - No valid SMILES after agentic correction for quinazoline + acrylamide
+[16:11:38] SMILES Parse Error: unclosed ring for input: 'Cc1cc(Br)cn'
+2026-04-20 16:11:38,284 - WARNING -   [SMILES fallback] Fine-tuned model returned no parseable SMILES. Switching to base_merged + few-shot.
+[16:11:57] SMILES Parse Error: syntax error while parsing: CCOC(=O)NC(=S)Nc1ccc(-n2ccnc2)cc1.
+[16:11:57] SMILES Parse Error: check for mistakes around position 34:
+[16:11:57] )Nc1ccc(-n2ccnc2)cc1.
+[16:11:57] ~~~~~~~~~~~~~~~~~~~~^
+[16:11:57] SMILES Parse Error: Failed parsing SMILES 'CCOC(=O)NC(=S)Nc1ccc(-n2ccnc2)cc1.' for input: 'CCOC(=O)NC(=S)Nc1ccc(-n2ccnc2)cc1.'
+[16:11:57] SMILES Parse Error: syntax error while parsing: EGFRvIII-specific
+[16:11:57] SMILES Parse Error: check for mistakes around position 1:
+[16:11:57] EGFRvIII-specific
+[16:11:57] ^
+[16:11:57] SMILES Parse Error: Failed parsing SMILES 'EGFRvIII-specific' for input: 'EGFRvIII-specific'
+2026-04-20 16:11:57,827 - WARNING -   [SMILES extract] Extracted 3 SMILES from text
+2026-04-20 16:11:57,827 - INFO - Generated SMILES for 'quinazoline + cyanoacrylamide':
+SMILES 1: Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3...
+2026-04-20 16:11:57,827 - INFO - Parsed 0 raw SMILES candidates
+2026-04-20 16:11:57,827 - WARNING -   [Last resort] parse_smiles found nothing. Trying text extraction...
+2026-04-20 16:11:57,827 - INFO -   [Last resort] Text extraction found 1 candidates
+2026-04-20 16:11:57,828 - INFO -   [Agentic OK] Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3... (TPSA=54.9, MW=341.8)
+2026-04-20 16:11:57,830 - INFO -   Final SMILES: Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3... -> verdict=likely, reward=0.0012, vina=-7.50, dili=0.00, bbb=0.39
+[16:12:09] SMILES Parse Error: syntax error while parsing: Carboxylic
+[16:12:09] SMILES Parse Error: check for mistakes around position 2:
+[16:12:09] Carboxylic
+[16:12:09] ~^
+[16:12:09] SMILES Parse Error: Failed parsing SMILES 'Carboxylic' for input: 'Carboxylic'
+[16:12:09] SMILES Parse Error: syntax error while parsing: Procedure
+[16:12:09] SMILES Parse Error: check for mistakes around position 2:
+[16:12:09] Procedure
+[16:12:09] ~^
+[16:12:09] SMILES Parse Error: Failed parsing SMILES 'Procedure' for input: 'Procedure'
+[16:12:09] SMILES Parse Error: syntax error while parsing: Carboxylic
+[16:12:09] SMILES Parse Error: check for mistakes around position 2:
+[16:12:09] Carboxylic
+[16:12:09] ~^
+[16:12:09] SMILES Parse Error: Failed parsing SMILES 'Carboxylic' for input: 'Carboxylic'
+[16:12:09] SMILES Parse Error: syntax error while parsing: Procedure
+[16:12:09] SMILES Parse Error: check for mistakes around position 2:
+[16:12:09] Procedure
+[16:12:09] ~^
+[16:12:09] SMILES Parse Error: Failed parsing SMILES 'Procedure' for input: 'Procedure'
+2026-04-20 16:12:09,959 - WARNING - [SMILES 校验] 检测到非法 SMILES: Carboxylic; Procedure; Carboxylic...
+2026-04-20 16:12:09,959 - INFO - [Self-Correct] Attempt 2/3 for molecular assembly strategy: temp=0.2, tokens=168
+2026-04-20 16:12:17,398 - WARNING - [Self-Correct] All 3 attempts exhausted for molecular assembly strategy
+2026-04-20 16:12:17,399 - INFO - Parsed 1 assembly strategies
+2026-04-20 16:12:17,399 - INFO -   Strategy 'pyridine + acrylamide': likely
+2026-04-20 16:12:17,399 - INFO - Level 2: SMILES Generation with physical evaluation and feedback injection
+2026-04-20 16:12:37,475 - WARNING -   [SMILES fallback] Fine-tuned model returned no parseable SMILES. Switching to base_merged + few-shot.
+[16:13:01] SMILES Parse Error: syntax error while parsing: CC(C)(C)OC(=O)NC(=O)Cc1ccc(Oc2ccc(Nc3ccccc3)cc2)cc1.
+[16:13:01] SMILES Parse Error: check for mistakes around position 52:
+[16:13:01] cc(Nc3ccccc3)cc2)cc1.
+[16:13:01] ~~~~~~~~~~~~~~~~~~~~^
+[16:13:01] SMILES Parse Error: Failed parsing SMILES 'CC(C)(C)OC(=O)NC(=O)Cc1ccc(Oc2ccc(Nc3ccccc3)cc2)cc1.' for input: 'CC(C)(C)OC(=O)NC(=O)Cc1ccc(Oc2ccc(Nc3ccccc3)cc2)cc1.'
+[16:13:01] SMILES Parse Error: syntax error while parsing: EGFRvIII-specific
+[16:13:01] SMILES Parse Error: check for mistakes around position 1:
+[16:13:01] EGFRvIII-specific
+[16:13:01] ^
+[16:13:01] SMILES Parse Error: Failed parsing SMILES 'EGFRvIII-specific' for input: 'EGFRvIII-specific'
+2026-04-20 16:13:01,299 - WARNING -   [SMILES extract] Extracted 3 SMILES from text
+2026-04-20 16:13:01,300 - INFO - Generated SMILES for 'pyridine + acrylamide':
+SMILES 1: Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3...
+2026-04-20 16:13:01,300 - INFO - Parsed 0 raw SMILES candidates
+2026-04-20 16:13:01,300 - WARNING -   [Last resort] parse_smiles found nothing. Trying text extraction...
+2026-04-20 16:13:01,300 - INFO -   [Last resort] Text extraction found 1 candidates
+2026-04-20 16:13:01,300 - INFO -   [Agentic OK] Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3... (TPSA=54.9, MW=341.8)
+2026-04-20 16:13:01,302 - INFO -   Final SMILES: Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3... -> verdict=likely, reward=0.0012, vina=-7.50, dili=0.00, bbb=0.39
+2026-04-20 16:13:01,302 - INFO - ============================================================
+2026-04-20 16:13:01,302 - INFO - BFS ToT search completed. Generated 2 final SMILES
+2026-04-20 16:13:01,302 - INFO - ============================================================
+2026-04-20 16:13:01,303 - INFO -   尝试 1: 生成 2 个分子, 新增 2 个, 总计 2/50
+2026-04-20 16:13:01,304 - INFO - Starting BFS ToT search for target: EGFR
+2026-04-20 16:13:01,304 - INFO - Parameters: depth=3, k=3, b=2, refinement_rounds=1
+2026-04-20 16:13:01,304 - INFO - ============================================================
+2026-04-20 16:13:01,304 - INFO - Level 0: Scaffold Proposal
+2026-04-20 16:13:01,304 - INFO - ============================================================
+[16:13:10] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:13:10] SMILES Parse Error: check for mistakes around position 3:
+[16:13:10] Scaffold
+[16:13:10] ~~^
+[16:13:10] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+[16:13:10] SMILES Parse Error: syntax error while parsing: Naphthalene
+[16:13:10] SMILES Parse Error: check for mistakes around position 2:
+[16:13:10] Naphthalene
+[16:13:10] ~^
+[16:13:10] SMILES Parse Error: Failed parsing SMILES 'Naphthalene' for input: 'Naphthalene'
+[16:13:10] SMILES Parse Error: syntax error while parsing: Corynebacterium
+[16:13:10] SMILES Parse Error: check for mistakes around position 3:
+[16:13:10] Corynebacterium
+[16:13:10] ~~^
+[16:13:10] SMILES Parse Error: Failed parsing SMILES 'Corynebacterium' for input: 'Corynebacterium'
+[16:13:10] SMILES Parse Error: syntax error while parsing: Pd(dppf)Cl2
+[16:13:10] SMILES Parse Error: check for mistakes around position 2:
+[16:13:10] Pd(dppf)Cl2
+[16:13:10] ~^
+[16:13:10] SMILES Parse Error: Failed parsing SMILES 'Pd(dppf)Cl2' for input: 'Pd(dppf)Cl2'
+2026-04-20 16:13:10,274 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold; Naphthalene; Corynebacterium...
+2026-04-20 16:13:10,274 - INFO - [Self-Correct] Attempt 2/3 for GBM drug scaffold proposal: temp=0.2, tokens=120
+[16:13:15] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:13:15] SMILES Parse Error: check for mistakes around position 3:
+[16:13:15] Scaffold
+[16:13:15] ~~^
+[16:13:15] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+[16:13:15] SMILES Parse Error: syntax error while parsing: Naphthalene
+[16:13:15] SMILES Parse Error: check for mistakes around position 2:
+[16:13:15] Naphthalene
+[16:13:15] ~^
+[16:13:15] SMILES Parse Error: Failed parsing SMILES 'Naphthalene' for input: 'Naphthalene'
+2026-04-20 16:13:15,638 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold; Naphthalene...
+2026-04-20 16:13:15,638 - INFO - [Self-Correct] Attempt 3/3 for GBM drug scaffold proposal: temp=0.2, tokens=120
+[16:13:20] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:13:20] SMILES Parse Error: check for mistakes around position 3:
+[16:13:20] Scaffold
+[16:13:20] ~~^
+[16:13:20] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+[16:13:20] SMILES Parse Error: syntax error while parsing: Naphthalene
+[16:13:20] SMILES Parse Error: check for mistakes around position 2:
+[16:13:20] Naphthalene
+[16:13:20] ~^
+[16:13:20] SMILES Parse Error: Failed parsing SMILES 'Naphthalene' for input: 'Naphthalene'
+2026-04-20 16:13:20,898 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold; Naphthalene...
+2026-04-20 16:13:20,898 - WARNING - [Self-Correct] All 3 attempts exhausted for GBM drug scaffold proposal
+2026-04-20 16:13:20,898 - INFO - Generated scaffold proposals (head):
+Scaffold 1: Naphthalene NN=C(c1ccccc1)c1ccccc1. This is step 1 in the retrosynthesis process. To synthesize 2-(pyridin-2-yl)-1H-indole, follow these procedures: A solution of 2-bromo-1H-indole (1.0 g, 5.5 mmol), 2-picoline (0.9 mL, 11.0 mmol) and potassium carbonate (1.5 g, 11.0 mmol...
+2026-04-20 16:13:20,898 - INFO - Parsed 1 scaffold proposals
+2026-04-20 16:13:20,898 - INFO -   Proposal 1: {'name': 'indole', 'rationale': 'Suitable scaffold for indole', 'base_mw': 170, 'bbb_potential': 'high'}
+2026-04-20 16:13:20,898 - INFO -   Scaffold 'indole': impossible
+2026-04-20 16:13:20,898 - INFO - Selected 0 scaffolds after evaluation
+2026-04-20 16:13:20,898 - WARNING - All scaffold proposals failed evaluation. Using hardcoded scaffold fallback.
+2026-04-20 16:13:20,898 - INFO - Scaffold fallback: using 2 hardcoded scaffolds
+2026-04-20 16:13:20,898 - INFO - ============================================================
+2026-04-20 16:13:20,898 - INFO - Level 1: Assembly Strategy + Level 2: SMILES Generation (nested with feedback)
+2026-04-20 16:13:20,899 - INFO - ============================================================
+2026-04-20 16:13:35,619 - INFO - Parsed 1 assembly strategies
+2026-04-20 16:13:35,619 - INFO -   Strategy 'quinazoline + acrylamide': likely
+2026-04-20 16:13:35,619 - INFO - Level 2: SMILES Generation with physical evaluation and feedback injection
+2026-04-20 16:13:57,356 - WARNING -   [SMILES fallback] Fine-tuned model returned no parseable SMILES. Switching to base_merged + few-shot.
+[16:14:16] SMILES Parse Error: extra close parentheses while parsing: O)(NCc1ccccc1Cl)C(F)(F)F.
+[16:14:16] SMILES Parse Error: check for mistakes around position 2:
+[16:14:16] O)(NCc1ccccc1Cl)C(F)(F)F.
+[16:14:16] ~^
+[16:14:16] SMILES Parse Error: Failed parsing SMILES 'O)(NCc1ccccc1Cl)C(F)(F)F.' for input: 'O)(NCc1ccccc1Cl)C(F)(F)F.'
+[16:14:16] SMILES Parse Error: syntax error while parsing: N-(5-fluoro-4-methylphenyl)-1H-pyrazole-3-carboxamide
+[16:14:16] SMILES Parse Error: check for mistakes around position 3:
+[16:14:16] N-(5-fluoro-4-methylphenyl)-1H-pyrazole-3
+[16:14:16] ~~^
+[16:14:16] SMILES Parse Error: Failed parsing SMILES 'N-(5-fluoro-4-methylphenyl)-1H-pyrazole-3-carboxamide' for input: 'N-(5-fluoro-4-methylphenyl)-1H-pyrazole-3-carboxamide'
+[16:14:16] SMILES Parse Error: syntax error while parsing: EGFRvIII-specific
+[16:14:16] SMILES Parse Error: check for mistakes around position 1:
+[16:14:16] EGFRvIII-specific
+[16:14:16] ^
+[16:14:16] SMILES Parse Error: Failed parsing SMILES 'EGFRvIII-specific' for input: 'EGFRvIII-specific'
+2026-04-20 16:14:16,643 - WARNING -   [SMILES extract] Extracted 3 SMILES from text
+2026-04-20 16:14:16,644 - INFO - Generated SMILES for 'quinazoline + acrylamide':
+SMILES 1: CCN=Cc1ccccc1Cl...
+2026-04-20 16:14:16,644 - INFO - Parsed 0 raw SMILES candidates
+2026-04-20 16:14:16,644 - WARNING -   [Last resort] parse_smiles found nothing. Trying text extraction...
+2026-04-20 16:14:16,644 - INFO -   [Last resort] Text extraction found 1 candidates
+2026-04-20 16:14:16,644 - WARNING -   [Agentic Fix] 'CCN=Cc1ccccc1Cl...' -> RDKit error: TPSA=12.4 outside target range (40-120). Add polar groups.
+[16:14:36] SMILES Parse Error: extra open parentheses while parsing: CC(C)(C)NC(=O)[C@@H](Cc1ccccc1Cl)C(=O)OC(C)(C)C.F.F.C.F.O=C(O)O.[Cs+2]Cl.[Cs+2]Cl.[Cs+2]Cl.OC(F)F.F.OC(F)F.[Cs+2]Cl.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F
+[16:14:36] SMILES Parse Error: check for mistakes around position 574:
+[16:14:36] F)F.OC(F)F.OC(F)F.OC(F
+[16:14:36] ~~~~~~~~~~~~~~~~~~~~^
+[16:14:36] SMILES Parse Error: Failed parsing SMILES 'CC(C)(C)NC(=O)[C@@H](Cc1ccccc1Cl)C(=O)OC(C)(C)C.F.F.C.F.O=C(O)O.[Cs+2]Cl.[Cs+2]Cl.[Cs+2]Cl.OC(F)F.F.OC(F)F.[Cs+2]Cl.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F' for input: 'CC(C)(C)NC(=O)[C@@H](Cc1ccccc1Cl)C(=O)OC(C)(C)C.F.F.C.F.O=C(O)O.[Cs+2]Cl.[Cs+2]Cl.[Cs+2]Cl.OC(F)F.F.OC(F)F.[Cs+2]Cl.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F)F.OC(F'
+2026-04-20 16:14:36,059 - INFO -   [Self-Correct] Attempt 1: CC(C)(C)NC(=O)N[C@H](Cc1ccccc1Cl)C(=O)OC(C)(C)C.OC... -> OK (TPSA=107.9, MW=490.9)
+2026-04-20 16:14:36,059 - INFO -   [Agentic Corrected] -> CC(C)(C)NC(=O)N[C@H](Cc1ccccc1Cl)C(=O)OC(C)(C)C.OC(F)F.OC(F)...
+2026-04-20 16:14:36,061 - INFO -   Final SMILES: CC(C)(C)NC(=O)N[C@H](Cc1ccccc1Cl)C(=O)OC(C)(C)C.OC... -> verdict=likely, reward=0.0000, vina=-7.50, dili=0.00, bbb=0.00
+2026-04-20 16:14:48,445 - INFO - Parsed 1 assembly strategies
+2026-04-20 16:14:48,445 - INFO -   Strategy 'pyridine + acrylamide': impossible
+2026-04-20 16:14:48,445 - WARNING - All assembly strategies failed. Using hardcoded strategy fallback.
+2026-04-20 16:14:48,445 - INFO - Strategy fallback: using 2 hardcoded strategies
+2026-04-20 16:14:48,445 - INFO - Level 2: SMILES Generation with physical evaluation and feedback injection
+[16:15:08] Explicit valence for atom # 2 Cl, 2, is greater than permitted
+2026-04-20 16:15:08,472 - WARNING -   [SMILES fallback] Fine-tuned model returned no parseable SMILES. Switching to base_merged + few-shot.
+[16:15:27] SMILES Parse Error: syntax error while parsing: CCOC(=O)NC(=O)c1ccc(Nc2ccc(C#N)cc2)cc1.
+[16:15:27] SMILES Parse Error: check for mistakes around position 39:
+[16:15:27] c(Nc2ccc(C#N)cc2)cc1.
+[16:15:27] ~~~~~~~~~~~~~~~~~~~~^
+[16:15:27] SMILES Parse Error: Failed parsing SMILES 'CCOC(=O)NC(=O)c1ccc(Nc2ccc(C#N)cc2)cc1.' for input: 'CCOC(=O)NC(=O)c1ccc(Nc2ccc(C#N)cc2)cc1.'
+[16:15:27] SMILES Parse Error: syntax error while parsing: EGFRvIII-specific
+[16:15:27] SMILES Parse Error: check for mistakes around position 1:
+[16:15:27] EGFRvIII-specific
+[16:15:27] ^
+[16:15:27] SMILES Parse Error: Failed parsing SMILES 'EGFRvIII-specific' for input: 'EGFRvIII-specific'
+2026-04-20 16:15:27,965 - WARNING -   [SMILES extract] Extracted 3 SMILES from text
+2026-04-20 16:15:27,966 - INFO - Generated SMILES for 'pyridine + acrylamide':
+SMILES 1: Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3...
+2026-04-20 16:15:27,966 - INFO - Parsed 0 raw SMILES candidates
+2026-04-20 16:15:27,966 - WARNING -   [Last resort] parse_smiles found nothing. Trying text extraction...
+2026-04-20 16:15:27,966 - INFO -   [Last resort] Text extraction found 1 candidates
+2026-04-20 16:15:27,966 - INFO -   [Agentic OK] Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3... (TPSA=54.9, MW=341.8)
+2026-04-20 16:15:27,968 - INFO -   Final SMILES: Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3... -> verdict=likely, reward=0.0012, vina=-7.50, dili=0.00, bbb=0.39
+2026-04-20 16:15:47,716 - WARNING -   [SMILES fallback] Fine-tuned model returned no parseable SMILES. Switching to base_merged + few-shot.
+[16:16:07] SMILES Parse Error: syntax error while parsing: Chloro-1H-indole
+[16:16:07] SMILES Parse Error: check for mistakes around position 2:
+[16:16:07] Chloro-1H-indole
+[16:16:07] ~^
+[16:16:07] SMILES Parse Error: Failed parsing SMILES 'Chloro-1H-indole' for input: 'Chloro-1H-indole'
+[16:16:07] SMILES Parse Error: syntax error while parsing: EGFRvIII-specific
+[16:16:07] SMILES Parse Error: check for mistakes around position 1:
+[16:16:07] EGFRvIII-specific
+[16:16:07] ^
+[16:16:07] SMILES Parse Error: Failed parsing SMILES 'EGFRvIII-specific' for input: 'EGFRvIII-specific'
+2026-04-20 16:16:07,205 - WARNING -   [SMILES extract] Extracted 3 SMILES from text
+2026-04-20 16:16:07,205 - INFO - Generated SMILES for 'pyridine + cyanoacrylamide':
+SMILES 1: Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3...
+2026-04-20 16:16:07,205 - INFO - Parsed 0 raw SMILES candidates
+2026-04-20 16:16:07,205 - WARNING -   [Last resort] parse_smiles found nothing. Trying text extraction...
+2026-04-20 16:16:07,205 - INFO -   [Last resort] Text extraction found 1 candidates
+2026-04-20 16:16:07,205 - INFO -   [Agentic OK] Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3... (TPSA=54.9, MW=341.8)
+2026-04-20 16:16:07,207 - INFO -   Final SMILES: Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3... -> verdict=likely, reward=0.0012, vina=-7.50, dili=0.00, bbb=0.39
+2026-04-20 16:16:07,207 - INFO - ============================================================
+2026-04-20 16:16:07,207 - INFO - BFS ToT search completed. Generated 3 final SMILES
+2026-04-20 16:16:07,207 - INFO - ============================================================
+2026-04-20 16:16:07,209 - INFO -   尝试 2: 生成 3 个分子, 新增 1 个, 总计 3/50
+2026-04-20 16:16:07,211 - INFO - Starting BFS ToT search for target: EGFR
+2026-04-20 16:16:07,211 - INFO - Parameters: depth=3, k=3, b=2, refinement_rounds=1
+2026-04-20 16:16:07,211 - INFO - ============================================================
+2026-04-20 16:16:07,211 - INFO - Level 0: Scaffold Proposal
+2026-04-20 16:16:07,211 - INFO - ============================================================
+[16:16:15] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:16:15] SMILES Parse Error: check for mistakes around position 3:
+[16:16:15] Scaffold
+[16:16:15] ~~^
+[16:16:15] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+[16:16:15] SMILES Parse Error: syntax error while parsing: Cytosine
+[16:16:15] SMILES Parse Error: check for mistakes around position 2:
+[16:16:15] Cytosine
+[16:16:15] ~^
+[16:16:15] SMILES Parse Error: Failed parsing SMILES 'Cytosine' for input: 'Cytosine'
+2026-04-20 16:16:15,642 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold; Cytosine...
+2026-04-20 16:16:15,642 - INFO - [Self-Correct] Attempt 2/3 for GBM drug scaffold proposal: temp=0.2, tokens=120
+[16:16:20] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:16:20] SMILES Parse Error: check for mistakes around position 3:
+[16:16:20] Scaffold
+[16:16:20] ~~^
+[16:16:20] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+[16:16:20] SMILES Parse Error: syntax error while parsing: Cytosine
+[16:16:20] SMILES Parse Error: check for mistakes around position 2:
+[16:16:20] Cytosine
+[16:16:20] ~^
+[16:16:20] SMILES Parse Error: Failed parsing SMILES 'Cytosine' for input: 'Cytosine'
+2026-04-20 16:16:20,854 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold; Cytosine...
+2026-04-20 16:16:20,854 - INFO - [Self-Correct] Attempt 3/3 for GBM drug scaffold proposal: temp=0.2, tokens=120
+[16:16:25] SMILES Parse Error: syntax error while parsing: Scaffold
+[16:16:25] SMILES Parse Error: check for mistakes around position 3:
+[16:16:25] Scaffold
+[16:16:25] ~~^
+[16:16:25] SMILES Parse Error: Failed parsing SMILES 'Scaffold' for input: 'Scaffold'
+[16:16:25] SMILES Parse Error: syntax error while parsing: Cytosine
+[16:16:25] SMILES Parse Error: check for mistakes around position 2:
+[16:16:25] Cytosine
+[16:16:25] ~^
+[16:16:25] SMILES Parse Error: Failed parsing SMILES 'Cytosine' for input: 'Cytosine'
+[16:16:25] SMILES Parse Error: syntax error while parsing: Penetration
+[16:16:25] SMILES Parse Error: check for mistakes around position 2:
+[16:16:25] Penetration
+[16:16:25] ~^
+[16:16:25] SMILES Parse Error: Failed parsing SMILES 'Penetration' for input: 'Penetration'
+2026-04-20 16:16:25,978 - WARNING - [SMILES 校验] 检测到非法 SMILES: Scaffold; Cytosine; Penetration...
+2026-04-20 16:16:25,978 - WARNING - [Self-Correct] All 3 attempts exhausted for GBM drug scaffold proposal
+2026-04-20 16:16:25,978 - INFO - Generated scaffold proposals (head):
+Scaffold 1: Cytosine  Bioavailability and BBB Penetration, suitable for complex biological interactions and potential therapeutic applications. Therefore, the designed molecule is: . This is step 1 in the retrosynthesis process. To synthesize 2',6-dihydroxybenzaldehyde, follow these procedures: A solution of 2,6-dihydroxybenzyl alcohol (1.0 g, 6.9 mmol) in acetic acid (10 mL) was treated with chromium oxide (0.1 g). The reaction mixture...
+2026-04-20 16:16:25,979 - INFO - Parsed 0 scaffold proposals
+2026-04-20 16:16:25,979 - INFO - Selected 0 scaffolds after evaluation
+2026-04-20 16:16:25,979 - WARNING - All scaffold proposals failed evaluation. Using hardcoded scaffold fallback.
+2026-04-20 16:16:25,979 - INFO - Scaffold fallback: using 2 hardcoded scaffolds
+2026-04-20 16:16:25,979 - INFO - ============================================================
+2026-04-20 16:16:25,979 - INFO - Level 1: Assembly Strategy + Level 2: SMILES Generation (nested with feedback)
+2026-04-20 16:16:25,979 - INFO - ============================================================
+2026-04-20 16:16:38,287 - INFO - Parsed 1 assembly strategies
+2026-04-20 16:16:38,287 - INFO -   Strategy 'quinazoline + acrylamide': impossible
+2026-04-20 16:16:38,287 - WARNING - All assembly strategies failed. Using hardcoded strategy fallback.
+2026-04-20 16:16:38,287 - INFO - Strategy fallback: using 2 hardcoded strategies
+2026-04-20 16:16:38,287 - INFO - Level 2: SMILES Generation with physical evaluation and feedback injection

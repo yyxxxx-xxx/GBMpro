@@ -1,0 +1,16 @@
+{
+  "targets": [
+    "EGFR",
+    "VEGF_VEGFR"
+  ],
+  "num_molecules_per_target": 200,
+  "tot_k": 4,
+  "tot_b": 3,
+  "gpu_id": 0,
+  "prompts_config_path": "gbm_project/configs/english_gbm_prompts.yaml",
+  "enable_guardrail_fallback": false,
+  "enable_default_strategy_fallback": false,
+  "max_attempts": 300,
+  "max_no_new_streak": 0,
+  "timestamp": "2026-04-22T06:55:56.749024"
+}

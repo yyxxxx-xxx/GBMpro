@@ -1,0 +1,25 @@
+﻿实验,靶点,生成分子数,有效分子数(DrugClip>0),有效分子中位数Score,有效分子平均Score,Score≥70率(%),Score≥80率(%)
+Full Model,EGFR,99,43,58.18,58.72,23.3,0.0
+Full Model,IDH1_IDH2,100,67,56.63,58.04,20.9,10.4
+Full Model,VEGF_VEGFR,99,48,63.83,64.72,41.7,12.5
+No CoT&ToT,EGFR,33,14,58.98,56.2,14.3,0.0
+No CoT&ToT,IDH1_IDH2,31,11,47.73,52.75,18.2,0.0
+No CoT&ToT,VEGF_VEGFR,26,12,55.03,53.4,25.0,0.0
+w/o ToT (CoT only),EGFR,29,15,58.76,57.08,20.0,6.7
+w/o ToT (CoT only),IDH1_IDH2,39,15,61.57,57.99,33.3,6.7
+w/o ToT (CoT only),VEGF_VEGFR,35,15,71.36,66.11,53.3,6.7
+w/o Feedback,EGFR,24,6,64.77,62.77,33.3,0.0
+w/o Feedback,IDH1_IDH2,18,10,70.11,64.56,50.0,40.0
+w/o Feedback,VEGF_VEGFR,15,7,64.81,70.4,42.9,42.9
+w/o Physical Eval,EGFR,23,7,62.69,65.52,42.9,14.3
+w/o Physical Eval,IDH1_IDH2,17,9,55.75,57.57,22.2,0.0
+w/o Physical Eval,VEGF_VEGFR,9,6,68.81,70.27,50.0,33.3
+w/o Domain Knowledge,EGFR,15,7,75.28,72.86,57.1,28.6
+w/o Domain Knowledge,IDH1_IDH2,19,8,59.9,59.28,37.5,12.5
+w/o Domain Knowledge,VEGF_VEGFR,9,6,58.71,60.7,16.7,16.7
+w/o GBM LoRA,EGFR,26,9,68.66,65.21,33.3,11.1
+w/o GBM LoRA,IDH1_IDH2,20,15,61.07,60.34,20.0,0.0
+w/o GBM LoRA,VEGF_VEGFR,17,10,62.51,59.52,40.0,10.0
+Base Model,EGFR,54,37,59.42,58.65,18.9,10.8
+Base Model,IDH1_IDH2,48,6,59.12,57.74,33.3,16.7
+Base Model,VEGF_VEGFR,27,8,71.7,71.0,62.5,25.0

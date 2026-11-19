@@ -1,0 +1,9 @@
+{
+  "EGFR": {
+    "target_key": "EGFR",
+    "n_generated": 0,
+    "n_unique": 0,
+    "csv": "/root/Llamole-main/gbm_project/experiments/cmp_test/EGFR.csv",
+    "smiles": []
+  }
+}

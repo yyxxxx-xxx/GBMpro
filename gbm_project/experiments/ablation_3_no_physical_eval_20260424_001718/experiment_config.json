@@ -1,0 +1,12 @@
+{
+  "experiment_name": "ablation_3_no_physical_eval",
+  "ablation_description": "Ablation 3: Physical evaluation module replaced with a fake evaluator that always returns 'likely' verdict with reward=1.0 and is_pruned=False. This removes Vina docking, DILI, BBB, hERG, and MPO reward signals from both the ToT search and the feedback loop. Only RDKit TPSA/MW validation remains.",
+  "targets": [
+    "EGFR",
+    "IDH1_IDH2",
+    "VEGF_VEGFR"
+  ],
+  "num_molecules": 50,
+  "gpu_id": 2,
+  "timestamp": "2026-04-24T00:17:18.971722"
+}

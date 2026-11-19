@@ -1,0 +1,12 @@
+{
+  "experiment_name": "ablation_2_no_feedback",
+  "ablation_description": "Ablation 2: Physical feedback iteration removed. ToT generates SMILES for only 1 round per branch, with NO feedback from Vina/DILI/BBB scores injected into the next round. This tests whether the iterative refinement loop genuinely improves molecular quality.",
+  "targets": [
+    "EGFR",
+    "IDH1_IDH2",
+    "VEGF_VEGFR"
+  ],
+  "num_molecules": 50,
+  "gpu_id": 2,
+  "timestamp": "2026-04-23T14:40:34.784282"
+}

@@ -1,0 +1,16 @@
+entity_id,mol_id,library_name,target,smiles
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_1,Qwen2-7B-Instruct (Base),IDH1,CC(=O)Nc1ccc(cc1)C(=O)N(C(=O)Nc2ccccc2)c3ccccc3
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_2,Qwen2-7B-Instruct (Base),IDH1,CC(=O)Nc1ccccc1C(=O)O
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_3,Qwen2-7B-Instruct (Base),IDH1,CC(=O)Nc1ccc(cc1)C(=O)O
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_4,Qwen2-7B-Instruct (Base),IDH1,N(C1CCCCC1)(C2=CC=CC=C2)C(=O)C3CCCCC3[C@H]1C2=CC(=C1C)CC2
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_5,Qwen2-7B-Instruct (Base),IDH1,CC(=O)Nc1ccc(cc1)C(CCN)=C
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_6,Qwen2-7B-Instruct (Base),IDH1,CC(=O)Nc1ccc(CCN1)c(c1C(=O)NC(=O)N1C(=O)C(=O)NC(=O)N1)CC(=O)Nc1
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_7,Qwen2-7B-Instruct (Base),IDH1,CC(=O)Nc1ccc(C(=O)Nc2ccccc2C(=O)N1)
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_8,Qwen2-7B-Instruct (Base),IDH1,NCC1C(=O)OC(C)C1C(NC2=CNC(=O)CN=C2)c3ccc(cc3)C
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_9,Qwen2-7B-Instruct (Base),IDH1,CC(=O)N
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_10,Qwen2-7B-Instruct (Base),IDH1,C1=CC=CC=C1C(=O)Nc2ccc(cc2)Nc3ccnc(n3)c4ccccc4
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_11,Qwen2-7B-Instruct (Base),IDH1,CC(=O)Nc1ccccc1C(=O)N(C)C
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_12,Qwen2-7B-Instruct (Base),IDH1,O=C(C)C/C(=O)O
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_13,Qwen2-7B-Instruct (Base),IDH1,CC(=O)Nc1ccccc1C(=O)N[C@H]1CN(C)C(=O)C(=O)c1
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_14,Qwen2-7B-Instruct (Base),IDH1,C1=CC=C(C=C1)C(=O)Nc2ccccc2Nc3ccccc3C(=O)Nc4ccccc4C(=O)
+IDH1,Qwen2-7B-Instruct (Base)_IDH1_15,Qwen2-7B-Instruct (Base),IDH1,C1=CC=C(C=C1)C(=O)Nc2ccc(c3ccccc3)cc2

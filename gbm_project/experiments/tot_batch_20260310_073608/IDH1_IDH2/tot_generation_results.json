@@ -1,0 +1,1917 @@
+{
+  "config": {
+    "target": "IDH1_IDH2",
+    "tot_depth": 3,
+    "tot_k": 2,
+    "tot_b": 1,
+    "constraints": {
+      "mw_range": "300-500",
+      "bbb_requirement": "high",
+      "logp_range": "2.0-4.0"
+    }
+  },
+  "num_generated": 50,
+  "molecules": [
+    {
+      "smiles": "Fc1ccc(Br)cn(S(C)(C)C)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc(Br)cn(S(C)(C)C)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc(Br)cn(S(C)(C)C)cc1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Ic1ccc(Br)cn(S(C)(C)C)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Ic1ccc(Br)cn(S(C)(C)C)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Ic1ccc(Br)cn(S(C)(C)C)cc1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "FCC(F)(F)F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "FCC(F)(F)F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "FCC(F)(F)F"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1cccs1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1cccs1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1cccs1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Clc1cc(Cl)no1-c1cc(Cl)no1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Clc1cc(Cl)no1-c1cc(Cl)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Clc1cc(Cl)no1-c1cc(Cl)no1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1cc(Cl)no1-c1cc(Cl)no1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1cc(Cl)no1-c1cc(Cl)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1cc(Cl)no1-c1cc(Cl)no1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[Br-]",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[Br-]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[Br-]"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[Br]",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[Br]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[Br]"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(C)(C)OC",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(C)(C)OC",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(C)(C)OC"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "c1ccccc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "c1ccccc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "c1ccccc1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "ClCc1cc(Cl)ccc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "ClCc1cc(Cl)ccc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "ClCc1cc(Cl)ccc1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "NCCN1CCCC1CCC(O)Oc1cc(Cl)ccc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "NCCN1CCCC1CCC(O)Oc1cc(Cl)ccc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "NCCN1CCCC1CCC(O)Oc1cc(Cl)ccc1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccc(C(F)(F)F)o1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc(C(F)(F)F)o1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc(C(F)(F)F)o1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1ccc(Br)cc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1ccc(Br)cc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1ccc(Br)cc1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "c1ccc(Cl)cc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "c1ccc(Cl)cc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "c1ccc(Cl)cc1Cl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(C)(C)C#N/c1ccc(Cl)cc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(C)(C)C#N/c1ccc(Cl)cc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(C)(C)C#N/c1ccc(Cl)cc1Cl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1ccnc1-c1ccc(F)cc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1ccnc1-c1ccc(F)cc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1ccnc1-c1ccc(F)cc1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(F)(F)F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(F)(F)F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(F)(F)F"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1cc(Br)cc(Br)n1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1cc(Br)cc(Br)n1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1cc(Br)cc(Br)n1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(-c2cc(C#N)cc2-c3ccc(Br)cc3)no1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2cc(C#N)cc2-c3ccc(Br)cc3)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2cc(C#N)cc2-c3ccc(Br)cc3)no1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[Cs+](Cs+)",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[Cs+](Cs+)",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[Cs+](Cs+)"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[Cs+]",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[Cs+]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[Cs+]"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Ic1cc(Cl)cc(Br)c1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Ic1cc(Cl)cc(Br)c1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Ic1cc(Cl)cc(Br)c1Cl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(Br)cc2ncccc2n1-c1cc(C(F)(F)F)nc(NCCCN)s1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cc2ncccc2n1-c1cc(C(F)(F)F)nc(NCCCN)s1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Br)cc2ncccc2n1-c1cc(C(F)(F)F)nc(NCCCN)s1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1cc(-c2ccccc2)no1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(-c2ccccc2)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1cc(-c2ccccc2)no1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1cc(Cl)ccc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(Cl)ccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1cc(Cl)ccc1Cl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "c1ccc([PH+](c2ccccc2)C(F)(F)F)cc1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "c1ccc([PH+](c2ccccc2)C(F)(F)F)cc1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "c1ccc([PH+](c2ccccc2)C(F)(F)F)cc1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "[PH+]",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "[PH+]",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "[PH+]"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1ccnc1-c1cc(Cl)ccc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1ccnc1-c1cc(Cl)ccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1ccnc1-c1cc(Cl)ccc1Cl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Clc1ccc(Cl)cc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Clc1ccc(Cl)cc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Clc1ccc(Cl)cc1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1ccn[nH]1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1ccn[nH]1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1ccn[nH]1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1cc(Cl)cc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(Cl)cc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1cc(Cl)cc1Cl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Ic1ccc(Br)cc1I",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Ic1ccc(Br)cc1I",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Ic1ccc(Br)cc1I"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1cc(Br)ccc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(Br)ccc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1cc(Br)ccc1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "ClCc1ccccc1F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "ClCc1ccccc1F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "ClCc1ccccc1F"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(-c2ccc(Br)cc2)no1-c1ccnc(N)n1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2ccc(Br)cc2)no1-c1ccnc(N)n1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2ccc(Br)cc2)no1-c1ccnc(N)n1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "I(F)(F)F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "I(F)(F)F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "I(F)(F)F"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OCc1cc(Cl)cc1Br",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OCc1cc(Cl)cc1Br",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OCc1cc(Cl)cc1Br"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CC(C)(C)OC",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "thiazole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(C)(C)OC",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CC(C)(C)OC"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Nc1cc(Cl)n(C(F)(F)F)n1-c1nc(Cl)n(C(F)(F)F)n1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "thiazole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Nc1cc(Cl)n(C(F)(F)F)n1-c1nc(Cl)n(C(F)(F)F)n1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Nc1cc(Cl)n(C(F)(F)F)n1-c1nc(Cl)n(C(F)(F)F)n1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "CC(C)(C)C",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "CC(C)(C)C",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "CC(C)(C)C"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(C)(C)C",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(C)(C)C",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(C)(C)C"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Clc1ccc(Cl)cc1F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Clc1ccc(Cl)cc1F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Clc1ccc(Cl)cc1F"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Fc1cccc(Cl)c1F",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1cccc(Cl)c1F",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1cccc(Cl)c1F"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Cc1cc(-c2nc(C(F)(F)F)n[nH]c2)no1-c1cc(Cl)ccc1Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2nc(C(F)(F)F)n[nH]c2)no1-c1cc(Cl)ccc1Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2nc(C(F)(F)F)n[nH]c2)no1-c1cc(Cl)ccc1Cl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(C)CN(C)CCl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(C)CN(C)CCl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(C)CN(C)CCl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "FCCN(CC)CC",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Default scaffold fallback: pyrimidine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyrimidine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "FCCN(CC)CC",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "FCCN(CC)CC"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "ClCc1cc(Br)cc(Br)C#N",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "pyridine + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "ClCc1cc(Br)cc(Br)C#N",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "ClCc1cc(Br)cc(Br)C#N"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "OC(C)(C)Cl",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "OC(C)(C)Cl",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "OC(C)(C)Cl"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "Ic1cc(Br)c(Br)c(Br)c(Br)c1I",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Ic1cc(Br)c(Br)c(Br)c(Br)c1I",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Ic1cc(Br)c(Br)c(Br)c(Br)c1I"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "timestamp": "2026-03-10T09:50:28.905174"
+}

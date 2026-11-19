@@ -1,0 +1,5 @@
+ID,SMILES,TPSA,MW
+MGMT_74116_001,Cc1cc(-c2cc(Cl)nc(NCc3ncccc3Cl)n2)no1,76.73,336.18
+MGMT_74116_002,Cc1cc(-c2cc(Cl)nc(NCc3ccc(C#N)cc3)cs2)no1,74.21,356.84
+MGMT_88002_003,Cc1cc(Br)cc(C(F)(F)F)cc2ccc(Cl)cc2n1-c1nc(N)n[nH]1,72.52,446.66
+MGMT_89848_004,Fc1cc(Br)cc(C(F)(F)F)cc2ccc(Cl)cc2n1-c1nc(N)n[nH]1,72.52,450.62

@@ -1,0 +1,15 @@
+{
+  "experiment_name": "exp8_first_lora_simple",
+  "description": "Exp8 rerun: minimal validation, trust model output, basic format cleanup only.",
+  "base_model": "/root/Llamole-main/models/Qwen2-7B-Instruct",
+  "lora_adapter": "/root/Llamole-main/saves/Llamole-Qwen2-7B-Instruct-Adapter",
+  "gbm_adapter": null,
+  "targets": [
+    "EGFR",
+    "IDH1_IDH2",
+    "VEGF_VEGFR"
+  ],
+  "num_molecules": 50,
+  "gpu_id": 3,
+  "timestamp": "2026-05-07T17:41:10.056799"
+}

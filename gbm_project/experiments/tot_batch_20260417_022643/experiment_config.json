@@ -1,0 +1,21 @@
+{
+  "targets": [
+    "EGFR",
+    "VEGF_VEGFR",
+    "IDH1_IDH2",
+    "MGMT",
+    "PD-1_PD-L1",
+    "PI3K_AKT_mTOR",
+    "p53_MDM2"
+  ],
+  "num_molecules_per_target": 100,
+  "tot_k": 3,
+  "tot_b": 2,
+  "gpu_id": 2,
+  "prompts_config_path": "/root/Llamole-main/gbm_project/configs/english_gbm_prompts.yaml",
+  "enable_guardrail_fallback": true,
+  "enable_default_strategy_fallback": true,
+  "max_attempts": 200,
+  "max_no_new_streak": 0,
+  "timestamp": "2026-04-17T02:27:15.227771"
+}

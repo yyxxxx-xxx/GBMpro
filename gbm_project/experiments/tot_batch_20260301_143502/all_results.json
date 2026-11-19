@@ -1,0 +1,700 @@
+{
+  "EGFR": [
+    {
+      "smiles": "pyridine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrimidine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "indole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "quinazoline",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "thiazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "EGFR",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "VEGF_VEGFR": [
+    {
+      "smiles": "indole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrimidine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "benzimidazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "benzimidazole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "benzimidazole",
+            "rationale": "Suitable scaffold for benzimidazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrrole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrrole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrrole",
+            "rationale": "Suitable scaffold for pyrrole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyridine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "thiazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "VEGF_VEGFR",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "IDH1_IDH2": [
+    {
+      "smiles": "indole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrimidine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyridine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "thiazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "quinazoline",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "MGMT": [
+    {
+      "smiles": "thiazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrimidine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyridine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrrole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrrole",
+          "evaluation": "impossible",
+          "metadata": {
+            "name": "pyrrole",
+            "rationale": "Suitable scaffold for pyrrole",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "indole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "benzimidazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "benzimidazole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "benzimidazole",
+            "rationale": "Suitable scaffold for benzimidazole",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "quinazoline",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "PD-1_PD-L1": [
+    {
+      "smiles": "thiazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PD-1_PD-L1",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "quinazoline",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PD-1_PD-L1",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyridine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "impossible",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PD-1_PD-L1",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "indole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "impossible",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PD-1_PD-L1",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrrole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrrole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyrrole",
+            "rationale": "Suitable scaffold for pyrrole",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PD-1_PD-L1",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "PI3K_AKT_mTOR": [
+    {
+      "smiles": "pyridine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "thiazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "thiazole",
+          "evaluation": "impossible",
+          "metadata": {
+            "name": "thiazole",
+            "rationale": "Suitable scaffold for thiazole",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "indole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "benzimidazole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "benzimidazole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "benzimidazole",
+            "rationale": "Suitable scaffold for benzimidazole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "purine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "purine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "purine",
+            "rationale": "Suitable scaffold for purine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "PI3K_AKT_mTOR",
+      "generation_method": "tot_bfs"
+    }
+  ],
+  "p53_MDM2": [
+    {
+      "smiles": "quinazoline",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "indole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Suitable scaffold for indole",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyridine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyridine",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyridine",
+            "rationale": "Suitable scaffold for pyridine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrimidine",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrimidine",
+          "evaluation": "sure",
+          "metadata": {
+            "name": "pyrimidine",
+            "rationale": "Suitable scaffold for pyrimidine",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs"
+    },
+    {
+      "smiles": "pyrrole",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "pyrrole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "pyrrole",
+            "rationale": "Suitable scaffold for pyrrole",
+            "base_mw": 190,
+            "bbb_potential": "high"
+          }
+        }
+      ],
+      "target": "p53_MDM2",
+      "generation_method": "tot_bfs"
+    }
+  ]
+}

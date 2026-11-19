@@ -1,0 +1,8 @@
+{
+  "experiment_name": "exp8_first_lora_simple",
+  "targets_processed": [
+    "VEGF_VEGFR"
+  ],
+  "total_molecules": 16,
+  "timestamp": "2026-05-08T12:22:17.301628"
+}

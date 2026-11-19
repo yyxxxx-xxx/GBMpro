@@ -1,0 +1,12 @@
+{
+  "experiment_name": "ablation_4_no_domain_knowledge",
+  "ablation_description": "Ablation 4: GBM knowledge base and domain prompt injection removed. The generator uses only a generic molecular design prompt with basic constraints (MW, LogP, TPSA, BBB). No target-specific knowledge, clinical insights, or structural priors are injected. This tests whether the domain-specific prompt engineering genuinely helps.",
+  "targets": [
+    "EGFR",
+    "IDH1_IDH2",
+    "VEGF_VEGFR"
+  ],
+  "num_molecules": 50,
+  "gpu_id": 3,
+  "timestamp": "2026-04-23T14:40:34.439732"
+}

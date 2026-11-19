@@ -1,0 +1,80 @@
+# REINVENT 4 TL+RL —— EGFR
+#
+# 与 reinvent_EGFR.toml 的唯一区别:
+#   prior_file / agent_file 从通用 PubChem 先验，换成该靶点 TL 后的 checkpoint。
+# 其余（Vina 对接奖励 + QED + MW + Alerts + Murcko 多样性过滤）完全相同。
+
+run_type = "staged_learning"
+device = "cpu"
+tb_logdir = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/tb_TLRL_EGFR"
+
+[parameters]
+prior_file = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/EGFR_tl.chkpt"
+agent_file = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/EGFR_tl.chkpt"
+summary_csv_prefix = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/EGFR_tlrl"
+batch_size = 32
+randomize_smiles = true
+unique_sequences = true
+
+[learning_strategy]
+type = "dap"
+sigma = 128
+rate = 0.0005
+
+[diversity_filter]
+type = "IdenticalMurckoScaffold"
+bucket_size = 10
+minscore = 0.4
+
+[[stage]]
+chkpt_file = "/root/Llamole-main/gbm_project/experiments/reinvent_baseline/EGFR_tlrl_stage1.chkpt"
+termination = "simple"
+max_score = 0.9
+min_steps = 8
+max_steps = 40
+
+[stage.scoring]
+type = "geometric_mean"
+
+[[stage.scoring.component]]
+[stage.scoring.component.VinaScore]
+params.receptor_pdbqt = "/root/Llamole-main/gbm_project/data/receptors/EGFR_2JIV_chainA.pdbqt"
+params.center = [4.77, 3.65, 17.11]
+params.size = [24.0, 24.0, 24.0]
+params.exhaustiveness = 4
+params.cpu = 4
+params.n_workers = 16
+
+[[stage.scoring.component.VinaScore.endpoint]]
+name = "Vina"
+weight = 1.0
+
+[[stage.scoring.component]]
+[stage.scoring.component.QED]
+[[stage.scoring.component.QED.endpoint]]
+name = "QED"
+weight = 0.3
+
+[[stage.scoring.component]]
+[stage.scoring.component.MolecularWeight]
+[[stage.scoring.component.MolecularWeight.endpoint]]
+name = "MW"
+weight = 0.2
+transform.type = "double_sigmoid"
+transform.low = 200.0
+transform.high = 500.0
+
+[[stage.scoring.component]]
+[stage.scoring.component.custom_alerts]
+[[stage.scoring.component.custom_alerts.endpoint]]
+name = "Alerts"
+params.smarts = [
+  "[*;r{8-17}]",
+  "[#8][#8]",
+  "[#6;+]",
+  "[#16][#16]",
+  "[#7;!n][S;!$(S(=O)=O)]",
+  "[#7;!n][#7;!n]",
+  "C#C",
+  "C(=[O,S])[O,S]"
+]

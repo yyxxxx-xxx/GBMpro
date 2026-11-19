@@ -1,0 +1,11 @@
+Target,SMILES
+EGFR,CC(=O)Nc1ccc(-n2ccnc2)cc1C(=O)Nc3ccccc3
+EGFR,Cc1cc(nc(-c2ccc(Cl)cc2)n1)C(=O)Nc3ccc(F)cc3
+EGFR,CSN=C(CCl)CNC(=O)CSCCNC(=S)C(N)=O
+EGFR,Cc1cc(N)ccc1NC(=O)C(C)(C)OCc1ccccc1C(=O)OCC(Cl)c1cc(Cl)cc1NCCC(O)C(C)(C)CI[C@H](CO)[2H]Cl.OCc1ccccc1I.OCc1ccccc1I.Ic1ccccc1I.OCc1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.OCc1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.Ic1ccccc1I.OCc1ccccc1I.Ic1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I.OCc1ccccc1I
+EGFR,N#Cc1cc(-c2cccnc2)nc3ccnc3n1
+EGFR,N#Cc1cc(-c2ccc(Cl)cc2)no1
+EGFR,CC(C)(C)OC(=O)N[C@@H]1CCC[C@H](CO)CN1.Cc1ccccc1F.Fc1ccccc1F.Fc1ccccc1F.[Na+].[OH-]
+EGFR,Cc1ccc(-c2cnnc2)cc1NC1CCN(c2ccc(Cl)cc2)CC1
+EGFR,O=C(/N=N/C(=O)/C(Cl)(Cl)Cl)C1CCC1
+EGFR,Cc1cc(N)nc(-c2ccc(Cl)cc2)n1C(=O)Nc3ccc(F)cc3

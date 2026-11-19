@@ -1,0 +1,38 @@
+{
+  "A_base_llamole": {
+    "stats": {
+      "raw_ok": 0,
+      "repaired": 2,
+      "failed": 18
+    },
+    "n_unique": 2,
+    "MW": 468.51,
+    "TPSA": 141.59,
+    "LogP": 2.21,
+    "QED_mean": null,
+    "SA": 3.54,
+    "PAINS_mean": 0.5,
+    "n_unique_scaffolds": 2,
+    "scaffold_entropy": 1.0,
+    "overlap_with_train": 0,
+    "overlap_pct": 0.0
+  },
+  "B_full_model": {
+    "stats": {
+      "raw_ok": 1,
+      "repaired": 16,
+      "failed": 3
+    },
+    "n_unique": 17,
+    "MW": 297.86,
+    "TPSA": 54.38,
+    "LogP": 3.6,
+    "QED_mean": null,
+    "SA": 2.48,
+    "PAINS_mean": 0.0,
+    "n_unique_scaffolds": 16,
+    "scaffold_entropy": 0.971,
+    "overlap_with_train": 0,
+    "overlap_pct": 0.0
+  }
+}

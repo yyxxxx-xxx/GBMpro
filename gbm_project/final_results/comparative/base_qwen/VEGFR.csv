@@ -1,0 +1,21 @@
+entity_id,mol_id,library_name,target,smiles
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_1,Qwen2-7B-Instruct (Base),VEGFR,C1=CC(=CC=C1C2=C(C=CC(=O)Nc3ccccc3)N2C(=O)OC)c4ccccc4O
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_2,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccccc1N(C(=O)O)C(=O)c2ccccc2
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_3,Qwen2-7B-Instruct (Base),VEGFR,O=C(NC1=CC=CN=C1)C(=O)N(C(=O)NC2=CC=CN=C2)C(=O)N(C(=O)NC3=CC=CN=C3)C(=O)N(C(=O)NC4=CC=CN=C4)C(=O)N
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_4,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccccc1C(=O)N
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_5,Qwen2-7B-Instruct (Base),VEGFR,C1=CC=C(C=C1)N(c1ccccc1)C(=O)Nc2ccc(cc2)[C@H]
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_6,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccccc1C(=O)Nc2ccccc2S(=O)(=O)N(C)CC
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_7,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccc(c2ccccc2)cc1C(=O)[C@H]
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_8,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccccc1C(=O)NC(=O)N(C)C(=O)N(C)C(=O)N(C)C(=O)N(C)C(=O)N
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_9,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccccc1C(=O)N(C)C(=O)Nc2ccc(cc2)
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_10,Qwen2-7B-Instruct (Base),VEGFR,CN1C(OC(C(=O)N2CCC2)CC1)=C
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_11,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccc(cc1)C(=O)O
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_12,Qwen2-7B-Instruct (Base),VEGFR,NCC1C(=O)OC(C)C1C(=O)NC(=O)C1C(=O)CN(C)C(=O)C1CCC(N)C(=O)CN(C)C(=O)C1CCC(N)C(=O)CN(C)C(=O)C1CCC(N)C(=O)CN(C)C(=O)C1CCC(N)C(=O)CN(C)C(=O)C1CCC(N)C(=O)CN(C)
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_13,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccc(CCN(c2ccccc2)C(=O)N2CCC(CC2)N[C@@H](C)c2ccc(C)cc2)cc1
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_14,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccc(cc1)C(OC(=O)Nc2ccccc2)c3ccccc3
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_15,Qwen2-7B-Instruct (Base),VEGFR,C1=CC=CC(=O)C=C1
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_16,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccc(cc1)C(OC)c2ccccc2
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_17,Qwen2-7B-Instruct (Base),VEGFR,CC(=O)Nc1ccc(cc1)C(=O)NCC(=O)c2ccccc2C(=O)Nc3ccc(C(=O)N4CCCC4)cc3
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_18,Qwen2-7B-Instruct (Base),VEGFR,C1=CC=C(C=C1)N
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_19,Qwen2-7B-Instruct (Base),VEGFR,C1=CC=CC=C1
+VEGFR,Qwen2-7B-Instruct (Base)_VEGFR_20,Qwen2-7B-Instruct (Base),VEGFR,C1=CC=CC=C1C(=O)Nc2ccc(cc2)S(=O)(=O)c3ccccc3

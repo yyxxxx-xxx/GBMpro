@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "smiles": "CCCCC(=O)Nc1ccc(C(=O)OCC)cc1",
+    "tpsa": 55.400000000000006,
+    "mw": 249.30999999999997,
+    "target": "EGFR"
+  },
+  {
+    "id": 1,
+    "smiles": "COC(=O)/C=C/c1ccc(C(=O)OCC)cc1.ClCCCl.N#Cc1ccccc1",
+    "tpsa": 76.39000000000001,
+    "mw": 436.3350000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 2,
+    "smiles": "CC[N+]CC(N)=O",
+    "tpsa": 57.190000000000005,
+    "mw": 101.129,
+    "target": "EGFR"
+  },
+  {
+    "id": 3,
+    "smiles": "On1nc2ccccc2n1",
+    "tpsa": 50.94,
+    "mw": 135.12599999999995,
+    "target": "EGFR"
+  },
+  {
+    "id": 4,
+    "smiles": "NC(=O)[C@@H]1CC[C@H](CO)N1C(=O)OC(C)(C)C",
+    "tpsa": 92.86,
+    "mw": 244.291,
+    "target": "EGFR"
+  },
+  {
+    "id": 5,
+    "smiles": "CCCC(CC(=O)[C@@H](NC(=O)OCc1ccccc1)C(=O)OCCl)c1ccccc1",
+    "tpsa": 81.7,
+    "mw": 431.9160000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 6,
+    "smiles": "CCCC(CC(C)(C)C(=O)Nc1ccc(-c2ccnc(N)c2)cc1)n1cccs1",
+    "tpsa": 72.94,
+    "mw": 409.5790000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 7,
+    "smiles": "Cc1n[nH]c(CCNc2ccc(-c3cc(Cl)cc3)cc2)c1Cl",
+    "tpsa": 40.71,
+    "mw": 333.2420000000001,
+    "target": "EGFR"
+  },
+  {
+    "id": 8,
+    "smiles": "Cc1n[nH]c(CCNc2ccc(Br)cc2)c1Br",
+    "tpsa": 40.71,
+    "mw": 359.065,
+    "target": "EGFR"
+  },
+  {
+    "id": 9,
+    "smiles": "CCCCSc1ccccc1NS(=O)(=O)c1cccc(C(F)(F)F)n1",
+    "tpsa": 59.06,
+    "mw": 390.45200000000006,
+    "target": "EGFR"
+  }
+]

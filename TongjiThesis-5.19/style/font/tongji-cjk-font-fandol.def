@@ -1,0 +1,58 @@
+%%
+%% tongji-cjk-font-fandol.def — Fandol CJK fonts (shipped with TeX Live)
+%%
+%% Copyright (C) TJ-CSCCG
+%% This work may be distributed under the LPPL 1.3c or later.
+%%
+\ProvidesFile{tongji-cjk-font-fandol.def}[2026/05/03 v1.4.1 Fandol CJK fonts definition (TongjiThesis)]
+
+\setCJKmainfont{FandolSong}
+  [
+    Path           = /usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/,
+    Extension      = .otf,
+    UprightFont    = *-Regular,
+    BoldFont       = *-Bold,
+    ItalicFont     = FandolKai-Regular
+  ]
+\setCJKsansfont{FandolHei}
+  [
+    Path           = /usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/,
+    Extension      = .otf,
+    UprightFont    = *-Regular,
+    BoldFont       = *-Bold,
+    AutoFakeBold   = 3
+  ]
+\setCJKmonofont{FandolFang}
+  [
+    Path           = /usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/,
+    Extension      = .otf,
+    UprightFont    = *-Regular
+  ]
+
+\setCJKfamilyfont{zhsong}{FandolSong}
+  [
+    Path           = /usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/,
+    Extension      = .otf, UprightFont = *-Regular, BoldFont = *-Bold,
+    ItalicFont     = FandolKai-Regular
+  ]
+\setCJKfamilyfont{zhhei}{FandolHei}
+  [
+    Path           = /usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/,
+    Extension      = .otf, UprightFont = *-Regular, BoldFont = *-Bold
+  ]
+\setCJKfamilyfont{zhkai}{FandolKai}
+  [
+    Path           = /usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/,
+    Extension      = .otf, UprightFont = *-Regular
+  ]
+\setCJKfamilyfont{zhfs}{FandolFang}
+  [
+    Path           = /usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/,
+    Extension      = .otf, UprightFont = *-Regular
+  ]
+
+\NewDocumentCommand{\songti}   {} { \CJKfamily{zhsong} }
+\NewDocumentCommand{\heiti}    {} { \CJKfamily{zhhei}  }
+\NewDocumentCommand{\kaishu}   {} { \CJKfamily{zhkai}  }
+\NewDocumentCommand{\fangsong} {} { \CJKfamily{zhfs}   }
+\endinput

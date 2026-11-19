@@ -1,0 +1,17 @@
+entity_id,mol_id,library_name,target,smiles
+EGFR,GBM-PharmaMind (Ours)_EGFR_1,GBM-PharmaMind (Ours),EGFR,NC(=O)Nc1ccc2ccccc2c1C(N)(=O)
+EGFR,GBM-PharmaMind (Ours)_EGFR_2,GBM-PharmaMind (Ours),EGFR,O=CCN(c1ccc2ccccc2c1)C(=O)NCc1ccccc1c1ccccc1Oc1ccccc1Cl
+EGFR,GBM-PharmaMind (Ours)_EGFR_3,GBM-PharmaMind (Ours),EGFR,CC(=O)Nc1ncc2ccccc2c1OCc1ccccc1
+EGFR,GBM-PharmaMind (Ours)_EGFR_4,GBM-PharmaMind (Ours),EGFR,CC(=O)Nc1ccc2ccccc2c1NC(C)C.O=C(N)Cc1ccccc1F
+EGFR,GBM-PharmaMind (Ours)_EGFR_5,GBM-PharmaMind (Ours),EGFR,CC(=O)Nc1nccc2[nH]c2n1OCc1ccccc1
+EGFR,GBM-PharmaMind (Ours)_EGFR_6,GBM-PharmaMind (Ours),EGFR,CCN(CC)CCOc1ccc(C)cc1Nc1ccccc1C(=O)OCc1ccccc1C(=O)C(=O)NCCc1ccccc1C(=O)Oc1ccccc1C(=O)Oc1ccc(C)cc1N1-CC2CC2N2CC2O1
+EGFR,GBM-PharmaMind (Ours)_EGFR_7,GBM-PharmaMind (Ours),EGFR,c1ccccc1OCCNc1sccs1Cl
+EGFR,GBM-PharmaMind (Ours)_EGFR_8,GBM-PharmaMind (Ours),EGFR,O=CCN
+EGFR,GBM-PharmaMind (Ours)_EGFR_9,GBM-PharmaMind (Ours),EGFR,c1ccc(CNc2ccccc2)cc1NC(=O)OCc1ccccc1
+EGFR,GBM-PharmaMind (Ours)_EGFR_10,GBM-PharmaMind (Ours),EGFR,CCCCCCCCC(=O)NCc1ccccc1NCCc1ccccc1Cc1ccccc1
+EGFR,GBM-PharmaMind (Ours)_EGFR_11,GBM-PharmaMind (Ours),EGFR,CCN(CC)CCN
+EGFR,GBM-PharmaMind (Ours)_EGFR_12,GBM-PharmaMind (Ours),EGFR,O=CC1c2ccccc2N1CCOc1ccccc1C(=O)OCc1ccccc1Cl
+EGFR,GBM-PharmaMind (Ours)_EGFR_13,GBM-PharmaMind (Ours),EGFR,CC(=O)Nc1ccc(N)cc1NC(C)C.Cc1ccccc1.OCc1ccccc1
+EGFR,GBM-PharmaMind (Ours)_EGFR_14,GBM-PharmaMind (Ours),EGFR,c1ccc2ccccc2c1ONC(=O)NCc1ccccc1
+EGFR,GBM-PharmaMind (Ours)_EGFR_15,GBM-PharmaMind (Ours),EGFR,O=C(Nc1ccccc1)c1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1OCCN1CCOCCO1
+EGFR,GBM-PharmaMind (Ours)_EGFR_16,GBM-PharmaMind (Ours),EGFR,O=C(NCc1ccccc1)NC(=O)OC(C)(C)Cc1ccccc1Nc1ccccc1OCCN1CCOCCO1

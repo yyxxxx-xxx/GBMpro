@@ -1,0 +1,63 @@
+{
+  "config": {
+    "target": "IDH1_IDH2",
+    "tot_depth": 3,
+    "tot_k": 3,
+    "tot_b": 2,
+    "constraints": {
+      "mw_range": "300-500",
+      "bbb_requirement": "high",
+      "logp_range": "2.0-4.0",
+      "tpsa_range": "40-120"
+    }
+  },
+  "num_generated": 1,
+  "molecules": [
+    {
+      "smiles": "COc1cc(C)c2ncccc12-c1nc(N)n[nH]1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Default scaffold fallback: quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "COc1cc(C)c2ncccc12-c1nc(N)n[nH]1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "COc1cc(C)c2ncccc12-c1nc(N)n[nH]1"
+          }
+        }
+      ],
+      "target": "IDH1_IDH2",
+      "generation_method": "tot_bfs",
+      "tpsa": 89.18,
+      "mw": 243.27
+    }
+  ],
+  "timestamp": "2026-04-14T11:26:46.659605",
+  "cleaned": true,
+  "original_count": 1,
+  "cleaned_rdkits": true,
+  "tpsa_range_filter": "20.0-120.0"
+}

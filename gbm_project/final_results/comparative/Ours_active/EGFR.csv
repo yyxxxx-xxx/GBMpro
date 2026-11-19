@@ -1,0 +1,16 @@
+entity_id,mol_id,library_name,target,smiles
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_1","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NCCN4CCCC4)cc31)NC2=O
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_2","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_3","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCCCCCO)cc3)CC21C
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_4","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_5","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCc4ccccc4)cc3)CC21C
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_6","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,N#Cc1cc(F)cc(Oc2ccc(C(=O)N3CCN(C)CC3)c(Cl)c2F)n1
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_7","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)OC)cc3)CC21C
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_8","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(=O)N(C)CCCC(F)(F)C)cc3)CC21C
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_9","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC(C)n1cnc2cc(n1)-c1ccc(NC(=O)OC(C)(C)C)c(OCC(F)F)c1-NC2=O
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_10","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCN(C)C)cc3)CC21C
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_11","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,Cc1cc(CO)(n1Cc2ccc(S(=O)(=O)C(F)(F)F)c(Cl)c2)N1CC1C(N)=O
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_12","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_13","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC1(CC(=O)N2CCC(C)(N3CCc4nc(N)sc4C3)C(O)Cc21)CC(F)(F)
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_14","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCCCCO)cc3)CC21C
+EGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_EGFR_15","GBM-PharmaMind (Ours, active-QA LoRA)",EGFR,CC(C)(C)OC(=O)Nc1nc(N)nc(-c2cccc(Cl)c2)n1

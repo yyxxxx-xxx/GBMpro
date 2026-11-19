@@ -1,0 +1,186 @@
+{
+  "config": {
+    "target": "MGMT",
+    "tot_depth": 3,
+    "tot_k": 3,
+    "tot_b": 2,
+    "constraints": {
+      "mw_range": "300-500",
+      "bbb_requirement": "high",
+      "logp_range": "2.0-4.0",
+      "tpsa_range": "40-120"
+    }
+  },
+  "num_generated": 4,
+  "molecules": [
+    {
+      "smiles": "Cc1cc(-c2cc(Cl)nc(NCc3ncccc3Cl)n2)no1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "indole",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "indole",
+            "rationale": "Default scaffold fallback: indole",
+            "base_mw": 210,
+            "bbb_potential": "medium"
+          }
+        },
+        {
+          "level": 1,
+          "content": "indole + reversible hinge-binder",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "reversible hinge-binder",
+            "bbb_enhancers": "methoxy, ethyl",
+            "estimated_mw": 420,
+            "expected_logp": "2.0-3.5",
+            "expected_tpsa": "50-80 Å²",
+            "rationale": "Non-covalent option emphasizing CNS exposure"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2cc(Cl)nc(NCc3ncccc3Cl)n2)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2cc(Cl)nc(NCc3ncccc3Cl)n2)no1"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs",
+      "tpsa": 76.73,
+      "mw": 336.18
+    },
+    {
+      "smiles": "Cc1cc(-c2cc(Cl)nc(NCc3ccc(C#N)cc3)cs2)no1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(-c2cc(Cl)nc(NCc3ccc(C#N)cc3)cs2)no1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(-c2cc(Cl)nc(NCc3ccc(C#N)cc3)cs2)no1"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs",
+      "tpsa": 74.21,
+      "mw": 356.84
+    },
+    {
+      "smiles": "Cc1cc(Br)cc(C(F)(F)F)cc2ccc(Cl)cc2n1-c1nc(N)n[nH]1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Cc1cc(Br)cc(C(F)(F)F)cc2ccc(Cl)cc2n1-c1nc(N)n[nH]1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Cc1cc(Br)cc(C(F)(F)F)cc2ccc(Cl)cc2n1-c1nc(N)n[nH]1"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs",
+      "tpsa": 72.52,
+      "mw": 446.66
+    },
+    {
+      "smiles": "Fc1cc(Br)cc(C(F)(F)F)cc2ccc(Cl)cc2n1-c1nc(N)n[nH]1",
+      "tot_path": [
+        {
+          "level": 0,
+          "content": "quinazoline",
+          "evaluation": "likely",
+          "metadata": {
+            "name": "quinazoline",
+            "rationale": "Suitable scaffold for quinazoline",
+            "base_mw": 170,
+            "bbb_potential": "high"
+          }
+        },
+        {
+          "level": 1,
+          "content": "quinazoline + cyanoacrylamide",
+          "evaluation": "likely",
+          "metadata": {
+            "warhead": "cyanoacrylamide",
+            "bbb_enhancers": "fluorine, trifluoromethyl",
+            "estimated_mw": 480,
+            "expected_logp": "2.5-4.0",
+            "expected_tpsa": "70-100 Å²",
+            "rationale": "Alternative electrophile with lipophilic BBB enhancers"
+          }
+        },
+        {
+          "level": 2,
+          "content": "Fc1cc(Br)cc(C(F)(F)F)cc2ccc(Cl)cc2n1-c1nc(N)n[nH]1",
+          "evaluation": null,
+          "metadata": {
+            "smiles": "Fc1cc(Br)cc(C(F)(F)F)cc2ccc(Cl)cc2n1-c1nc(N)n[nH]1"
+          }
+        }
+      ],
+      "target": "MGMT",
+      "generation_method": "tot_bfs",
+      "tpsa": 72.52,
+      "mw": 450.62
+    }
+  ],
+  "timestamp": "2026-04-14T13:58:43.068935",
+  "cleaned": true,
+  "original_count": 4,
+  "cleaned_rdkits": true,
+  "tpsa_range_filter": "20.0-120.0"
+}

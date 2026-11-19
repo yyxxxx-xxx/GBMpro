@@ -1,0 +1,33 @@
+{
+  "experiment": "exp10_llamamolinst_simple",
+  "model": "LLaMA-MolInst-Molecule-7B (LLaMA-2-7b-hf + zjunlp/llama-molinst-molecule-7b)",
+  "timestamp": "20260508_114616",
+  "results": {
+    "EGFR": {
+      "new": 6,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 6,
+      "calls": 30,
+      "novelty_rate": "100.0%"
+    },
+    "IDH1_IDH2": {
+      "new": 2,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 2,
+      "calls": 30,
+      "novelty_rate": "100.0%"
+    },
+    "VEGF_VEGFR": {
+      "new": 3,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 3,
+      "calls": 30,
+      "novelty_rate": "100.0%"
+    }
+  },
+  "existing_counts": {
+    "EGFR": 150,
+    "IDH1_IDH2": 96,
+    "VEGF_VEGFR": 0
+  }
+}

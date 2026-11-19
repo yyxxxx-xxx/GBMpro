@@ -1,0 +1,18 @@
+entity_id,mol_id,library_name,target,smiles
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_1,GBM-PharmaMind (Ours),VEGFR,NC(=O)Nc1ccc2ccccc2c1C(N)(=O)
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_2,GBM-PharmaMind (Ours),VEGFR,CC(C)(C)OC(=O)N
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_3,GBM-PharmaMind (Ours),VEGFR,CC(=O)Nc1ccc(C(N)CC)cc1Cl
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_4,GBM-PharmaMind (Ours),VEGFR,CC(=O)N
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_5,GBM-PharmaMind (Ours),VEGFR,CCN(CC)CCOc1ccc(C)cc1OCc1ccccc1
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_6,GBM-PharmaMind (Ours),VEGFR,c1ccccc1OCCN1Cc1
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_7,GBM-PharmaMind (Ours),VEGFR,O=CCN(C)CCc1ccc(C(N)=O)cc1OCc1ccccc1
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_8,GBM-PharmaMind (Ours),VEGFR,NC(=O)NCc1ccccc1OCCNc1ccccc1Cl
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_9,GBM-PharmaMind (Ours),VEGFR,c1ccc(CN)cc1OCc1ccccc1O
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_10,GBM-PharmaMind (Ours),VEGFR,CCCCOc1ccc(C)cc1NCCO
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_11,GBM-PharmaMind (Ours),VEGFR,CCN(CC)CCN(N)CCc1ccccc1OC
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_12,GBM-PharmaMind (Ours),VEGFR,O=C(Nc1ccccc1)c1ccccc1Cc1ccccc1Oc1ccccc1Nc1ccccc1Cl
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_13,GBM-PharmaMind (Ours),VEGFR,CC(C)(C)OC(=O)NCc1ccccc1Cl
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_14,GBM-PharmaMind (Ours),VEGFR,CC(=O)Nc1ccc2ccccc2n1
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_15,GBM-PharmaMind (Ours),VEGFR,O=C(Nc1ccccc1)c1ccccc1Oc1ccccc1Oc1ccccc1Oc1ccccc1OCCN1CCOCCO1
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_16,GBM-PharmaMind (Ours),VEGFR,O=C(NCc1ccccc1)NCc1ccccc1.OCc1ccccc1Oc1ccccc1NCc1ccccc1CCNc1ccccc1Oc1ccc(O)cc1OCCl
+VEGFR,GBM-PharmaMind (Ours)_VEGFR_17,GBM-PharmaMind (Ours),VEGFR,CC(=O)Nc1ccc2ccccc2c1NCc1ccccc1S(N)(=O)C(F)F

@@ -1,0 +1,50 @@
+{
+  "experiment": "exp10_llamamolinst_simple",
+  "description": "LLaMA-MolInst-Molecule-7B 对比实验。使用 Alpaca prompt 格式，atom-bond notation 输出，与 Mol-Instructions demo 保持一致。",
+  "base_model": "/root/Llamole-main/models/models--baffo32--decapoda-research-llama-7B-hf/snapshots/main",
+  "lora_adapter": "/root/Llamole-main/models/models--zjunlp--llama-molinst-molecule-7b/snapshots/b147ec6e64e6e4f70284e6c24ad24bfe3d60f8fb",
+  "hf_mirror": "https://hf-mirror.com",
+  "gpu_id": 1,
+  "targets": [
+    "EGFR",
+    "IDH1_IDH2",
+    "VEGF_VEGFR"
+  ],
+  "num_molecules": 50,
+  "temperature": 0.5,
+  "top_p": 0.9,
+  "top_k": 40,
+  "num_beams": 1,
+  "repetition_penalty": 1.1,
+  "max_new_tokens": 256,
+  "do_sample": true,
+  "timestamp": "20260508_114616",
+  "results": {
+    "EGFR": {
+      "new": 6,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 6,
+      "calls": 30,
+      "novelty_rate": "100.0%"
+    },
+    "IDH1_IDH2": {
+      "new": 2,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 2,
+      "calls": 30,
+      "novelty_rate": "100.0%"
+    },
+    "VEGF_VEGFR": {
+      "new": 3,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 3,
+      "calls": 30,
+      "novelty_rate": "100.0%"
+    }
+  },
+  "existing_counts": {
+    "EGFR": 150,
+    "IDH1_IDH2": 96,
+    "VEGF_VEGFR": 0
+  }
+}

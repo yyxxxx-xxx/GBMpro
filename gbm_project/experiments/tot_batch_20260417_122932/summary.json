@@ -1,0 +1,71 @@
+{
+  "experiment_config": {
+    "targets": [
+      "EGFR",
+      "VEGF_VEGFR",
+      "IDH1_IDH2",
+      "MGMT",
+      "PD-1_PD-L1",
+      "PI3K_AKT_mTOR",
+      "p53_MDM2"
+    ],
+    "num_molecules_per_target": 50,
+    "tot_k": 3,
+    "tot_b": 2,
+    "gpu_id": 3,
+    "prompts_config_path": "/root/Llamole-main/gbm_project/configs/english_gbm_prompts.yaml",
+    "enable_guardrail_fallback": true,
+    "enable_default_strategy_fallback": true,
+    "max_attempts": 200,
+    "max_no_new_streak": 0,
+    "timestamp": "2026-04-17T12:30:33.459547"
+  },
+  "summary_stats": {
+    "EGFR": {
+      "total_generated": 50,
+      "unique_smiles": 50,
+      "avg_path_length": 3.0
+    },
+    "VEGF_VEGFR": {
+      "total_generated": 50,
+      "unique_smiles": 50,
+      "avg_path_length": 3.0
+    },
+    "IDH1_IDH2": {
+      "total_generated": 50,
+      "unique_smiles": 49,
+      "avg_path_length": 3.0
+    },
+    "MGMT": {
+      "total_generated": 50,
+      "unique_smiles": 50,
+      "avg_path_length": 3.0
+    },
+    "PD-1_PD-L1": {
+      "total_generated": 50,
+      "unique_smiles": 50,
+      "avg_path_length": 3.0
+    },
+    "PI3K_AKT_mTOR": {
+      "total_generated": 50,
+      "unique_smiles": 50,
+      "avg_path_length": 3.0
+    },
+    "p53_MDM2": {
+      "total_generated": 50,
+      "unique_smiles": 50,
+      "avg_path_length": 3.0
+    }
+  },
+  "total_targets": 7,
+  "total_molecules": 350,
+  "targets_breakdown": {
+    "EGFR": 50,
+    "VEGF_VEGFR": 50,
+    "IDH1_IDH2": 50,
+    "MGMT": 50,
+    "PD-1_PD-L1": 50,
+    "PI3K_AKT_mTOR": 50,
+    "p53_MDM2": 50
+  }
+}

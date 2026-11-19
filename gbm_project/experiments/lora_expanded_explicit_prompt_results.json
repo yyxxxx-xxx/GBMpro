@@ -1,0 +1,14 @@
+{
+  "model_info": {
+    "base_model": "Qwen2-7B-Instruct",
+    "lora_adapter": "gbm-evaluation-expanded",
+    "training_samples": "9600+",
+    "prompt": "Generate a SMILES string for a GBM drug molecule. Output format: SMILES: <SMILES>"
+  },
+  "results": [],
+  "summary": {
+    "total_generated": 10,
+    "valid_molecules": 0,
+    "avg_composite_score": 0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "experiment": "exp9_llasmol_simple",
+  "model": "LlaSMol + Mistral-7B-v0.1 (4-bit)",
+  "adapter": "osunlp/LlaSMol-Mistral-7B",
+  "timestamp": "20260507_140225",
+  "results": {
+    "EGFR": {
+      "new": 42,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 42,
+      "calls": 20,
+      "novelty_rate": "100.0%"
+    },
+    "IDH1_IDH2": {
+      "new": 35,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 35,
+      "calls": 20,
+      "novelty_rate": "100.0%"
+    },
+    "VEGF_VEGFR": {
+      "new": 19,
+      "duplicate_vs_prior": 0,
+      "total_extracted": 20,
+      "calls": 20,
+      "novelty_rate": "95.0%"
+    }
+  },
+  "existing_counts": {
+    "EGFR": 10,
+    "IDH1_IDH2": 0,
+    "VEGF_VEGFR": 0
+  }
+}

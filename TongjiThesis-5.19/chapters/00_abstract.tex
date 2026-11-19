@@ -1,0 +1,15 @@
+\MakeAbstract{
+胶质母细胞瘤（Glioblastoma, GBM）是一类常见的恶性脑肿瘤。由于肿瘤异质性强，且药物较难穿过血脑屏障，GBM 新药发现仍面临较大困难。近年来，多模态大语言模型被用于分子生成和虚拟筛选，为候选药物发现提供了新的思路。传统虚拟筛选通常依赖已有化合物库。该方法流程清楚，但可探索的化学空间有限，许多疾病相关信息也难以提前进入筛选过程。大模型辅助的分子生成方法可以生成新的候选结构，但在 GBM 场景中仍存在一些问题。模型可能忽略中枢神经系统药物的设计要求，生成分子也常需要在后续评价中被大量筛除。
+
+针对上述问题，本文设计了 GBM-PharmaMind 候选药物分子生成与优化框架。本文先创新性构建了面向GBM候选分子生成的领域知识输入方式。 随后，本文以多模态大语言模型和分子图—文本生成模型为基础，引入低秩适配（ LoRA ）进行领域适配，使模型更贴近 GBM 药物设计任务。分子生成时，本文创新性地设计了 CoT-ToT 三阶段推理策略。该策略将生成过程分为骨架提议、片段组装和 SMILES 输出三个阶段，生成后的分子会经过对接预测、成药性评估、血脑屏障预测等检查，评价结果用于反馈下一轮生成。最终候选分子的排序则依据 DrugCLIP 和 SwissADME 测得的结果完成。
+
+本文在多个 GBM 相关靶点上进行了实验。实验结果表明，该框架能够生成具有进一步筛选价值的候选分子。对比实验和消融实验说明，领域适配、分阶段推理和评估反馈设计对生成质量都有积极作用。
+}{胶质母细胞瘤；多模态大语言模型；分子生成；多目标优化}
+
+\MakeAbstractEng{
+Glioblastoma (GBM) is a common malignant brain tumor. Drug discovery for GBM remains difficult because the tumor is highly heterogeneous, and many compounds cannot easily pass through the blood-brain barrier. In recent years, multimodal large language models have been introduced into molecular generation and virtual screening, offering a new route for finding candidate drugs. Traditional virtual screening usually starts from existing compound libraries. This workflow is straightforward, but the chemical space that can be explored is limited. Disease-related information is also hard to include before screening begins. Large-model-assisted molecular generation can provide new candidate structures, but it still faces problems in the GBM setting. The model may overlook the design requirements of central nervous system drugs, and many generated molecules may be removed during later evaluation.
+
+To address these problems, this thesis designs GBM-PharmaMind, a framework for generating and optimizing candidate drug molecules for GBM. First, GBM-related target information, clinical treatment experience, and molecular structure knowledge are collected and written into prompts. Then, based on a multimodal large language model and a molecular graph-text generation model, LoRA is used for domain adaptation so that the model can better fit the GBM drug design task. During molecular generation, this thesis adopts a CoT-ToT reasoning strategy. The generation process is divided into three stages: scaffold proposal, fragment assembly, and SMILES output. The generated molecules are then checked by docking prediction, drug-likeness evaluation, and blood-brain barrier prediction. The evaluation results are used to guide the next round of generation. The final ranking of candidate molecules is determined by the results measured with external tools, including DrugCLIP and SwissADME.
+
+Experiments are carried out on several GBM-related targets. The results show that the proposed framework can generate candidate molecules with further screening value. Comparative experiments and ablation experiments also indicate that domain adaptation, staged reasoning, and evaluation feedback all have positive effects on generation quality.
+}{Glioblastoma; Multi-modal Large Language Model; Molecular Generation; Multi-Parameter Optimization}

@@ -1,0 +1,1172 @@
+[
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: FC(F)(F)c1ccc(C=Cc2nc(COc3ccc(CCCCn4ccnn4)cc3)co2)cc1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "mubritinib",
+   "connectivity_score": 2.118,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.6221807599067688,
+    "hERG_prob": 0.810189425945282,
+    "DILI_prob": 0.9300433397293091,
+    "AMES_prob": 0.13328668475151062,
+    "QED": 0.26491022028969163,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 468.479,
+    "TPSA": 65.97,
+    "HBD": 0,
+    "HBA": 5
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Astrocyte-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CC(=Cc1csc(C)n1)C1CC2OC2(C)CCCC(C)C(O)C(C)C(=O)C(C)(C)C(O)CC(=O)O1",
+  "metadata": {
+   "cell_state": "AC",
+   "original_drug": "epothilone.b",
+   "connectivity_score": 1.25,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.45652103424072266,
+    "hERG_prob": 0.5454138517379761,
+    "DILI_prob": 0.7933908700942993,
+    "AMES_prob": 0.13650453090667725,
+    "QED": 0.4486891198616771,
+    "BBB permeant": "No",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 507.693,
+    "TPSA": 109.25,
+    "HBD": 2,
+    "HBA": 8
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Neural progenitor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: O=C1CCc2cc(OCCCCc3nnnn3C3CCCCC3)ccc2N1",
+  "metadata": {
+   "cell_state": "NPC",
+   "original_drug": "cilostazol",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9641900062561035,
+    "hERG_prob": 0.8034628629684448,
+    "DILI_prob": 0.6588665246963501,
+    "AMES_prob": 0.52580326795578,
+    "QED": 0.755913406639335,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 369.469,
+    "TPSA": 81.93,
+    "HBD": 1,
+    "HBA": 5
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Oligodendrocyte precursor-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CN(C)CCCOC1C(C(O)CO)OC2OC(C)(C)OC21",
+  "metadata": {
+   "cell_state": "OPC",
+   "original_drug": "amiprilose",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.4865621030330658,
+    "hERG_prob": 0.014211791567504406,
+    "DILI_prob": 0.09567532688379288,
+    "AMES_prob": 0.29414457082748413,
+    "QED": 0.6168117192767837,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "No",
+    "MW": 305.371,
+    "TPSA": 80.62,
+    "HBD": 2,
+    "HBA": 7
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: C=C1C(=CC=C2CCCC3(C)C2CCC3C(C)C=CC(C)C(C)(C)O)CC(O)CC1O",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "ercalcitriol",
+   "connectivity_score": 0.727,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.7871813774108887,
+    "hERG_prob": 0.8064628839492798,
+    "DILI_prob": 0.09507538378238678,
+    "AMES_prob": 0.19108177721500397,
+    "QED": 0.4903561485345293,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 428.657,
+    "TPSA": 60.69,
+    "HBD": 3,
+    "HBA": 3
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Oligodendrocyte precursor-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: N#Cc1ccc(C(c2ccc(C#N)cc2)n2cncn2)cc1",
+  "metadata": {
+   "cell_state": "OPC",
+   "original_drug": "letrozole",
+   "connectivity_score": 1.333,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.3630571663379669,
+    "hERG_prob": 0.2200317680835724,
+    "DILI_prob": 0.9089117050170898,
+    "AMES_prob": 0.11165759712457657,
+    "QED": 0.7407442417149674,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 285.31,
+    "TPSA": 78.29,
+    "HBD": 0,
+    "HBA": 4
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CNC(=O)c1cnn(-c2nc(N)c3ncn(C4OC(CO)C(O)C4O)c3n2)c1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "regadenoson",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.3197758197784424,
+    "hERG_prob": 0.10911776125431061,
+    "DILI_prob": 0.9969903826713562,
+    "AMES_prob": 0.39900070428848267,
+    "QED": 0.32033113268604546,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 390.36,
+    "TPSA": 186.46,
+    "HBD": 5,
+    "HBA": 10
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Neural progenitor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: COC(=O)CCc1ccc(OCC(O)CNC(C)C)cc1",
+  "metadata": {
+   "cell_state": "NPC",
+   "original_drug": "esmolol",
+   "connectivity_score": 1.5,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.7986844778060913,
+    "hERG_prob": 0.6469660997390747,
+    "DILI_prob": 0.15076975524425507,
+    "AMES_prob": 0.05910491943359375,
+    "QED": 0.6762987306145708,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 295.379,
+    "TPSA": 67.79,
+    "HBD": 2,
+    "HBA": 5
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Oligodendrocyte precursor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: NC(=O)OCC(COC(N)=O)c1ccccc1",
+  "metadata": {
+   "cell_state": "OPC",
+   "original_drug": "felbamate",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9646586179733276,
+    "hERG_prob": 0.3591404855251312,
+    "DILI_prob": 0.2644364535808563,
+    "AMES_prob": 0.42842984199523926,
+    "QED": 0.796471019540729,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "No",
+    "MW": 238.243,
+    "TPSA": 104.64,
+    "HBD": 2,
+    "HBA": 4
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: O=C1NC(=O)C(c2c[nH]c3ccccc23)=C1c1c[nH]c2ccccc12",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "bisindolylmaleimide",
+   "connectivity_score": 0.857,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.5697272419929504,
+    "hERG_prob": 0.3614713251590729,
+    "DILI_prob": 0.9594129323959351,
+    "AMES_prob": 0.36895444989204407,
+    "QED": 0.4943855376376712,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 327.343,
+    "TPSA": 77.75,
+    "HBD": 3,
+    "HBA": 2
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CCN1CCN(Cc2ccc(Nc3ncc4c(n3)N(C)c3ccccc3C(=O)N4C)cc2C(F)(F)F)CC1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "JWE.035",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.8888104557991028,
+    "hERG_prob": 0.9849947094917297,
+    "DILI_prob": 0.8103103637695312,
+    "AMES_prob": 0.31167981028556824,
+    "QED": 0.5165039651339903,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 525.579,
+    "TPSA": 67.84,
+    "HBD": 1,
+    "HBA": 7
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: C=CC1(C)CC(=O)C2(O)C(C)(O1)C(OC(C)=O)C(O)C1C(C)(C)CCC(O)C12C",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "forskolin",
+   "connectivity_score": 1.143,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.6655916571617126,
+    "hERG_prob": 0.43002599477767944,
+    "DILI_prob": 0.38976946473121643,
+    "AMES_prob": 0.13241657614707947,
+    "QED": 0.4671638090242009,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "No",
+    "MW": 410.507,
+    "TPSA": 113.29,
+    "HBD": 3,
+    "HBA": 7
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: low; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CNC(=O)Oc1ccc2c(c1)C1(C)CCN(C)C1N2C",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "physostigmine",
+   "connectivity_score": 1.667,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: low; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.8591479063034058,
+    "hERG_prob": 0.5158783197402954,
+    "DILI_prob": 0.046568043529987335,
+    "AMES_prob": 0.1777448058128357,
+    "QED": 0.8482399591613494,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 275.352,
+    "TPSA": 44.81,
+    "HBD": 1,
+    "HBA": 4
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Neural progenitor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: Cc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc(S(N)(=O)=O)cc2)cc1",
+  "metadata": {
+   "cell_state": "NPC",
+   "original_drug": "celecoxib",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.7506058812141418,
+    "hERG_prob": 0.5416674017906189,
+    "DILI_prob": 0.9714311361312866,
+    "AMES_prob": 0.07743994146585464,
+    "QED": 0.7541053298167572,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 381.379,
+    "TPSA": 77.98,
+    "HBD": 1,
+    "HBA": 3
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Oligodendrocyte precursor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CC(C)(C)C1(O)CCN2CC3c4ccccc4CCc4cccc(c43)C2C1",
+  "metadata": {
+   "cell_state": "OPC",
+   "original_drug": "butaclamol",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9740923047065735,
+    "hERG_prob": 0.9530086517333984,
+    "DILI_prob": 0.2425418347120285,
+    "AMES_prob": 0.29231375455856323,
+    "QED": 0.7253217496691058,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 361.529,
+    "TPSA": 23.47,
+    "HBD": 1,
+    "HBA": 2
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: COc1cc(-c2ccc(=O)[nH]n2)ccc1OC(F)F",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "zardaverine",
+   "connectivity_score": 2.75,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.833903431892395,
+    "hERG_prob": 0.18187315762043,
+    "DILI_prob": 0.9268693923950195,
+    "AMES_prob": 0.23642420768737793,
+    "QED": 0.9212527984858792,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 268.219,
+    "TPSA": 64.21,
+    "HBD": 1,
+    "HBA": 4
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CC1(CO)C(O)CCC2(C)C1CCC1CC3CC12CCC3(O)CO",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "aphidicolin",
+   "connectivity_score": 1.812,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.7487578392028809,
+    "hERG_prob": 0.4859868586063385,
+    "DILI_prob": 0.023513371124863625,
+    "AMES_prob": 0.07539844512939453,
+    "QED": 0.6213998951551418,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "No",
+    "MW": 338.488,
+    "TPSA": 80.92,
+    "HBD": 4,
+    "HBA": 4
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: O=C(O)CCC=CCC1COC(c2ccccc2Cl)OC1c1ccccc1O",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "ICI.192605",
+   "connectivity_score": 2.0,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.3805197477340698,
+    "hERG_prob": 0.5285117030143738,
+    "DILI_prob": 0.6632152199745178,
+    "AMES_prob": 0.23363962769508362,
+    "QED": 0.6175861803484053,
+    "BBB permeant": "No",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 402.874,
+    "TPSA": 75.99,
+    "HBD": 2,
+    "HBA": 4
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: low; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: NC(N)=Nc1nc(CSCCC(N)=NS(N)(=O)=O)cs1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "famotidine",
+   "connectivity_score": 2.0,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: low; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.4964490830898285,
+    "hERG_prob": 0.3069293797016144,
+    "DILI_prob": 0.21923255920410156,
+    "AMES_prob": 0.33319488167762756,
+    "QED": 0.28661243847385526,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "No",
+    "MW": 337.456,
+    "TPSA": 175.83,
+    "HBD": 4,
+    "HBA": 6
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CCN(CC)CCNC(=O)c1cc(S(C)(=O)=O)ccc1OC",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "tiapride",
+   "connectivity_score": 3.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9463073015213013,
+    "hERG_prob": 0.3808451294898987,
+    "DILI_prob": 0.2946329116821289,
+    "AMES_prob": 0.24302515387535095,
+    "QED": 0.7751498496172248,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "No",
+    "MW": 328.434,
+    "TPSA": 75.71,
+    "HBD": 1,
+    "HBA": 5
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CCC1OC(=O)C(C)C(OC2CC(C)(OC)C(O)C(C)O2)C(C)C(OC2OC(C)CC(N(C)C)C2O)C(C)(O)CC(C)C(=NOCOCCOC)C(C)C(O)C1(C)O",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "roxithromycin",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.016276579350233078,
+    "hERG_prob": 0.17205913364887238,
+    "DILI_prob": 0.6601913571357727,
+    "AMES_prob": 0.15934652090072632,
+    "QED": 0.07781066233799223,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 837.058,
+    "TPSA": 216.89,
+    "HBD": 5,
+    "HBA": 17
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: COc1cc2ncnc(Oc3cccc(NC(=O)Nc4cc(C(C)(C)C(F)(F)F)on4)c3)c2cc1OC",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "CEP.32496",
+   "connectivity_score": 0.889,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.19751378893852234,
+    "hERG_prob": 0.6206177473068237,
+    "DILI_prob": 0.9928620457649231,
+    "AMES_prob": 0.09713087975978851,
+    "QED": 0.3103792866850044,
+    "BBB permeant": "No",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 517.464,
+    "TPSA": 120.63,
+    "HBD": 2,
+    "HBA": 8
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: O=c1cccc2n1CC1CNCC2C1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "cytisine",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: low; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.8252679109573364,
+    "hERG_prob": 0.1070777028799057,
+    "DILI_prob": 0.0823512151837349,
+    "AMES_prob": 0.15336035192012787,
+    "QED": 0.6481364433522537,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "No",
+    "MW": 190.246,
+    "TPSA": 34.03,
+    "HBD": 1,
+    "HBA": 2
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Neural progenitor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: Clc1ccc(Cn2c(CN3CCCC3)nc3ccccc32)cc1",
+  "metadata": {
+   "cell_state": "NPC",
+   "original_drug": "clemizole",
+   "connectivity_score": 4.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.986333966255188,
+    "hERG_prob": 0.9618657827377319,
+    "DILI_prob": 0.20494118332862854,
+    "AMES_prob": 0.08330871164798737,
+    "QED": 0.7114328092614038,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 325.843,
+    "TPSA": 21.06,
+    "HBD": 0,
+    "HBA": 2
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Oligodendrocyte precursor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CCCn1c(=O)[nH]c(=O)c2[nH]cnc21",
+  "metadata": {
+   "cell_state": "OPC",
+   "original_drug": "enprofylline",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9104546308517456,
+    "hERG_prob": 0.04474280774593353,
+    "DILI_prob": 0.9387927055358887,
+    "AMES_prob": 0.2674463391304016,
+    "QED": 0.6953141636084316,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 194.194,
+    "TPSA": 83.54,
+    "HBD": 2,
+    "HBA": 3
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CC(=O)c1c(C)c2cnc(Nc3ccc(N4CCNCC4)cn3)nc2n(C2CCCC2)c1=O",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "palbociclib",
+   "connectivity_score": 1.143,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.6084914803504944,
+    "hERG_prob": 0.876272976398468,
+    "DILI_prob": 0.9775179624557495,
+    "AMES_prob": 0.40949493646621704,
+    "QED": 0.5754108874418277,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 447.543,
+    "TPSA": 105.04,
+    "HBD": 2,
+    "HBA": 8
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Astrocyte-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: COc1ccc(-c2ccc3c(N4CCOCC4C)nc(N4CCOCC4C)nc3n2)cc1CO",
+  "metadata": {
+   "cell_state": "AC",
+   "original_drug": "AZD.8055",
+   "connectivity_score": 2.217,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.7155926823616028,
+    "hERG_prob": 0.850507915019989,
+    "DILI_prob": 0.9862680435180664,
+    "AMES_prob": 0.5009987354278564,
+    "QED": 0.6103026509720985,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 465.554,
+    "TPSA": 93.07,
+    "HBD": 1,
+    "HBA": 9
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Astrocyte-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CNC(=O)C1OC(n2cnc3c(NCc4cccc(I)c4)ncnc32)C(O)C1O",
+  "metadata": {
+   "cell_state": "AC",
+   "original_drug": "IB.MECA",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.4397910237312317,
+    "hERG_prob": 0.3549303412437439,
+    "DILI_prob": 0.9805690050125122,
+    "AMES_prob": 0.43353575468063354,
+    "QED": 0.36302812776745697,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 510.292,
+    "TPSA": 134.42,
+    "HBD": 4,
+    "HBA": 8
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CCN1CC(CCN2CCOCC2)C(c2ccccc2)(c2ccccc2)C1=O",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "doxapram",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9487438201904297,
+    "hERG_prob": 0.7703235745429993,
+    "DILI_prob": 0.28976941108703613,
+    "AMES_prob": 0.3119778037071228,
+    "QED": 0.7740303952237003,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 378.516,
+    "TPSA": 32.78,
+    "HBD": 0,
+    "HBA": 3
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Oligodendrocyte precursor-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: N#CC(c1ccnc(NCCc2cccnc2)n1)c1nc2ccccc2s1",
+  "metadata": {
+   "cell_state": "OPC",
+   "original_drug": "AS.601245",
+   "connectivity_score": 1.36,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.41598671674728394,
+    "hERG_prob": 0.8242316246032715,
+    "DILI_prob": 0.9331235885620117,
+    "AMES_prob": 0.13112106919288635,
+    "QED": 0.553945769740658,
+    "BBB permeant": "No",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 372.457,
+    "TPSA": 87.38,
+    "HBD": 1,
+    "HBA": 7
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Oligodendrocyte precursor-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CCC(C(=O)O)c1ccc(N2Cc3ccccc3C2=O)cc1",
+  "metadata": {
+   "cell_state": "OPC",
+   "original_drug": "indobufen",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.35436147451400757,
+    "hERG_prob": 0.08820964395999908,
+    "DILI_prob": 0.8747583627700806,
+    "AMES_prob": 0.08999208360910416,
+    "QED": 0.9398376055960551,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 295.338,
+    "TPSA": 57.61,
+    "HBD": 1,
+    "HBA": 2
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: Cc1cccc(Nc2ccncc2S(=O)(=O)NC(=O)NC(C)C)c1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "torasemide",
+   "connectivity_score": 0.75,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.5397867560386658,
+    "hERG_prob": 0.0803571492433548,
+    "DILI_prob": 0.9535430073738098,
+    "AMES_prob": 0.0010395146673545241,
+    "QED": 0.7708144759661694,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 348.428,
+    "TPSA": 100.19,
+    "HBD": 3,
+    "HBA": 5
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CCCCNc1c(C(=O)OCC)c(C)nc2c1cnn2CC",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "tracazolate",
+   "connectivity_score": 2.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9819195866584778,
+    "hERG_prob": 0.4804905354976654,
+    "DILI_prob": 0.8973578214645386,
+    "AMES_prob": 0.1511547863483429,
+    "QED": 0.6283660799399212,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 304.394,
+    "TPSA": 69.04,
+    "HBD": 1,
+    "HBA": 5
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CS(=O)(=O)c1cccc(CNc2nc(Nc3ccc4c(c3)CCC(=O)N4)ncc2C(F)(F)F)c1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "PF.573228",
+   "connectivity_score": 3.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.5360699892044067,
+    "hERG_prob": 0.807529628276825,
+    "DILI_prob": 0.9766446948051453,
+    "AMES_prob": 0.2572746276855469,
+    "QED": 0.4750496673879972,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 491.495,
+    "TPSA": 113.08,
+    "HBD": 3,
+    "HBA": 7
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Astrocyte-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: Cc1cc2c(OCC(CNC(C)(C)C)OC(=O)c3ccccc3)cccc2[nH]1",
+  "metadata": {
+   "cell_state": "AC",
+   "original_drug": "bopindolol",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9551904797554016,
+    "hERG_prob": 0.9717835187911987,
+    "DILI_prob": 0.464752733707428,
+    "AMES_prob": 0.17514528334140778,
+    "QED": 0.5938295079592366,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 380.488,
+    "TPSA": 63.35,
+    "HBD": 2,
+    "HBA": 4
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Neural progenitor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: COc1cc2c(cc1OC)CN(CCc1ccc(NC(=O)c3cccc4c(=O)c5cccc(OC)c5[nH]c34)cc1)CC2",
+  "metadata": {
+   "cell_state": "NPC",
+   "original_drug": "elacridar",
+   "connectivity_score": 3.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.7053316831588745,
+    "hERG_prob": 0.9757922887802124,
+    "DILI_prob": 0.949309229850769,
+    "AMES_prob": 0.620548665523529,
+    "QED": 0.24029909184903506,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 563.654,
+    "TPSA": 92.89,
+    "HBD": 2,
+    "HBA": 6
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: Cc1cccc(Oc2cnc(=O)[nH]c2)c1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "tolimidone",
+   "connectivity_score": 2.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.8267200589179993,
+    "hERG_prob": 0.046460215002298355,
+    "DILI_prob": 0.8740023374557495,
+    "AMES_prob": 0.05227462202310562,
+    "QED": 0.808314134929686,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 202.213,
+    "TPSA": 54.98,
+    "HBD": 1,
+    "HBA": 3
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Oligodendrocyte precursor-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CC1CC(=O)NN=C1c1ccc(NN=C(C#N)C#N)cc1",
+  "metadata": {
+   "cell_state": "OPC",
+   "original_drug": "levosimendan",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.2945220470428467,
+    "hERG_prob": 0.27863964438438416,
+    "DILI_prob": 0.9659883379936218,
+    "AMES_prob": 0.5455485582351685,
+    "QED": 0.6423198478718842,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 280.291,
+    "TPSA": 113.43,
+    "HBD": 2,
+    "HBA": 6
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: low; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: CC(CCC(=O)NCCS(=O)(=O)O)C1CCC2C3C(O)CC4CC(O)CCC4(C)C3CCC12C",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "ursodeoxycholyltaurine",
+   "connectivity_score": 0.8,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: low; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.5779764652252197,
+    "hERG_prob": 0.6944824457168579,
+    "DILI_prob": 0.059478677809238434,
+    "AMES_prob": 0.14788302779197693,
+    "QED": 0.39816166284880605,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 499.714,
+    "TPSA": 123.93,
+    "HBD": 4,
+    "HBA": 5
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Mesenchymal-like GBM cells\n- Target metrics: BBB: moderate permeability (logBB > -0.5); GBM Activity: high; Toxicity: low; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: O=C(O)C1CC2CC(CCc3nn[nH]n3)CCC2CN1",
+  "metadata": {
+   "cell_state": "MES",
+   "original_drug": "LY.215490",
+   "connectivity_score": 1.429,
+   "target": "EGFR",
+   "metrics": "BBB: moderate permeability (logBB > -0.5); GBM Activity: high; Toxicity: low; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.3407629430294037,
+    "hERG_prob": 0.031578484922647476,
+    "DILI_prob": 0.22082194685935974,
+    "AMES_prob": 0.04787389934062958,
+    "QED": 0.7458110982847017,
+    "BBB permeant": "No",
+    "hERG risk": "No",
+    "DILI risk": "No",
+    "MW": 279.344,
+    "TPSA": 103.79,
+    "HBD": 3,
+    "HBA": 5
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Neural progenitor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: Nc1ncn(C2CC(O)C(CO)O2)c(=O)n1",
+  "metadata": {
+   "cell_state": "NPC",
+   "original_drug": "decitabine",
+   "connectivity_score": 1.667,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.5855010747909546,
+    "hERG_prob": 0.0050756195560097694,
+    "DILI_prob": 0.8617346882820129,
+    "AMES_prob": 0.08915787190198898,
+    "QED": 0.5273624425093522,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 228.208,
+    "TPSA": 123.49,
+    "HBD": 3,
+    "HBA": 7
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Neural progenitor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: NC(=O)C1CC2(NC(=O)NC2=O)c2cc(F)ccc2O1",
+  "metadata": {
+   "cell_state": "NPC",
+   "original_drug": "fidarestat",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: moderate acceptable; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.8942025899887085,
+    "hERG_prob": 0.01715920679271221,
+    "DILI_prob": 0.8719415664672852,
+    "AMES_prob": 0.3200361132621765,
+    "QED": 0.6014958684301971,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 279.227,
+    "TPSA": 110.52,
+    "HBD": 3,
+    "HBA": 4
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Astrocyte-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: Cc1[nH]nc2ccc(-c3cncc(OCC(N)Cc4c[nH]c5ccccc45)c3)cc12",
+  "metadata": {
+   "cell_state": "AC",
+   "original_drug": "A.443654",
+   "connectivity_score": 1.561,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: low; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.6426267027854919,
+    "hERG_prob": 0.9759016036987305,
+    "DILI_prob": 0.8504155874252319,
+    "AMES_prob": 0.6076077222824097,
+    "QED": 0.3967766478103931,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "Yes",
+    "MW": 397.482,
+    "TPSA": 92.61,
+    "HBD": 3,
+    "HBA": 4
+   },
+   "use_cot": true
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Astrocyte-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: O=C1CC2(CCCC2)CC(=O)N1CCCCN1CCN(c2ncccn2)CC1",
+  "metadata": {
+   "cell_state": "AC",
+   "original_drug": "buspirone",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: moderate; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.9580713510513306,
+    "hERG_prob": 0.8554332852363586,
+    "DILI_prob": 0.3770660161972046,
+    "AMES_prob": 0.1727871298789978,
+    "QED": 0.551662995519089,
+    "BBB permeant": "Yes",
+    "hERG risk": "Yes",
+    "DILI risk": "No",
+    "MW": 385.512,
+    "TPSA": 69.64,
+    "HBD": 0,
+    "HBA": 6
+   },
+   "use_cot": false
+  }
+ },
+ {
+  "instruction": "You are an expert in GBM drug development, specializing in novel drug candidates for Glioblastoma Multiforme (GBM).\nYou need to generate candidate compounds based on GBM biological characteristics, clinical treatment experience, and molecular design principles.\n\nKey GBM biological characteristics:\n- High heterogeneity and invasiveness\n- Blood-brain barrier (BBB) limiting drug entry\n- Multiple resistance mechanisms\n- Immunosuppressive microenvironment\n- Stem cell subpopulations causing recurrence\n\nGBM treatment challenges:\n- TMZ chemotherapy resistance rate up to 90%\n- Poor prognosis for recurrent GBM\n- Damage to normal brain tissue\n- Tumor heterogeneity leading to treatment failure\n\nPlease design novel drug candidates with the following characteristics:\n- Target cell phenotype: Neural progenitor-like GBM cells\n- Target metrics: BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: high; Selectivity: high (GBM/normal ratio)\n- Molecular features: MW 300-500 Da, logP 2-4, TPSA 60-120, HBD 1-4, HBA 3-8\n\nDesign GBM candidates targeting the EGFR pathway:\n\nEGFR role in GBM:\n- Most common gene amplification (~40%)\n- EGFRvIII mutation with immunogenicity\n- Drives excessive tumor cell proliferation\n\nDesign requirements:\n- Prioritize targeting EGFRvIII mutants\n- Overcome resistance mechanisms (T790M, etc.)\n- Optimize blood-brain barrier penetration\n- Reduce wild-type EGFR toxicity\n\nMolecular features:\n- Molecular weight: 400-550 Da\n- logP: 2-4\n- Tyrosine kinase inhibitor structure\n\nLet's think through this GBM candidate molecule design step by step:\n\n1. Target Selection and Validation:\n   - Select most relevant targets based on GBM molecular subtypes\n   - Consider target expression levels and function in GBM\n   - Assess target criticality for GBM growth\n\n2. Molecular Scaffold Design:\n   - Choose scaffolds with BBB penetration potential\n   - Reference structural features of known GBM drugs\n   - Ensure synthetic feasibility and drug-likeness\n\n3. Pharmacophore Optimization:\n   - Design structures with high target affinity\n   - Optimize selectivity and binding stability\n   - Consider impact of resistance mutations\n\n4. ADMET Property Optimization:\n   - Predict and optimize BBB permeability\n   - Assess hepatotoxicity and nephrotoxicity risks\n   - Optimize metabolic stability and half-life\n\n5. GBM Specificity Validation:\n   - Evaluate activity against GBM cells\n   - Verify toxicity to normal cells\n   - Confirm target selectivity\n\nBased on the above analysis, design candidate molecule:\n\nBased on the above analysis, generate a novel GBM candidate molecule, including SMILES string and design rationale.",
+  "response": "SMILES: Nc1nc(NC2CC2)c2ncn(C3C=CC(CO)C3)c2n1",
+  "metadata": {
+   "cell_state": "NPC",
+   "original_drug": "abacavir",
+   "connectivity_score": 1.0,
+   "target": "EGFR",
+   "metrics": "BBB: good permeability (logBB > -0.5); GBM Activity: high; Toxicity: high; Selectivity: high (GBM/normal ratio)",
+   "properties": {
+    "BBB_prob": 0.6830271482467651,
+    "hERG_prob": 0.38013628125190735,
+    "DILI_prob": 0.9057803153991699,
+    "AMES_prob": 0.7277191281318665,
+    "QED": 0.7272302824304794,
+    "BBB permeant": "Yes",
+    "hERG risk": "No",
+    "DILI risk": "Yes",
+    "MW": 286.339,
+    "TPSA": 101.88,
+    "HBD": 3,
+    "HBA": 6
+   },
+   "use_cot": true
+  }
+ }
+]

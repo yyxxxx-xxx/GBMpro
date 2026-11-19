@@ -1,0 +1,128 @@
+[
+  {
+    "id": 0,
+    "smiles": "Cc1nnc(Nc2ccc(C(=O)O)c3ccccc23)n[nH]1",
+    "tpsa": 103.78999999999999,
+    "mw": 282.28299999999996,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 1,
+    "smiles": "CC(C)(C)[NH+](CC(=O)OC(C)(C)C)C#N",
+    "tpsa": 54.53,
+    "mw": 213.301,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 2,
+    "smiles": "Cc1cnnc(Nc2ccc(C(=O)O)c3ccccc23)n[nH]1",
+    "tpsa": 98.44,
+    "mw": 295.302,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 3,
+    "smiles": "CCN(CC(=O)c1ccccc1)C(=O)OC(C)(C)C",
+    "tpsa": 46.61,
+    "mw": 263.337,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 4,
+    "smiles": "CcCNC(=O)c1ccc(Nc2ncccc2C(C)(C)C)cc1CC[NH+](CC)CC.N=Cc1nc2ccccc2[nH]1",
+    "tpsa": 106.17,
+    "mw": 556.7790000000003,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 5,
+    "smiles": "N=Cc1nc2ccccc2[nH]1",
+    "tpsa": 52.53,
+    "mw": 145.165,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 6,
+    "smiles": "Cc1ccc(-c2nnc(C)c2C(=O)OCc2ccccc2Cl)cc1",
+    "tpsa": 52.08,
+    "mw": 339.802,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 7,
+    "smiles": "CCCC(CC#N)c1ccc(C(=O)OCc2ccccc2)cc1",
+    "tpsa": 50.09,
+    "mw": 307.393,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 8,
+    "smiles": "Cc1cc(N=Cc2cccc(B(O)c3ccccc3)n2)cn1Cc1cc(Cl)nc1C#N",
+    "tpsa": 87.09,
+    "mw": 426.69600000000014,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 9,
+    "smiles": "CCOC(=O)[C@H]1CCCC[C@@H](CO)[C@H]1",
+    "tpsa": 46.53,
+    "mw": 199.26999999999998,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 10,
+    "smiles": "CCCCCCCCCCNS(=O)(CCN(C(=O)OCc1ccccc1)c1ccccc1)C(=O)O",
+    "tpsa": 95.94000000000001,
+    "mw": 504.69300000000027,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 11,
+    "smiles": "CCCC(CC#N)c1cnc(C(=O)OCCCl)cn1",
+    "tpsa": 75.87,
+    "mw": 281.74299999999994,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 12,
+    "smiles": "NC(=S)NC(=S)NC(=S)NC(=S)Nc1ccc(C(F)(F)F)cc1",
+    "tpsa": 74.14,
+    "mw": 397.4980000000001,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 13,
+    "smiles": "OCC(C)(C)OC(=O)Nc1cccc(-c2ccccc2)c1",
+    "tpsa": 58.56,
+    "mw": 285.343,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 14,
+    "smiles": "OCCCN(Cc1ccc(Oc2ccccc2)cc1)C(=O)N1CCCCC1",
+    "tpsa": 53.010000000000005,
+    "mw": 368.47700000000026,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 15,
+    "smiles": "Cc1cccc(NC(=O)OC(C)(C)C)cn1",
+    "tpsa": 51.22,
+    "mw": 221.28,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 16,
+    "smiles": "CC(C)(C)OC(=O)[nH]c1ccccc1.CC[NH+]c1nc(-c2ccc(Br)cc2)c1",
+    "tpsa": 66.28999999999999,
+    "mw": 444.3730000000001,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 17,
+    "smiles": "C(C)(C)OC(=O)N[C@@H](Cc1ccccc1)NC(=O)CCNC(=O)CC",
+    "tpsa": 96.53,
+    "mw": 349.4310000000002,
+    "target": "VEGF_VEGFR"
+  }
+]

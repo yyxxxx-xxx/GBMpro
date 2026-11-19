@@ -1,0 +1,26 @@
+{
+  "experiment": "llamole_retro_extract",
+  "source_dir": "/root/Llamole-main/gbm_project/experiments/llamole_retro_extract_20260507_191922",
+  "timestamp": "20260507_194021",
+  "results": {
+    "EGFR": {
+      "new": 3,
+      "duplicate_vs_prior": 7,
+      "total_extracted": 10,
+      "druglike": 1,
+      "novelty_rate": "30.0%"
+    },
+    "IDH1_IDH2": {
+      "new": 11,
+      "duplicate_vs_prior": 7,
+      "total_extracted": 18,
+      "druglike": 2,
+      "novelty_rate": "61.1%"
+    }
+  },
+  "existing_counts": {
+    "EGFR": 236,
+    "IDH1_IDH2": 139,
+    "VEGF_VEGFR": 0
+  }
+}

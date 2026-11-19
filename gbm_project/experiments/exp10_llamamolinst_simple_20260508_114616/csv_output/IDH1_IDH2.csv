@@ -1,0 +1,3 @@
+entity_id,mol_id,library_name,smiles,MW,TPSA,LogP,target
+llamamolinst_20260508_114616,IDH1_IDH2_00000,LLaMA-MolInst-Molecule-7B,O-O-O-O-[Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1][Si-1],682.90,47.92,-8.57,IDH1_IDH2
+llamamolinst_20260508_114616,IDH1_IDH2_00001,LLaMA-MolInst-Molecule-7B,CCCCCCCCCCSCCCCCCC,272.54,0.00,6.83,IDH1_IDH2

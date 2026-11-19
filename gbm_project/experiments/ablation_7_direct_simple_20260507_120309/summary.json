@@ -1,0 +1,14 @@
+{
+  "experiment_name": "ablation_7_direct_simple",
+  "ablation_description": "Ablation 7: Direct simple prompt generation. No CoT step_by_step_design template, no ToT hierarchical search. Tests the raw model capability with minimal prompting guidance.",
+  "targets_processed": [
+    "IDH1_IDH2",
+    "VEGF_VEGFR"
+  ],
+  "total_molecules": 0,
+  "per_target": {
+    "IDH1_IDH2": 0,
+    "VEGF_VEGFR": 0
+  },
+  "timestamp": "2026-05-07T13:04:35.653062"
+}

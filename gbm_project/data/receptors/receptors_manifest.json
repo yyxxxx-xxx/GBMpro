@@ -1,0 +1,62 @@
+{
+  "EGFR": {
+    "status": "ok",
+    "pdb_id": "2JIV",
+    "chain": "A",
+    "pdbqt": "/root/Llamole-main/gbm_project/data/receptors/EGFR_2JIV_chainA.pdbqt",
+    "center": [
+      4.77,
+      3.65,
+      17.11
+    ],
+    "size": [
+      24,
+      24,
+      24
+    ],
+    "ligand_residue": "HKI",
+    "crystal_ligand_smiles": "CCOC1CC2NCC(CN)C(NC3CCC(OCC4CCCCN4)C(Cl)C3)C2CC1NC(O)CCCN(C)C",
+    "n_receptor_atoms": 2535,
+    "n_atoms_in_box": 609
+  },
+  "IDH1_IDH2": {
+    "status": "ok",
+    "pdb_id": "6U4J",
+    "chain": "A",
+    "pdbqt": "/root/Llamole-main/gbm_project/data/receptors/IDH1_IDH2_6U4J_chainA.pdbqt",
+    "center": [
+      11.89,
+      -3.71,
+      23.56
+    ],
+    "size": [
+      24,
+      24,
+      24
+    ],
+    "ligand_residue": "PWV",
+    "crystal_ligand_smiles": "C[C@H](NC1=CC=C(C#N)N(C)C1=O)C2=Cc3cc(Cl)ccc3NC2=O",
+    "n_receptor_atoms": 4027,
+    "n_atoms_in_box": 583
+  },
+  "VEGF_VEGFR": {
+    "status": "ok",
+    "pdb_id": "3WZD",
+    "chain": "A",
+    "pdbqt": "/root/Llamole-main/gbm_project/data/receptors/VEGF_VEGFR_3WZD_chainA.pdbqt",
+    "center": [
+      1.12,
+      -6.89,
+      15.94
+    ],
+    "size": [
+      24,
+      24,
+      24
+    ],
+    "ligand_residue": "LEV",
+    "crystal_ligand_smiles": null,
+    "n_receptor_atoms": 2706,
+    "n_atoms_in_box": 561
+  }
+}

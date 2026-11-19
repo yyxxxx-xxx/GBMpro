@@ -1,0 +1,16 @@
+{
+  "targets": [
+    "EGFR",
+    "VEGF_VEGFR",
+    "IDH1_IDH2",
+    "MGMT",
+    "PD-1_PD-L1",
+    "PI3K_AKT_mTOR",
+    "p53_MDM2"
+  ],
+  "num_molecules_per_target": 50,
+  "tot_k": 3,
+  "tot_b": 2,
+  "gpu_id": 0,
+  "timestamp": "2026-03-01T14:35:14.567882"
+}

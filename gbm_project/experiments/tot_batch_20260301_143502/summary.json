@@ -1,0 +1,66 @@
+{
+  "experiment_config": {
+    "targets": [
+      "EGFR",
+      "VEGF_VEGFR",
+      "IDH1_IDH2",
+      "MGMT",
+      "PD-1_PD-L1",
+      "PI3K_AKT_mTOR",
+      "p53_MDM2"
+    ],
+    "num_molecules_per_target": 50,
+    "tot_k": 3,
+    "tot_b": 2,
+    "gpu_id": 0,
+    "timestamp": "2026-03-01T14:35:14.567882"
+  },
+  "summary_stats": {
+    "EGFR": {
+      "total_generated": 5,
+      "unique_smiles": 5,
+      "avg_path_length": 1.0
+    },
+    "VEGF_VEGFR": {
+      "total_generated": 6,
+      "unique_smiles": 6,
+      "avg_path_length": 1.0
+    },
+    "IDH1_IDH2": {
+      "total_generated": 5,
+      "unique_smiles": 5,
+      "avg_path_length": 1.0
+    },
+    "MGMT": {
+      "total_generated": 7,
+      "unique_smiles": 7,
+      "avg_path_length": 1.0
+    },
+    "PD-1_PD-L1": {
+      "total_generated": 5,
+      "unique_smiles": 5,
+      "avg_path_length": 1.0
+    },
+    "PI3K_AKT_mTOR": {
+      "total_generated": 5,
+      "unique_smiles": 5,
+      "avg_path_length": 1.0
+    },
+    "p53_MDM2": {
+      "total_generated": 5,
+      "unique_smiles": 5,
+      "avg_path_length": 1.0
+    }
+  },
+  "total_targets": 7,
+  "total_molecules": 38,
+  "targets_breakdown": {
+    "EGFR": 5,
+    "VEGF_VEGFR": 6,
+    "IDH1_IDH2": 5,
+    "MGMT": 7,
+    "PD-1_PD-L1": 5,
+    "PI3K_AKT_mTOR": 5,
+    "p53_MDM2": 5
+  }
+}

@@ -1,0 +1,19 @@
+entity_id,mol_id,library_name,target,smiles
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_1","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NC4=NC=N4)cc31)NC2=O
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_2","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,CC(C)(C)OC(=O)N1CCC(C)(N2CCc3c(-c4cnc(N)nc4)nc(N4CCOCC4)nc32)C1
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_3","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,CC(=O)Cn1cnc2c(OCc3ccccc3)c(-c3ccc(F)c(Cl)c3F)n(c2c1)
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_4","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,Nc1nc(N)c([N+](=O)[O-])c(OCc2ccccc2)n1
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_5","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCl)cc3)CC21C
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_6","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCCOCc4ccccc4)cc3)CC21C
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_7","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,Nc1nc(OCc2cc(Br)cs2)c2[nH]cnc2n1
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_8","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,COc1ccc(C(=O)Nc2nc(N)nc3nc[nH]c23)c(Br)c1
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_9","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,Cc1cc2cc(n1)-c1cnn(C)c1OCCCC(C1CC1)Cn1c(nc3ccc(NCCN4CCCC4)cc31)NC2=O
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_10","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,CC#CC1(O)CCC2C3CCC4=CC(=O)CCC4=C3C(c3ccc(N(C)CCCCCC(F)(F)OC)cc3)CC21C
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_11","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,CC(C)(C)OC(=O)Nc1ccc(Oc2cc(F)cnc2)c(Cl)n1
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_12","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,CC(=O)c1ccc(Oc2cc(F)cc(Cl)c2)c(C(F)(F)F)c1C
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_13","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,Nc1nc(OCc2ccccc2)c2[nH]cnc2n1
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_14","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,Cc1cc(CO)(C)c2nc(N)sc2c(OCc3cccc(Cl)c3F)n1
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_15","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,CC(Oc1cc2c3c(c1)nc(-c1ccc4oc(N)nc4c1)n3CCCCO2)C(N)=O
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_16","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,N#Cc1cc(F)cc(Oc2ccc(C=CC(N)=O)cn2)c1
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_17","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,NC(=O)c1ccc(Oc2cc(F)cc(Cl)c2)c2c1C(O)C(F)(F)C2
+VEGFR,"GBM-PharmaMind (Ours, active-QA LoRA)_VEGFR_18","GBM-PharmaMind (Ours, active-QA LoRA)",VEGFR,Nc1nc(N)c([N+](=O)[O-])c(OCc2ccc(Cl)c(F)c2)n1

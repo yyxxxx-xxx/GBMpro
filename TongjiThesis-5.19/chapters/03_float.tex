@@ -1,0 +1,130 @@
+\chapter{相关技术与理论基础}\label{chap:theory}
+
+\section{引言}\label{sec:ch2-intro}
+
+本章主要介绍本文研究所涉及的相关技术与理论基础。候选药物分子生成任务涉及深度学习、自然语言处理、分子表示学习和生成模型等多个方向，因此有必要对后续研究中使用的关键技术进行梳理。本章将围绕大语言模型、分子表示与多模态对齐、分子生成模型、CoT-ToT推理、物理评估方法以及LoRA参数高效微调等内容展开介绍，为第3章的框架设计和第4章的实验分析奠定理论基础。
+
+\section{面向药物分子生成的大语言模型}\label{sec:llm-for-molecular-design}
+
+大语言模型不仅可用于文本生成，还可在任务理解、条件建模和生成过程控制等方面发挥作用。在分子生成任务中，LLM能够对靶点描述、理化约束和药物设计要求进行语义理解，并为后续分子结构生成提供条件信息。
+
+\subsection{大语言模型在分子生成任务中的作用}
+
+传统分子生成模型（如VAE、GAN、扩散模型）通常以“分子图”或“SMILES序列”作为直接输入~\cite{GomezBombarelli2018,Bagal2021}，缺乏对自然语言描述的语义理解能力。然而，药物设计任务的本质是根据靶点信息、疾病背景、理化约束、风险提示等文本描述，生成满足多维约束的分子结构。
+
+上述药物设计任务的文本驱动特性，决定了分子生成系统需要具备语义理解、多模态对齐、结构化推理和工具调用等多方面能力。具体而言，系统应能理解"EGFR靶点""BBB穿透性""TPSA<90"等药物设计专业描述，并将文本语义与分子结构（SMILES、分子图）进行对齐~\cite{Wei2022}；同时，系统还需具备按逻辑顺序拆解分子设计任务的能力~\cite{Wei2022}，并能够调用物理评估工具获取反馈~\cite{Li2025DrugPilot}。大语言模型具备上述能力~\cite{Qwen2Team2024,jin2025effective}，因此成为分子生成系统的核心组件~\cite{jin2025effective,Li2025DrugPilot}。
+
+\subsection{LLM在分子生成中的角色定位}
+
+在 GBM-PharmaMind 框架中，基于 Qwen2-7B-Instruct~\cite{Qwen2Team2024} 的大语言模型承担多重角色：作为任务规划器，将"生成GBM靶向候选分子"这一模糊目标分解为靶点分析、骨架选择、药效团设计、ADMET评估和SMILES输出等结构化步骤~\cite{Wei2022}；作为 Prompt 解释器，理解 GBM 知识库中的靶点信息、理化约束和风险提示，并将其转化为分子生成的条件；作为多模态生成控制器，协调分子图生成（通过图扩散变换器）和 SMILES 输出~\cite{liu2025multimodal}，实现文本语义到分子结构的映射；作为反馈整合器，将物理评估结果（Vina 对接、BBB 评分、毒性警报）整合到下一轮 Prompt 中~\cite{Yao2023}，引导生成方向的动态调整。
+
+\subsection{LLM单独用于分子生成的局限性}
+
+然而，LLM 单独用于分子生成时存在明显局限：生成的 SMILES 可能存在化学无效结构~\cite{Bagal2021}，难以精确遵循 MW、LogP、TPSA 等理化数值约束~\cite{Pardridge2012}，且无法自主评估生成分子的理化性质和对接分数~\cite{Trott2010}。因此，LLM 必须与分子图模型（RNN、GNN、扩散模型）和外部评估工具（Vina、ADMET 预测）结合~\cite{Li2025DrugPilot}，形成完整的生成-验证闭环。
+
+\section{分子表示与多模态对齐}\label{sec:molecular-representation}
+
+分子可以用不同的表示方式进行编码，每种表示方式捕获了不同层面的化学信息~\cite{Gilmer2017}。理解这些表示方法的优缺点，是设计分子生成系统的基础。
+
+\subsection{SMILES表示的优缺点}
+
+SMILES（Simplified Molecular Input Line Entry System）是一种基于字符串的分子表示方法，能够将分子图编码为一条 ASCII 字符串，并通过原子符号、键符号和分支括号表示分子的拓扑结构~\cite{Weininger1988}。这种表示方法具有紧凑性，例如苯分子的 SMILES 表示为 "c1ccccc1"，便于存储和传输；同时，其序列形式与自然语言处理技术天然兼容，可直接使用 Transformer 或 RNN 处理~\cite{Bagal2021}。然而，SMILES 也存在固有缺陷：同一分子可能对应多种不同的字符串表示，字符串中的微小扰动可能导致生成结果无效~\cite{Bagal2021}，且缺乏直观的几何意义，难以直接反映分子的三维构象。
+
+SELFIES（SELF-referencing Embedded Strings）通过引入"引用"机制，使任意SELFIES字符串必然对应一个有效的分子~\cite{KrenNips2020}，从而提升了生成模型的有效率~\cite{KrenNips2020}。
+
+\subsection{分子图表示的优势}
+
+分子图（Molecular Graph）将分子表示为数学图$G = (V, E)$，其中节点集合$V$代表原子，边集合$E$代表化学键，能够较好地保留分子的拓扑结构信息~\cite{Xu2019}。与 SMILES 序列相比，分子图在结构表达上更加直观，原子和化学键之间的关系能够被完整保留；同时，节点特征和边特征可分别编码原子类型、价电子数、电负性、键类型和芳香性等化学信息~\cite{Gilmer2017}。此外，分子图与图神经网络天然兼容，后者可以通过消息传递机制聚合局部结构信息，从而有效学习分子表示~\cite{Xu2019,Gilmer2017}。
+
+在多模态分子生成中，SMILES和分子图各有优势~\cite{liu2025multimodal}：SMILES便于语言模型处理，分子图便于图神经网络处理~\cite{liu2025multimodal}。Llamole~\cite{liu2025multimodal}的核心设计正是将两者结合，实现文本—分子对齐~\cite{liu2025multimodal}。本文在Llamole的基础上构建GBM-PharmaMind框架，进一步整合领域知识注入和物理评估反馈。
+
+\subsection{多模态对齐在分子生成中的作用}
+
+蛋白-分子匹配任务本质上是一个跨模态任务~\cite{Gao2023}：输入是蛋白口袋结构（3D几何信息）和靶点描述（文本语义），输出是分子结构（2D图或SMILES）。具体而言，系统需要能够将"EGFR 激酶域 ATP 结合位点"~\cite{Fu2025}等靶点描述转化为分子生成条件，将 MW、LogP、TPSA 等理化约束~\cite{Ertl2000,Pardridge2012}转化为分子图的生成条件，并将文本语义和分子图映射到统一向量空间~\cite{Gao2023}，实现语义级的生成分子匹配。
+
+DrugCLIP~\cite{Gao2023}通过对比学习将蛋白口袋和分子映射到统一向量空间~\cite{Gao2023}，为分子生成提供了语义级的评价依据~\cite{Gao2023}。Llamole~\cite{liu2025multimodal}则通过触发Token机制和语义查询Token~\cite{liu2025multimodal}，实现文本语义到分子图生成的映射~\cite{liu2025multimodal}。GBM-PharmaMind框架在此基础上进一步整合了领域知识注入和物理评估反馈机制。
+
+\section{分子生成模型的发展与 Llamole 的适用性分析}\label{sec:generation-models}
+
+分子生成模型经历了从VAE/GAN到Transformer，再到扩散模型和多模态LLM的演进~\cite{Grisoni2023}。本节分析各类模型的特点，并说明本文底层生成模型选择Llamole~\cite{liu2025multimodal}作为分子图—文本协同生成基础，以及在此基础上构建GBM-PharmaMind框架的依据。
+
+\subsection{SMILES生成模型的局限}
+
+早期分子生成模型（如 VAE~\cite{GomezBombarelli2018}、RNN~\cite{Segler2017}、MolGPT~\cite{Bagal2021}）直接在 SMILES 字符串空间进行操作，面临三重困难：SMILES 字符串的微小扰动可能导致无效结构~\cite{Bagal2021}，难以保证生成分子满足多维理化约束~\cite{Grisoni2023}，且缺乏对分子拓扑结构的显式建模~\cite{Xu2019}。
+
+\subsection{图生成模型的优势}
+
+图神经网络和图扩散模型在分子生成任务中取得了显著进展~\cite{Liu2024GraphDiffusion,Xu2023}。相比 SMILES 生成模型，图生成模型的优势在于：分子图表示保留了完整的拓扑结构信息~\cite{Xu2019}，节点和边的特征可编码丰富的化学知识~\cite{Gilmer2017}，扩散模型（如 Graph Diffusion Transformers~\cite{Liu2024GraphDiffusion}）支持多条件生成~\cite{Liu2024GraphDiffusion}。然而，图生成模型通常缺乏对自然语言描述的理解能力~\cite{liu2025multimodal}，难以直接用于根据靶点描述生成候选分子的任务~\cite{liu2025multimodal}。
+
+\subsection{扩散模型在化学空间探索中的作用}
+
+几何潜在扩散模型能够生成具有真实 3D 构象的分子~\cite{Xu2023}，其优势在于生成质量高且多样性好~\cite{Xu2023}，不易陷入模式坍塌~\cite{Liu2024GraphDiffusion}，且支持条件生成~\cite{Liu2024GraphDiffusion}，适合探索复杂的化学空间~\cite{Xu2023}，而 LLM 适合理解和分解任务~\cite{Wei2022,Yao2023}。两者的结合（Llamole~\cite{liu2025multimodal}）可以发挥各自优势~\cite{liu2025multimodal}。本文在 Llamole 的基础上构建 GBM-PharmaMind 框架，进一步整合领域知识注入和物理评估反馈。
+
+\subsection{Llamole 模型的适用性分析}
+
+Llamole~\cite{liu2025multimodal}是专门为逆分子设计及逆合成规划设计的多模态大语言模型~\cite{liu2025multimodal}。具体而言，Llamole 通过触发 Token 机制~\cite{liu2025multimodal}具备文本—分子对齐能力，能够理解分子设计任务的文本描述~\cite{liu2025multimodal}；通过整合图扩散变换器~\cite{Liu2024GraphDiffusion}和 GNN 编码器~\cite{Gilmer2017}支持分子图生成~\cite{liu2025multimodal}；支持逆合成路线规划~\cite{liu2025multimodal}，是评估分子合成可行性的重要环节；并将 LLM 语义理解~\cite{Qwen2Team2024}和图模型结构生成~\cite{Liu2024GraphDiffusion}深度融合~\cite{liu2025multimodal}，形成多模态融合架构~\cite{liu2025multimodal}。
+
+原始Llamole并非专门面向GBM或CNS药物设计~\cite{liu2025multimodal}，缺少GBM领域知识注入和BBB约束处理机制~\cite{liu2025multimodal}。本文在Llamole的基础上构建GBM-PharmaMind框架，增加GBM知识库~\cite{Fu2025,Pardridge2012}和领域LoRA微调~\cite{hu2022lora}，实现面向GBM的分子生成。
+
+\section{CoT-ToT 在分子设计中的作用}\label{sec:cot-tot-molecular-design}
+
+Chain-of-Thought（CoT）和Tree-of-Thoughts（ToT）是提升LLM推理能力的两种策略~\cite{Wei2022,Yao2023}。本节阐述它们在分子设计中的具体作用。
+
+\subsection{结构化推理在分子设计中的作用}
+
+分子设计是一个多约束、多阶段的复杂任务~\cite{Zhou2019Exp}。不考虑BBB穿透性、靶点选择性、药代动力学性质~\cite{Pardridge2012}等多维约束~\cite{Zhou2019Exp}，模型可能生成理化性质不合格或化学结构无效的分子~\cite{Bagal2021}。
+
+CoT推理~\cite{Wei2022}可以将"生成GBM靶向候选分子"这一模糊目标~\cite{Wei2022}，分解为以下结构化步骤：
+
+具体而言，CoT 推理可将分子生成分解为：靶点分析（理解 EGFR/VEGF/IDH1 等靶点的生物学背景和结合位点特征）、骨架设计（选择具有 BBB 穿透潜力的母核结构）、药效团设计（设计 ATP 竞争性结合基团或变构调节基团）、ADMET 考虑（评估 BBB、毒性风险和代谢稳定性）和 SMILES 输出（给出最终分子结构）。这种分步推理~\cite{Wei2022}使得每一步的输出可以独立验证~\cite{Wei2022}，而非一次性生成难以检验的完整分子~\cite{Wei2022}。
+
+\subsection{多分支搜索在候选分子探索中的作用}
+
+CoT是线性的~\cite{Yao2023}：每个步骤只产生一个输出。单一推理路径可能限制候选结构的多样性，使模型在生成过程中陷入局部最优，从而忽略其他具有潜力的分子设计方向~\cite{Yao2023}。
+
+ToT~\cite{Yao2023}通过多分支搜索~\cite{Yao2023}解决这一问题。具体而言，在 ToT 中骨架阶段生成 3 个候选骨架（如喹唑啉类、吲哚类、氮杂环类），片段阶段为每个骨架提供 3 个片段修饰方案，SMILES 阶段为每个片段方案生成多个候选。这种分层搜索策略~\cite{Yao2023}在探索广度和深度之间取得平衡~\cite{Yao2023}：广度保证不遗漏有潜力的设计方向，深度保证每个方向能生成具体分子。
+
+\subsection{ToT 与剪枝的协同作用}
+
+ToT的价值不仅在于多分支探索~\cite{Yao2023}，还在于与物理评估剪枝的协同~\cite{Yao2023}。在每个ToT阶段，低评分分支可以被提前剪除~\cite{Yao2023}，从而将更多计算资源分配给高潜力方向~\cite{Yao2023}。
+
+例如，在骨架提议阶段，如果某个骨架的BBB预测评分较低~\cite{Clark2000}，该分支可以被提前终止~\cite{Yao2023}，避免在该方向上浪费后续的片段组装和SMILES生成计算~\cite{Yao2023}。这种"早剪枝"策略~\cite{Yao2023}显著提升了生成效率~\cite{Yao2023}。
+
+\section{物理评估与剪枝机制}\label{sec:physics-pruning}
+
+物理评估是分子生成系统中不可或缺的环节~\cite{Trott2010,Clark2000,Aronov2008}。本节阐述物理评估在本文框架中的定位和作用。
+
+\subsection{物理评估在分子生成中的作用}
+
+如前所述，LLM 单独用于分子生成时存在化学有效性~\cite{Bagal2021}和物理约束~\cite{Pardridge2012}难以保证的问题~\cite{jin2025effective,Li2025DrugPilot}。分子对接是虚拟筛选中的重要计算方法，可通过模拟小分子与药物靶标之间的相互作用，从候选化合物库中快速筛选潜在活性分子，从而提高筛选效率并降低药物发现成本~\cite{张煜卓2017}。物理评估模块通过 AutoDock Vina 对接分数~\cite{Trott2010}评估生成分子与靶点蛋白的空间匹配程度，通过 BBB 经验评分~\cite{Clark2000,Ertl2000}判断分子是否具有 CNS 药物理化倾向，通过 DILI/hERG/PAINS 警报~\cite{Aronov2008}排除具有明显风险结构的分子。这些评估主要作为生成过程中的剪枝评价指标，而非最终实验验证。
+
+\subsection{生成阶段剪枝与最终候选排序的区分}
+
+本文将相关评估指标分为两类不同用途：生成阶段反馈指标（Vina 对接分数和 BBB 经验评分）主要用于生成过程中的物理评估、过滤和剪枝~\cite{Trott2010,Clark2000}，帮助模型在生成过程中避免明显不适合 GBM/CNS 药物设计的结构~\cite{Trott2010,Clark2000}，属于中间反馈而非最终排序依据。最终候选分子的排序依据为离线计算得到的 TotalScore。TotalScore 综合 DrugCLIP 预测活性并计算的 Vina 对接分数、SwissADME 网站返回 BBB 穿透性预测、SA/类药性指标、PAINS/Brenk 结构警报、P-gp 风险等基础理化性质信息。DrugCLIP 和 SwissADME 是 TotalScore 的重要信息来源，但非唯一依据。二者在使用阶段和评价目的上存在差异：Vina 对接分数和 BBB 经验公式是生成-剪枝循环中的反馈信号~\cite{Trott2010,Clark2000}，而 TotalScore 中的 DrugCLIP、Vina、BBB 等各项则是最终候选分子的综合排序依据。
+
+\subsection{物理评估的局限性}
+
+具体而言，Vina 对接分数是经验打分~\cite{Trott2010}，\textit{不等同于实验结合自由能}，仅反映在当前打分函数和对接着眼下的相对稳定性~\cite{Trott2010}；BBB 经验公式仅考虑 TPSA 和 LogP~\cite{Clark2000}，未考虑主动转运（P-gp 等外排泵）和代谢稳定性等因素，预测结果可能与实际 BBB 穿透性存在较大偏差~\cite{Pardridge2012}。因此，所有物理评估指标仅用于早期虚拟筛选和候选分子排序参考~\cite{Trott2010,Clark2000,Gao2023}，不能替代体外活性、毒性和BBB渗透实验验证~\cite{Trott2010,Pardridge2012}。
+
+\section{LoRA 参数高效微调}\label{sec:lora-purpose}
+
+大语言模型的全量微调需要更新模型的所有参数，计算和存储开销巨大~\cite{hu2022lora}。LoRA~\cite{hu2022lora}通过低秩矩阵适应~\cite{hu2022lora}，在保持预训练模型能力的同时~\cite{hu2022lora}，实现领域适配~\cite{hu2022lora}。
+
+\subsection{领域适配在分子生成任务中的作用}
+
+通用大语言模型（如Qwen2~\cite{Qwen2Team2024}）虽然在语言理解方面表现出色~\cite{Qwen2Team2024}，但缺乏对GBM疾病背景~\cite{Fu2025}、CNS药物设计约束~\cite{Pardridge2012}和特定靶点知识~\cite{Fu2025}的深度理解。具体而言，领域适配的作用包括：通过领域适配，模型可以更好地学习 GBM 靶点相关的分子设计约束，例如 EGFR 的 EGFRvIII 变体及其相关旁路信号激活~\cite{Fu2025}。同时，模型也能更充分地利用 CNS 药物中与 BBB 相关的理化要求，如 MW<450 Da、TPSA<90 Å² 等~\cite{Ertl2000,Pardridge2012}。对于特定骨架和药效团的生成偏好，领域适配也能起到一定的引导作用。
+领域LoRA微调~\cite{hu2022lora}使得模型既能利用GBM领域知识~\cite{hu2022lora}，又能保持对通用分子生成任务的能力~\cite{hu2022lora}。
+
+\subsection{LoRA 在本文中的配置}
+
+在本文中，LoRA~\cite{hu2022lora}的各参数含义如下：在本文配置中，$r=16$ 为秩参数，表示低秩矩阵的秩~\cite{hu2022lora}，过小会限制表示能力，过大则增加训练开销；lora\_alpha=32 为缩放因子，用于缩放 LoRA 分支的输出贡献~\cite{hu2022lora}；lora\_dropout=0.05 为丢弃率，用于防止过拟合~\cite{hu2022lora}；目标模块覆盖 Transformer 中所有线性层~\cite{hu2022lora}。
+
+LoRA适用于本文场景的原因包括：（1）保留预训练模型的通用能力~\cite{hu2022lora}；（2）在消费级GPU（如RTX 3090）上可完成训练~\cite{hu2022lora}；（3）可以针对不同任务训练多个LoRA适配器~\cite{hu2022lora}，实现模型的灵活扩展~\cite{hu2022lora}。
+
+\section{本章小结}\label{sec:ch2-summary}
+
+本章围绕本文研究所需的关键技术进行了介绍。
+
+具体而言：大语言模型承担任务规划、Prompt 解释、多模态控制和反馈整合的角色~\cite{Qwen2Team2024,jin2025effective}，但单独使用时存在化学有效性和物理约束难以保证的问题~\cite{jin2025effective,Li2025DrugPilot}；SMILES 便于语言模型处理~\cite{Weininger1988}，分子图便于图神经网络处理~\cite{Xu2019,Gilmer2017}，多模态对齐是实现文本—分子映射的关键~\cite{liu2025multimodal,Gao2023}；Llamole~\cite{liu2025multimodal}同时具备文本理解和分子图生成能力~\cite{liu2025multimodal}，是本文选择的底层生成模型~\cite{liu2025multimodal}，本文在其基础上构建 GBM-PharmaMind 框架，进一步整合领域知识注入和物理评估反馈；CoT 用于分步结构化推理~\cite{Wei2022}，ToT 用于多分支搜索~\cite{Yao2023}，两者协同实现推理方向正确与探索空间充分的平衡~\cite{Yao2023}；Vina 对接和 BBB 经验公式是生成阶段剪枝反馈~\cite{Trott2010,Clark2000}，而非最终排序依据~\cite{Trott2010,Clark2000,Daina2017}；LoRA~\cite{hu2022lora}用于实现 GBM 领域知识注入~\cite{hu2022lora}，使通用模型适配 CNS 药物设计任务~\cite{hu2022lora}。
+
+上述技术共同构成了后续GBM候选分子生成框架的理论基础。

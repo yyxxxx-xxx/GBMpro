@@ -1,0 +1,10 @@
+entity_id,mol_id,library_name,smiles,MW,TPSA,LogP,target
+llamole_20260507_184337,IDH1_IDH2_00000,Llamole-Qwen2-7B-Instruct-Adapter,CC[NH+](CC)CC (available),0.00,0.00,0.00,IDH1_IDH2
+llamole_20260507_184337,IDH1_IDH2_00001,Llamole-Qwen2-7B-Instruct-Adapter,O=C(Oc1ccc(-c2nc(C(=O)O)c3ccccc23)cc1)c1cccs1 (not available,0.00,0.00,0.00,IDH1_IDH2
+llamole_20260507_184337,IDH1_IDH2_00002,Llamole-Qwen2-7B-Instruct-Adapter,[Na+] (available),0.00,0.00,0.00,IDH1_IDH2
+llamole_20260507_184337,IDH1_IDH2_00003,Llamole-Qwen2-7B-Instruct-Adapter,[OH-] (available). This is step 2 in the retrosynthesis process. To synthesize 4-(4-methylphenyl)-7,0.00,0.00,0.00,IDH1_IDH2
+llamole_20260507_184337,IDH1_IDH2_00004,Llamole-Qwen2-7B-Instruct-Adapter,O=C(O)O (available),0.00,0.00,0.00,IDH1_IDH2
+llamole_20260507_184337,IDH1_IDH2_00005,Llamole-Qwen2-7B-Instruct-Adapter,[K+] (available). This is step 2 in the retrosynthesis process. To synthesize 3-chloro-6-methoxy-4-pyridazinecarboxylic acid (1.8 g,0.00,0.00,0.00,IDH1_IDH2
+llamole_20260507_184337,IDH1_IDH2_00006,Llamole-Qwen2-7B-Instruct-Adapter,C#N (not available,0.00,0.00,0.00,IDH1_IDH2
+llamole_20260507_184337,IDH1_IDH2_00007,Llamole-Qwen2-7B-Instruct-Adapter,[K+] (available). This is step 2 in the retrosynthesis process. To synthesize 1-(4-methoxyphenyl)-2,0.00,0.00,0.00,IDH1_IDH2
+llamole_20260507_184337,IDH1_IDH2_00008,Llamole-Qwen2-7B-Instruct-Adapter,Nc1ccccc1Cl (available). This is step 3 in the retrosynthesis process. To synthesize 4-methoxy-aniline (described in Example 8a),0.00,0.00,0.00,IDH1_IDH2

@@ -1,0 +1,10 @@
+{
+  "experiment_name": "ablation_7_direct_simple",
+  "ablation_description": "Ablation 7: Direct simple prompt generation. No CoT step_by_step_design template, no ToT hierarchical search. Tests the raw model capability with minimal prompting guidance.",
+  "targets": [
+    "EGFR"
+  ],
+  "num_molecules": 50,
+  "gpu_id": 3,
+  "timestamp": "2026-05-07T03:10:30.821990"
+}

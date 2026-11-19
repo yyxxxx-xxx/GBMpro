@@ -1,0 +1,226 @@
+[
+  {
+    "id": 0,
+    "smiles": "CC(=O)Nc1ccccc1C(=O)O",
+    "tpsa": 66.4,
+    "mw": 179.17499999999995,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 1,
+    "smiles": "CC(=O)Nc1ccc(cc1)C(=O)Nc2ccccc2C(=O)c3ccccc3C4=NC(=O)c5ccc(cc5)N=C4",
+    "tpsa": 117.06000000000002,
+    "mw": 514.5410000000003,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 2,
+    "smiles": "CN(C)C1CCCCC1C(=O)O",
+    "tpsa": 40.540000000000006,
+    "mw": 171.24,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 3,
+    "smiles": "CC(=O)Nc1ccc(cc1)C(=O)O",
+    "tpsa": 66.4,
+    "mw": 179.17499999999998,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 4,
+    "smiles": "CC(=O)NCCCC(=O)NC1=CN2C(=O)C(=O)C21",
+    "tpsa": 95.58000000000001,
+    "mw": 251.24200000000002,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 5,
+    "smiles": "CN(C)C1=CC=C(C=C1)N(CCN3CCC3)CN4CCCC4CN(CCN4CCCC4)C(=O)O",
+    "tpsa": 56.74000000000001,
+    "mw": 472.6780000000004,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 6,
+    "smiles": "CC(NC1=CC=CC=C1)C(=O)N",
+    "tpsa": 55.120000000000005,
+    "mw": 164.20799999999994,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 7,
+    "smiles": "Nc1ccccc1N=C(O)C(=O)O",
+    "tpsa": 95.91000000000001,
+    "mw": 180.163,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 8,
+    "smiles": "C(NC(=O)NC(=O)c1ccc(CBr)cc1)C",
+    "tpsa": 58.2,
+    "mw": 285.14099999999996,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 9,
+    "smiles": "CN1CC(C(=O)O)C(=O)N(C)C1",
+    "tpsa": 60.85000000000001,
+    "mw": 172.18399999999997,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 10,
+    "smiles": "CN1CCCCC1C(=O)O",
+    "tpsa": 40.540000000000006,
+    "mw": 143.186,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 11,
+    "smiles": "C1=CC=C2C(=C(C=C1)N)C(=O)OC3=CC=C(C=C3)N=C2S",
+    "tpsa": 69.12,
+    "mw": 296.351,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 12,
+    "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+    "tpsa": 63.60000000000001,
+    "mw": 180.15899999999996,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 13,
+    "smiles": "Cc1ccccc1N(C(=O)Nc2ccccc2)C(=O)O",
+    "tpsa": 69.64,
+    "mw": 270.288,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 14,
+    "smiles": "CCC(=O)N(C)C1CCN(C2CCCCC2)C(=O)N1",
+    "tpsa": 52.650000000000006,
+    "mw": 267.3729999999999,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 15,
+    "smiles": "CC(=O)Nc1ccc(O)cc1",
+    "tpsa": 49.33,
+    "mw": 151.165,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 16,
+    "smiles": "CC(=O)Nc1ccc(cc1)OC(=O)Nc2ccc(cc2)N",
+    "tpsa": 93.44999999999999,
+    "mw": 285.303,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 17,
+    "smiles": "CC(=O)Nc1cccc(C(=O)Nc2ccc(cc2)N)c1",
+    "tpsa": 84.22,
+    "mw": 269.30400000000003,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 18,
+    "smiles": "CC(=O)Nc1ccccc1O",
+    "tpsa": 49.33,
+    "mw": 151.16499999999996,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 19,
+    "smiles": "CC(=O)OC1=CC2CCCCC2C(C1=O)N(C)C",
+    "tpsa": 46.61000000000001,
+    "mw": 251.32599999999996,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 20,
+    "smiles": "CN=C1CN(C(=O)C2=CC=CC=C2)C(=O)N1",
+    "tpsa": 61.77,
+    "mw": 217.228,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 21,
+    "smiles": "CC(=O)NCCCC(=O)N",
+    "tpsa": 72.19,
+    "mw": 144.174,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 22,
+    "smiles": "C(CCN(C(=O)NCC)CC(=O)NCC)CC",
+    "tpsa": 61.440000000000005,
+    "mw": 243.35099999999994,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 23,
+    "smiles": "CC(=O)C1=CC=C(C=C1)NC(=O)C2CCCCC2",
+    "tpsa": 46.17,
+    "mw": 245.3219999999999,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 24,
+    "smiles": "C1CCC(C(=O)NC(=O)C)CC1",
+    "tpsa": 46.17,
+    "mw": 169.22399999999996,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 25,
+    "smiles": "CC(=O)NCC(=O)NCCC",
+    "tpsa": 58.2,
+    "mw": 158.20099999999996,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 26,
+    "smiles": "CC(=O)NC1(CCCCC)CN1",
+    "tpsa": 51.040000000000006,
+    "mw": 170.256,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 27,
+    "smiles": "C(=O)NC1CCCCC1CC(=O)N",
+    "tpsa": 72.19,
+    "mw": 184.23899999999998,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 28,
+    "smiles": "CC(=O)NC(=O)C1CCCCC1",
+    "tpsa": 46.17,
+    "mw": 169.22399999999996,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 29,
+    "smiles": "C(=O)NCC1CCC(C(=O)NC)C1",
+    "tpsa": 58.2,
+    "mw": 184.23899999999998,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 30,
+    "smiles": "CC(=O)NCCCCCNCC(=O)",
+    "tpsa": 58.2,
+    "mw": 186.255,
+    "target": "VEGF_VEGFR"
+  },
+  {
+    "id": 31,
+    "smiles": "C(=O)NC1CCCCC1CC(=O)",
+    "tpsa": 46.17,
+    "mw": 169.224,
+    "target": "VEGF_VEGFR"
+  }
+]

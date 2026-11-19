@@ -1,0 +1,43 @@
+{
+  "experiment_config": {
+    "targets": [
+      "EGFR",
+      "IDH1_IDH2",
+      "VEGF_VEGFR"
+    ],
+    "num_molecules_per_target": 50,
+    "tot_k": 4,
+    "tot_b": 3,
+    "gpu_id": 2,
+    "prompts_config_path": "gbm_project/configs/english_gbm_prompts.yaml",
+    "enable_guardrail_fallback": false,
+    "enable_default_strategy_fallback": false,
+    "max_attempts": 300,
+    "max_no_new_streak": 0,
+    "timestamp": "2026-04-21T17:04:49.363455"
+  },
+  "summary_stats": {
+    "EGFR": {
+      "total_generated": 50,
+      "unique_smiles": 48,
+      "avg_path_length": 3.0
+    },
+    "IDH1_IDH2": {
+      "total_generated": 50,
+      "unique_smiles": 50,
+      "avg_path_length": 3.0
+    },
+    "VEGF_VEGFR": {
+      "total_generated": 50,
+      "unique_smiles": 49,
+      "avg_path_length": 3.0
+    }
+  },
+  "total_targets": 3,
+  "total_molecules": 150,
+  "targets_breakdown": {
+    "EGFR": 50,
+    "IDH1_IDH2": 50,
+    "VEGF_VEGFR": 50
+  }
+}

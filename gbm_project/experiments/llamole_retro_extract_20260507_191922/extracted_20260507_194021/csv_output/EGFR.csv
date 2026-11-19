@@ -1,0 +1,4 @@
+entity_id,mol_id,library_name,smiles,MW,TPSA,LogP,target,strategy
+llamole_retro_20260507_194021,EGFR_00000,Llamole-Qwen2-7B-Instruct-Adapter,COCCOCCCO,134.18,38.69,0.03,EGFR,applied_reaction
+llamole_retro_20260507_194021,EGFR_00001,Llamole-Qwen2-7B-Instruct-Adapter,C[C@@H]1CN(C)[C@H](OC(C)C)NC1,172.27,24.50,0.87,EGFR,applied_reaction
+llamole_retro_20260507_194021,EGFR_00002,Llamole-Qwen2-7B-Instruct-Adapter,Cc1cccc([PH+](c2ccccc2)c2ccccc2)c1,277.33,0.00,3.49,EGFR,applied_reaction
