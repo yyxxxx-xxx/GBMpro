@@ -99,6 +99,10 @@ class RolloutConfig:
     repetition_penalty: float = 1.1
     seed: int = 0
     stop_at_newline: bool = True
+    # ⚠️ 生成时的分块大小 (实测: G=16 一次生成会 OOM, 因为 HF 对所有位置
+    #    算 logits: 16 x 650 x 152064 x 2B = 3.16GB, float() 上转 = 6.3GB)。
+    #    8 是实测安全值。
+    gen_chunk_size: int = 8
 
 
 @dataclass
@@ -167,6 +171,19 @@ class RolloutEngine:
             print(f"[rollout] 开始: {len(use_prompts)} 组 x {G} 个, "
                   f"model.training={self.model.training}, "
                   f"use_cache={self.model.config.use_cache}", flush=True)
+
+            # ⚠️⚠️ 分块生成 (实测踩坑): `num_return_sequences=G` 一次生成 G 条时,
+            #    HF 会对**所有**位置算 logits:
+            #        G x 650 x 152064 x 2B (fp16) = 3.16 GB, 再 float() 上转 = 6.3 GB
+            #    G=16 时实测 `Tried to allocate 5.37 GiB` -> OOM。
+            #    解决: 内部按 chunk 切分 (默认 8), 每块独立 generate。
+            #    ⚠️ 注意: 分块会改变随机数消耗顺序, 所以**必须固定 seed**,
+            #    否则同一 seed 下 G=8 与 G=16 采到的分子不同 (影响可复现性)。
+            chunk = getattr(self.cfg, "gen_chunk_size", 8) or G
+            if chunk < G:
+                print(f"[rollout] ⚠️ 分块生成: {G} -> {chunk}/块 "
+                      f"(避免 logits OOM)", flush=True)
+
             for pid, prompt in enumerate(use_prompts):
                 t_g = time.time()
                 enc = self.tokenizer(prompt, return_tensors="pt").to(
@@ -176,26 +193,50 @@ class RolloutEngine:
                 if seed is not None:
                     torch.manual_seed(seed + pid * 1000)
 
-                gen_kwargs = dict(
+                base_kwargs = dict(
                     max_new_tokens=self.cfg.max_new_tokens,
                     temperature=self.cfg.temperature,
                     top_p=self.cfg.top_p,
                     do_sample=True,
                     repetition_penalty=self.cfg.repetition_penalty,
-                    num_return_sequences=G,
                     pad_token_id=self.tokenizer.pad_token_id,
                     eos_token_id=self.tokenizer.eos_token_id,
                 )
                 if self.cfg.stop_at_newline and newline_token_id is not None:
                     stopper = self._stopper(prompt_len)
                     if stopper is not None:
-                        gen_kwargs["stopping_criteria"] = StoppingCriteriaList(
+                        base_kwargs["stopping_criteria"] = StoppingCriteriaList(
                             [stopper])
 
                 print(f"[rollout] group {pid} 开始生成 (prompt_len={prompt_len})",
                       flush=True)
-                with torch.no_grad():
-                    out = self.model.generate(**enc, **gen_kwargs)
+
+                # 分块生成, 收集所有输出
+                outs = []
+                for c0 in range(0, G, chunk):
+                    n_chunk = min(chunk, G - c0)
+                    if seed is not None:
+                        # 每块重新设 seed, 保证分块生成也可复现
+                        torch.manual_seed(seed + pid * 1000 + c0)
+                    with torch.no_grad():
+                        out = self.model.generate(
+                            **enc, num_return_sequences=n_chunk, **base_kwargs)
+                    outs.append(out)
+
+                # ⚠️ 不同块生成长度可能不同 -> 不能直接 cat (维度 1 长度不一致)。
+                #    用 pad_token 补齐到最大长度再 cat。
+                max_len = max(int(o.shape[1]) for o in outs)
+                padded = []
+                for o in outs:
+                    if int(o.shape[1]) < max_len:
+                        pad = torch.full(
+                            (o.shape[0], max_len - o.shape[1]),
+                            self.tokenizer.pad_token_id,
+                            dtype=o.dtype, device=o.device)
+                        o = torch.cat([o, pad], dim=1)
+                    padded.append(o)
+                out = torch.cat(padded, dim=0)
+
                 print(f"[rollout] group {pid} 生成完成", flush=True)
 
                 n_gen = int(out.shape[1]) - prompt_len
