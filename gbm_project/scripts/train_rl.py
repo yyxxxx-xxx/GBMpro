@@ -60,13 +60,15 @@ def build_argparser() -> argparse.ArgumentParser:
     ap.add_argument("--max_grad_norm", type=float, default=1.0)
     ap.add_argument("--kl_estimator", default="k3", choices=["k1", "k2", "k3"])
 
-    # Rollout
+    # Rollout (默认基于实测有效率, 见 rl/rollout.py 的表格)
     ap.add_argument("--n_prompts", type=int, default=4)
     ap.add_argument("--group_size", type=int, default=8)
-    ap.add_argument("--temperature", type=float, default=1.0)
-    ap.add_argument("--top_p", type=float, default=0.95)
-    ap.add_argument("--max_new_tokens", type=int, default=220)
+    ap.add_argument("--temperature", type=float, default=0.8)
+    ap.add_argument("--top_p", type=float, default=0.92)
+    ap.add_argument("--max_new_tokens", type=int, default=512)
     ap.add_argument("--min_heavy_atoms", type=int, default=12)
+    ap.add_argument("--save_every", type=int, default=5,
+                    help="每 N 步存一次 latest checkpoint (0=只在结束时存)")
 
     # 多样性 (与 REINVENT 对齐)
     ap.add_argument("--bucket_size", type=int, default=10)
@@ -104,6 +106,7 @@ def main():
         base_model=args.base_model,
         llamole_adapter=args.llamole_adapter,
         sft_adapter=args.sft_adapter,
+        target=args.target,
         algorithm=args.algorithm,
         lr=args.lr,
         beta_kl=args.beta_kl,
@@ -118,6 +121,7 @@ def main():
         top_p=args.top_p,
         max_new_tokens=args.max_new_tokens,
         min_heavy_atoms=args.min_heavy_atoms,
+        save_every=args.save_every,
         diversity_bucket_size=args.bucket_size,
         diversity_minscore=args.minscore,
         enable_diversity_filter=not args.no_diversity_filter,

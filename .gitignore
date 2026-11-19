@@ -198,3 +198,11 @@ gbm_project/figures/*.svg
 # 运行时缓存
 *.tmp
 .pytest_cache/
+
+# ---- RL 训练产物 (2026-11-19) ----
+# checkpoint 可由训练脚本重新生成, 不入库
+*.safetensors
+experiments/rl_*/
+!experiments/rl_*/train_log.jsonl
+!experiments/rl_*/train_config.json
+!experiments/rl_*/reward_cache.jsonl

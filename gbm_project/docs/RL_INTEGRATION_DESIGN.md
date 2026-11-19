@@ -1122,13 +1122,88 @@ Vina 权重扫描实测（27 个反馈分子）：
 
 ### M2 — 完整训练循环 + 收敛性（1 天）
 
-- [ ] 多步循环、checkpoint（**只存 LoRA**）、resume
-- [ ] 多样性过滤接入
-- [ ] 每步指标日志（§8.3 的全部曲线）
+- [x] 多步循环、checkpoint（**只存 LoRA**）、resume
+- [x] 多样性过滤接入
+- [x] 每步指标日志（§8.3 的全部曲线）
+- [x] **定期存 `latest` checkpoint**（`--save_every`，默认 5 步）
+      —— 否则中途被杀只能从头开始
 - [ ] **短程验证**：先跑 15 步，看 reward 是否单调上升
-- [ ] hacking 警报接入
+      （⚠️ 必须看**滑动平均**，单步 reward 噪声极大 —— 实测 3 步
+      就出现 0.19 → 0.21 → 0.11 的波动）
+- [x] hacking 警报接入
 
 **验收**：15 步后 reward mean 显著高于 SFT 水平线。
+
+---
+
+### M1.5 — 实跑踩坑记录（2026-11-19 实测，**必读**）
+
+M1 的代码在**单元测试层面全过**，但实跑暴露了 9 个只有真跑才会出现的缺陷。
+每一个都会让 RL **静默失效**（不报错，但学不到东西）——这是 RL 最危险的失败模式。
+
+| # | 缺陷 | 症状 | 根因 | 修复 |
+|---|---|---|---|---|
+| 1 | **PEFT `set_adapter` 只能激活一个 adapter** | rollout 有效率 **0%** | `set_adapter("rl")` 把 SFT adapter 停用了, rollout 跑的是「基座+随机初始化 LoRA」 | SFT LoRA 也 `merge_and_unload()`, 只留一个可训练 RL LoRA |
+| 2 | **ProcessPoolExecutor 默认 fork 继承 CUDA context** | reward 阶段死锁 >5 分钟 | 父进程已加载 7B 到 GPU, fork 出的 worker CUDA 初始化死锁 | `mp.get_context("spawn")` |
+| 3 | **logits 全量计算** | `OutOfMemoryError` | `model(...)` 对全部位置算 logits, Qwen2 再 `logits.float()`: 4×650×152k×4B = 1.58GB ×3 | 只跑 body, `lm_head` 只作用于 response 位置 (省 3.52GB, 19%) |
+| 4 | **gradient checkpointing 开得太晚** | 6 样本即 OOM | 在 backward 前才开, 前向激活图全留在显存 | 前向**之前**就开 |
+| 5 | **采样温度过高** | 有效率 38% | t=1.0 vs 反馈闭环的 t=0.7 | 默认 t=0.8 (实测 75%) |
+| 6 | **`_NewlineStopper` 只看 `input_ids[0]`** | 序列被截断 | `num_return_sequences>1` 时第一个遇换行就停掉全部 | `_BatchNewlineStopper` (全部遇换行才停) |
+| 7 | **prompt 索引错配** | logprob 全错 | `prompt_id` 是组位置, `prompt_idxs` 是原始索引 | `group_to_prompt` 映射 |
+| 8 | **response 格式不一致** | 分布漂移 | 只用裸 SMILES, SFT 训练是 `"SMILES: xxx"` | 统一成 `SMILES: xxx` |
+| 9 | **基座指纹哈希 7B 参数** | 每步 24 秒 | `.float()` 产生 28GB 临时拷贝 | 采样 64 个张量 + 原始 dtype |
+
+**外加 3 个非阻塞 bug**：
+
+| 缺陷 | 症状 | 修复 |
+|---|---|---|
+| `RewardCache` 定义了 `__len__` | 空缓存时 `bool(cache)` 为 False → **缓存永远不落盘** | 去掉 `__len__`, 加 `__bool__` 返回 True |
+| `score_batch` 去重只填第一个位置 | 重复 SMILES → `AttributeError: 'NoneType' has no 'items'` | 填**所有**出现位置 + None 兜底 |
+| 守卫阈值重复了 MPO 的约束 | 45% 的真实生成分子被丢弃, RL 信号砍半 | 守卫只管 reward 管不到的 (`rot`/`rings`/`chain`), 不管 MW |
+
+**关键教训**: RL 的每个断言都要问「**如果这一步是错的, 会报错吗?**」。
+上面 9 个里有 7 个**不报错**, 只是安静地学不到东西。
+
+**M1 实跑验收结果**（IDH1 / GRPO / 3 步，命令见下）:
+
+```bash
+python scripts/train_rl.py --target IDH1 --algorithm grpo --steps 3 \
+    --n_prompts 2 --group_size 8 --train_batch 4 --grad_accum 2 \
+    --n_workers 8 --save_every 2 --out_dir ../experiments/rl_m1_final
+```
+
+```
+[step 0] loss=-0.7266  kl=0.00000  rew=0.1944 (max 0.4729)
+         valid=6/16  adv|=1.000  t=79.8s   prior_contaminated=false
+[step 1] loss=-0.1658  kl=0.00000  rew=0.2132 (max 0.4595)
+         valid=8/16  adv|=0.965  t=59.4s   prior_contaminated=false
+[step 2] loss= 0.0517  kl=0.00001  rew=0.1051 (max 0.3154)
+         valid=3/16  adv|=1.000  t=49.3s   prior_contaminated=false
+```
+
+| 验收项 | 结果 | 说明 |
+|---|---|---|
+| loss 有限 | ✅ -0.7266 / -0.1658 / +0.0517 | 三步都有限 |
+| KL 起始为 0 | ✅ 0.00000 | RL LoRA 零初始化, agent ≡ prior |
+| KL 开始偏移 | ✅ 0.00001 (step 2) | 策略确实在动, 不是死循环 |
+| advantage 符号正确 | ✅ \|adv\| = 1.000 / 0.965 | 组内 z-score 精确 |
+| 梯度非零 | ✅ backward 完成 | loss 逐步变化 |
+| 显存 < 20 GB | ✅ 峰值 19.5 GB | |
+| prior 未被污染 | ✅ `prior_contaminated=false` | 3/3 步 |
+| checkpoint 保存 | ✅ `rl_lora_final.safetensors` (161MB) + `state_final.json` (192MB) | |
+| reward 缓存生效 | ✅ 第二次跑相同分子 reward 耗时 **0.0s** | |
+| 单元测试 | ✅ 21/21 (20 + 1 回归) | |
+
+**⚠️ 关于 reward_mean 的波动**（0.1944 → 0.2132 → 0.1051）:
+这**不是**收敛失败, 而是每步只采 16 个分子（有效 3~8 个）的**采样噪声**。
+step 2 的 `valid=3/16` 且 `n_skipped_groups=1`（一个组内 reward 无方差被跳过）,
+所以 reward_mean 掉下来了。判断收敛需要 **15+ 步**（见 M2），
+并且应该看**滑动平均**而不是单步值。
+
+**⚠️ 关于 KL 一直是 0.0000x**: 数值很小是因为 `beta_kl=0.02` 且
+RL LoRA 的 lr=1e-6（很小）。这是**有意的** —— 先小步确认梯度方向正确,
+再放大 lr。放大到 1e-5 / 5e-5 是 M2 的内容。
+
 
 ### M3 — DAP-Lite 对照 + 消融（1 天）
 

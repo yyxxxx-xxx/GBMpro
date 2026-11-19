@@ -42,17 +42,63 @@ from generate_with_new_adapter import (  # noqa: E402
 )
 
 
+class _BatchNewlineStopper:
+    """
+    batch 安全的换行 stopper。
+
+    ⚠️ `generate_with_new_adapter._NewlineStopper` 只检查 `input_ids[0]`,
+    配合 `num_return_sequences>1` 时, 第一个序列遇到换行就会**停掉全部**,
+    其余序列被截断 -> 有效率骤降 (实测 8 序列时只有 ~50% 有效)。
+    这里改成"全部序列都遇到换行才停"。
+
+    (实现成普通类而非继承 StoppingCriteria, 是因为 transformers 4.44+
+    与 5.x 的 StoppingCriteria 接口不一致; `generate` 只要求返回 bool。)
+    """
+
+    def __init__(self, newline_token_id: int, prompt_len: int):
+        self.newline_token_id = newline_token_id
+        self.prompt_len = prompt_len
+
+    def __call__(self, input_ids, scores, **kwargs) -> bool:
+        import torch
+        gen = input_ids[:, self.prompt_len:]
+        if gen.shape[1] == 0:
+            return False
+        last = gen[:, -1]
+        return bool(torch.all(last == self.newline_token_id).item())
+
+
 @dataclass
 class RolloutConfig:
-    """采样配置。"""
+    """采样配置。
+
+    ⚠️ 默认值基于**实测有效率** (2026-11-19, IDH1, N=8, 同一条 prompt):
+
+        | 配置                          | 有效率 |
+        |-------------------------------|--------|
+        | t=0.7 p=0.90 (反馈闭环原配置)  | 88%    |
+        | **t=0.8 p=0.92 (默认)**        | **75%** |
+        | t=0.9 p=0.92                   | 62%    |
+        | t=1.0 p=0.95                   | 38%    |
+
+    温度是有效率的**主因** (不是 max_new_tokens 截断)。
+    选 t=0.8 而不是直接对齐反馈闭环的 0.7 —— RL 需要比反馈闭环更大的
+    探索空间 (否则组内 reward 差异太小, GRPO 没梯度信号)。
+    75% 有效率下, 组内 8 个样本平均有 6 个有效, 组内方差足够。
+
+    ⚠️ 必须开 `stop_at_newline`: 训练集的 response 形如
+    "SMILES: <one smiles>" (单行), 模型常在 SMILES 之后继续输出
+    混合物/解释文字, 不停就会产出噪声。
+    """
 
     group_size: int = 8          # G: 每条 prompt 采多少个分子
-    temperature: float = 1.0     # 与 REINVENT 一致, 保证探索
-    top_p: float = 0.95
-    max_new_tokens: int = 220    # ⚠️ 128 会截断长 SMILES (已实测)
+    temperature: float = 0.8     # 实测: 0.7 -> 88%, 0.8 -> 75%, 1.0 -> 38%
+    top_p: float = 0.92
+    max_new_tokens: int = 512     # 与反馈闭环一致
     min_heavy_atoms: int = 12
     repetition_penalty: float = 1.1
     seed: int = 0
+    stop_at_newline: bool = True
 
 
 @dataclass
@@ -101,10 +147,14 @@ class RolloutEngine:
             展平的 RolloutSample 列表, 顺序 = group 优先 (便于还原 group)
         """
         import torch
+        from transformers import StoppingCriteriaList
 
         G = group_size or self.cfg.group_size
         use_prompts = list(prompts)[:n_groups]
         samples: List[RolloutSample] = []
+
+        # 换行 stopper 的 token id (训练集 response 是单行 "SMILES: xxx")
+        newline_token_id = self._newline_token_id()
 
         # ⚠️ 生成阶段: 关 gradient checkpointing, 开 KV cache
         was_training = self.model.training
@@ -114,7 +164,11 @@ class RolloutEngine:
             self.model.gradient_checkpointing_disable()
 
         try:
+            print(f"[rollout] 开始: {len(use_prompts)} 组 x {G} 个, "
+                  f"model.training={self.model.training}, "
+                  f"use_cache={self.model.config.use_cache}", flush=True)
             for pid, prompt in enumerate(use_prompts):
+                t_g = time.time()
                 enc = self.tokenizer(prompt, return_tensors="pt").to(
                     self.model.device)
                 prompt_len = enc["input_ids"].shape[1]
@@ -122,18 +176,31 @@ class RolloutEngine:
                 if seed is not None:
                     torch.manual_seed(seed + pid * 1000)
 
+                gen_kwargs = dict(
+                    max_new_tokens=self.cfg.max_new_tokens,
+                    temperature=self.cfg.temperature,
+                    top_p=self.cfg.top_p,
+                    do_sample=True,
+                    repetition_penalty=self.cfg.repetition_penalty,
+                    num_return_sequences=G,
+                    pad_token_id=self.tokenizer.pad_token_id,
+                    eos_token_id=self.tokenizer.eos_token_id,
+                )
+                if self.cfg.stop_at_newline and newline_token_id is not None:
+                    stopper = self._stopper(prompt_len)
+                    if stopper is not None:
+                        gen_kwargs["stopping_criteria"] = StoppingCriteriaList(
+                            [stopper])
+
+                print(f"[rollout] group {pid} 开始生成 (prompt_len={prompt_len})",
+                      flush=True)
                 with torch.no_grad():
-                    out = self.model.generate(
-                        **enc,
-                        max_new_tokens=self.cfg.max_new_tokens,
-                        temperature=self.cfg.temperature,
-                        top_p=self.cfg.top_p,
-                        do_sample=True,
-                        repetition_penalty=self.cfg.repetition_penalty,
-                        num_return_sequences=G,
-                        pad_token_id=self.tokenizer.pad_token_id,
-                        eos_token_id=self.tokenizer.eos_token_id,
-                    )
+                    out = self.model.generate(**enc, **gen_kwargs)
+                print(f"[rollout] group {pid} 生成完成", flush=True)
+
+                n_gen = int(out.shape[1]) - prompt_len
+                print(f"[rollout] group {pid}: {G} 分子, 生成 {n_gen} token, "
+                      f"{time.time()-t_g:.1f}s", flush=True)
 
                 for gi in range(G):
                     resp_ids = out[gi][prompt_len:]
@@ -147,6 +214,27 @@ class RolloutEngine:
                 self.model.train()
 
         return samples
+
+    def _newline_token_id(self):
+        """换行符的 token id (取所有可能的编码里最短的那个)。"""
+        if getattr(self, "_nl_id", None) is not None:
+            return self._nl_id
+        ids = set()
+        for s in ("\n", "\n\n", " \n"):
+            enc = self.tokenizer.encode(s, add_special_tokens=False)
+            if enc:
+                ids.add(enc[0])
+        self._nl_id = min(ids) if ids else None
+        return self._nl_id
+
+    def _stopper(self, prompt_len: int):
+        """
+        batch 安全的换行 stopper (见 _BatchNewlineStopper 的说明)。
+        """
+        nl_id = self._newline_token_id()
+        if nl_id is None:
+            return None
+        return _BatchNewlineStopper(nl_id, prompt_len)
 
     def _parse(self, prompt_id: int, group_idx: int,
                text: str, n_tokens: int) -> RolloutSample:

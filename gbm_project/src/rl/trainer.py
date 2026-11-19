@@ -55,6 +55,7 @@ class TrainerConfig:
     base_model: str = "/root/Llamole-main/models/Qwen2-7B-Instruct"
     llamole_adapter: str = "/root/Llamole-main/saves/Llamole-Qwen2-7B-Instruct-Adapter"
     sft_adapter: str = "/root/Llamole-main/saves/Llamole-Qwen2-7B-Instruct-Adapter-gbm-active"
+    target: str = "IDH1"
 
     # --- RL 超参 ---
     algorithm: str = "grpo"          # 'grpo' | 'dap'
@@ -67,14 +68,16 @@ class TrainerConfig:
     kl_estimator: str = "k3"
     length_normalize: bool = True
 
-    # --- Rollout ---
+    # --- Rollout (实测有效率, 见 rl/rollout.py) ---
     n_prompts: int = 4
     group_size: int = 8
-    temperature: float = 1.0
-    top_p: float = 0.95
-    max_new_tokens: int = 220
+    temperature: float = 0.8
+    top_p: float = 0.92
+    max_new_tokens: int = 512
     repetition_penalty: float = 1.1
     min_heavy_atoms: int = 12
+    # 每 N 步存一次 `latest` checkpoint (state 含 optimizer, 约 190MB)
+    save_every: int = 5
 
     # --- 多样性 ---
     diversity_bucket_size: int = 10  # 与 REINVENT 一致
@@ -120,28 +123,44 @@ def build_rl_model(cfg: TrainerConfig, device: str = "cuda:0"):
         cfg.base_model, torch_dtype=torch.float16, device_map=device)
     model.config.use_cache = False
 
-    # 1) Llamole LoRA -> merge 进基座 (省一层 adapter 复杂度)
+    # 1) Llamole LoRA -> merge 进基座
     if cfg.llamole_adapter and Path(cfg.llamole_adapter).exists():
         print(f"[model] merge Llamole adapter: {cfg.llamole_adapter}", flush=True)
         model = PeftModel.from_pretrained(model, cfg.llamole_adapter)
         model = model.merge_and_unload()
 
-    # 2) GBM SFT LoRA (frozen) —— prior
-    print(f"[model] 加载 SFT adapter (frozen): {cfg.sft_adapter}", flush=True)
-    model = PeftModel.from_pretrained(model, cfg.sft_adapter,
-                                       adapter_name="sft",
-                                       is_trainable=True)
+    # 2) GBM SFT LoRA -> **也 merge 进基座**
+    #
+    # ⚠️⚠️ 实测踩坑 (关键): PEFT 的 `set_adapter(name)` **一次只能激活一个
+    #    adapter**。如果保留 SFT adapter 为独立层再 `set_adapter("rl")`,
+    #    SFT 就被停用了 -> rollout 跑的是「基座 + 随机初始化的 RL LoRA」,
+    #    等于在噪声上采样 -> 有效 SMILES 率为 0。
+    #
+    #    正确做法: 把 SFT LoRA 也 merge 进基座, 只留一个可训练的 RL LoRA。
+    #    此时:
+    #       agent = merged_base(SFT) + RL LoRA      <- rollout & 训练用
+    #       prior = merged_base(SFT)                 <- disable_adapter() 得到
+    #    prior 是 merge 后的**同一个模型**, 所以 prior 不可能被污染 (R14 消除)。
+    print(f"[model] merge SFT adapter (frozen prior): {cfg.sft_adapter}", flush=True)
+    model = PeftModel.from_pretrained(model, cfg.sft_adapter, is_trainable=True)
+    model = model.merge_and_unload()
 
     # 3) RL LoRA (trainable) —— agent
+    #    初始为全零 (lora_B=0) -> agent 初始 == prior, 训练从"不变"开始
+    #
+    # ⚠️ 用 `get_peft_model` 而不是 `from_pretrained`:
+    #    from_pretrained 会**加载 SFT adapter 的权重** (非零) -> RL 一开始
+    #    就偏离 prior; 我们要的是"从 prior 出发做增量调整"。
+    #    get_peft_model 创建全新的零初始化 LoRA。
     rl_cfg = LoraConfig(
         r=cfg.rl_lora_r, lora_alpha=cfg.rl_lora_alpha,
         lora_dropout=cfg.rl_lora_dropout, bias="none",
         target_modules=cfg.rl_target_modules, task_type="CAUSAL_LM")
-    model.add_adapter("rl", rl_cfg)
+    from peft import get_peft_model
+    model = get_peft_model(model, rl_cfg, adapter_name="rl")
     model.set_adapter("rl")
 
     # ⚠️ 关键: 显式逐参数设置 requires_grad
-    #    否则 SFT LoRA 会被一起优化 -> 静默污染 prior (风险 R14)
     n_train = 0
     for n, p in model.named_parameters():
         p.requires_grad = ("lora" in n) and (".rl." in n)
@@ -156,23 +175,39 @@ def build_rl_model(cfg: TrainerConfig, device: str = "cuda:0"):
     return model, tokenizer
 
 
-def sft_adapter_fingerprint(model) -> str:
+def sft_adapter_fingerprint(model, n_tensors: int = 64) -> str:
     """
-    计算 SFT adapter 的权重指纹 —— 用于训练后校验 prior 未被污染。
+    计算 **基座权重**的指纹 —— 用于校验 prior 未被污染。
 
-    只对 SFT adapter ('sft') 的 lora 参数求哈希, 不含 'rl'。
+    ⚠️ 架构变更后 (SFT LoRA 已 merge 进基座), 没有独立的 "sft" adapter 了。
+    现在 prior = 基座权重 (merge 后), agent = 基座 + RL LoRA。
+
+    ⚠️⚠️ 实测踩坑: 最初实现把**全部**基座参数转 float32 求哈希 ——
+    7B 模型 = 28GB 数据, 每步要算几十秒, RL 训练直接卡死。
+    改成只哈希**确定性采样**的 n_tensors 个张量 (按参数名排序后取
+    均匀间隔的样本), 既能检测异常改动, 又只花几毫秒。
+
+    由于 optimizer 只持有 RL LoRA 的参数, 基座权重在数学上不可能被改变;
+    这个指纹只是**防御性**检查 (防止意外的 in-place 操作 / 精度漂移)。
     """
     import hashlib
+    named = [(n, p) for n, p in model.named_parameters() if "lora" not in n]
+    named.sort(key=lambda x: x[0])
+    if not named:
+        return "empty:0"
+    # 均匀采样 n_tensors 个 (含首尾)
+    if len(named) <= n_tensors:
+        picked = named
+    else:
+        step = max(1, len(named) // n_tensors)
+        picked = named[::step][:n_tensors]
     h = hashlib.sha256()
-    n = 0
-    for name, p in model.named_parameters():
-        if "lora" not in name:
-            continue
-        if ".sft." in name:
-            h.update(name.encode())
-            h.update(p.detach().to(torch.float32).cpu().numpy().tobytes())
-            n += 1
-    return f"{h.hexdigest()[:16]}:{n}"
+    for name, p in picked:
+        h.update(name.encode())
+        # ⚠️ 不要 .float() —— 7B 参数转 fp32 会产生几十 GB 的临时拷贝,
+        #    实测耗时 24 秒。直接用原始 dtype 的字节即可。
+        h.update(p.detach().cpu().contiguous().view(torch.uint8).numpy().tobytes())
+    return f"{h.hexdigest()[:16]}:{len(picked)}/{len(named)}"
 
 
 # ---------------------------------------------------------------------------
@@ -251,10 +286,22 @@ def batched_logprobs(
     """
     批量算 logprob (带 padding)。
 
+    ⚠️⚠️ **关键优化: 只对 response 位置算 logits**。
+    直接调 `model(...)` 会对**全部**位置算 logits, 而后 Qwen2ForCausalLM
+    还会做 `logits.float()` —— 4 × 650 token × 152k 词表 × 4 bytes
+    = 1.58 GB 一份, 再加 log_softmax 和 backward 的梯度, **直接 OOM**
+    (实测: `torch.OutOfMemoryError: Tried to allocate 484.00 MiB`)。
+
+    而 prompt 占了序列的 85% (实测 prompt_len=379~592, response 只有 ~77),
+    这些位置的 logprob 根本用不上 (mask=0)。
+
+    做法: 只跑 transformer body 拿 hidden states, 然后把 lm_head
+    **只作用在 response 对应的位置**上。
+        B=4, R=77, V=152k  ->  4 × 77 × 152k × 4 bytes = 187 MB (可接受)
+
     Args:
         sequences: [(prompt_ids, response_ids), ...]
-        with_grad: True=agent (要梯度, 开 grad ckpt);
-                   False=prior (no_grad, 不开 grad ckpt)
+        with_grad: True=agent (要梯度); False=prior (no_grad)
 
     Returns:
         (logps [B, T_max], mask [B, T_max])
@@ -267,28 +314,105 @@ def batched_logprobs(
                             dtype=torch.long, device=device)
     attn = torch.zeros((B, T_max), dtype=torch.long, device=device)
     resp_mask = torch.zeros((B, T_max), dtype=torch.bool, device=device)
+    spans = []          # 每个样本的 (response_start, response_end)
 
     for i, (p, r) in enumerate(sequences):
         L = len(p) + len(r)
         input_ids[i, :L] = torch.tensor(list(p) + list(r), device=device)
         attn[i, :L] = 1
         resp_mask[i, len(p):L] = True
+        spans.append((len(p), L))
+
+    # --- 拿到 transformer body 与 lm_head (兼容 PEFT 包装) ---
+    body, lm_head = _get_body_and_head(model)
+
+    # ⚠️ 分块: 一次只处理 batch_size 个样本的 log_softmax。
+    #    log_softmax 的中间结果 [chunk, R, V] 在反向时必须保留,
+    #    R=77, V=152k -> 单样本 47MB, 6 个样本就是 280MB + 梯度副本。
+    #    分块 + 保留计算图 -> 显存可控。
+    chunk = max(1, batch_size)
+    full_lp = torch.zeros((B, T_max), dtype=torch.float32, device=device)
+    mask = torch.zeros((B, T_max), dtype=torch.bool, device=device)
 
     ctx = torch.enable_grad() if with_grad else torch.no_grad()
-    with ctx:
-        out = model(input_ids=input_ids, attention_mask=attn)
-        logits = out.logits.float()
-        logp = torch.log_softmax(logits[:, :-1, :], dim=-1)
-        tgt = input_ids[:, 1:]
-        tok_lp = logp.gather(-1, tgt.unsqueeze(-1)).squeeze(-1)   # [B, T-1]
+    for start in range(0, B, chunk):
+        end = min(start + chunk, B)
+        b = end - start
+        with ctx:
+            out = body(input_ids=input_ids[start:end], attention_mask=attn[start:end])
+            hidden = out.last_hidden_state          # [b, T_max, H]
 
-    # 对齐到 [B, T_max]: 位置 t 的 logprob 对应 token t
-    full_lp = torch.zeros((B, T_max), dtype=tok_lp.dtype, device=device)
-    full_lp[:, 1:] = tok_lp
-    mask = torch.zeros((B, T_max), dtype=torch.bool, device=device)
-    mask[:, 1:] = resp_mask[:, 1:]
+            for j in range(b):
+                i = start + j
+                p_start, p_end = spans[i]
+                # 位置 t 的 hidden 预测 token t+1
+                # response token 在 [p_start, p_end), 对应 hidden 在
+                # [p_start-1, p_end-1)
+                h = hidden[j, p_start - 1:p_end - 1]          # [R, H]
+                logits = lm_head(h).float()                    # [R, V]
+                logp = torch.log_softmax(logits, dim=-1)       # [R, V]
+                tgt = input_ids[i, p_start:p_end]              # [R]
+                tok_lp = logp.gather(-1, tgt.unsqueeze(-1)).squeeze(-1)   # [R]
+                full_lp[i, p_start:p_end] = tok_lp
+                mask[i, p_start:p_end] = True
 
     return full_lp, mask
+
+
+def _get_body_and_head(model):
+    """
+    拆出 transformer body 与 lm_head (兼容 PEFT 各种包装层级)。
+
+    ⚠️ 不能用 `hasattr(m, "lm_head")` 判断层级 —— PEFT 的 LoraModel 实现了
+    `__getattr__` 转发, `hasattr(lora_model, "lm_head")` 会返回 True,
+    导致取到的 body 其实是 ForCausalLM 而不是 Qwen2Model。
+
+    层级: PeftModel -> LoraModel -> Qwen2ForCausalLM -> {model, lm_head}
+
+    ⚠️ body 必须是 **LoRA 注入后的** decoder, 否则 RL LoRA 不生效
+    (LoRA 层是挂在 Qwen2Model 的子模块上的)。
+    """
+    m = model
+    # 剥 PeftModel
+    if hasattr(m, "base_model") and hasattr(m.base_model, "model"):
+        m = m.base_model.model          # LoraModel.model -> ForCausalLM
+    # 剥 LoraModel (如果上面没成功)
+    if not hasattr(m, "lm_head") and hasattr(m, "model"):
+        m = m.model
+    if not hasattr(m, "lm_head"):
+        raise RuntimeError(f"无法从 {type(model)} 找到 lm_head "
+                           f"(当前层级: {type(m)})")
+    body = m.model          # Qwen2Model
+    head = m.lm_head
+    if not hasattr(body, "layers"):
+        raise RuntimeError(f"body 不是 transformer decoder: {type(body)}")
+    return body, head
+
+
+def _to_jsonable(obj):
+    """
+    把含 tensor 的嵌套结构转成 JSON 可序列化的形式。
+
+    ⚠️ **已不再用于 optimizer 状态** —— 那样做会让 checkpoint 膨胀到 2.2GB
+    (AdamW 的 exp_avg/exp_avg_sq 转成 Python list 体积暴涨 5-7 倍)。
+    optimizer 状态现在用 `torch.save` 存二进制。见 save_checkpoint()。
+
+    这里保留给小的元数据 (如 prompt_bank / history) 使用。
+    """
+    import numpy as np
+    if isinstance(obj, torch.Tensor):
+        return obj.detach().cpu().tolist()
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    if isinstance(obj, (np.generic,)):
+        return obj.item()
+    if isinstance(obj, dict):
+        return {k: _to_jsonable(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [_to_jsonable(v) for v in obj]
+    if isinstance(obj, (int, float, str, bool)) or obj is None:
+        return obj
+    return str(obj)
 
 
 # ---------------------------------------------------------------------------
@@ -354,51 +478,77 @@ class RLTrainer:
 
         self.step = 0
         self.history: List[dict] = []
+        t_fp = time.time()
         self._sft_fp = sft_adapter_fingerprint(self.model)
+        print(f"[init] 基座指纹 {self._sft_fp} ({time.time()-t_fp:.2f}s)", flush=True)
 
     # ------------------------------------------------------------------
     def save_checkpoint(self, tag: str = "latest"):
-        """只存 RL LoRA (≈250MB), 不存完整模型 (磁盘只剩 148GB)。"""
+        """只存 RL LoRA (≈161MB), 不存完整模型 (磁盘只剩 148GB)。
+
+        ⚠️⚠️ optimizer 状态**不能**用 JSON 存!
+        实测: 40.37M 参数的 AdamW 状态 (exp_avg + exp_avg_sq)
+        转成 Python list 后 JSON 体积暴涨到 **2.2 GB** (比二进制大 5-7 倍),
+        60 步训练 + 每 5 步存一次 = 几十 GB, 直接撑爆磁盘。
+        -> optimizer 状态用 `torch.save` 存二进制 .pt 文件
+        -> JSON 只存元数据 (config / history / diversity)
+        """
         from peft.utils import get_peft_model_state_dict
         sd = get_peft_model_state_dict(self.model, adapter_name="rl")
         path = self.out_dir / f"rl_lora_{tag}.safetensors"
         from safetensors.torch import save_file
         save_file({k: v.detach().cpu().contiguous() for k, v in sd.items()},
                   str(path))
-        # 训练状态 (resume 用)
+
+        # optimizer 状态 -> 二进制 (161MB, 而不是 JSON 的 2.2GB)
+        opt_path = self.out_dir / f"optimizer_{tag}.pt"
+        torch.save({
+            "optimizer": self.optimizer.state_dict(),
+            "scheduler": self.sched.state_dict(),
+            "step": self.step,
+        }, str(opt_path))
+
+        # 元数据 -> JSON (小)
         state = {
             "step": self.step,
             "config": asdict(self.cfg),
             "prompt_bank": self.prompt_bank.to_dict(),
-            "sft_fingerprint": self._sft_fp,
+            "base_fingerprint": self._sft_fp,
             "diversity": self.diversity.state_dict(),
-            "optimizer": self.optimizer.state_dict(),
-            "scheduler": self.sched.state_dict(),
             "history": self.history,
         }
         with open(self.out_dir / f"state_{tag}.json", "w") as f:
             json.dump(state, f, indent=2, ensure_ascii=False)
-        print(f"[ckpt] {path.name}", flush=True)
+        print(f"[ckpt] {path.name} (+{opt_path.name})", flush=True)
 
     def load_checkpoint(self, tag: str = "latest"):
         from safetensors.torch import load_file
         from peft import set_peft_model_state_dict
         lora_path = self.out_dir / f"rl_lora_{tag}.safetensors"
         state_path = self.out_dir / f"state_{tag}.json"
+        opt_path = self.out_dir / f"optimizer_{tag}.pt"
         if not state_path.exists():
             print(f"[ckpt] 找不到 {state_path}, 从头开始", flush=True)
             return False
         state = json.load(open(state_path))
-        if state.get("sft_fingerprint") != self._sft_fp:
-            print("[ckpt] ⚠️ SFT fingerprint 不一致, 先验可能已变!", flush=True)
+        if state.get("base_fingerprint") != self._sft_fp:
+            print("[ckpt] ⚠️ 基座 fingerprint 不一致, 先验可能已变!", flush=True)
         if lora_path.exists():
             sd = load_file(str(lora_path))
             set_peft_model_state_dict(self.model, sd, adapter_name="rl")
         self.step = state.get("step", 0)
         self.diversity.load_state_dict(state.get("diversity", {}))
-        self.optimizer.load_state_dict(state["optimizer"])
-        self.sched.load_state_dict(state["scheduler"])
         self.history = state.get("history", [])
+        # optimizer / scheduler 从二进制恢复
+        if opt_path.exists():
+            try:
+                blob = torch.load(str(opt_path), map_location="cpu",
+                                  weights_only=False)
+                self.optimizer.load_state_dict(blob["optimizer"])
+                self.sched.load_state_dict(blob["scheduler"])
+                print(f"[ckpt] optimizer 已恢复", flush=True)
+            except Exception as e:
+                print(f"[ckpt] ⚠️ optimizer 恢复失败 ({e}), 用空状态继续", flush=True)
         print(f"[ckpt] resume @ step {self.step}", flush=True)
         return True
 
@@ -426,14 +576,24 @@ class RLTrainer:
                                          seed=cfg.seed * 100 + self.step)
         t_rollout = time.time() - t0
 
+        # ⚠️ 关键: RolloutEngine 返回的 prompt_id 是**组的位置** (0,1,2...),
+        #    而 prompt_idxs 是**原始索引**。必须建立映射, 否则算 logprob 时
+        #    用的 prompt 与 rollout 时的 prompt 不是同一个 -> logprob 全错。
+        #    (实测踩坑: 组 1 用了 bank.prompts[1] 而实际生成用的是 bank.prompts[2])
+        group_to_prompt = {gid: prompt_idxs[gid] for gid in range(len(prompt_idxs))}
+
         # --- 2. Reward ---
         valid = [s for s in samples if s.valid]
         t0 = time.time()
+        print(f"[step {self.step}] rollout 完成: {len(valid)}/{len(samples)} 有效, "
+              f"耗时 {t_rollout:.1f}s -> 开始 reward", flush=True)
         if valid:
             recs = self.reward_service.score_batch([s.smiles for s in valid])
         else:
             recs = []
         t_reward = time.time() - t0
+        print(f"[step {self.step}] reward 完成: {len(recs)} 条, "
+              f"耗时 {t_reward:.1f}s", flush=True)
 
         # 把 reward 映射回 samples
         rec_by_smiles = {}
@@ -452,7 +612,7 @@ class RLTrainer:
 
         # --- 4. 构建训练 batch ---
         (agent_seqs, prior_seqs, advs) = self._build_training_batch(
-            samples, rec_by_smiles, groups)
+            samples, rec_by_smiles, groups, group_to_prompt)
 
         if not agent_seqs:
             print(f"[step {self.step}] ⚠️ 没有可用样本, 跳过", flush=True)
@@ -460,11 +620,23 @@ class RLTrainer:
             return {"step": self.step, "skipped": True, **gstats}
 
         # --- 5. Logprob + Loss ---
+        # ⚠️⚠️ gradient checkpointing 必须在**前向之前**开启!
+        #    之前放在 backward 阶段才开 -> 前向的完整激活图被全部保留在显存里,
+        #    6 个样本直接 OOM (实测 OutOfMemoryError: Tried to allocate 94 MiB)。
+        #    开 checkpointing 后前向只保存边界激活, 显存大幅下降。
+        self.model.gradient_checkpointing_enable(
+            gradient_checkpointing_kwargs={"use_reentrant": False})
+        self.model.config.use_cache = False
+
         t0 = time.time()
         agent_lp, agent_mask = batched_logprobs(
             self.model, self.tokenizer, agent_seqs,
             batch_size=cfg.train_batch, with_grad=True)
-        with torch.no_grad():
+
+        # ⚠️ prior = 关掉 RL LoRA 后的模型 (= merge 后的 SFT 模型)
+        #    绝不能直接用 agent 的 logprob 冒充 prior, 否则 KL 恒为 0,
+        #    策略可以无约束漂移 (RL 最常见的静默失效)。
+        with torch.no_grad(), self.model.disable_adapter():
             prior_lp, prior_mask = batched_logprobs(
                 self.model, self.tokenizer, prior_seqs,
                 batch_size=cfg.train_batch, with_grad=False)
@@ -486,10 +658,6 @@ class RLTrainer:
 
         # --- 6. Backward ---
         t0 = time.time()
-        # 训练阶段: 开 gradient checkpointing, 关 cache
-        self.model.gradient_checkpointing_enable(
-            gradient_checkpointing_kwargs={"use_reentrant": False})
-        self.model.config.use_cache = False
         self.model.train()
 
         total_loss = loss_out["loss"]
@@ -549,7 +717,8 @@ class RLTrainer:
         return stats
 
     # ------------------------------------------------------------------
-    def _build_training_batch(self, samples, rec_by_smiles, groups):
+    def _build_training_batch(self, samples, rec_by_smiles, groups,
+                              group_to_prompt):
         """
         构建 (agent_seqs, prior_seqs, advantages)。
 
@@ -587,10 +756,15 @@ class RLTrainer:
                 except StopIteration:
                     break
 
-                prompt_text = self._prompt_for(s.prompt_id)
+                prompt_text = self._prompt_for(group_to_prompt[s.prompt_id])
                 p_ids = self.tokenizer(prompt_text,
                                        return_tensors="pt")["input_ids"][0].tolist()
-                r_ids = self.tokenizer(rec.smiles + self.tokenizer.eos_token,
+                # ⚠️ response 格式必须是 "SMILES: xxx" —— 与 SFT 训练分布一致。
+                #    训练时 response 就是这个形态 (见 build_qa_dataset.py:16)。
+                #    若只用裸 SMILES, 模型会学到"直接输出 SMILES",
+                #    与 SFT 分布不一致, 且下一轮 rollout 的 prompt 也会漂移。
+                resp_text = f"SMILES: {rec.smiles}{self.tokenizer.eos_token}"
+                r_ids = self.tokenizer(resp_text,
                                        return_tensors="pt",
                                        add_special_tokens=False)["input_ids"][0].tolist()
                 if len(r_ids) == 0:
@@ -632,6 +806,11 @@ class RLTrainer:
                     flush=True)
 
             self._write_log()
+
+            # ⚠️ 定期存 `latest` —— 否则中途被杀只能从头开始, 白跑。
+            #    (state 文件含 optimizer 状态, 约 190MB, 每 5 步存一次)
+            if self.cfg.save_every > 0 and self.step % self.cfg.save_every == 0:
+                self.save_checkpoint("latest")
 
         self.save_checkpoint("final")
         print(f"\n[RL] 训练结束, 共 {self.step} 步", flush=True)

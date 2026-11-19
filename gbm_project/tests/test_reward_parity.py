@@ -321,6 +321,32 @@ class TestRewardParity:
             finally:
                 svc.close()
 
+    def test_duplicate_smiles_all_filled(self):
+        """
+        回归测试: 同一批 SMILES 里有重复时, **每个位置**都要拿到结果。
+
+        实测踩坑: 采样会产出重复 SMILES, 原实现只填了去重后第一个位置,
+        其余位置是 None -> 下游 `AttributeError: 'NoneType' object has no
+        attribute 'items'`。
+        """
+        from rl.reward_service import RewardService, RewardConfig
+        svc = RewardService(RewardConfig(target="IDH1", n_workers=4,
+                                         use_cache=False))
+        try:
+            dup = [TEST_SMILES[0], TEST_SMILES[1], TEST_SMILES[0],
+                   TEST_SMILES[1], TEST_SMILES[0]]
+            recs = svc.score_batch(dup)
+            assert len(recs) == len(dup)
+            for i, r in enumerate(recs):
+                assert r is not None, f"位置 {i} 是 None"
+                assert r.smiles == dup[i], f"位置 {i} 的 SMILES 错位"
+                assert r.vina is not None
+            # 重复项的分数必须一致
+            assert recs[0].vina == recs[2].vina == recs[4].vina
+            assert recs[1].vina == recs[3].vina
+        finally:
+            svc.close()
+
 
 if __name__ == "__main__":
     sys.exit(pytest.main([__file__, "-v", "--tb=short",

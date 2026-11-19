@@ -86,15 +86,28 @@ class RewardConfig:
 # 第一层防线在 reward 函数本身 (BBB 硬截断 / ENDPOINT_FLOOR / 几何平均),
 # 这一层是**结构合理性检查** —— 挡住明显不是药物的分子。
 #
-# 阈值参考 `scripts/rescore_parallel.py` 的类药预筛 (所有方法共用同一门槛):
-#   MW <= 500, 重原子 <= 40, 可旋转键 <= 10
+# ⚠️⚠️ **设计原则 (实测踩坑后修正)**:
+#   守卫**不能**重复 reward 已有的类药性约束, 否则会大量丢弃有效样本。
+#   实测: 用 rescore_parallel 的门槛 (MW>500 / heavy>40 / rot>10) 做训练守卫,
+#   193 个**真实生成分子**里有 86 个 (45%) 被拦下 —— RL 的有效信号被砍掉一半。
+#
+#   MPO 的硬约束已经用**按真实 CNS 药物 p99 标定**的阈值:
+#       mw: 180-650, tpsa: 20-145, bbb_prob >= 0.5
+#   守卫只保留 reward **管不到**的形式问题 (reward hacking 专用):
+#       - 过长烷烃链 (模型会生成 rot=147 的聚乙烯退化产物)
+#       - 过多可旋转键 (柔性的极端情况)
+#       - 环数爆炸
+#   MW / 重原子数**不设守卫** —— 交给 MPO 的 mw_max=650 处理。
+#
+# 真正的 reward hacking 防线是第 3 层: 硬截断 + BBB 硬约束 + 几何平均。
 HACKING_GUARDS = {
-    "max_rotatable_bonds": 10,
-    "max_heavy_atoms": 40,
-    "max_mw": 500.0,
-    "max_ring_count": 6,
-    "max_amide_bonds": 3,
-    "max_aliphatic_chain": 12,   # 连续 sp3 碳链长度
+    "max_rotatable_bonds": 15,   # reward 不管柔性的极端情况
+    "max_ring_count": 8,
+    "max_aliphatic_chain": 12,   # 连续 sp3 碳链长度 (防长链烷烃退化)
+    "max_amide_bonds": 4,
+    # ⚠️ 不设 max_mw / max_heavy_atoms ——
+    #    MPO 已有 mw_max=650 (按真实 CNS 药物 p99 标定),
+    #    再加 MW>500 会误杀 45% 的合法生成分子。
 }
 
 
@@ -166,10 +179,8 @@ def check_hacking_guards(smiles: str) -> Optional[str]:
         rot = Descriptors.NumRotatableBonds(mol)
         rings = mol.GetRingInfo().NumRings()
 
-        if mw > HACKING_GUARDS["max_mw"]:
-            return f"guard_mw={mw:.0f}"
-        if heavy > HACKING_GUARDS["max_heavy_atoms"]:
-            return f"guard_heavy={heavy}"
+        # ⚠️ 不检查 mw / heavy —— MPO 的硬约束已用 mw_max=650 处理
+        #    (按真实 CNS 药物 p99 标定), 再加严会误杀大量合法分子。
         if rot > HACKING_GUARDS["max_rotatable_bonds"]:
             return f"guard_rot={rot}"
         if rings > HACKING_GUARDS["max_ring_count"]:
@@ -179,7 +190,6 @@ def check_hacking_guards(smiles: str) -> Optional[str]:
             Chem.MolFromSmarts("[NX3][CX3](=[OX1])")))
         if amides > HACKING_GUARDS["max_amide_bonds"]:
             return f"guard_amide={amides}"
-
         # 连续 sp3 碳链 (防长链烷烃 —— 实测基线里出现过 rot=147 的退化产物)
         longest = _longest_aliphatic_chain(mol)
         if longest > HACKING_GUARDS["max_aliphatic_chain"]:
@@ -340,8 +350,12 @@ class RewardCache:
             self._fh.close()
             self._fh = None
 
-    def __len__(self):
-        return len(self._mem)
+    # ⚠️ 刻意**不实现** `__len__`。
+    #    RewardCache 定义了 `__len__` 时, 空缓存的 `bool(cache)` 是 False,
+    #    `if self.cache:` 会静默跳过写入 -> 缓存永远不落盘 (实测踩坑)。
+    #    去掉 `__len__` 后, `bool(cache)` 恒为 True, 语义正确。
+    def __bool__(self):
+        return True
 
 
 # ---------------------------------------------------------------------------
@@ -365,7 +379,16 @@ class RewardService:
 
     def _get_executor(self) -> ProcessPoolExecutor:
         if self._executor is None:
-            self._executor = ProcessPoolExecutor(max_workers=self.cfg.n_workers)
+            # ⚠️⚠️ 必须用 **spawn** 上下文!
+            #    默认的 fork 会把父进程的 CUDA context 一起复制到子进程,
+            #    父进程此时已加载了 7B 模型到 GPU -> 子进程里的 CUDA 初始化
+            #    会死锁 (实测: reward 阶段卡住 >5 分钟, CPU 占用极低,
+            #    reward_cache.jsonl 一直为空)。
+            #    spawn 从干净的解释器启动, 没有继承 CUDA 状态。
+            import multiprocessing as mp
+            ctx = mp.get_context("spawn")
+            self._executor = ProcessPoolExecutor(
+                max_workers=self.cfg.n_workers, mp_context=ctx)
         return self._executor
 
     def score_batch(self, smiles_list: Sequence[str]) -> List[RewardRecord]:
@@ -383,7 +406,7 @@ class RewardService:
         # 1) 查缓存
         todo_idx = []
         for i, smi in enumerate(smiles_list):
-            hit = self.cache.get(smi) if self.cache else None
+            hit = self.cache.get(smi) if self.cache is not None else None
             if hit is not None:
                 results[i] = hit
             else:
@@ -391,17 +414,30 @@ class RewardService:
 
         # 2) 并行计算缺失部分
         if todo_idx:
-            uniq: Dict[str, int] = {}
+            # ⚠️ 用 smi -> [所有出现位置] 的映射, 不能只记第一个位置!
+            #    同一个 SMILES 可能在 batch 里出现多次 (采样会重复),
+            #    只填第一个位置 -> 其余位置仍是 None -> 下游 AttributeError。
+            uniq: Dict[str, List[int]] = {}
             for i in todo_idx:
-                uniq.setdefault(smiles_list[i], i)
+                uniq.setdefault(smiles_list[i], []).append(i)
             uniq_smiles = list(uniq.keys())
 
             ex = self._get_executor()
             payload = [(s, self.cfg) for s in uniq_smiles]
             for smi, d in zip(uniq_smiles, ex.map(_score_one, payload)):
-                if self.cache:
+                if self.cache is not None:
                     self.cache.put(d)
-                results[uniq[smi]] = d
+                # 填所有出现位置
+                for i in uniq[smi]:
+                    results[i] = d
+
+        # 兜底: 极端情况下仍有 None (worker 返回异常), 给 reward=0 而不是崩掉
+        for i, r in enumerate(results):
+            if r is None:
+                results[i] = {
+                    "smiles": smiles_list[i], "reward": 0.0,
+                    "error": "not_scored", "pruned": False,
+                }
 
         return [RewardRecord(**{k: v for k, v in r.items()
                                 if k in RewardRecord.__dataclass_fields__})
@@ -414,7 +450,7 @@ class RewardService:
         if self._executor is not None:
             self._executor.shutdown(wait=False)
             self._executor = None
-        if self.cache:
+        if self.cache is not None:
             self.cache.close()
 
     def __enter__(self):
@@ -451,5 +487,5 @@ if __name__ == "__main__":
             print(f"  reward={r.reward:.4f}  vina={r.vina}  bbb={r.bbb}  "
                   f"pruned={r.pruned} {r.prune_reason or ''}")
         print(f"\n{len(recs)} 分子 / {dt:.1f}s -> {dt/len(recs):.2f}s/分子")
-        if svc.cache:
-            print(f"缓存条目: {len(svc.cache)}")
+        if svc.cache is not None:
+            print(f"缓存条目: {len(svc.cache._mem)}")
