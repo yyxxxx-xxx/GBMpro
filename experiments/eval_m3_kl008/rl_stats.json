@@ -1,0 +1,14 @@
+{
+  "tag": "rl",
+  "n_sampled": 220,
+  "n_scored": 220,
+  "reward_mean": 0.3165537318181818,
+  "reward_std": 0.26079125320006397,
+  "reward_median": 0.415336,
+  "reward_max": 0.706478,
+  "reward_p90": 0.6368475,
+  "vina_mean": -7.823770186335404,
+  "vina_best": -10.875,
+  "n_unique": 143,
+  "seed": 1234
+}
