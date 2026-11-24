@@ -1,0 +1,112 @@
+{
+  "all_pairs": {
+    "MW": {
+      "n": 2228,
+      "mean_delta": 1.007625673249547,
+      "t": 1.1584108787399663,
+      "significant": false,
+      "direction": 0
+    },
+    "TPSA": {
+      "n": 2228,
+      "mean_delta": 3.1234560143626497,
+      "t": 8.26581864017068,
+      "significant": true,
+      "direction": 0
+    },
+    "QED": {
+      "n": 2228,
+      "mean_delta": 0.001961672849199298,
+      "t": 0.806460980814364,
+      "significant": false,
+      "direction": 0
+    },
+    "BBB_prob": {
+      "n": 2228,
+      "mean_delta": -0.03027202601292082,
+      "t": -9.066584710476302,
+      "significant": true,
+      "direction": 0
+    },
+    "hERG_prob": {
+      "n": 2228,
+      "mean_delta": 0.010654740824733645,
+      "t": 3.713796945094655,
+      "significant": true,
+      "direction": -1
+    },
+    "DILI_prob": {
+      "n": 2228,
+      "mean_delta": -0.0002620878029126453,
+      "t": -0.18480072437165806,
+      "significant": false,
+      "direction": -1
+    },
+    "AMES_prob": {
+      "n": 2228,
+      "mean_delta": -0.011213948311036724,
+      "t": -3.745434845676624,
+      "significant": true,
+      "direction": -1
+    },
+    "value_um": {
+      "n": 2877,
+      "mean_delta": 0.011679873419220633,
+      "t": 2.690058157006668,
+      "significant": true,
+      "direction": -1
+    }
+  },
+  "within_target": {
+    "MW": {
+      "n": 2228,
+      "mean_delta": 1.007625673249547,
+      "t": 1.1584108787399663,
+      "significant": false
+    },
+    "TPSA": {
+      "n": 2228,
+      "mean_delta": 3.1234560143626497,
+      "t": 8.26581864017068,
+      "significant": true
+    },
+    "QED": {
+      "n": 2228,
+      "mean_delta": 0.001961672849199298,
+      "t": 0.806460980814364,
+      "significant": false
+    },
+    "BBB_prob": {
+      "n": 2228,
+      "mean_delta": -0.03027202601292082,
+      "t": -9.066584710476302,
+      "significant": true
+    },
+    "hERG_prob": {
+      "n": 2228,
+      "mean_delta": 0.010654740824733645,
+      "t": 3.713796945094655,
+      "significant": true
+    },
+    "DILI_prob": {
+      "n": 2228,
+      "mean_delta": -0.0002620878029126453,
+      "t": -0.18480072437165806,
+      "significant": false
+    },
+    "AMES_prob": {
+      "n": 2228,
+      "mean_delta": -0.011213948311036724,
+      "t": -3.745434845676624,
+      "significant": true
+    },
+    "value_um": {
+      "n": 2877,
+      "mean_delta": 0.011679873419220633,
+      "t": 2.690058157006668,
+      "significant": true
+    }
+  },
+  "n_pairs": 2877,
+  "n_pairs_within_target": 2877
+}
