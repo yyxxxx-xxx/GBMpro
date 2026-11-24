@@ -37,8 +37,25 @@ from pathlib import Path
 
 
 def infer_target(eval_dir: Path) -> str:
-    """从目录名或上级 train_config 推断靶点名。"""
-    # 1) 上溯找 train_config.json (训练目录里有)
+    """推断靶点名。
+
+    优先级: rl_stats.json / baseline_sft_stats.json 里的 target 字段
+            -> 上溯 train_config.json
+            -> reward cache 字段
+            -> 目录名兜底
+    """
+    # 1) 评估产物自带的 target 字段 (最可靠)
+    for name in ("rl_stats.json", "baseline_sft_stats.json"):
+        f = eval_dir / name
+        if f.exists():
+            try:
+                t = json.loads(f.read_text(encoding="utf-8")).get("target")
+                if t:
+                    return str(t)
+            except Exception:
+                pass
+
+    # 2) 上溯找 train_config.json (训练目录里有)
     for parent in [eval_dir, *eval_dir.parents]:
         cfg = parent / "train_config.json"
         if cfg.exists():
@@ -47,7 +64,8 @@ def infer_target(eval_dir: Path) -> str:
                     "target", "IDH1")
             except Exception:
                 pass
-    # 2) 从 reward_cache 里的字段找 (Vina 通常带 target)
+
+    # 3) 从 reward_cache 里的字段找
     for f in eval_dir.glob("*_reward_cache.jsonl"):
         for line in f.read_text(encoding="utf-8").splitlines():
             if line.strip():
@@ -59,7 +77,8 @@ def infer_target(eval_dir: Path) -> str:
                     if d.get(k):
                         return str(d[k])
                 break
-    # 3) 目录名兜底
+
+    # 4) 目录名兜底
     name = eval_dir.name
     for t in ("IDH1", "EGFR", "VEGFR", "VEGF"):
         if t in name.upper():

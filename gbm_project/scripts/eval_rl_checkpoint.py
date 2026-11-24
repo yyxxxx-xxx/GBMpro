@@ -118,6 +118,9 @@ def main():
                          "否则采到的分子不同, 对比不公平")
     ap.add_argument("--n_workers", type=int, default=15)
     ap.add_argument("--out_dir", required=True)
+    ap.add_argument("--target", default="IDH1",
+                    help="靶点: IDH1 / EGFR / VEGFR "
+                         "(受体已就绪, 见 configs/receptors.yaml)")
     ap.add_argument("--base_model",
                     default="/root/Llamole-main/models/Qwen2-7B-Instruct")
     ap.add_argument("--sft_adapter",
@@ -130,7 +133,7 @@ def main():
 
     # --- 固定的独立 prompt 集 (与训练用的 bank 相同, 但采样是新的) ---
     from rl.prompt_bank import PromptBank, format_full_prompt
-    bank = PromptBank.build("IDH1", n_prompts=args.n_prompts)
+    bank = PromptBank.build(args.target, n_prompts=args.n_prompts)
     prompts = [format_full_prompt(p) for p in bank.prompts]
     print(f"[eval] 独立评估 prompt 集: {len(prompts)} 条", flush=True)
 
@@ -152,7 +155,7 @@ def main():
     # --- 统一重打分 (与训练同一个 reward 服务) ---
     from rl.reward_service import RewardService, RewardConfig
     svc = RewardService(RewardConfig(
-        target="IDH1", n_workers=args.n_workers,
+        target=args.target, n_workers=args.n_workers,
         cache_path=out_dir / f"{tag}_reward_cache.jsonl"))
     try:
         recs = svc.score_batch([m["smiles"] for m in mols])
@@ -165,6 +168,7 @@ def main():
 
     stats = {
         "tag": tag,
+        "target": args.target,
         "n_sampled": len(mols),
         "n_scored": len(recs),
         "reward_mean": float(rew.mean()) if len(rew) else 0.0,
