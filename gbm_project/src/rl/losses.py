@@ -176,6 +176,7 @@ def dap_loss(
     sigma0: float = 8.0,
     reward_zscore: bool = True,
     use_adaptive_sigma: bool = True,
+    length_normalize: bool = True,
 ) -> Dict[str, torch.Tensor]:
     """
     DAP-Lite 损失 (REINVENT DAP 移植到 LLM, 带两处必要修正)。
@@ -184,10 +185,12 @@ def dap_loss(
         agent_logps: [B, T]
         prior_logps: [B, T]
         mask:        [B, T]
-        rewards:     [B] 原始 reward
+        rewards:     [B] 原始 reward (或已归一化的 advantage)
         sigma0:      σ 基准值 (自适应模式下作为缩放因子)
         reward_zscore: 是否对 reward 做 z-score (修正原始 DAP 缺 baseline)
         use_adaptive_sigma: 是否自适应标定 σ (修正原始 σ=128 的量纲问题)
+        length_normalize: 是否按有效 token 数归一 (与 GRPO 保持一致;
+            否则长 SMILES 的序列 logprob 绝对值更大, 会被系统性惩罚)
     """
     assert agent_logps.shape == prior_logps.shape == mask.shape
 
@@ -202,6 +205,15 @@ def dap_loss(
 
     seq_agent = (agent_logps * m).sum(dim=1)
     seq_prior = (prior_logps * m).sum(dim=1)
+
+    # ⚠️ 长度归一: 与 GRPO 保持一致。
+    #    DAP 的 `augmented = seq_prior + sigma * r` 是**序列级**目标,
+    #    若不归一, 长 SMILES 的 |seq_logprob| 天然更大 -> 平方误差被
+    #    长分子主导 -> 模型会系统性偏好短分子。
+    if length_normalize:
+        n_norm = n_valid.clamp(min=1.0)
+        seq_agent = seq_agent / n_norm
+        seq_prior = seq_prior / n_norm
 
     # --- reward z-score (修正 1: 缺 baseline) ---
     if reward_zscore:
@@ -248,11 +260,27 @@ def compute_loss(
     sigma0: float = 8.0,
     **kwargs,
 ) -> Dict[str, torch.Tensor]:
-    """按算法名分发。"""
+    """按算法名分发。
+
+    ⚠️⚠️ **实测踩坑**: trainer 的调用点会**无条件**传
+    `kl_estimator` / `length_normalize` (它们是 GRPO 专有参数)。
+    早期版本直接 `dap_loss(..., **kwargs)` → 抛
+    `TypeError: dap_loss() got an unexpected keyword argument 'kl_estimator'`,
+    而 DAP 路径**从未被实跑验证过**, 单元测试也没覆盖到 → 这个 bug
+    潜伏了整个 M0–M4 阶段 (2026-11-24 扩大实验前审计才发现)。
+
+    修法: 按算法**显式筛选**参数, 不做盲目透传。
+    """
     if algorithm == "grpo":
         return grpo_loss(agent_logps, prior_logps, mask, advantages,
                          beta=beta, **kwargs)
     if algorithm == "dap":
+        # DAP 只认这几个参数, 其余 (kl_estimator / beta) 对 DAP 无意义。
+        # length_normalize 语义上仍适用 (与 GRPO 保持一致)。
+        dap_kwargs = {k: v for k, v in kwargs.items()
+                      if k in ("length_normalize", "reward_zscore",
+                               "use_adaptive_sigma")}
+        # DAP 无显式 KL 项 -> beta 不参与
         return dap_loss(agent_logps, prior_logps, mask, advantages,
-                        sigma0=sigma0, **kwargs)
+                        sigma0=sigma0, **dap_kwargs)
     raise ValueError(f"未知算法: {algorithm} (支持 'grpo' / 'dap')")
