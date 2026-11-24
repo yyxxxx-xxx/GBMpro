@@ -11,6 +11,10 @@
 **reward median +52.1%、mean +31.1%，Mann-Whitney p=0.0007，配对检验 8/8 全胜**，
 8 项分子属性指标**全部同向改善**，且**未发生 reward hacking**。
 
+![主结果](https://raw.githubusercontent.com/yyxxxx-xxx/GBMpro/master/experiments/eval_m3_kl008/main_result.png)
+
+> 左：reward 分布右移（中位数 +52.1%）；右：8 项属性全部改善。
+
 ---
 
 ## 2. 架构修改：改了什么
@@ -55,17 +59,19 @@
 
 | 文件 | 行数 | 职责 |
 |---|---|---|
-| `src/rl/trainer.py` | 880 | GRPO/DAP 训练主循环、checkpoint、KL/优势统计 |
-| `src/rl/rollout.py` | 420 | 分块生成、批量换行停止器、候选分子抽取与修复 |
-| `src/rl/advantage.py` | 160 | 组内 z-score 优势计算（无效样本不参与梯度） |
-| `src/rl/losses.py` | 180 | GRPO / DAP-Lite 损失，`k3` KL 估计量 |
-| `src/rl/reward_service.py` | 340 | Vina + admet-ai 打分服务，spawn 进程池 + JSONL 缓存 + hacking 守卫 |
-| `src/rl/prompt_bank.py` | 150 | 冻结 prompt 库（`CELL_STATES × METRIC_VARIANTS` 全组合去重 → 8 条） |
-| `src/rl/diversity.py` | 130 | 骨架多样性过滤（Morgan 指纹分桶） |
-| `scripts/train_rl.py` | 175 | 训练 CLI |
-| `scripts/eval_rl_checkpoint.py` | 210 | **独立**评估（固定 prompt 集 + 同 seed） |
+| `src/rl/trainer.py` | 895 | GRPO/DAP 训练主循环、checkpoint、KL/优势统计 |
+| `src/rl/rollout.py` | 309 | 分块生成、批量换行停止器、候选分子抽取与修复 |
+| `src/rl/advantage.py` | 159 | 组内 z-score 优势计算（无效样本不参与梯度） |
+| `src/rl/losses.py` | 286 | GRPO / DAP-Lite 损失，`k3` KL 估计量 |
+| `src/rl/reward_service.py` | 491 | Vina + admet-ai 打分服务，spawn 进程池 + JSONL 缓存 + hacking 守卫 |
+| `src/rl/prompt_bank.py` | 152 | 冻结 prompt 库（`CELL_STATES × METRIC_VARIANTS` 全组合去重 → 8 条） |
+| `src/rl/diversity.py` | 136 | 骨架多样性过滤（Morgan 指纹分桶） |
+| `scripts/train_rl.py` | 172 | 训练 CLI |
+| `scripts/eval_rl_checkpoint.py` | 194 | **独立**评估（固定 prompt 集 + 同 seed） |
 | `scripts/compare_eval.py` | 165 | 显著性检验（Mann-Whitney / Cliff's δ / Cohen's d / 配对） |
-| `scripts/plot_rl_curve.py` | 240 | 4 联训练曲线 + 自动收敛判定 |
+| `scripts/plot_rl_curve.py` | 236 | 4 联训练曲线 + 自动收敛判定 |
+| `scripts/plot_m4_ablation.py` | 125 | **消融对比图**（汇报用） |
+| `scripts/plot_main_result.py` | 135 | **主结果图**（汇报用） |
 | `scripts/stat_test_m2.py` | 180 | on-policy 日志回归与 t 检验 |
 
 **零侵入性**：原有 `src/gbm/`、`generate_feedback_loop.py` **一行未改**。
@@ -171,6 +177,11 @@ guard 与 prune 率**双双下降** → 提升不是靠生成畸形分子骗 sco
 - 先验污染检查：**全部 0 次**（prior 与 agent 严格分离）
 - grad_norm 健康：均值 1.1–1.4，最大 2.07（无爆炸、无消失）
 
+![消融对比](https://raw.githubusercontent.com/yyxxxx-xxx/GBMpro/master/experiments/m4_ablation.png)
+
+> 左：reward MA 收敛曲线（虚线 = SFT 起点水平）；中：KL 漂移控制（绿带 = 健康区间 0.05–0.10，
+> B 因 β 过大被锁在区间下方，C 漂移最快）；右：学习速率排序（C > A ≈ D ≫ B）。
+
 ---
 
 ## 4. 复现命令
@@ -204,8 +215,8 @@ python3 scripts/compare_eval.py ../experiments/eval_m3_kl008
 
 | # | 问题 | 现状 |
 |---|---|---|
-| 1 | 只做了 IDH1 单靶点 | 建议补 EGFR（Vina 最强靶点，对比最严苛） |
-| 2 | 无 REINVENT 4 / DAP-Lite 原始实现对照 | 目前只有"RL vs SFT"内部对照 |
+| 1 | 只做了 IDH1 单靶点 | 建议补 EGFR（Vina 最强靶点，对比最严苛）|
+| 2 | 无 REINVENT 4 / DAP-Lite 原始实现对照 | **DAP 路径刚修完潜伏 Bug（见 §6）**，尚未跑完整对照 |
 | 3 | 单一 seed（1234） | 建议补 2–3 个 seed，报 mean ± std |
 | 4 | 评估样本量 220–244 | 建议 `n_per_prompt` 提到 100 |
 | 5 | reward_max 未系统性提升 | 组内 z-score 对极值不敏感，建议引入 top-k 加权 |
@@ -213,13 +224,45 @@ python3 scripts/compare_eval.py ../experiments/eval_m3_kl008
 
 ---
 
-## 6. 附录：产物索引
+## 6. ⚠️ 汇报时需主动说明的一条：DAP 路径的潜伏 Bug
+
+**在准备扩大实验方案、审计 DAP-Lite 可用性时才发现**：
+
+```python
+# compute_loss 把 GRPO 专有参数盲目透传给 dap_loss
+return dap_loss(..., sigma0=sigma0, **kwargs)
+#   TypeError: dap_loss() got an unexpected keyword argument 'kl_estimator'
+```
+
+**事实**：DAP 路径从 M0 到 M4 **从未被真实跑通过**，单元测试也未覆盖该分支。
+
+**已修复并验证**（commit `4e0b01c`）：
+- `compute_loss` 按算法显式筛选参数
+- `dap_loss` 新增 `length_normalize`（否则长分子主导平方误差 → 偏好短分子）
+- 实跑 2 步通过：`loss 7.26 → 2.25`，`grad_norm 13.35 → 2.59`（收敛）
+
+**这意味着什么**：
+- ✅ **GRPO 的所有结论不受影响** —— GRPO 路径全程实跑验证过（M1–M4 共 200+ 步）
+- ⚠️ 但**"我们实现了 DAP-Lite"这句话在 M4 之前是不成立的** —— 只有代码，没有可运行性证据
+- 💡 **方法论教训**：所有结论都建立在单条路径上，备选路径连跑都没跑过。
+  这本身就是"必须补 DAP 对照"的强理由
+
+**汇报口径建议**：主动说明这一点，比被问到再解释好得多 —— 它恰恰证明
+我们对代码的验证深度，以及"扩大实验"的必要性。
+
+---
+
+## 7. 附录：产物索引
 
 | 类别 | 路径 |
 |---|---|
 | 完整设计文档（1438+ 行，含全部踩坑记录） | `gbm_project/docs/RL_INTEGRATION_DESIGN.md` |
 | 本汇报文档 | `gbm_project/docs/RL_STAGE_REPORT.md` |
+| 扩大实验方案（已决策暂缓，存档备查） | `gbm_project/docs/RL_EXPANSION_PLAN.md` |
 | 训练日志 | `experiments/rl_m3_kl008/train_log.jsonl` 等 5 个 run |
-| 训练曲线 | `experiments/*/rl_curve.png` |
+| 训练曲线（单 run 4 联图） | `experiments/*/rl_curve.png` |
+| **主结果图**（汇报用） | `experiments/eval_m3_kl008/main_result.png` |
+| **消融对比图**（汇报用） | `experiments/m4_ablation.png` |
 | 评估结果 | `experiments/eval_m3_kl008/`、`eval_m4_{a,b,c,d}/` |
 | 显著性检验脚本 | `gbm_project/scripts/compare_eval.py` |
+| 绘图脚本 | `gbm_project/scripts/plot_rl_curve.py`、`plot_m4_ablation.py`、`plot_main_result.py` |

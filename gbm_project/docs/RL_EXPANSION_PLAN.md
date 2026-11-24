@@ -1,7 +1,20 @@
 # 扩大实验方案（待批准）
 
 > 依据: M3/M4 阶段性结果 ｜ 日期: 2026-11-24
-> 状态: **等待批准，尚未改动任何代码**
+> 状态: **已决策 —— 暂不执行**（2026-11-24 用户决定：先用于阶段汇报，
+> 不加 top-k 加权，等审阅具体命令后再启动）
+
+## 📌 决策记录（2026-11-24）
+
+| 问题 | 决定 |
+|---|---|
+| 扩大范围 | **暂不扩大** —— 先把当前 M3/M4 结果用于阶段汇报 |
+| top-k 加权 | **不做** —— 保持代码最小改动 |
+| 何时启动 | **等用户审阅具体命令/配置后再开始** |
+
+因此本方案**仅作为备选清单存档**，批 1–3 的命令尚未执行。
+下方内容保留了完整的可行性审计结论（seed 隔离已正确、EGFR/VEGFR 受体就绪、
+DAP Bug 已修复），将来批准时可直接照此执行，无需重新审计。
 
 ---
 
@@ -75,16 +88,40 @@ $ python3 -c "from gbm_target_evaluator import *"
 `target_aliases` 已含 `IDH1 / EGFR / VEGFR` → **无需任何配置改动**。
 （可顺带把 VEGFR 作为第 4 个靶点加入批 2，GPU 还有余量。）
 
-**DAP-Lite 代码审计：✅ 已实现且自洽**
+**DAP-Lite 代码审计：⚠️ 发现并修复了一个潜伏 Bug**
 
 `src/rl/losses.py` 同时含 `grpo_loss`（第 61 行）与 `dap_loss`（第 171 行），
-`compute_loss` 按 `--algorithm` 分发。DAP 的核心特征：
-- **无 KL 项**（`kl` 恒返回 0）——靠 `sigma` 自适应标定代替
-- `augmented = seq_prior + sigma * r`，`r` 为 batch 级 z-score
-- `adaptive_sigma` 按 prior logprob 与 reward 的尺度自动定 σ（修正 REINVENT 原始 σ=128 的量纲问题）
+`compute_loss` 按 `--algorithm` 分发。审计时**实测跑了一遍**才发现：
 
-⚠️ **注意**：DAP 路径下 `beta_kl` **不生效**。跑 DAP 时应调
-`--sigma0`（默认 8.0）而非 `beta_kl`。批 2 的 DAP run 会固定 `sigma0=8.0`。
+> **DAP 路径从 M0 到 M4 阶段从未被真实跑通过。**
+> `compute_loss` 盲目 `**kwargs` 透传 `kl_estimator` / `length_normalize`
+> （GRPO 专有参数）→ `TypeError: dap_loss() got an unexpected keyword
+> argument 'kl_estimator'`。单元测试也没覆盖到这个分支。
+
+已修复（commit `4e0b01c`）：
+- `compute_loss` 按算法**显式筛选**参数
+- `dap_loss` 新增 `length_normalize` 并在序列级目标上应用
+  （否则长 SMILES 的 |seq_logprob| 更大 → 平方误差被长分子主导 →
+  模型系统性偏好短分子）
+
+**修复后实跑验证通过**：
+```
+[step 0] loss=+7.2610 kl=0.00000 rew=0.2434 gnorm=13.35
+[step 1] loss=+2.2549 kl=0.00000 rew=0.3785 gnorm=2.59   ← 收敛
+```
+
+DAP 的核心特征（审计确认）：
+- **无显式 KL 项**（`kl` 恒为 0）——靠 `sigma` 自适应标定代替
+- `augmented = seq_prior + sigma * r`，`r` 为 batch 级 z-score
+- `adaptive_sigma` 按 prior logprob 与 reward 的尺度自动定 σ
+  （修正 REINVENT 原始 σ=128 的量纲问题）
+
+⚠️ **DAP 路径下 `beta_kl` 不生效**。跑 DAP 时应调 `--sigma0`（默认 8.0）
+而非 `beta_kl`。批 2 的 DAP run 固定 `sigma0=8.0`。
+
+> 💡 **这暴露了一个方法论问题**：M0–M4 的所有结论都建立在 GRPO 一条路径上，
+> 而 DAP 这条"备选对照"路径连跑都没跑过。**批 2 之前的任何对照实验都是
+> 不可靠的**——这本身就是把 DAP 纳入批 2 的最强理由。
 
 ---
 
