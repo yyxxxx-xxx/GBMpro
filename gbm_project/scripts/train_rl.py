@@ -41,6 +41,12 @@ def build_argparser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(description="GBM RL 训练 (GRPO / DAP-Lite)")
     ap.add_argument("--target", default="IDH1")
     ap.add_argument("--algorithm", default="grpo", choices=["grpo", "dap"])
+    ap.add_argument("--advantage_mode", default="zscore",
+                    choices=["zscore", "pairwise", "pairwise_scaled", "rank"],
+                    help="组内 advantage 方式。zscore=原实现(默认,保证可复现); "
+                         "pairwise=成对差分(PBCNet2.0 启发); "
+                         "pairwise_scaled=成对差分+保留组间信息量差异; "
+                         "rank=组内排名")
     ap.add_argument("--steps", type=int, default=60)
 
     # 模型
@@ -132,6 +138,7 @@ def main():
         sft_adapter=args.sft_adapter,
         target=args.target,
         algorithm=args.algorithm,
+        advantage_mode=args.advantage_mode,
         lr=args.lr,
         beta_kl=args.beta_kl,
         sigma0=args.sigma0,

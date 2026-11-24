@@ -60,6 +60,9 @@ class TrainerConfig:
 
     # --- RL 超参 ---
     algorithm: str = "grpo"          # 'grpo' | 'dap'
+    advantage_mode: str = "zscore"   # 'zscore' | 'pairwise' | 'rank'
+                                       # pairwise 见 advantage.py 的说明
+                                       # (借鉴 PBCNet2.0 的成对差分 readout)
     lr: float = 1e-6                 # 比 SFT (1e-4) 低 2 个数量级
     beta_kl: float = 0.02
     sigma0: float = 8.0              # DAP 自适应 sigma 的基准
@@ -633,7 +636,8 @@ class RLTrainer:
                 rec_by_smiles[s.smiles].reward if s.valid and s.smiles in rec_by_smiles
                 else float("nan"))
 
-        groups = compute_group_advantages(rewards_by_group)
+        groups = compute_group_advantages(rewards_by_group,
+                                          mode=cfg.advantage_mode)
         gstats = summarize_groups(groups)
 
         # --- 4. 构建训练 batch ---
