@@ -206,3 +206,6 @@ experiments/rl_*/
 !experiments/rl_*/train_log.jsonl
 !experiments/rl_*/train_config.json
 !experiments/rl_*/reward_cache.jsonl
+# ⚠️ optimizer 二进制状态 (每个 300MB+, 12 个 run 就 3.6GB) —— 绝不入库
+experiments/*/optimizer_*.pt
+experiments/*/state_latest.json
