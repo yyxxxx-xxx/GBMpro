@@ -94,6 +94,8 @@ def build_argparser() -> argparse.ArgumentParser:
     ap.add_argument("--out_dir", default=None)
     ap.add_argument("--resume", action="store_true")
     ap.add_argument("--log_every", type=int, default=1)
+    ap.add_argument("--device", default="cuda:0",
+                    help="训练用 GPU (如 cuda:1)。4 卡可并行跑消融。")
     return ap
 
 
@@ -102,6 +104,21 @@ def main():
 
     # ★ 显存碎片缓解 (实测 B=16 OOM 的对策)
     os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
+
+    # ★ 多卡并行: 把目标物理卡映射成进程内唯一的 cuda:0。
+    #   为什么必须这么做: PEFT 的 `load_peft_weights` 内部**硬编码**用
+    #   "cuda:0" 加载 adapter 权重 —— 即使模型建在 cuda:2, 加载权重时
+    #   仍会往 GPU 0 分配 1GB, 导致多卡并行时 OOM (实测 4 卡并行崩 2 个)。
+    #   用 CUDA_VISIBLE_DEVICES 隔离后, 进程内 "cuda:0" 就是目标物理卡。
+    if args.device.startswith("cuda:") and ":" in args.device:
+        _idx = args.device.split(":")[1]
+        if _idx.isdigit() and _idx != "0":
+            os.environ["CUDA_VISIBLE_DEVICES"] = _idx
+            print(f"[device] CUDA_VISIBLE_DEVICES={_idx} "
+                  f"(进程内 {args.device} == 物理卡 {_idx})", flush=True)
+            args.device = "cuda:0"
+    elif args.device == "cuda":
+        os.environ.setdefault("CUDA_VISIBLE_DEVICES", "0")
 
     out_dir = Path(args.out_dir or
                    f"final_results/comparative/Ours_{args.algorithm.upper()}_{args.target}")
@@ -145,7 +162,7 @@ def main():
     with open(out_dir / "train_config.json", "w") as f:
         json.dump(vars(args), f, indent=2, ensure_ascii=False)
 
-    trainer = RLTrainer(cfg, out_dir)
+    trainer = RLTrainer(cfg, out_dir, device=args.device)
     if args.resume:
         trainer.load_checkpoint("latest")
     trainer.train(n_steps=args.steps, log_every=args.log_every)

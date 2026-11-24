@@ -288,7 +288,7 @@ def batched_logprobs(
     tokenizer,
     sequences: List[Tuple[List[int], List[int]]],
     batch_size: int = 8,
-    device: str = "cuda:0",
+    device: Optional[str] = None,
     with_grad: bool = True,
 ) -> Tuple[torch.Tensor, torch.Tensor]:
     """
@@ -310,10 +310,19 @@ def batched_logprobs(
     Args:
         sequences: [(prompt_ids, response_ids), ...]
         with_grad: True=agent (要梯度); False=prior (no_grad)
+        device: None=**自动从 model 的参数推断** (支持多卡并行消融);
+            显式传入会覆盖。
 
     Returns:
         (logps [B, T_max], mask [B, T_max])
     """
+    # ⚠️ 不要硬编码 "cuda:0" —— 4 卡并行跑消融时, 张量必须在 model 所在卡上,
+    #    否则会跨卡拷贝 (慢) 甚至报 device mismatch。
+    if device is None:
+        try:
+            device = next(model.parameters()).device
+        except StopIteration:
+            device = "cuda:0"
     device = torch.device(device)
     B = len(sequences)
     T_max = max(len(p) + len(r) for p, r in sequences)
@@ -440,10 +449,11 @@ class RLTrainer:
         6. 反向传播 + step
     """
 
-    def __init__(self, cfg: TrainerConfig, out_dir: Path):
+    def __init__(self, cfg: TrainerConfig, out_dir: Path, device: str = "cuda:0"):
         self.cfg = cfg
         self.out_dir = Path(out_dir)
         self.out_dir.mkdir(parents=True, exist_ok=True)
+        self.device = device
 
         torch.manual_seed(cfg.seed)
         random.seed(cfg.seed)
@@ -454,7 +464,7 @@ class RLTrainer:
         from rl.diversity import ScaffoldDiversityFilter
 
         # --- 模型 ---
-        self.model, self.tokenizer = build_rl_model(cfg)
+        self.model, self.tokenizer = build_rl_model(cfg, device=device)
         self.rollout = RolloutEngine(self.model, self.tokenizer, RolloutConfig(
             group_size=cfg.group_size, temperature=cfg.temperature,
             top_p=cfg.top_p, max_new_tokens=cfg.max_new_tokens,
