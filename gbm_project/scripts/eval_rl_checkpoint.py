@@ -32,6 +32,38 @@ GBM = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(GBM / "src"))
 sys.path.insert(0, str(GBM / "scripts"))
 
+
+def _early_device_setup() -> str:
+    """在 import torch **之前** 设置 CUDA_VISIBLE_DEVICES (多卡隔离)。
+
+    ⚠️ **为什么必须这么早**:
+       PEFT 的 load_peft_weights 把权重硬编码加载到 cuda:0。
+       多卡并行评估时, 所有实例都会往 GPU 0 分配显存 -> OOM。
+       (训练脚本 train_rl.py 用的也是同一套办法。)
+       一旦 import torch 且 CUDA 上下文已初始化, 环境变量改动就不生效了。
+
+    这里直接扫 sys.argv, 不依赖 argparse (argparse 要等 main 才跑, 那时 torch 已导入)。
+    """
+    import os
+    dev = "cuda:0"
+    argv = sys.argv
+    for i, a in enumerate(argv):
+        if a == "--device" and i + 1 < len(argv):
+            dev = argv[i + 1]
+            break
+        if a.startswith("--device="):
+            dev = a.split("=", 1)[1]
+            break
+    if dev.startswith("cuda:"):
+        idx = dev.split(":", 1)[1]
+        os.environ["CUDA_VISIBLE_DEVICES"] = idx
+        print(f"[eval] GPU 隔离: CUDA_VISIBLE_DEVICES={idx}", flush=True)
+        return "cuda:0"
+    return dev
+
+
+DEVICE = _early_device_setup()
+
 import numpy as np
 import torch
 
@@ -48,7 +80,6 @@ def build_model(rl_adapter=None, sft_adapter=None, base_model=None):
     model = AutoModelForCausalLM.from_pretrained(
         base_model, torch_dtype=torch.float16, device_map="cuda:0")
     model.config.use_cache = True
-
     llamole = "/root/Llamole-main/saves/Llamole-Qwen2-7B-Instruct-Adapter"
     if Path(llamole).exists():
         model = PeftModel.from_pretrained(model, llamole)
@@ -126,6 +157,9 @@ def main():
     ap.add_argument("--sft_adapter",
                     default="/root/Llamole-main/saves/"
                             "Llamole-Qwen2-7B-Instruct-Adapter-gbm-active")
+    ap.add_argument("--device", default=None,
+                    help="指定 GPU, 如 cuda:1。多卡并行时必须用, "
+                         "内部映射为 CUDA_VISIBLE_DEVICES (PEFT 硬编码 cuda:0)")
     args = ap.parse_args()
 
     out_dir = Path(args.out_dir)
