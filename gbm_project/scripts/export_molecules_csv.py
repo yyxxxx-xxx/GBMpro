@@ -1,194 +1,225 @@
+#!/usr/bin/env python3
 """
-RL 生成分子 -> CSV 导出
-======================
+RL 生成分子导出 CSV (ID, SMILES)
+=================================
 
-把独立评估产出的分子整理成两列 CSV:  `ID,SMILES`
+把 RL 训练产出的分子整理成两列 CSV:
+    ID,SMILES
+    EGFR_m5_egfr_zscore_RL_0000,Cc1cc(C#N)c([O-])c(OCc2ccc(F)c(Br)c2)n1
+    ...
 
-ID 格式:  `{靶点}_{来源标签}_{编号}`
-  - 靶点名称: IDH1 (从评估目录的 train_config / 靶点配置推断)
-  - 来源标签: RL (强化学习生成) / SFT (基线生成)
-  - 编号: 4 位零填充, 便于排序与引用
+ID 格式: {靶点大写}_{实验标签}_{RL|BASE}_{4位序号}
+    - 靶点名: EGFR / VEGFR / IDH1 ...
+    - 实验标签: 与训练目录同名, 如 m5_egfr_zscore / m5_egfr_pairwise
+    - RL / BASE: 区分强化学习产物与 SFT 基线产物
+    - 4 位序号: 从 0000 开始, 按首次出现顺序 (与 reward_cache 的记录顺序一致,
+                便于和打分缓存逐行对照)
 
-⚠️ 多组实验的 ID 冲突: 不同消融组 (m4_a / m4_b / ...) 的分子都是
-`IDH1_RL_0000` 起, 合并多个 CSV 时会撞号。用 `--tag` 给每组加前缀:
-    IDH1_RL_a_0000 / IDH1_RL_b_0000 ...
+过滤规则
+--------
 
-用法:
-    # 单个评估目录
-    python3 scripts/export_molecules_csv.py ../experiments/eval_m3_kl008
+⚠️ **默认剔除被硬约束截断 (pruned) 的分子**。
+   这些分子触发了 reward 硬约束 (结构守卫违规 / 端点越界),
+   它们在训练中被 prune 掉, 不进入 advantage, 化学上也不可接受。
+   用 --include_pruned 可以保留 (用于排查), 但会在 ID 后加 "_P" 标记。
 
-    # 同时导出 RL + SFT 基线, 输出到指定路径
-    python3 scripts/export_molecules_csv.py ../experiments/eval_m3_kl008 \
-        --include_baseline --out ../experiments/eval_m3_kl008/molecules.csv
+去重
+----
+   同一分子可能在多个 rollout 步被重复生成。
+   --dedup (默认开): 只保留**首次出现**的, 保证 ID 连续且无重复行
+   --keep_dup: 保留全部 (用于统计多样性/重复率)
 
-    # 批量导出所有评估目录 (自动从目录名推导 tag: eval_m4_a -> a)
-    python3 scripts/export_molecules_csv.py ../experiments --batch
+用法
+----
 
-    # 合并多组到一个 CSV (自动去重)
-    python3 scripts/export_molecules_csv.py ../experiments --batch \
-        --merge ../experiments/all_molecules.csv
+    # 导出全部 M5 实验
+    python3 scripts/export_molecules_csv.py --m5 --out_dir ../experiments/csv
+
+    # 导出单个实验
+    python3 scripts/export_molecules_csv.py \
+        --exp_dir ../experiments/m5_egfr_zscore --target EGFR
+
+    # 保留被 prune 的分子 (排查用)
+    python3 scripts/export_molecules_csv.py --m5 --include_pruned
+
+    # 保留重复分子 (统计用)
+    python3 scripts/export_molecules_csv.py --m5 --keep_dup
 """
 from __future__ import annotations
 
 import argparse
 import csv
 import json
+import re
 from pathlib import Path
 
+GBM_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = GBM_ROOT.parent
+EXP_ROOT = REPO_ROOT / "experiments"
 
-def infer_target(eval_dir: Path) -> str:
-    """推断靶点名。
 
-    优先级: rl_stats.json / baseline_sft_stats.json 里的 target 字段
-            -> 上溯 train_config.json
-            -> reward cache 字段
-            -> 目录名兜底
+def infer_target(exp_dir: Path) -> str:
+    """从 train_config.json 读靶点, 读不到就从目录名猜。"""
+    cfg = exp_dir / "train_config.json"
+    if cfg.exists():
+        try:
+            d = json.loads(cfg.read_text(encoding="utf-8"))
+            if d.get("target"):
+                return str(d["target"]).upper()
+        except Exception:
+            pass
+    # 目录名如 m5_egfr_zscore -> egfr
+    m = re.search(r"(egfr|vegfr|idh1|mgmt|pi3k[a-z_]*|p53[a-z_]*)", exp_dir.name.lower())
+    return (m.group(1).upper() if m else "UNK")
+
+
+def exp_tag(exp_dir: Path) -> str:
+    """实验标签: 目录名去 experiments/ 前缀。"""
+    return exp_dir.name
+
+
+def load_molecules(exp_dir: Path, include_pruned: bool):
+    """从 reward_cache.jsonl 读取分子。
+
+    返回 [(smiles, reward, pruned, first_step_seen)]
     """
-    # 1) 评估产物自带的 target 字段 (最可靠)
-    for name in ("rl_stats.json", "baseline_sft_stats.json"):
-        f = eval_dir / name
-        if f.exists():
-            try:
-                t = json.loads(f.read_text(encoding="utf-8")).get("target")
-                if t:
-                    return str(t)
-            except Exception:
-                pass
-
-    # 2) 上溯找 train_config.json (训练目录里有)
-    for parent in [eval_dir, *eval_dir.parents]:
-        cfg = parent / "train_config.json"
-        if cfg.exists():
-            try:
-                return json.loads(cfg.read_text(encoding="utf-8")).get(
-                    "target", "IDH1")
-            except Exception:
-                pass
-
-    # 3) 从 reward_cache 里的字段找
-    for f in eval_dir.glob("*_reward_cache.jsonl"):
-        for line in f.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                try:
-                    d = json.loads(line)
-                except Exception:
-                    break
-                for k in ("target", "target_name"):
-                    if d.get(k):
-                        return str(d[k])
-                break
-
-    # 4) 目录名兜底
-    name = eval_dir.name
-    for t in ("IDH1", "EGFR", "VEGFR", "VEGF"):
-        if t in name.upper():
-            return t
-    return "IDH1"
-
-
-def load_smiles(path: Path):
-    if not path.exists():
+    cache = exp_dir / "reward_cache.jsonl"
+    if not cache.exists():
         return []
-    data = json.loads(path.read_text(encoding="utf-8"))
+
     out = []
-    for m in data:
-        smi = m.get("smiles") if isinstance(m, dict) else m
-        if smi:
-            out.append(smi)
+    with cache.open(encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            smi = d.get("smiles")
+            if not smi:
+                continue
+            pruned = bool(d.get("pruned")) or bool(d.get("guard_violation"))
+            if pruned and not include_pruned:
+                continue
+            out.append((smi, d.get("reward"), pruned))
     return out
 
 
-def write_csv(rows, out_path: Path):
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(out_path, "w", newline="", encoding="utf-8") as f:
+def write_csv(path: Path, rows, tag_target: str, tag: str, kind: str):
+    """写 CSV。rows = [(smiles, reward, pruned), ...]"""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["ID", "SMILES"])
-        w.writerows(rows)
+        for i, (smi, reward, pruned) in enumerate(rows):
+            suffix = "_P" if pruned else ""
+            mid = f"{tag_target}_{tag}_{kind}_{i:04d}{suffix}"
+            w.writerow([mid, smi])
     return len(rows)
 
 
-def export_dir(eval_dir: Path, target: str, include_baseline: bool,
-               out: Path | None, tag: str = ""):
-    """导出一个评估目录。返回 [(路径, 行数)] 列表。"""
-    written = []
-    mid = f"{target}_{tag}" if tag else target
-
-    rl = load_smiles(eval_dir / "rl_smiles.json")
-    if rl:
-        rows = [[f"{mid}_RL_{i:04d}", s] for i, s in enumerate(rl)]
-        p = out if out else eval_dir / "rl_molecules.csv"
-        n = write_csv(rows, p)
-        written.append((p, n))
-
-    if include_baseline:
-        base = load_smiles(eval_dir / "baseline_sft_smiles.json")
-        if base:
-            rows = [[f"{mid}_SFT_{i:04d}", s] for i, s in enumerate(base)]
-            p = (out.parent / (out.stem + "_baseline.csv")) if out \
-                else eval_dir / "baseline_sft_molecules.csv"
-            n = write_csv(rows, p)
-            written.append((p, n))
-    return written
-
-
-def derive_tag(eval_dir: Path) -> str:
-    """从目录名推导分组标签: eval_m4_a -> a, eval_m3_kl008 -> m3_kl008"""
-    name = eval_dir.name
-    for prefix in ("eval_",):
-        if name.startswith(prefix):
-            return name[len(prefix):]
-    return name
+def summarize(rows, total_raw):
+    n_pruned = sum(1 for r in rows if r[2])
+    uniq = len({r[0] for r in rows})
+    rews = [r[1] for r in rows if isinstance(r[1], (int, float))]
+    return {
+        "n_exported": len(rows),
+        "n_raw": total_raw,
+        "n_pruned_excluded": total_raw - len(rows) + n_pruned,
+        "n_unique": uniq,
+        "duplicate_rate": round(1 - uniq / len(rows), 4) if rows else 0.0,
+        "reward_mean": round(sum(rews) / len(rews), 4) if rews else None,
+    }
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("eval_dir", help="评估目录 (含 rl_smiles.json)")
-    ap.add_argument("--out", default=None, help="输出 CSV 路径")
-    ap.add_argument("--include_baseline", action="store_true",
-                    help="同时导出 SFT 基线分子")
-    ap.add_argument("--batch", action="store_true",
-                    help="批量处理: 输入目录下的所有 eval_* 子目录")
-    ap.add_argument("--tag", default=None,
-                    help="ID 中的分组标签 (默认单目录=无, 批量=从目录名推导)")
-    ap.add_argument("--merge", default=None,
-                    help="把所有分子合并导出到一个 CSV (自动去重)")
+    ap.add_argument("--exp_dir", default=None, help="单个实验目录")
+    ap.add_argument("--m5", action="store_true", help="导出所有 m5_* 实验")
+    ap.add_argument("--target", default=None, help="覆盖靶点名")
+    ap.add_argument("--out_dir", default=None, help="输出目录")
+    ap.add_argument("--out", default=None, help="单个输出文件路径")
+    ap.add_argument("--include_pruned", action="store_true",
+                    help="保留被硬约束截断的分子 (ID 加 _P 标记)")
+    ap.add_argument("--keep_dup", action="store_true",
+                    help="保留重复分子 (默认去重, 只留首次出现)")
     args = ap.parse_args()
 
-    root = Path(args.eval_dir)
+    if args.exp_dir:
+        exp_dirs = [Path(args.exp_dir)]
+    elif args.m5:
+        exp_dirs = sorted([d for d in EXP_ROOT.glob("m5_*")
+                            if d.is_dir() and (d / "reward_cache.jsonl").exists()])
+    else:
+        ap.error("需要 --exp_dir 或 --m5")
 
-    if args.batch:
-        dirs = sorted(p for p in root.glob("eval_*") if p.is_dir())
-        if not dirs:
-            print(f"⚠️ {root} 下没有 eval_* 子目录")
-            return
-        merged = []
-        seen = set()
-        for d in dirs:
-            tgt = infer_target(d)
-            tag = args.tag if args.tag is not None else derive_tag(d)
-            for p, n in export_dir(d, tgt, args.include_baseline, None, tag):
-                print(f"{p}  ({n} 个分子, 靶点={tgt}, tag={tag})")
-                if args.merge:
-                    with open(p, newline="", encoding="utf-8") as f:
-                        for r in csv.DictReader(f):
-                            if r["SMILES"] not in seen:
-                                seen.add(r["SMILES"])
-                                merged.append([r["ID"], r["SMILES"]])
-        if args.merge:
-            mp = Path(args.merge)
-            write_csv(merged, mp)
-            print(f"\n合并: {mp}  ({len(merged)} 个唯一分子)")
+    if not exp_dirs:
+        print("没有找到实验目录")
         return
 
-    target = infer_target(root)
-    out = Path(args.out) if args.out else None
-    tag = args.tag or ""
-    written = export_dir(root, target, args.include_baseline, out, tag)
-    if not written:
-        print(f"⚠️ {root} 里没找到 rl_smiles.json")
-        return
-    for p, n in written:
-        print(f"{p}  ({n} 个分子, 靶点={target})")
+    out_dir = Path(args.out_dir) if args.out_dir else EXP_ROOT / "csv"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"输出目录: {out_dir}")
+    print(f"实验数: {len(exp_dirs)}\n")
+
+    all_summaries = []
+    for d in exp_dirs:
+        target = (args.target or infer_target(d)).upper()
+        tag = exp_tag(d)
+
+        raw = load_molecules(d, include_pruned=True)
+        rows = load_molecules(d, include_pruned=args.include_pruned)
+
+        if not args.keep_dup:
+            seen = set()
+            deduped = []
+            for smi, rew, pr in rows:
+                if smi in seen:
+                    continue
+                seen.add(smi)
+                deduped.append((smi, rew, pr))
+            rows = deduped
+
+        if args.out:
+            out_path = Path(args.out)
+        else:
+            out_path = out_dir / f"{target.lower()}_{tag}_molecules.csv"
+
+        n = write_csv(out_path, rows, target, tag, "RL")
+
+        s = summarize(rows, len(raw))
+        s["experiment"] = tag
+        s["target"] = target
+        s["file"] = str(out_path)
+        all_summaries.append(s)
+
+        print(f"── {tag} ({target})")
+        print(f"   原始分子      : {s['n_raw']}")
+        print(f"   剔除 prune 后 : {s['n_exported']}  "
+              f"(剔除 {s['n_pruned_excluded']})")
+        print(f"   唯一分子      : {s['n_unique']}  "
+              f"(重复率 {s['duplicate_rate']*100:.1f}%)")
+        if s["reward_mean"] is not None:
+            print(f"   平均 reward   : {s['reward_mean']}")
+        print(f"   → {out_path}\n")
+
+    # 汇总表
+    print("=" * 74)
+    print(f"{'实验':<24}{'靶点':<10}{'导出':>7}{'唯一':>7}"
+          f"{'重复率':>9}{'平均reward':>12}")
+    print("-" * 74)
+    for s in all_summaries:
+        print(f"{s['experiment']:<24}{s['target']:<10}{s['n_exported']:>7}"
+              f"{s['n_unique']:>7}{s['duplicate_rate']*100:>8.1f}%"
+              f"{(s['reward_mean'] if s['reward_mean'] is not None else 0):>12.4f}")
+    print("=" * 74)
+
+    (out_dir / "export_summary.json").write_text(
+        json.dumps(all_summaries, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"\n汇总: {out_dir / 'export_summary.json'}")
 
 
 if __name__ == "__main__":

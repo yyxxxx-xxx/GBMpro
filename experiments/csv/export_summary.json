@@ -1,0 +1,46 @@
+[
+  {
+    "n_exported": 383,
+    "n_raw": 638,
+    "n_pruned_excluded": 255,
+    "n_unique": 383,
+    "duplicate_rate": 0.0,
+    "reward_mean": 0.4766,
+    "experiment": "m5_egfr_pairwise",
+    "target": "EGFR",
+    "file": "../experiments/csv/egfr_m5_egfr_pairwise_molecules.csv"
+  },
+  {
+    "n_exported": 297,
+    "n_raw": 471,
+    "n_pruned_excluded": 174,
+    "n_unique": 297,
+    "duplicate_rate": 0.0,
+    "reward_mean": 0.4779,
+    "experiment": "m5_egfr_zscore",
+    "target": "EGFR",
+    "file": "../experiments/csv/egfr_m5_egfr_zscore_molecules.csv"
+  },
+  {
+    "n_exported": 620,
+    "n_raw": 1044,
+    "n_pruned_excluded": 424,
+    "n_unique": 620,
+    "duplicate_rate": 0.0,
+    "reward_mean": 0.4515,
+    "experiment": "m5_vegfr_pairwise",
+    "target": "VEGFR",
+    "file": "../experiments/csv/vegfr_m5_vegfr_pairwise_molecules.csv"
+  },
+  {
+    "n_exported": 309,
+    "n_raw": 487,
+    "n_pruned_excluded": 178,
+    "n_unique": 309,
+    "duplicate_rate": 0.0,
+    "reward_mean": 0.4528,
+    "experiment": "m5_vegfr_zscore",
+    "target": "VEGFR",
+    "file": "../experiments/csv/vegfr_m5_vegfr_zscore_molecules.csv"
+  }
+]
